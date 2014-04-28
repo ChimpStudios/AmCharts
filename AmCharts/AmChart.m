@@ -10,7 +10,8 @@
 #import "AmCategories.h"
 #import "AmBalloon.h"
 #import "AmLegend.h"
-
+#import "AmTitle.h"
+#import "AmLabel.h"
 
 @implementation AmChart
 
@@ -67,7 +68,14 @@
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
 	if (self.allLabels) {
-		[dictRep setObject:self.allLabels forKey:@"allLabels"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.allLabels.count];
+        for (AmLabel *label in self.allLabels) {
+            // only add appropriate class items
+            if ([label.class isSubclassOfClass:[AmLabel class]]) {
+                [tmpArr addObject:[label dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"allLabels"];
 	}
 
 	if (self.backgroundAlpha) {
@@ -171,7 +179,14 @@
 	}
 
 	if (self.titles) {
-		[dictRep setObject:self.titles forKey:@"titles"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.titles.count];
+        for (AmTitle *title in self.titles) {
+            // only add appropriate class items
+            if ([title.class isSubclassOfClass:[AmTitle class]]) {
+                [tmpArr addObject:[title dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"titles"];
 	}
 
 	if (self.type) {

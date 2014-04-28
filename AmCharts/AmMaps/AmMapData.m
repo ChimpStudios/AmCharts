@@ -8,7 +8,7 @@
 
 #import "AmMapData.h"
 #import "AmCategories.h"
-
+#import "AmMapArea.h"
 
 @implementation AmMapData
 
@@ -29,7 +29,14 @@
 	NSMutableDictionary *dictRep = [[super dictionaryRepresentation] mutableCopy];
 
 	if (self.areas) {
-		[dictRep setObject:self.areas forKey:@"areas"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.areas.count];
+        for (AmMapArea *mapArea in self.areas) {
+            // only add appropriate class items
+            if ([mapArea.class isSubclassOfClass:[AmMapArea class]]) {
+                [tmpArr addObject:[mapArea dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"areas"];
 	}
 
 	if (self.bottomLatitude) {

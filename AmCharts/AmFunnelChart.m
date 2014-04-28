@@ -80,9 +80,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amFunnelChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end

@@ -8,7 +8,8 @@
 
 #import "AmAngularGauge.h"
 #import "AmCategories.h"
-
+#import "AmGaugeArrow.h"
+#import "AmGaugeAxis.h"
 
 @implementation AmAngularGauge
 
@@ -39,11 +40,25 @@
 	[dictRep setObject:@(self.adjustSize) forKey:@"adjustSize"];
 
 	if (self.arrows) {
-		[dictRep setObject:self.arrows forKey:@"arrows"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.arrows.count];
+        for (AmGaugeArrow *gaugeArrow in self.arrows) {
+            // only add appropriate class items
+            if ([gaugeArrow.class isSubclassOfClass:[AmGaugeArrow class]]) {
+                [tmpArr addObject:[gaugeArrow dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"arrows"];
 	}
 
 	if (self.axes) {
-		[dictRep setObject:self.axes forKey:@"axes"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.axes.count];
+        for (AmGaugeAxis *gaugeAxis in self.axes) {
+            // only add appropriate class items
+            if ([gaugeAxis.class isSubclassOfClass:[AmGaugeAxis class]]) {
+                [tmpArr addObject:[gaugeAxis dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"axes"];
 	}
 
 	[dictRep setObject:@(self.clockWiseOnly) forKey:@"clockWiseOnly"];
@@ -113,9 +128,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amAngularGauge\": %@", [dictRep JSONString]];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end

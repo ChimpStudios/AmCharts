@@ -9,7 +9,8 @@
 #import "AmMapObject.h"
 #import "AmCategories.h"
 #import "AmMapObject.h"
-
+#import "AmMapImage.h"
+#import "AmMapLine.h"
 
 @implementation AmMapObject
 
@@ -78,11 +79,25 @@
 	}
 
 	if (self.images) {
-		[dictRep setObject:self.images forKey:@"images"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.images.count];
+        for (AmMapImage *mapImage in self.images) {
+            // only add appropriate class items
+            if ([mapImage.class isSubclassOfClass:[AmMapImage class]]) {
+                [tmpArr addObject:[mapImage dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"images"];
 	}
 
 	if (self.lines) {
-		[dictRep setObject:self.lines forKey:@"lines"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.lines.count];
+        for (AmMapLine *mapLine in self.lines) {
+            // only add appropriate class items
+            if ([mapLine.class isSubclassOfClass:[AmMapLine class]]) {
+                [tmpArr addObject:[mapLine dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"lines"];
 	}
 
 	if (self.linkToObject) {

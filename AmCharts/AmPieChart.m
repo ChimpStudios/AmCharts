@@ -98,9 +98,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amPieChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end

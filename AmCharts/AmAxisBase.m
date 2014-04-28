@@ -8,7 +8,7 @@
 
 #import "AmAxisBase.h"
 #import "AmCategories.h"
-
+#import "AmGuide.h"
 
 @implementation AmAxisBase
 
@@ -108,7 +108,14 @@
 	}
 
 	if (self.guides) {
-		[dictRep setObject:self.guides forKey:@"guides"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.guides.count];
+        for (AmGuide *guide in self.guides) {
+            // only add appropriate class items
+            if ([guide.class isSubclassOfClass:[AmGuide class]]) {
+                [tmpArr addObject:[guide dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"guides"];
 	}
 
 	[dictRep setObject:@(self.ignoreAxisWidth) forKey:@"ignoreAxisWidth"];

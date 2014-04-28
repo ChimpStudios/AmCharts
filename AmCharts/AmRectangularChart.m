@@ -10,7 +10,7 @@
 #import "AmCategories.h"
 #import "AmChartCursor.h"
 #import "AmChartScrollbar.h"
-
+#import "AmTrendLine.h"
 
 @implementation AmRectangularChart
 
@@ -106,7 +106,14 @@
 	}
 
 	if (self.trendLines) {
-		[dictRep setObject:self.trendLines forKey:@"trendLines"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.trendLines.count];
+        for (AmTrendLine *trendLine in self.trendLines) {
+            // only add appropriate class items
+            if ([trendLine.class isSubclassOfClass:[AmTrendLine class]]) {
+                [tmpArr addObject:[trendLine dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"trendLines"];
 	}
 
 	if (self.zoomOutButtonAlpha) {
@@ -142,9 +149,8 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amRectangularChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+    
+	return [dictRep JSONString];
 }
 
 @end

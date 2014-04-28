@@ -8,7 +8,9 @@
 
 #import "AmCoordinateChart.h"
 #import "AmCategories.h"
-
+#import "AmGraph.h"
+#import "AmGuide.h"
+#import "AmValueAxis.h"
 
 @implementation AmCoordinateChart
 
@@ -52,13 +54,27 @@
 	}
 
 	if (self.graphs) {
-		[dictRep setObject:self.graphs forKey:@"graphs"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.graphs.count];
+        for (AmGraph *graph in self.graphs) {
+            // only add appropriate class items
+            if ([graph.class isSubclassOfClass:[AmGraph class]]) {
+                [tmpArr addObject:[graph dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"graphs"];
 	}
 
 	[dictRep setObject:@(self.gridAboveGraphs) forKey:@"gridAboveGraphs"];
 
 	if (self.guides) {
-		[dictRep setObject:self.guides forKey:@"guides"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.guides.count];
+        for (AmGuide *guide in self.guides) {
+            // only add appropriate class items
+            if ([guide.class isSubclassOfClass:[AmGuide class]]) {
+                [tmpArr addObject:[guide dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"guides"];
 	}
 
 	[dictRep setObject:@(self.sequencedAnimation) forKey:@"sequencedAnimation"];
@@ -80,7 +96,14 @@
 	}
 
 	if (self.valueAxes) {
-		[dictRep setObject:self.valueAxes forKey:@"valueAxes"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.valueAxes.count];
+        for (AmValueAxis *valueAxis in self.valueAxes) {
+            // only add appropriate class items
+            if ([valueAxis.class isSubclassOfClass:[AmValueAxis class]]) {
+                [tmpArr addObject:[valueAxis dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"valueAxes"];
 	}
 
 	return dictRep;
@@ -88,9 +111,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amCoordinateChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end

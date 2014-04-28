@@ -211,9 +211,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amSlicedChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end

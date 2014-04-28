@@ -10,7 +10,7 @@
 #import "AmCategories.h"
 #import "AmValueAxis.h"
 #import "AmStockLegend.h"
-
+#import "AmStockGraph.h"
 
 @implementation AmStockPanel
 
@@ -62,7 +62,14 @@
 	[dictRep setObject:@(self.showComparedOnTop) forKey:@"showComparedOnTop"];
 
 	if (self.stockGraphs) {
-		[dictRep setObject:self.stockGraphs forKey:@"stockGraphs"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.stockGraphs.count];
+        for (AmStockGraph *stockGraph in self.stockGraphs) {
+            // only add appropriate class items
+            if ([stockGraph.class isSubclassOfClass:[AmStockGraph class]]) {
+                [tmpArr addObject:[stockGraph dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"stockGraphs"];
 	}
 
 	if (self.stockLegend) {

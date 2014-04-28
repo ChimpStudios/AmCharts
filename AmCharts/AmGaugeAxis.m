@@ -8,7 +8,7 @@
 
 #import "AmGaugeAxis.h"
 #import "AmCategories.h"
-
+#import "AmGaugeBand.h"
 
 @implementation AmGaugeAxis
 
@@ -81,7 +81,14 @@
 	}
 
 	if (self.bands) {
-		[dictRep setObject:self.bands forKey:@"bands"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.bands.count];
+        for (AmGaugeBand *gaugeBand in self.bands) {
+            // only add appropriate class items
+            if ([gaugeBand.class isSubclassOfClass:[AmGaugeBand class]]) {
+                [tmpArr addObject:[gaugeBand dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"bands"];
 	}
 
 	if (self.bottomText) {

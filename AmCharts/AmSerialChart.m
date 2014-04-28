@@ -99,9 +99,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [dictRep JSONString];
-	return jsonRep;
+	return [dictRep JSONString];
 }
 
 @end
