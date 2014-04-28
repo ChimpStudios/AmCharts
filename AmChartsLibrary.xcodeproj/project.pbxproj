@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
+		1151A49F190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A49D190E9E5A004D52EC /* InfoPlist.strings */; };
+		1151A4A1190E9E5A004D52EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A0190E9E5A004D52EC /* main.m */; };
+		1151A4A5190E9E5A004D52EC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4A3190E9E5A004D52EC /* Credits.rtf */; };
+		1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A7190E9E5A004D52EC /* AppDelegate.m */; };
+		1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4A9190E9E5A004D52EC /* MainMenu.xib */; };
+		1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4AC190E9E5A004D52EC /* Images.xcassets */; };
+		1151A4B4190E9E5A004D52EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A4B3190E9E5A004D52EC /* XCTest.framework */; };
+		1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
+		1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4BB190E9E5A004D52EC /* InfoPlist.strings */; };
+		1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1151A4B6190E9E5A004D52EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1151A490190E9E5A004D52EC;
+			remoteInfo = AmChartsLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1151A491190E9E5A004D52EC /* AmChartsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmChartsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1151A494190E9E5A004D52EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1151A497190E9E5A004D52EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1151A498190E9E5A004D52EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1151A499190E9E5A004D52EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1151A49C190E9E5A004D52EC /* AmChartsLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsLibrary-Info.plist"; sourceTree = "<group>"; };
+		1151A49E190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1151A4A0190E9E5A004D52EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1151A4A2190E9E5A004D52EC /* AmChartsLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmChartsLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		1151A4A4190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1151A4A6190E9E5A004D52EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1151A4A7190E9E5A004D52EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1151A4AA190E9E5A004D52EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1151A4AC190E9E5A004D52EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1151A4B3190E9E5A004D52EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		1151A4BC190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsLibraryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1151A48E190E9E5A004D52EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1151A4AF190E9E5A004D52EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
+				1151A4B4190E9E5A004D52EC /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1151A488190E9E5A004D52EC = {
+			isa = PBXGroup;
+			children = (
+				1151A49A190E9E5A004D52EC /* AmChartsLibrary */,
+				1151A4B8190E9E5A004D52EC /* AmChartsLibraryTests */,
+				1151A493190E9E5A004D52EC /* Frameworks */,
+				1151A492190E9E5A004D52EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1151A492190E9E5A004D52EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1151A491190E9E5A004D52EC /* AmChartsLibrary.app */,
+				1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1151A493190E9E5A004D52EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1151A494190E9E5A004D52EC /* Cocoa.framework */,
+				1151A4B3190E9E5A004D52EC /* XCTest.framework */,
+				1151A496190E9E5A004D52EC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1151A496190E9E5A004D52EC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1151A497190E9E5A004D52EC /* AppKit.framework */,
+				1151A498190E9E5A004D52EC /* CoreData.framework */,
+				1151A499190E9E5A004D52EC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1151A49A190E9E5A004D52EC /* AmChartsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				1151A4A6190E9E5A004D52EC /* AppDelegate.h */,
+				1151A4A7190E9E5A004D52EC /* AppDelegate.m */,
+				1151A4A9190E9E5A004D52EC /* MainMenu.xib */,
+				1151A4AC190E9E5A004D52EC /* Images.xcassets */,
+				1151A49B190E9E5A004D52EC /* Supporting Files */,
+			);
+			path = AmChartsLibrary;
+			sourceTree = "<group>";
+		};
+		1151A49B190E9E5A004D52EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1151A49C190E9E5A004D52EC /* AmChartsLibrary-Info.plist */,
+				1151A49D190E9E5A004D52EC /* InfoPlist.strings */,
+				1151A4A0190E9E5A004D52EC /* main.m */,
+				1151A4A2190E9E5A004D52EC /* AmChartsLibrary-Prefix.pch */,
+				1151A4A3190E9E5A004D52EC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1151A4B8190E9E5A004D52EC /* AmChartsLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */,
+				1151A4B9190E9E5A004D52EC /* Supporting Files */,
+			);
+			path = AmChartsLibraryTests;
+			sourceTree = "<group>";
+		};
+		1151A4B9190E9E5A004D52EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */,
+				1151A4BB190E9E5A004D52EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1151A490190E9E5A004D52EC /* AmChartsLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1151A4C2190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibrary" */;
+			buildPhases = (
+				1151A48D190E9E5A004D52EC /* Sources */,
+				1151A48E190E9E5A004D52EC /* Frameworks */,
+				1151A48F190E9E5A004D52EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmChartsLibrary;
+			productName = AmChartsLibrary;
+			productReference = 1151A491190E9E5A004D52EC /* AmChartsLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1151A4B1190E9E5A004D52EC /* AmChartsLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1151A4C5190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibraryTests" */;
+			buildPhases = (
+				1151A4AE190E9E5A004D52EC /* Sources */,
+				1151A4AF190E9E5A004D52EC /* Frameworks */,
+				1151A4B0190E9E5A004D52EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1151A4B7190E9E5A004D52EC /* PBXTargetDependency */,
+			);
+			name = AmChartsLibraryTests;
+			productName = AmChartsLibraryTests;
+			productReference = 1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1151A489190E9E5A004D52EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Chimp Studios";
+				TargetAttributes = {
+					1151A4B1190E9E5A004D52EC = {
+						TestTargetID = 1151A490190E9E5A004D52EC;
+					};
+				};
+			};
+			buildConfigurationList = 1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1151A488190E9E5A004D52EC;
+			productRefGroup = 1151A492190E9E5A004D52EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1151A490190E9E5A004D52EC /* AmChartsLibrary */,
+				1151A4B1190E9E5A004D52EC /* AmChartsLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1151A48F190E9E5A004D52EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A49F190E9E5A004D52EC /* InfoPlist.strings in Resources */,
+				1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */,
+				1151A4A5190E9E5A004D52EC /* Credits.rtf in Resources */,
+				1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1151A4B0190E9E5A004D52EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1151A48D190E9E5A004D52EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */,
+				1151A4A1190E9E5A004D52EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1151A4AE190E9E5A004D52EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1151A4B7190E9E5A004D52EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1151A490190E9E5A004D52EC /* AmChartsLibrary */;
+			targetProxy = 1151A4B6190E9E5A004D52EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1151A49D190E9E5A004D52EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1151A49E190E9E5A004D52EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1151A4A3190E9E5A004D52EC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1151A4A4190E9E5A004D52EC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1151A4A9190E9E5A004D52EC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1151A4AA190E9E5A004D52EC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1151A4BB190E9E5A004D52EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1151A4BC190E9E5A004D52EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1151A4C0190E9E5A004D52EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1151A4C1190E9E5A004D52EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1151A4C3190E9E5A004D52EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1151A4C4190E9E5A004D52EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1151A4C6190E9E5A004D52EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AmChartsLibraryTests/AmChartsLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1151A4C7190E9E5A004D52EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "AmChartsLibraryTests/AmChartsLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1151A4C0190E9E5A004D52EC /* Debug */,
+				1151A4C1190E9E5A004D52EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1151A4C2190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1151A4C3190E9E5A004D52EC /* Debug */,
+				1151A4C4190E9E5A004D52EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1151A4C5190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1151A4C6190E9E5A004D52EC /* Debug */,
+				1151A4C7190E9E5A004D52EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1151A489190E9E5A004D52EC /* Project object */;
+}
