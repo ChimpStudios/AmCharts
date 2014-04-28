@@ -179,4 +179,7 @@
  */
 @property(strong) NSString * unitPosition;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

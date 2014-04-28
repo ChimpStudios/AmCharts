@@ -22,7 +22,7 @@
  Read-only. Chart creates category axis itself. If you want to change some properties, you should get this axis from the chart and set properties to this object.
  @version 3.4.8
  */
-@property(strong) CategoryAxis * categoryAxis;
+@property(strong) AmCategoryAxis * categoryAxis;
 
 /**
  Category field name tells the chart the name of the field in your dataProvider object which will be used for category axis values.
@@ -113,5 +113,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL zoomOutOnDataUpdate;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

@@ -203,4 +203,7 @@
  */
 @property(strong) NSString * widthAndHeightUnits;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

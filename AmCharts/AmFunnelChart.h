@@ -77,4 +77,7 @@
  */
 @property(strong) NSString * valueRepresents;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

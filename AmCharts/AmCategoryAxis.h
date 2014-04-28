@@ -8,9 +8,6 @@
 
 #import "AmAxisBase.h"
 
-@class Am%%BLANK%%;
-@class Am%%BLANK%%;
-
 @interface AmCategoryAxis : AmAxisBase
 
 /**
@@ -42,7 +39,7 @@
     categoryFunction should return Date object. For example, if you have date strings in your data, you can use this method to convert these strings into Date objects.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * categoryFunction;
+@property(assign) id categoryFunction;
 
 /**
  This setting works only when parseDates is set to true and equalSpacing is set to false. In case you set it to false,<br>
@@ -99,7 +96,7 @@
                 Your function should return string which will be displayed on the axis.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * labelFunction;
+@property(assign) id labelFunction;
 
 /**
  If you set it to false, the start of longer periods won't use a different date format and won't be bold.
@@ -138,5 +135,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL twoLineMode ;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

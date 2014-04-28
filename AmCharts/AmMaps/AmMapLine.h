@@ -71,4 +71,7 @@
  */
 @property(strong) NSMutableArray * y;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

@@ -17,7 +17,7 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.allLabels = [@[[]] mutableCopy];
+		self.allLabels = [@[] mutableCopy];
 		self.backgroundAlpha = @(0);
 		self.backgroundColor = @"#FFFFFF";
 		self.balloon = [[AmBalloon alloc] init];
@@ -35,11 +35,29 @@
 		self.panEventsEnabled = true;
 		self.percentPrecision = @(2);
 		self.precision = @(-1);
-		self.prefixesOfBigNumbers = [@[[{number:1e+3,prefix:"k"},{number:1e+6,prefix:"M"},{number:1e+9,prefix:"G"},{number:1e+12,prefix:"T"},{number:1e+15,prefix:"P"},{number:1e+18,prefix:"E"},{number:1e+21,prefix:"Z"},{number:1e+24,prefix:"Y"}]] mutableCopy];
-		self.prefixesOfSmallNumbers = [@[[{number:1e-24, prefix:"y"},{number:1e-21, prefix:"z"},{number:1e-18, prefix:"a"},{number:1e-15, prefix:"f"},{number:1e-12, prefix:"p"},{number:1e-9, prefix:"n"},{number:1e-6, prefix:"μ"},{number:1e-3, prefix:"m"}]] mutableCopy];
+        self.prefixesOfBigNumbers = [@[
+                                       @{@"number":@"1e+3",@"prefix":@"k"},
+                                       @{@"number":@"1e+6",@"prefix":@"M"},
+                                       @{@"number":@"1e+9",@"prefix":@"G"},
+                                       @{@"number":@"1e+12",@"prefix":@"T"},
+                                       @{@"number":@"1e+15",@"prefix":@"P"},
+                                       @{@"number":@"1e+18",@"prefix":@"E"},
+                                       @{@"number":@"1e+21",@"prefix":@"Z"},
+                                       @{@"number":@"1e+24",@"prefix":@"Y"}
+                                       ] mutableCopy];
+		self.prefixesOfSmallNumbers = [@[
+                                         @{@"number":@"1e-24", @"prefix":@"y"},
+                                         @{@"number":@"1e-21", @"prefix":@"z"},
+                                         @{@"number":@"1e-18", @"prefix":@"a"},
+                                         @{@"number":@"1e-15", @"prefix":@"f"},
+                                         @{@"number":@"1e-12", @"prefix":@"p"},
+                                         @{@"number":@"1e-9", @"prefix":@"n"},
+                                         @{@"number":@"1e-6", @"prefix":@"μ"},
+                                         @{@"number":@"1e-3", @"prefix":@"m"}
+                                         ] mutableCopy];
 		self.theme = @"none";
 		self.thousandsSeparator = @",";
-		self.titles = [@[[]] mutableCopy];
+		self.titles = [@[] mutableCopy];
 		self.usePrefixes = false;
 	}
 	return self;
@@ -61,7 +79,7 @@
 	}
 
 	if (self.balloon) {
-		[dictRep setObject:[self.balloon jsonRepresentation] forKey:@"balloon"];
+		[dictRep setObject:[self.balloon javascriptRepresentation] forKey:@"balloon"];
 	}
 
 	if (self.borderAlpha) {
@@ -115,7 +133,7 @@
 	}
 
 	if (self.legend) {
-		[dictRep setObject:[self.legend jsonRepresentation] forKey:@"legend"];
+		[dictRep setObject:[self.legend javascriptRepresentation] forKey:@"legend"];
 	}
 
 	if (self.legendDiv) {

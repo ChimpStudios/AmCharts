@@ -200,4 +200,7 @@
  */
 @property(strong) NSString * version;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

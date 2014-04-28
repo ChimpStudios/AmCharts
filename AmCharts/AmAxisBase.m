@@ -26,7 +26,7 @@
 		self.gridColor = @"#000000";
 		self.gridCount = @(5);
 		self.gridThickness = @(1);
-		self.guides = [@[[]] mutableCopy];
+		self.guides = [@[] mutableCopy];
 		self.ignoreAxisWidth = false;
 		self.inside = false;
 		self.labelFrequency = @(1);

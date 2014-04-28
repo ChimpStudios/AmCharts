@@ -160,6 +160,9 @@
  Value axis of a guide. As you can add guides directly to the chart, you might need to specify which which value axis should be used.
  @version 3.4.8
  */
-@property(strong) ValueAxis * valueAxis;
+@property(strong) AmValueAxis * valueAxis;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

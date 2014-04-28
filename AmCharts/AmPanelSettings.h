@@ -198,4 +198,7 @@
  */
 @property(assign) BOOL usePrefixes;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

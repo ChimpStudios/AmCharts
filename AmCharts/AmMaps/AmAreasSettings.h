@@ -149,4 +149,7 @@
  */
 @property(strong) NSString * unlistedAreasOutlineColor;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

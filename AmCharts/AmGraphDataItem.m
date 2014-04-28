@@ -23,8 +23,8 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	if (self.alpha<div class="copy-url label label-info"><i class="icon-share icon-white" title="Link to this"></i></div>) {
-		[dictRep setObject:self.alpha<div class="copy-url label label-info"><i class="icon-share icon-white" title="Link to this"></i></div> forKey:@"alpha<div class="copy-url label label-info"><i class="icon-share icon-white" title="Link to this"></i></div>"];
+	if (self.alpha) {
+		[dictRep setObject:self.alpha forKey:@"alpha"];
 	}
 
 	if (self.bullet) {
@@ -64,7 +64,7 @@
 	}
 
 	if (self.serialDataItem) {
-		[dictRep setObject:[self.serialDataItem jsonRepresentation] forKey:@"serialDataItem"];
+		[dictRep setObject:[self.serialDataItem javascriptRepresentation] forKey:@"serialDataItem"];
 	}
 
 	if (self.url) {

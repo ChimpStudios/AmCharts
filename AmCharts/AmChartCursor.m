@@ -8,8 +8,6 @@
 
 #import "AmChartCursor.h"
 #import "AmCategories.h"
-#import "Am%%BLANK%%.h"
-
 
 @implementation AmChartCursor
 
@@ -73,7 +71,7 @@
 	[dictRep setObject:@(self.categoryBalloonEnabled) forKey:@"categoryBalloonEnabled"];
 
 	if (self.categoryBalloonFunction) {
-		[dictRep setObject:[self.categoryBalloonFunction jsonRepresentation] forKey:@"categoryBalloonFunction"];
+		[dictRep setObject:[self.categoryBalloonFunction javascriptRepresentation] forKey:@"categoryBalloonFunction"];
 	}
 
 	if (self.color) {

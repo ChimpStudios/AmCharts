@@ -35,13 +35,13 @@
  Cursor of a chart.
  @version 3.4.8
  */
-@property(strong) ChartCursor * chartCursor;
+@property(strong) AmChartCursor * chartCursor;
 
 /**
  Chart's scrollbar.
  @version 3.4.8
  */
-@property(strong) ChartScrollbar * chartScrollbar;
+@property(strong) AmChartScrollbar * chartScrollbar;
 
 /**
  The depth of the 3D part of plot area. This creates a 3D effect (if the "angle" is &gt; 0).
@@ -156,5 +156,8 @@
  @version 3.4.8
  */
 @property(strong) NSString * zoomOutText;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

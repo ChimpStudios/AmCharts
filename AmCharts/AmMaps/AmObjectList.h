@@ -17,4 +17,7 @@
  */
 @property(strong) NSString * container;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

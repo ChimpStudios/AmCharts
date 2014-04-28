@@ -9,7 +9,6 @@
 #import "AmMap.h"
 #import "AmCategories.h"
 #import "AmAreasSettings.h"
-#import "AmFunction.h"
 #import "AmMapData.h"
 #import "AmImagesSettings.h"
 #import "AmLinesSettings.h"
@@ -26,16 +25,16 @@
 	if (self) {
 		self.allowClickOnSelectedObject = true;
 		self.allowMultipleDescriptionWindows = false;
-		self.AmAreasSettings = [[AreasSettings alloc] init];
+		self.areasSettings = [[AmAreasSettings alloc] init];
 		self.backgroundZoomsToTop = false;
 		self.centerMap = true;
 		self.colorSteps = @(5);
 		self.developerMode = false;
 		self.dragMap = true;
 		self.fitMapToContainer = true;
-		self.AmImagesSettings = [[ImagesSettings alloc] init];
+		self.imagesSettings = [[AmImagesSettings alloc] init];
 		self.linesAboveImages = true;
-		self.AmLinesSettings = [[LinesSettings alloc] init];
+		self.linesSettings = [[AmLinesSettings alloc] init];
 		self.minValue = @(0);
 		self.mouseWheelZoomEnabled = false;
 		self.showAreasInList = true;
@@ -46,7 +45,7 @@
 		self.showObjectsAfterZoom = false;
 		self.useHandCursorOnClickableOjects = true;
 		self.useObjectColorForBalloon = true;
-		self.AmZoomControl = [[ZoomControl alloc] init];
+		self.zoomControl = [[AmZoomControl alloc] init];
 		self.zoomDuration = @(1);
 		self.zoomOnDoubleClick = true;
 	}
@@ -65,13 +64,13 @@
 	}
 
 	if (self.areasSettings) {
-		[dictRep setObject:[self.areasSettings jsonRepresentation] forKey:@"areasSettings"];
+		[dictRep setObject:[self.areasSettings javascriptRepresentation] forKey:@"areasSettings"];
 	}
 
 	[dictRep setObject:@(self.backgroundZoomsToTop) forKey:@"backgroundZoomsToTop"];
 
 	if (self.balloonLabelFunction) {
-		[dictRep setObject:[self.balloonLabelFunction jsonRepresentation] forKey:@"balloonLabelFunction"];
+		[dictRep setObject:[self.balloonLabelFunction javascriptRepresentation] forKey:@"balloonLabelFunction"];
 	}
 
 	[dictRep setObject:@(self.centerMap) forKey:@"centerMap"];
@@ -81,7 +80,7 @@
 	}
 
 	if (self.dataProvider) {
-		[dictRep setObject:[self.dataProvider jsonRepresentation] forKey:@"dataProvider"];
+		[dictRep setObject:[self.dataProvider javascriptRepresentation] forKey:@"dataProvider"];
 	}
 
 	[dictRep setObject:@(self.developerMode) forKey:@"developerMode"];
@@ -91,13 +90,13 @@
 	[dictRep setObject:@(self.fitMapToContainer) forKey:@"fitMapToContainer"];
 
 	if (self.imagesSettings) {
-		[dictRep setObject:[self.imagesSettings jsonRepresentation] forKey:@"imagesSettings"];
+		[dictRep setObject:[self.imagesSettings javascriptRepresentation] forKey:@"imagesSettings"];
 	}
 
 	[dictRep setObject:@(self.linesAboveImages) forKey:@"linesAboveImages"];
 
 	if (self.linesSettings) {
-		[dictRep setObject:[self.linesSettings jsonRepresentation] forKey:@"linesSettings"];
+		[dictRep setObject:[self.linesSettings javascriptRepresentation] forKey:@"linesSettings"];
 	}
 
 	if (self.mapVar) {
@@ -115,7 +114,7 @@
 	[dictRep setObject:@(self.mouseWheelZoomEnabled) forKey:@"mouseWheelZoomEnabled"];
 
 	if (self.selectedObject) {
-		[dictRep setObject:[self.selectedObject jsonRepresentation] forKey:@"selectedObject"];
+		[dictRep setObject:[self.selectedObject javascriptRepresentation] forKey:@"selectedObject"];
 	}
 
 	[dictRep setObject:@(self.showAreasInList) forKey:@"showAreasInList"];
@@ -131,7 +130,7 @@
 	[dictRep setObject:@(self.showObjectsAfterZoom) forKey:@"showObjectsAfterZoom"];
 
 	if (self.smallMap) {
-		[dictRep setObject:[self.smallMap jsonRepresentation] forKey:@"smallMap"];
+		[dictRep setObject:[self.smallMap javascriptRepresentation] forKey:@"smallMap"];
 	}
 
 	[dictRep setObject:@(self.useHandCursorOnClickableOjects) forKey:@"useHandCursorOnClickableOjects"];
@@ -139,11 +138,11 @@
 	[dictRep setObject:@(self.useObjectColorForBalloon) forKey:@"useObjectColorForBalloon"];
 
 	if (self.valueLegend) {
-		[dictRep setObject:[self.valueLegend jsonRepresentation] forKey:@"valueLegend"];
+		[dictRep setObject:[self.valueLegend javascriptRepresentation] forKey:@"valueLegend"];
 	}
 
 	if (self.zoomControl) {
-		[dictRep setObject:[self.zoomControl jsonRepresentation] forKey:@"zoomControl"];
+		[dictRep setObject:[self.zoomControl javascriptRepresentation] forKey:@"zoomControl"];
 	}
 
 	if (self.zoomDuration) {

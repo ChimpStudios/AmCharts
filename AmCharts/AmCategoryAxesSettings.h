@@ -175,4 +175,7 @@ It's also possible to supply a number for increments, i.e. "15mm" which will ins
  */
 @property(assign) BOOL twoLineMode;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

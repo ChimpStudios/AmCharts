@@ -89,4 +89,7 @@
  */
 @property(strong) NSNumber * top;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

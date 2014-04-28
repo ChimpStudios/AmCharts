@@ -125,4 +125,7 @@
  */
 @property(strong) NSNumber * selectedScale;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

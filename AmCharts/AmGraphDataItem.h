@@ -16,7 +16,7 @@
  Opacity of the data item.
  @version 3.4.8
  */
-@property(strong) NSNumber * alpha<div class="copy-url label label-info"><i class="icon-share icon-white" title="Link to this"></i></div>;
+@property(strong) NSNumber * alpha;
 
 /**
  Bullet type.
@@ -101,5 +101,8 @@
  @version 3.4.8
  */
 @property(strong) NSNumber * y;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

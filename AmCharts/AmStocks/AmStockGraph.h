@@ -8,8 +8,6 @@
 
 #import "AmGraph.h"
 
-@class Am%%BLANK%%;
-
 @interface AmStockGraph : AmGraph
 
 /**
@@ -58,7 +56,7 @@
  If you set some function, the graph will call it and pass GraphDataItem and AmGraph object to it. This function should return a string which will be displayed in a balloon. This will be used for graphs from compared data sets only. Use balloonFunction for main data set's graphs.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * compareGraphBalloonFunction;
+@property(assign) id compareGraphBalloonFunction;
 
 /**
  Balloon text of comparing graph.
@@ -143,5 +141,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL useDataSetColors;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

@@ -117,7 +117,7 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis jsonRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:[self.valueAxis javascriptRepresentation] forKey:@"valueAxis"];
 	}
 
 	return dictRep;

@@ -211,4 +211,7 @@
  */
 @property(strong) NSNumber * zoomY;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

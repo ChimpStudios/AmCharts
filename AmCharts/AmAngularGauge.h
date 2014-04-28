@@ -125,4 +125,7 @@
  */
 @property(strong) NSString * startEffect;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

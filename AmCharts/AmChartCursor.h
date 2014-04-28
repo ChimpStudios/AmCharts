@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class Am%%BLANK%%;
-
 @interface AmChartCursor : NSObject
 
 /**
@@ -64,7 +62,7 @@
  Allows formatting any category balloon text you want. categoryBalloonFunction should return a string which will be displayed in a balloon. When categoryBalloonFunction is called, category value (or date) is passed as an argument.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * categoryBalloonFunction;
+@property(assign) id categoryBalloonFunction;
 
 /**
  Text color.
@@ -155,5 +153,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL zooming;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

@@ -8,8 +8,6 @@
 
 #import "AmStockGraph.h"
 #import "AmCategories.h"
-#import "Am%%BLANK%%.h"
-
 
 @implementation AmStockGraph
 
@@ -55,7 +53,7 @@
 	}
 
 	if (self.compareGraphBalloonFunction) {
-		[dictRep setObject:[self.compareGraphBalloonFunction jsonRepresentation] forKey:@"compareGraphBalloonFunction"];
+		[dictRep setObject:[self.compareGraphBalloonFunction javascriptRepresentation] forKey:@"compareGraphBalloonFunction"];
 	}
 
 	if (self.compareGraphBalloonText) {

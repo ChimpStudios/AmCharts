@@ -167,4 +167,7 @@
  */
 @property(strong) NSNumber * zoomFactor;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

@@ -96,4 +96,7 @@
  */
 @property(strong) NSString * urlTarget;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

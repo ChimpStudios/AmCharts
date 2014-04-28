@@ -15,10 +15,10 @@
 #import "AmDataSetSelector.h"
 #import "AmLegendSettings.h"
 #import "AmDataSet.h"
-#import "AmPanelsSettings.h"
+#import "AmPanelSettings.h"
 #import "AmPeriodSelector.h"
 #import "AmSerialChart.h"
-#import "AmStockEventsSettings.h"
+#import "AmStockEventSettings.h"
 #import "AmValueAxesSettings.h"
 
 
@@ -28,17 +28,17 @@
 	self = [super init];
 	if (self) {
 		self.balloon = [[AmBalloon alloc] init];
-		self.AmCategoryAxesSettings = [[CategoryAxesSettings alloc] init];
-		self.AmChartCursorSettings = [[ChartCursorSettings alloc] init];
-		self.AmChartScrollbarSettings = [[ChartScrollbarSettings alloc] init];
-		self.colors = [@[["#FF6600", "#FCD202", "#B0DE09", "#0D8ECF", "#2A0CD0", "#CD0D74", "#CC0000", "#00CC00", "#0000CC", "#DDDDDD", "#999999", "#333333", "#990000"]] mutableCopy];
+		self.categoryAxesSettings = [[AmCategoryAxesSettings alloc] init];
+		self.chartCursorSettings = [[AmChartCursorSettings alloc] init];
+		self.chartScrollbarSettings = [[AmChartScrollbarSettings alloc] init];
+		self.colors = [@[@"#FF6600", @"#FCD202", @"#B0DE09", @"#0D8ECF", @"#2A0CD0", @"#CD0D74", @"#CC0000", @"#00CC00", @"#0000CC", @"#DDDDDD", @"#999999", @"#333333", @"#990000"] mutableCopy];
 		self.firstDayOfWeek = @(1);
 		self.glueToTheEnd = false;
-		self.AmLegendSettings = [[LegendSettings alloc] init];
+		self.legendSettings = [[AmLegendSettings alloc] init];
 		self.mouseWheelScrollEnabled = false;
-		self.AmPanelsSettings = [[PanelsSettings alloc] init];
-		self.AmStockEventsSettings = [[StockEventsSettings alloc] init];
-		self.AmValueAxesSettings = [[ValueAxesSettings alloc] init];
+		self.panelsSettings = [[AmPanelSettings alloc] init];
+		self.stockEventsSettings = [[AmStockEventSettings alloc] init];
+		self.valueAxesSettings = [[AmValueAxesSettings alloc] init];
 		self.zoomOutOnDataSetChange = false;
 	}
 	return self;
@@ -50,21 +50,21 @@
 	[dictRep setObject:@(self.animationPlayed) forKey:@"animationPlayed"];
 
 	if (self.balloon) {
-		[dictRep setObject:[self.balloon jsonRepresentation] forKey:@"balloon"];
+		[dictRep setObject:[self.balloon javascriptRepresentation] forKey:@"balloon"];
 	}
 
 	if (self.categoryAxesSettings) {
-		[dictRep setObject:[self.categoryAxesSettings jsonRepresentation] forKey:@"categoryAxesSettings"];
+		[dictRep setObject:[self.categoryAxesSettings javascriptRepresentation] forKey:@"categoryAxesSettings"];
 	}
 
 	[dictRep setObject:@(self.chartCreated) forKey:@"chartCreated"];
 
 	if (self.chartCursorSettings) {
-		[dictRep setObject:[self.chartCursorSettings jsonRepresentation] forKey:@"chartCursorSettings"];
+		[dictRep setObject:[self.chartCursorSettings javascriptRepresentation] forKey:@"chartCursorSettings"];
 	}
 
 	if (self.chartScrollbarSettings) {
-		[dictRep setObject:[self.chartScrollbarSettings jsonRepresentation] forKey:@"chartScrollbarSettings"];
+		[dictRep setObject:[self.chartScrollbarSettings javascriptRepresentation] forKey:@"chartScrollbarSettings"];
 	}
 
 	if (self.colors) {
@@ -84,7 +84,7 @@
 	}
 
 	if (self.dataSetSelector) {
-		[dictRep setObject:[self.dataSetSelector jsonRepresentation] forKey:@"dataSetSelector"];
+		[dictRep setObject:[self.dataSetSelector javascriptRepresentation] forKey:@"dataSetSelector"];
 	}
 
 	if (self.endDate) {
@@ -102,11 +102,11 @@
 	[dictRep setObject:@(self.glueToTheEnd) forKey:@"glueToTheEnd"];
 
 	if (self.legendSettings) {
-		[dictRep setObject:[self.legendSettings jsonRepresentation] forKey:@"legendSettings"];
+		[dictRep setObject:[self.legendSettings javascriptRepresentation] forKey:@"legendSettings"];
 	}
 
 	if (self.mainDataSet) {
-		[dictRep setObject:[self.mainDataSet jsonRepresentation] forKey:@"mainDataSet"];
+		[dictRep setObject:[self.mainDataSet javascriptRepresentation] forKey:@"mainDataSet"];
 	}
 
 	[dictRep setObject:@(self.mouseWheelScrollEnabled) forKey:@"mouseWheelScrollEnabled"];
@@ -116,7 +116,7 @@
 	}
 
 	if (self.panelsSettings) {
-		[dictRep setObject:[self.panelsSettings jsonRepresentation] forKey:@"panelsSettings"];
+		[dictRep setObject:[self.panelsSettings javascriptRepresentation] forKey:@"panelsSettings"];
 	}
 
 	if (self.pathToImages) {
@@ -124,11 +124,11 @@
 	}
 
 	if (self.periodSelector) {
-		[dictRep setObject:[self.periodSelector jsonRepresentation] forKey:@"periodSelector"];
+		[dictRep setObject:[self.periodSelector javascriptRepresentation] forKey:@"periodSelector"];
 	}
 
 	if (self.scrollbarChart) {
-		[dictRep setObject:[self.scrollbarChart jsonRepresentation] forKey:@"scrollbarChart"];
+		[dictRep setObject:[self.scrollbarChart javascriptRepresentation] forKey:@"scrollbarChart"];
 	}
 
 	if (self.startDate) {
@@ -136,7 +136,7 @@
 	}
 
 	if (self.stockEventsSettings) {
-		[dictRep setObject:[self.stockEventsSettings jsonRepresentation] forKey:@"stockEventsSettings"];
+		[dictRep setObject:[self.stockEventsSettings javascriptRepresentation] forKey:@"stockEventsSettings"];
 	}
 
 	if (self.type) {
@@ -144,7 +144,7 @@
 	}
 
 	if (self.valueAxesSettings) {
-		[dictRep setObject:[self.valueAxesSettings jsonRepresentation] forKey:@"valueAxesSettings"];
+		[dictRep setObject:[self.valueAxesSettings javascriptRepresentation] forKey:@"valueAxesSettings"];
 	}
 
 	if (self.version) {

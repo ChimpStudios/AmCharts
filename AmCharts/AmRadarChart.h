@@ -47,4 +47,7 @@
  */
 @property(strong) NSString * radius;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

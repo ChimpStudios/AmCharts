@@ -35,7 +35,7 @@
  Read-only. Category axis of the scrollbar.
  @version 3.4.8
  */
-@property(strong) CategoryAxis * categoryAxis;
+@property(strong) AmCategoryAxis * categoryAxis;
 
 /**
  Text color.
@@ -192,5 +192,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL updateOnReleaseOnly;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

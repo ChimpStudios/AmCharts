@@ -17,8 +17,8 @@
 	if (self) {
 		self.alpha = @(1);
 		self.brightnessStep = @(30);
-		self.colors = [@[["#FF0F00", "#FF6600", "#FF9E01", "#FCD202", "#F8FF01", "#B0DE09", "#04D215", "#0D8ECF", "#0D52D1", "#2A0CD0", "#8A0CCF", "#CD0D74", "#754DEB", "#DDDDDD", "#999999", "#333333", "#000000", "#57032A", "#CA9726", "#990000", "#4B0C25"]] mutableCopy];
-		self.gradientRatio = [@[[]] mutableCopy];
+		self.colors = [@[@"#FF0F00", @"#FF6600", @"#FF9E01", @"#FCD202", @"#F8FF01", @"#B0DE09", @"#04D215", @"#0D8ECF", @"#0D52D1", @"#2A0CD0", @"#8A0CCF", @"#CD0D74", @"#754DEB", @"#DDDDDD", @"#999999", @"#333333", @"#000000", @"#57032A", @"#CA9726", @"#990000", @"#4B0C25"] mutableCopy];
+		self.gradientRatio = [@[] mutableCopy];
 		self.groupedAlpha = @(1);
 		self.groupedPulled = false;
 		self.groupedTitle = @"Other";

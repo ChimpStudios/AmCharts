@@ -8,12 +8,8 @@
 
 #import "AmGraph.h"
 #import "AmCategories.h"
-#import "Am%%BLANK%%.h"
 #import "AmValueAxis.h"
 #import "AmGraph.h"
-#import "AmValueAxis.h"
-#import "AmValueAxis.h"
-#import "AmValueAxis.h"
 
 
 @implementation AmGraph
@@ -58,10 +54,10 @@
 		self.showHandOnHover = false;
 		self.stackable = true;
 		self.type = @"line";
-		self.valueAxis = [[ValueAxis alloc] init];
+		self.valueAxis = [[AmValueAxis alloc] init];
 		self.visibleInLegend = true;
-		self.xAxis = [[ValueAxis alloc] init];
-		self.yAxis = [[ValueAxis alloc] init];
+		self.xAxis = [[AmValueAxis alloc] init];
+		self.yAxis = [[AmValueAxis alloc] init];
 	}
 	return self;
 }
@@ -78,7 +74,7 @@
 	}
 
 	if (self.balloonFunction) {
-		[dictRep setObject:[self.balloonFunction jsonRepresentation] forKey:@"balloonFunction"];
+		[dictRep setObject:[self.balloonFunction javascriptRepresentation] forKey:@"balloonFunction"];
 	}
 
 	if (self.balloonText) {
@@ -96,7 +92,7 @@
 	}
 
 	if (self.bulletAxis ) {
-		[dictRep setObject:[self.bulletAxis  jsonRepresentation] forKey:@"bulletAxis "];
+		[dictRep setObject:[self.bulletAxis  javascriptRepresentation] forKey:@"bulletAxis "];
 	}
 
 	if (self.bulletBorderAlpha) {
@@ -200,7 +196,7 @@
 	}
 
 	if (self.fillToGraph) {
-		[dictRep setObject:[self.fillToGraph jsonRepresentation] forKey:@"fillToGraph"];
+		[dictRep setObject:[self.fillToGraph javascriptRepresentation] forKey:@"fillToGraph"];
 	}
 
 	if (self.fontSize) {
@@ -372,7 +368,7 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis jsonRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:[self.valueAxis javascriptRepresentation] forKey:@"valueAxis"];
 	}
 
 	if (self.valueField) {
@@ -382,7 +378,7 @@
 	[dictRep setObject:@(self.visibleInLegend) forKey:@"visibleInLegend"];
 
 	if (self.xAxis) {
-		[dictRep setObject:[self.xAxis jsonRepresentation] forKey:@"xAxis"];
+		[dictRep setObject:[self.xAxis javascriptRepresentation] forKey:@"xAxis"];
 	}
 
 	if (self.xField) {
@@ -390,7 +386,7 @@
 	}
 
 	if (self.yAxis) {
-		[dictRep setObject:[self.yAxis jsonRepresentation] forKey:@"yAxis"];
+		[dictRep setObject:[self.yAxis javascriptRepresentation] forKey:@"yAxis"];
 	}
 
 	if (self.yField) {

@@ -17,7 +17,7 @@
 	self = [super init];
 	if (self) {
 		self.balloonDateFormat = @"MMM DD, YYYY";
-		self.categoryAxis = [[CategoryAxis alloc] init];
+		self.categoryAxis = [[AmCategoryAxis alloc] init];
 		self.columnSpacing = @(5);
 		self.columnSpacing3D = @(0);
 		self.columnWidth = @(0.8);
@@ -37,7 +37,7 @@
 	}
 
 	if (self.categoryAxis) {
-		[dictRep setObject:[self.categoryAxis jsonRepresentation] forKey:@"categoryAxis"];
+		[dictRep setObject:[self.categoryAxis javascriptRepresentation] forKey:@"categoryAxis"];
 	}
 
 	if (self.categoryField) {

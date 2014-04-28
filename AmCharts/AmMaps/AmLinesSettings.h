@@ -83,4 +83,7 @@
  */
 @property(strong) NSNumber * thickness;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

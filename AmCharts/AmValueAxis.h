@@ -8,7 +8,6 @@
 
 #import "AmAxisBase.h"
 
-@class Am%%BLANK%%;
 @class AmValueAxis;
 
 @interface AmValueAxis : AmAxisBase
@@ -78,7 +77,7 @@
     Where value is numeric value, valueText is formatted string and valueAxis is a reference to valueAxis object. Your function should return string.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * labelFunction;
+@property(assign) id labelFunction;
 
 /**
  Specifies if this value axis' scale should be logarithmic.
@@ -169,7 +168,7 @@
  One value axis can be synchronized with another value axis. You can use both reference to your axis or id of the axis here. You should set synchronizationMultiplyer in order for this to work.
  @version 3.4.8
  */
-@property(strong) ValueAxis * synchronizeWith;
+@property(strong) AmValueAxis * synchronizeWith;
 
 /**
  If this value axis is stacked and has columns, setting valueAxis.totalText = "[[total]]" will make it to display total value above the most-top column.
@@ -206,5 +205,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL useScientificNotation;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

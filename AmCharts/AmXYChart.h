@@ -29,4 +29,7 @@
  */
 @property(strong) NSNumber * maxZoomFactor;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

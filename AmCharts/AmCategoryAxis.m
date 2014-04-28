@@ -8,9 +8,6 @@
 
 #import "AmCategoryAxis.h"
 #import "AmCategories.h"
-#import "Am%%BLANK%%.h"
-#import "Am%%BLANK%%.h"
-
 
 @implementation AmCategoryAxis
 
@@ -20,7 +17,16 @@
 		self.autoWrap = false;
 		self.boldPeriodBeginning = true;
 		self.centerLabelOnFullPeriod = true;
-		self.dateFormats = [@[[{period:'fff',format:'JJ:NN:SS'},{period:'ss',format:'JJ:NN:SS'},{period:'mm',format:'JJ:NN'},{period:'hh',format:'JJ:NN'},{period:'DD',format:'MMM DD'},{period:'WW',format:'MMM DD'},{period:'MM',format:'MMM'},{period:'YYYY',format:'YYYY'}]] mutableCopy];
+		self.dateFormats = [@[
+              @{@"period":@"fff",@"format":@"JJ:NN:SS"},
+              @{@"period":@"ss",@"format":@"JJ:NN:SS"},
+              @{@"period":@"mm",@"format":@"JJ:NN"},
+              @{@"period":@"hh",@"format":@"JJ:NN"},
+              @{@"period":@"DD",@"format":@"MMM DD"},
+              @{@"period":@"WW",@"format":@"MMM DD"},
+              @{@"period":@"MM",@"format":@"MMM"},
+              @{@"period":@"YYYY",@"format":@"YYYY"}
+          ] mutableCopy];
 		self.equalSpacing = false;
 		self.firstDayOfWeek  = @(1);
 		self.gridPosition = @"middle";
@@ -50,7 +56,7 @@
 	[dictRep setObject:@(self.boldPeriodBeginning) forKey:@"boldPeriodBeginning"];
 
 	if (self.categoryFunction) {
-		[dictRep setObject:[self.categoryFunction jsonRepresentation] forKey:@"categoryFunction"];
+		[dictRep setObject:[self.categoryFunction javascriptRepresentation] forKey:@"categoryFunction"];
 	}
 
 	[dictRep setObject:@(self.centerLabelOnFullPeriod) forKey:@"centerLabelOnFullPeriod"];
@@ -74,7 +80,7 @@
 	}
 
 	if (self.labelFunction) {
-		[dictRep setObject:[self.labelFunction jsonRepresentation] forKey:@"labelFunction"];
+		[dictRep setObject:[self.labelFunction javascriptRepresentation] forKey:@"labelFunction"];
 	}
 
 	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];

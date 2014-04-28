@@ -257,4 +257,7 @@
  */
 @property(strong) NSNumber * valueInterval;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

@@ -8,12 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class Am%%BLANK%%;
 @class AmValueAxis;
 @class AmGraph;
-@class AmValueAxis;
-@class AmValueAxis;
-@class AmValueAxis;
 
 @interface AmGraph : NSObject
 
@@ -33,7 +29,7 @@
  If you set some function, the graph will call it and pass GraphDataItem and AmGraph object to it. This function should return a string which will be displayed in a balloon.
  @version 3.4.8
  */
-@property(strong) Am%%BLANK%% * balloonFunction;
+@property(assign) id balloonFunction;
 
 /**
  Balloon text. You can use tags like [[value]], [[description]], [[percents]], [[open]], [[category]] or any other field name from your data provider. HTML tags can also be used.
@@ -63,7 +59,7 @@
  bulletAxis value is used when you are building error chart. Error chart is a regular serial or XY chart with bullet type set to "xError" or "yError". The graph should know which axis should be used to determine the size of this bullet - that's when bulletAxis should be set. Besides that, you should also set graph.errorField. You can also use other bullet types with this feature too. For example, if you set bulletAxis for XY chart, the size of a bullet will change as you zoom the chart.
  @version 3.4.8
  */
-@property(strong) ValueAxis * bulletAxis ;
+@property(strong) AmValueAxis * bulletAxis ;
 
 /**
  Bullet border opacity.
@@ -507,7 +503,7 @@
  Specifies which value axis the graph will use. Will use the first value axis if not set. You can use reference to the real ValueAxis object or set value axis id.
  @version 3.4.8
  */
-@property(strong) ValueAxis * valueAxis;
+@property(strong) AmValueAxis * valueAxis;
 
 /**
  Name of the value field in your dataProvider.
@@ -525,7 +521,7 @@
  XY chart only. A horizontal value axis object to attach graph to.
  @version 3.4.8
  */
-@property(strong) ValueAxis * xAxis;
+@property(strong) AmValueAxis * xAxis;
 
 /**
  XY chart only. Name of the x field in your dataProvider.
@@ -537,12 +533,15 @@
  XY chart only. A vertical value axis object to attach graph to.
  @version 3.4.8
  */
-@property(strong) ValueAxis * yAxis;
+@property(strong) AmValueAxis * yAxis;
 
 /**
  XY chart only. Name of the y field in your dataProvider.
  @version 3.4.8
  */
 @property(strong) NSString * yField;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

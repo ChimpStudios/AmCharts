@@ -95,4 +95,7 @@
  */
 @property(strong) NSNumber * width;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

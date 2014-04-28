@@ -77,4 +77,7 @@
  */
 @property(assign) BOOL visibleInLegend;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

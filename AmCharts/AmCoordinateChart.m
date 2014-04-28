@@ -15,15 +15,27 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.colors = [@[['#FF6600', '#FCD202', '#B0DE09', '#0D8ECF', '#2A0CD0', '#CD0D74', '#CC0000', '#00CC00', '#0000CC', '#DDDDDD', '#999999', '#333333', '#990000']] mutableCopy];
+		self.colors = [@[@"#FF6600",
+                         @"#FCD202",
+                         @"#B0DE09",
+                         @"#0D8ECF",
+                         @"#2A0CD0",
+                         @"#CD0D74",
+                         @"#CC0000",
+                         @"#00CC00",
+                         @"#0000CC",
+                         @"#DDDDDD",
+                         @"#999999",
+                         @"#333333",
+                         @"#990000"] mutableCopy];
 		self.gridAboveGraphs = false;
-		self.guides = [@[[]] mutableCopy];
+		self.guides = [@[] mutableCopy];
 		self.sequencedAnimation = true;
 		self.startAlpha = @(1);
 		self.startDuration = @(0);
 		self.startEffect = @"elastic";
 		self.urlTarget = @"_self";
-		self.valueAxes = [@[ValueAxis] mutableCopy];
+		self.valueAxes = [@[] mutableCopy];
 	}
 	return self;
 }

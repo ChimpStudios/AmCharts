@@ -215,4 +215,7 @@
  */
 @property(strong) NSNumber * titleFontSize;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

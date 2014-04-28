@@ -77,4 +77,7 @@
  */
 @property(strong) NSMutableArray * valueAxes;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

@@ -60,7 +60,7 @@
 	}
 
 	if (self.categoryAxis) {
-		[dictRep setObject:[self.categoryAxis jsonRepresentation] forKey:@"categoryAxis"];
+		[dictRep setObject:[self.categoryAxis javascriptRepresentation] forKey:@"categoryAxis"];
 	}
 
 	if (self.color) {
@@ -76,7 +76,7 @@
 	}
 
 	if (self.graph) {
-		[dictRep setObject:[self.graph jsonRepresentation] forKey:@"graph"];
+		[dictRep setObject:[self.graph javascriptRepresentation] forKey:@"graph"];
 	}
 
 	if (self.graphFillAlpha) {

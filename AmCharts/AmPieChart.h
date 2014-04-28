@@ -101,4 +101,7 @@
  */
 @property(strong) NSString * startRadius;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

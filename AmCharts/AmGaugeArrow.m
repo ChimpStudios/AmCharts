@@ -17,7 +17,7 @@
 	self = [super init];
 	if (self) {
 		self.alpha = @(1);
-		self.AmGaugeAxis = [[GaugeAxis alloc] init];
+		self.axis = [[AmGaugeAxis alloc] init];
 		self.borderAlpha = @(1);
 		self.clockWiseOnly = false;
 		self.color = @"#000000";
@@ -40,7 +40,7 @@
 	}
 
 	if (self.axis) {
-		[dictRep setObject:[self.axis jsonRepresentation] forKey:@"axis"];
+		[dictRep setObject:[self.axis javascriptRepresentation] forKey:@"axis"];
 	}
 
 	if (self.borderAlpha) {

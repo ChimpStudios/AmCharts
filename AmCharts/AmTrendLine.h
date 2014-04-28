@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @class AmValueAxis;
-@class AmValueAxis;
 
 @interface AmTrendLine : NSObject
 
@@ -101,12 +100,15 @@
  Value axis of the trend line. Will use first value axis of the chart if not set any. You can use a reference to the value axis object or id of value axis.
  @version 3.4.8
  */
-@property(strong) ValueAxis * valueAxis;
+@property(strong) AmValueAxis * valueAxis;
 
 /**
  Used by XY chart only. X axis of trend line. Will use first X axis of the chart if not set any. You can use a reference to the value axis object or id of value axis.
  @version 3.4.8
  */
-@property(strong) ValueAxis * valueAxisX;
+@property(strong) AmValueAxis * valueAxisX;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

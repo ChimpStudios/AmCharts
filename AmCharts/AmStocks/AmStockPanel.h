@@ -29,7 +29,7 @@
  Specifies on which value axis user can draw trend lines. Set drawingIconsEnabled to true if you want drawing icons to be visible. First value axis will be used if not set here. You can use a reference to the value axis object or id of value axis.
  @version 3.4.8
  */
-@property(strong) ValueAxis * drawOnAxis;
+@property(strong) AmValueAxis * drawOnAxis;
 
 /**
  Specifies if all trend lines should be erased when erase button is clicked. If false, trend lines can be erased one by one.
@@ -108,5 +108,8 @@
  @version 3.4.8
  */
 @property(strong) NSNumber * trendLineThickness;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

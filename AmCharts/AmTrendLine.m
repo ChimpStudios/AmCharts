@@ -22,8 +22,8 @@
 		self.lineAlpha = @(1);
 		self.lineColor = @"#00CC00";
 		self.lineThickness = @(1);
-		self.valueAxis = [[ValueAxis alloc] init];
-		self.valueAxisX = [[ValueAxis alloc] init];
+		self.valueAxis = [[AmValueAxis alloc] init];
+		self.valueAxisX = [[AmValueAxis alloc] init];
 	}
 	return self;
 }
@@ -86,11 +86,11 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis jsonRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:[self.valueAxis javascriptRepresentation] forKey:@"valueAxis"];
 	}
 
 	if (self.valueAxisX) {
-		[dictRep setObject:[self.valueAxisX jsonRepresentation] forKey:@"valueAxisX"];
+		[dictRep setObject:[self.valueAxisX javascriptRepresentation] forKey:@"valueAxisX"];
 	}
 
 	return dictRep;

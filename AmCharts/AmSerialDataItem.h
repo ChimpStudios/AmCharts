@@ -41,4 +41,7 @@
  */
 @property(strong) NSNumber * x;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

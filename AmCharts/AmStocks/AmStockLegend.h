@@ -36,4 +36,7 @@
  */
 @property(strong) NSString * valueTextRegular;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

@@ -53,4 +53,7 @@
  */
 @property(strong) NSString * type;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

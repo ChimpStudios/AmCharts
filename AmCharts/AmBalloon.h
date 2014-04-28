@@ -137,4 +137,7 @@
  */
 @property(strong) NSNumber * verticalPadding;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

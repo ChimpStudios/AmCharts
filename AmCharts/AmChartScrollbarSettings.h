@@ -192,4 +192,7 @@
  */
 @property(strong) NSString * usePeriod;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

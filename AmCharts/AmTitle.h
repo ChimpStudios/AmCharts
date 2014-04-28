@@ -47,4 +47,7 @@
  */
 @property(strong) NSString * text;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

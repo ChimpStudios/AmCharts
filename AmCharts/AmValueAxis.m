@@ -8,7 +8,6 @@
 
 #import "AmValueAxis.h"
 #import "AmCategories.h"
-#import "Am%%BLANK%%.h"
 #import "AmValueAxis.h"
 
 
@@ -76,7 +75,7 @@
 	[dictRep setObject:@(self.integersOnly) forKey:@"integersOnly"];
 
 	if (self.labelFunction) {
-		[dictRep setObject:[self.labelFunction jsonRepresentation] forKey:@"labelFunction"];
+		[dictRep setObject:[self.labelFunction javascriptRepresentation] forKey:@"labelFunction"];
 	}
 
 	[dictRep setObject:@(self.logarithmic) forKey:@"logarithmic"];
@@ -128,7 +127,7 @@
 	}
 
 	if (self.synchronizeWith) {
-		[dictRep setObject:[self.synchronizeWith jsonRepresentation] forKey:@"synchronizeWith"];
+		[dictRep setObject:[self.synchronizeWith javascriptRepresentation] forKey:@"synchronizeWith"];
 	}
 
 	if (self.totalText) {

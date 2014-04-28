@@ -89,4 +89,7 @@
  */
 @property(assign) BOOL zoomable;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

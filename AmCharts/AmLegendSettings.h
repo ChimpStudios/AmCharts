@@ -161,4 +161,7 @@
  */
 @property(strong) NSNumber * verticalGap;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

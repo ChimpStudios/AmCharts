@@ -257,4 +257,7 @@
  */
 @property(strong) NSString * visibleInLegendField;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

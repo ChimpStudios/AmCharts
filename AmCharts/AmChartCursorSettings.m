@@ -15,7 +15,16 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.categoryBalloonDateFormats = [@[[{period:"YYYY", format:"YYYY"}, {period:"MM", format:"MMM, YYYY"}, {period:"WW", format:"MMM DD, YYYY"}, {period:"DD", format:"MMM DD, YYYY"}, {period:"hh", format:"JJ:NN"}, {period:"mm", format:"JJ:NN"}, {period:"ss", format:"JJ:NN:SS"}, {period:"fff", format:"JJ:NN:SS"}]] mutableCopy];
+		self.categoryBalloonDateFormats = [@[
+              @{@"period":@"YYYY", @"format":@"YYYY"},
+              @{@"period":@"MM", @"format":@"MMM, YYYY"},
+              @{@"period":@"WW", @"format":@"MMM DD, YYYY"},
+              @{@"period":@"DD", @"format":@"MMM DD, YYYY"},
+              @{@"period":@"hh", @"format":@"JJ:NN"},
+              @{@"period":@"mm", @"format":@"JJ:NN"},
+              @{@"period":@"ss", @"format":@"JJ:NN:SS"},
+              @{@"period":@"fff", @"format":@"JJ:NN:SS"}
+              ] mutableCopy];
 		self.enabled = true;
 		self.valueBalloonsEnabled = false;
 	}

@@ -71,4 +71,7 @@
  */
 @property(strong) NSNumber * topLatitude;
 
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
+
 @end

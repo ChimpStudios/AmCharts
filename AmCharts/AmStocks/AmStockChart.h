@@ -15,10 +15,10 @@
 @class AmDataSetSelector;
 @class AmLegendSettings;
 @class AmDataSet;
-@class AmPanelsSettings;
+@class AmPanelSettings;
 @class AmPeriodSelector;
 @class AmSerialChart;
-@class AmStockEventsSettings;
+@class AmStockEventSettings;
 @class AmValueAxesSettings;
 
 @interface AmStockChart : NSObject
@@ -141,7 +141,7 @@
  Settings for stock panels.
  @version 3.4.8
  */
-@property(strong) AmPanelsSettings * panelsSettings;
+@property(strong) AmPanelSettings * panelsSettings;
 
 /**
  Specifies path to the folder where images like resize grips, lens and similar are.
@@ -171,7 +171,7 @@
  Settings for stock events.
  @version 3.4.8
  */
-@property(strong) AmStockEventsSettings * stockEventsSettings;
+@property(strong) AmStockEventSettings * stockEventsSettings;
 
 /**
  Read-only. Type of the chart.
@@ -196,5 +196,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL zoomOutOnDataSetChange;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

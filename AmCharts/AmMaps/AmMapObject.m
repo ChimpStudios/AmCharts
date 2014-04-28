@@ -86,7 +86,7 @@
 	}
 
 	if (self.linkToObject) {
-		[dictRep setObject:[self.linkToObject jsonRepresentation] forKey:@"linkToObject"];
+		[dictRep setObject:[self.linkToObject dictionaryRepresentation] forKey:@"linkToObject"];
 	}
 
 	[dictRep setObject:@(self.mouseEnabled) forKey:@"mouseEnabled"];

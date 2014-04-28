@@ -9,7 +9,6 @@
 #import "AmChart.h"
 
 @class AmAreasSettings;
-@class AmFunction;
 @class AmMapData;
 @class AmImagesSettings;
 @class AmLinesSettings;
@@ -59,7 +58,7 @@
             You can extract any data from mapObject and return new balloon text.
  @version 3.4.8
  */
-@property(strong) AmFunction * balloonLabelFunction;
+@property(assign) id balloonLabelFunction;
 
 /**
  Specifies if the map should be centered.
@@ -223,5 +222,8 @@
  @version 3.4.8
  */
 @property(assign) BOOL zoomOnDoubleClick;
+
+- (NSDictionary *)dictionaryRepresentation;
+- (NSString *)javascriptRepresentation;
 
 @end

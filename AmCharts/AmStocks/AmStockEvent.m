@@ -60,7 +60,7 @@
 	}
 
 	if (self.graph) {
-		[dictRep setObject:[self.graph jsonRepresentation] forKey:@"graph"];
+		[dictRep setObject:[self.graph javascriptRepresentation] forKey:@"graph"];
 	}
 
 	if (self.rollOverColor) {
