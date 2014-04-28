@@ -56,11 +56,11 @@
 	[dictRep setObject:@(self.autoMargins) forKey:@"autoMargins"];
 
 	if (self.chartCursor) {
-		[dictRep setObject:[self.chartCursor javascriptRepresentation] forKey:@"chartCursor"];
+		[dictRep setObject:[self.chartCursor dictionaryRepresentation] forKey:@"chartCursor"];
 	}
 
 	if (self.chartScrollbar) {
-		[dictRep setObject:[self.chartScrollbar javascriptRepresentation] forKey:@"chartScrollbar"];
+		[dictRep setObject:[self.chartScrollbar dictionaryRepresentation] forKey:@"chartScrollbar"];
 	}
 
 	if (self.depth3D) {

@@ -79,7 +79,7 @@
 	}
 
 	if (self.balloon) {
-		[dictRep setObject:[self.balloon javascriptRepresentation] forKey:@"balloon"];
+		[dictRep setObject:[self.balloon dictionaryRepresentation] forKey:@"balloon"];
 	}
 
 	if (self.borderAlpha) {
@@ -133,7 +133,7 @@
 	}
 
 	if (self.legend) {
-		[dictRep setObject:[self.legend javascriptRepresentation] forKey:@"legend"];
+		[dictRep setObject:[self.legend dictionaryRepresentation] forKey:@"legend"];
 	}
 
 	if (self.legendDiv) {
@@ -190,7 +190,7 @@
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
 
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amChart\": %@", [dictRep JSONString]];
+	NSString *jsonRep = [NSString stringWithFormat:@"%@", [dictRep JSONString]];
 	return jsonRep;
 }
 

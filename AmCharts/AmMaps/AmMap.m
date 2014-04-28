@@ -64,13 +64,13 @@
 	}
 
 	if (self.areasSettings) {
-		[dictRep setObject:[self.areasSettings javascriptRepresentation] forKey:@"areasSettings"];
+		[dictRep setObject:[self.areasSettings dictionaryRepresentation] forKey:@"areasSettings"];
 	}
 
 	[dictRep setObject:@(self.backgroundZoomsToTop) forKey:@"backgroundZoomsToTop"];
 
 	if (self.balloonLabelFunction) {
-		[dictRep setObject:[self.balloonLabelFunction javascriptRepresentation] forKey:@"balloonLabelFunction"];
+		[dictRep setObject:[self.balloonLabelFunction dictionaryRepresentation] forKey:@"balloonLabelFunction"];
 	}
 
 	[dictRep setObject:@(self.centerMap) forKey:@"centerMap"];
@@ -80,7 +80,7 @@
 	}
 
 	if (self.dataProvider) {
-		[dictRep setObject:[self.dataProvider javascriptRepresentation] forKey:@"dataProvider"];
+		[dictRep setObject:[self.dataProvider dictionaryRepresentation] forKey:@"dataProvider"];
 	}
 
 	[dictRep setObject:@(self.developerMode) forKey:@"developerMode"];
@@ -90,13 +90,13 @@
 	[dictRep setObject:@(self.fitMapToContainer) forKey:@"fitMapToContainer"];
 
 	if (self.imagesSettings) {
-		[dictRep setObject:[self.imagesSettings javascriptRepresentation] forKey:@"imagesSettings"];
+		[dictRep setObject:[self.imagesSettings dictionaryRepresentation] forKey:@"imagesSettings"];
 	}
 
 	[dictRep setObject:@(self.linesAboveImages) forKey:@"linesAboveImages"];
 
 	if (self.linesSettings) {
-		[dictRep setObject:[self.linesSettings javascriptRepresentation] forKey:@"linesSettings"];
+		[dictRep setObject:[self.linesSettings dictionaryRepresentation] forKey:@"linesSettings"];
 	}
 
 	if (self.mapVar) {
@@ -114,7 +114,7 @@
 	[dictRep setObject:@(self.mouseWheelZoomEnabled) forKey:@"mouseWheelZoomEnabled"];
 
 	if (self.selectedObject) {
-		[dictRep setObject:[self.selectedObject javascriptRepresentation] forKey:@"selectedObject"];
+		[dictRep setObject:[self.selectedObject dictionaryRepresentation] forKey:@"selectedObject"];
 	}
 
 	[dictRep setObject:@(self.showAreasInList) forKey:@"showAreasInList"];
@@ -130,7 +130,7 @@
 	[dictRep setObject:@(self.showObjectsAfterZoom) forKey:@"showObjectsAfterZoom"];
 
 	if (self.smallMap) {
-		[dictRep setObject:[self.smallMap javascriptRepresentation] forKey:@"smallMap"];
+		[dictRep setObject:[self.smallMap dictionaryRepresentation] forKey:@"smallMap"];
 	}
 
 	[dictRep setObject:@(self.useHandCursorOnClickableOjects) forKey:@"useHandCursorOnClickableOjects"];
@@ -138,11 +138,11 @@
 	[dictRep setObject:@(self.useObjectColorForBalloon) forKey:@"useObjectColorForBalloon"];
 
 	if (self.valueLegend) {
-		[dictRep setObject:[self.valueLegend javascriptRepresentation] forKey:@"valueLegend"];
+		[dictRep setObject:[self.valueLegend dictionaryRepresentation] forKey:@"valueLegend"];
 	}
 
 	if (self.zoomControl) {
-		[dictRep setObject:[self.zoomControl javascriptRepresentation] forKey:@"zoomControl"];
+		[dictRep setObject:[self.zoomControl dictionaryRepresentation] forKey:@"zoomControl"];
 	}
 
 	if (self.zoomDuration) {

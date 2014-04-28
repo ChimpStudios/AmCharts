@@ -71,7 +71,7 @@
 	[dictRep setObject:@(self.categoryBalloonEnabled) forKey:@"categoryBalloonEnabled"];
 
 	if (self.categoryBalloonFunction) {
-		[dictRep setObject:[self.categoryBalloonFunction javascriptRepresentation] forKey:@"categoryBalloonFunction"];
+		[dictRep setObject:[self.categoryBalloonFunction dictionaryRepresentation] forKey:@"categoryBalloonFunction"];
 	}
 
 	if (self.color) {

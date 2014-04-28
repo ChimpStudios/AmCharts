@@ -86,11 +86,11 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis javascriptRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:[self.valueAxis dictionaryRepresentation] forKey:@"valueAxis"];
 	}
 
 	if (self.valueAxisX) {
-		[dictRep setObject:[self.valueAxisX javascriptRepresentation] forKey:@"valueAxisX"];
+		[dictRep setObject:[self.valueAxisX dictionaryRepresentation] forKey:@"valueAxisX"];
 	}
 
 	return dictRep;

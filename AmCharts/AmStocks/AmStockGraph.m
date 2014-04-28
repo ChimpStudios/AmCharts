@@ -53,7 +53,7 @@
 	}
 
 	if (self.compareGraphBalloonFunction) {
-		[dictRep setObject:[self.compareGraphBalloonFunction javascriptRepresentation] forKey:@"compareGraphBalloonFunction"];
+		[dictRep setObject:[self.compareGraphBalloonFunction dictionaryRepresentation] forKey:@"compareGraphBalloonFunction"];
 	}
 
 	if (self.compareGraphBalloonText) {

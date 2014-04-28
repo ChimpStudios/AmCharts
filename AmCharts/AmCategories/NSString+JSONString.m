@@ -12,6 +12,8 @@
 
 - (NSString *)JSONString
 {
+    
+    return self;
     // wrap string in quotes
     return [@"\"" stringByAppendingFormat:@"%@\"", self];
 }

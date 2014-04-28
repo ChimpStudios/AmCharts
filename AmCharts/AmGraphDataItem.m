@@ -64,7 +64,7 @@
 	}
 
 	if (self.serialDataItem) {
-		[dictRep setObject:[self.serialDataItem javascriptRepresentation] forKey:@"serialDataItem"];
+		[dictRep setObject:[self.serialDataItem dictionaryRepresentation] forKey:@"serialDataItem"];
 	}
 
 	if (self.url) {

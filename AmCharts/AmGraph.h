@@ -503,7 +503,7 @@
  Specifies which value axis the graph will use. Will use the first value axis if not set. You can use reference to the real ValueAxis object or set value axis id.
  @version 3.4.8
  */
-@property(strong) AmValueAxis * valueAxis;
+@property(strong) NSString * valueAxis;
 
 /**
  Name of the value field in your dataProvider.

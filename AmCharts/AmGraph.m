@@ -54,7 +54,6 @@
 		self.showHandOnHover = false;
 		self.stackable = true;
 		self.type = @"line";
-		self.valueAxis = [[AmValueAxis alloc] init];
 		self.visibleInLegend = true;
 		self.xAxis = [[AmValueAxis alloc] init];
 		self.yAxis = [[AmValueAxis alloc] init];
@@ -74,7 +73,7 @@
 	}
 
 	if (self.balloonFunction) {
-		[dictRep setObject:[self.balloonFunction javascriptRepresentation] forKey:@"balloonFunction"];
+		[dictRep setObject:[self.balloonFunction dictionaryRepresentation] forKey:@"balloonFunction"];
 	}
 
 	if (self.balloonText) {
@@ -92,7 +91,7 @@
 	}
 
 	if (self.bulletAxis ) {
-		[dictRep setObject:[self.bulletAxis  javascriptRepresentation] forKey:@"bulletAxis "];
+		[dictRep setObject:[self.bulletAxis  dictionaryRepresentation] forKey:@"bulletAxis "];
 	}
 
 	if (self.bulletBorderAlpha) {
@@ -196,7 +195,7 @@
 	}
 
 	if (self.fillToGraph) {
-		[dictRep setObject:[self.fillToGraph javascriptRepresentation] forKey:@"fillToGraph"];
+		[dictRep setObject:[self.fillToGraph dictionaryRepresentation] forKey:@"fillToGraph"];
 	}
 
 	if (self.fontSize) {
@@ -344,7 +343,7 @@
 	}
 
 	if (self.showBulletsAt ) {
-		[dictRep setObject:self.showBulletsAt  forKey:@"showBulletsAt "];
+		[dictRep setObject:self.showBulletsAt  forKey:@"showBulletsAt"];
 	}
 
 	[dictRep setObject:@(self.showHandOnHover) forKey:@"showHandOnHover"];
@@ -368,7 +367,7 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis javascriptRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:self.valueAxis forKey:@"valueAxis"];
 	}
 
 	if (self.valueField) {
@@ -378,7 +377,7 @@
 	[dictRep setObject:@(self.visibleInLegend) forKey:@"visibleInLegend"];
 
 	if (self.xAxis) {
-		[dictRep setObject:[self.xAxis javascriptRepresentation] forKey:@"xAxis"];
+		[dictRep setObject:[self.xAxis dictionaryRepresentation] forKey:@"xAxis"];
 	}
 
 	if (self.xField) {
@@ -386,7 +385,7 @@
 	}
 
 	if (self.yAxis) {
-		[dictRep setObject:[self.yAxis javascriptRepresentation] forKey:@"yAxis"];
+		[dictRep setObject:[self.yAxis dictionaryRepresentation] forKey:@"yAxis"];
 	}
 
 	if (self.yField) {

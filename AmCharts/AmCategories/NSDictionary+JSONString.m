@@ -19,8 +19,17 @@
         NSLog(@"%@", serializeErr.localizedDescription);
         return @"";
     }
+    NSString *validJson = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSError *regexErr = nil;
+    NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\"(\\w+)\"\\s*:" options:NSRegularExpressionCaseInsensitive error:&regexErr];
+    if (regexErr) {
+        NSLog(@"%@", regexErr.localizedDescription);
+    }
+   // NSArray *matches = [regex matchesInString:validJson options:0 range:NSMakeRange(0, validJson.length)];
+   // NSLog(@"%li", matches.count);
+    NSString *unquotedKeyJson = [regex stringByReplacingMatchesInString:validJson options:0 range:NSMakeRange(0, validJson.length) withTemplate:@"$1:"];
     
-    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return unquotedKeyJson;
 }
 
 @end

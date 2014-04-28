@@ -60,7 +60,7 @@
 	}
 
 	if (self.graph) {
-		[dictRep setObject:[self.graph javascriptRepresentation] forKey:@"graph"];
+		[dictRep setObject:[self.graph dictionaryRepresentation] forKey:@"graph"];
 	}
 
 	if (self.graphFillAlpha) {

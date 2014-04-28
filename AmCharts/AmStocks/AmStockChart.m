@@ -50,21 +50,21 @@
 	[dictRep setObject:@(self.animationPlayed) forKey:@"animationPlayed"];
 
 	if (self.balloon) {
-		[dictRep setObject:[self.balloon javascriptRepresentation] forKey:@"balloon"];
+		[dictRep setObject:[self.balloon dictionaryRepresentation] forKey:@"balloon"];
 	}
 
 	if (self.categoryAxesSettings) {
-		[dictRep setObject:[self.categoryAxesSettings javascriptRepresentation] forKey:@"categoryAxesSettings"];
+		[dictRep setObject:[self.categoryAxesSettings dictionaryRepresentation] forKey:@"categoryAxesSettings"];
 	}
 
 	[dictRep setObject:@(self.chartCreated) forKey:@"chartCreated"];
 
 	if (self.chartCursorSettings) {
-		[dictRep setObject:[self.chartCursorSettings javascriptRepresentation] forKey:@"chartCursorSettings"];
+		[dictRep setObject:[self.chartCursorSettings dictionaryRepresentation] forKey:@"chartCursorSettings"];
 	}
 
 	if (self.chartScrollbarSettings) {
-		[dictRep setObject:[self.chartScrollbarSettings javascriptRepresentation] forKey:@"chartScrollbarSettings"];
+		[dictRep setObject:[self.chartScrollbarSettings dictionaryRepresentation] forKey:@"chartScrollbarSettings"];
 	}
 
 	if (self.colors) {
@@ -84,7 +84,7 @@
 	}
 
 	if (self.dataSetSelector) {
-		[dictRep setObject:[self.dataSetSelector javascriptRepresentation] forKey:@"dataSetSelector"];
+		[dictRep setObject:[self.dataSetSelector dictionaryRepresentation] forKey:@"dataSetSelector"];
 	}
 
 	if (self.endDate) {
@@ -102,11 +102,11 @@
 	[dictRep setObject:@(self.glueToTheEnd) forKey:@"glueToTheEnd"];
 
 	if (self.legendSettings) {
-		[dictRep setObject:[self.legendSettings javascriptRepresentation] forKey:@"legendSettings"];
+		[dictRep setObject:[self.legendSettings dictionaryRepresentation] forKey:@"legendSettings"];
 	}
 
 	if (self.mainDataSet) {
-		[dictRep setObject:[self.mainDataSet javascriptRepresentation] forKey:@"mainDataSet"];
+		[dictRep setObject:[self.mainDataSet dictionaryRepresentation] forKey:@"mainDataSet"];
 	}
 
 	[dictRep setObject:@(self.mouseWheelScrollEnabled) forKey:@"mouseWheelScrollEnabled"];
@@ -116,7 +116,7 @@
 	}
 
 	if (self.panelsSettings) {
-		[dictRep setObject:[self.panelsSettings javascriptRepresentation] forKey:@"panelsSettings"];
+		[dictRep setObject:[self.panelsSettings dictionaryRepresentation] forKey:@"panelsSettings"];
 	}
 
 	if (self.pathToImages) {
@@ -124,11 +124,11 @@
 	}
 
 	if (self.periodSelector) {
-		[dictRep setObject:[self.periodSelector javascriptRepresentation] forKey:@"periodSelector"];
+		[dictRep setObject:[self.periodSelector dictionaryRepresentation] forKey:@"periodSelector"];
 	}
 
 	if (self.scrollbarChart) {
-		[dictRep setObject:[self.scrollbarChart javascriptRepresentation] forKey:@"scrollbarChart"];
+		[dictRep setObject:[self.scrollbarChart dictionaryRepresentation] forKey:@"scrollbarChart"];
 	}
 
 	if (self.startDate) {
@@ -136,7 +136,7 @@
 	}
 
 	if (self.stockEventsSettings) {
-		[dictRep setObject:[self.stockEventsSettings javascriptRepresentation] forKey:@"stockEventsSettings"];
+		[dictRep setObject:[self.stockEventsSettings dictionaryRepresentation] forKey:@"stockEventsSettings"];
 	}
 
 	if (self.type) {
@@ -144,7 +144,7 @@
 	}
 
 	if (self.valueAxesSettings) {
-		[dictRep setObject:[self.valueAxesSettings javascriptRepresentation] forKey:@"valueAxesSettings"];
+		[dictRep setObject:[self.valueAxesSettings dictionaryRepresentation] forKey:@"valueAxesSettings"];
 	}
 
 	if (self.version) {

@@ -37,7 +37,7 @@
 	}
 
 	if (self.categoryAxis) {
-		[dictRep setObject:[self.categoryAxis javascriptRepresentation] forKey:@"categoryAxis"];
+		[dictRep setObject:[self.categoryAxis dictionaryRepresentation] forKey:@"categoryAxis"];
 	}
 
 	if (self.categoryField) {
@@ -100,7 +100,7 @@
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
 
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amSerialChart\": %@", [dictRep JSONString]];
+	NSString *jsonRep = [dictRep JSONString];
 	return jsonRep;
 }
 

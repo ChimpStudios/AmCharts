@@ -40,7 +40,7 @@
 	[dictRep setObject:@(self.drawingIconsEnabled) forKey:@"drawingIconsEnabled"];
 
 	if (self.drawOnAxis) {
-		[dictRep setObject:[self.drawOnAxis javascriptRepresentation] forKey:@"drawOnAxis"];
+		[dictRep setObject:[self.drawOnAxis dictionaryRepresentation] forKey:@"drawOnAxis"];
 	}
 
 	[dictRep setObject:@(self.eraseAll) forKey:@"eraseAll"];
@@ -66,7 +66,7 @@
 	}
 
 	if (self.stockLegend) {
-		[dictRep setObject:[self.stockLegend javascriptRepresentation] forKey:@"stockLegend"];
+		[dictRep setObject:[self.stockLegend dictionaryRepresentation] forKey:@"stockLegend"];
 	}
 
 	if (self.title) {

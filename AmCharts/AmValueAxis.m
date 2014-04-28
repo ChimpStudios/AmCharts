@@ -75,7 +75,7 @@
 	[dictRep setObject:@(self.integersOnly) forKey:@"integersOnly"];
 
 	if (self.labelFunction) {
-		[dictRep setObject:[self.labelFunction javascriptRepresentation] forKey:@"labelFunction"];
+		[dictRep setObject:[self.labelFunction dictionaryRepresentation] forKey:@"labelFunction"];
 	}
 
 	[dictRep setObject:@(self.logarithmic) forKey:@"logarithmic"];
@@ -127,7 +127,7 @@
 	}
 
 	if (self.synchronizeWith) {
-		[dictRep setObject:[self.synchronizeWith javascriptRepresentation] forKey:@"synchronizeWith"];
+		[dictRep setObject:[self.synchronizeWith dictionaryRepresentation] forKey:@"synchronizeWith"];
 	}
 
 	if (self.totalText) {

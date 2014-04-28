@@ -56,7 +56,7 @@
 	[dictRep setObject:@(self.boldPeriodBeginning) forKey:@"boldPeriodBeginning"];
 
 	if (self.categoryFunction) {
-		[dictRep setObject:[self.categoryFunction javascriptRepresentation] forKey:@"categoryFunction"];
+		[dictRep setObject:[self.categoryFunction dictionaryRepresentation] forKey:@"categoryFunction"];
 	}
 
 	[dictRep setObject:@(self.centerLabelOnFullPeriod) forKey:@"centerLabelOnFullPeriod"];
@@ -68,7 +68,7 @@
 	[dictRep setObject:@(self.equalSpacing) forKey:@"equalSpacing"];
 
 	if (self.firstDayOfWeek ) {
-		[dictRep setObject:self.firstDayOfWeek  forKey:@"firstDayOfWeek "];
+		[dictRep setObject:self.firstDayOfWeek  forKey:@"firstDayOfWeek"];
 	}
 
 	if (self.forceShowField) {
@@ -80,7 +80,7 @@
 	}
 
 	if (self.labelFunction) {
-		[dictRep setObject:[self.labelFunction javascriptRepresentation] forKey:@"labelFunction"];
+		[dictRep setObject:[self.labelFunction dictionaryRepresentation] forKey:@"labelFunction"];
 	}
 
 	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];
@@ -97,7 +97,7 @@
 
 	[dictRep setObject:@(self.startOnAxis) forKey:@"startOnAxis"];
 
-	[dictRep setObject:@(self.twoLineMode ) forKey:@"twoLineMode "];
+	[dictRep setObject:@(self.twoLineMode) forKey:@"twoLineMode"];
 
 	return dictRep;
 }
