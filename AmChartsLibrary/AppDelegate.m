@@ -12,11 +12,24 @@
 #import "AmValueAxis.h"
 #import "AmGraph.h"
 
+#import "AmStockChart.h"
+#import "AmDataSet.h"
+#import "AmStockPanel.h"
+#import "AmPanelSettings.h"
+#import "AmCategoryAxesSettings.h"
+#import "AmValueAxesSettings.h"
+#import "AmChartScrollbarSettings.h"
+#import "AmChartCursorSettings.h"
+#import "AmPeriodSelector.h"
+#import "AmStockLegend.h"
+#import "AmStockGraph.h"
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    /*
     AmSerialChart *chart = [[AmSerialChart alloc] init];
     chart.type = @"serial";
     chart.dataProvider = [@[@{@"year" : @"2005", @"income" : @"23.5"},
@@ -47,6 +60,59 @@
     chart.graphs = [@[graph] mutableCopy];
     
     NSLog(@"\n%@", [chart javascriptRepresentation]);
+     */
+    
+    AmStockChart *stockChart = [[AmStockChart alloc] init];
+    stockChart.type = @"stock";
+    stockChart.pathToImages = @"../amcharts/images/";
+    stockChart.dataDateFormat = @"YYYY-MM-DD";
+    AmDataSet *dataSet = [[AmDataSet alloc] init];
+    
+    NSMutableArray *dataProvider = [[NSMutableArray alloc] init];
+    [dataProvider addObject:@{@"date": @"2011-06-01", @"val": @(10)}];
+    [dataProvider addObject:@{@"date": @"2011-06-02", @"val": @(11)}];
+    [dataProvider addObject:@{@"date": @"2011-06-03", @"val": @(12)}];
+    [dataProvider addObject:@{@"date": @"2011-06-04", @"val": @(11)}];
+    [dataProvider addObject:@{@"date": @"2011-06-05", @"val": @(10)}];
+    [dataProvider addObject:@{@"date": @"2011-06-06", @"val": @(11)}];
+    [dataProvider addObject:@{@"date": @"2011-06-07", @"val": @(13)}];
+    [dataProvider addObject:@{@"date": @"2011-06-08", @"val": @(14)}];
+    [dataProvider addObject:@{@"date": @"2011-06-09", @"val": @(17)}];
+    [dataProvider addObject:@{@"date": @"2011-06-10", @"val": @(13)}];
+    dataSet.dataProvider = dataProvider;
+    dataSet.fieldMappings = [@[@{@"fromField" : @"val", @"toField" : @"value"}] mutableCopy];
+    dataSet.categoryField = @"date";
+    
+    stockChart.dataSets = [@[dataSet] mutableCopy];
+    
+    AmStockPanel *panel = [[AmStockPanel alloc] init];
+    panel.legend = [[AmStockLegend alloc] init];
+    
+    AmStockGraph *stockGraph = [[AmStockGraph alloc] init];
+    stockGraph.uid = @"graph1";
+    stockGraph.valueField = @"value";
+    stockGraph.type = @"column";
+    stockGraph.title = @"MyGraph";
+    stockGraph.fillAlphas = @(1);
+    panel.stockGraphs = [@[stockGraph] mutableCopy];
+    stockChart.panels = [@[panel] mutableCopy];
+    
+    stockChart.panelsSettings.startDuration = @(1);
+    stockChart.categoryAxesSettings.dashLength = @(5);
+    stockChart.valueAxesSettings.dashLength = @(5);
+    stockChart.chartScrollbarSettings.graph = @"graph1";
+    stockChart.chartScrollbarSettings.graphType = @"line";
+    
+    AmPeriodSelector *periodSelector = [[AmPeriodSelector alloc] init];
+    periodSelector.periods = [@[@{@"period" : @"DD", @"count" : @(1), @"label" : @"1 day"},
+                                @{@"period" : @"DD", @"count" : @(5), @"label" : @"5 days"},
+                                @{@"period" : @"MM", @"count" : @(1), @"label" : @"1 month"},
+                                @{@"period" : @"YYYY", @"count" : @(1), @"label" : @"1 year"},
+                                @{@"period" : @"YTD", @"label" : @"YTD"}] mutableCopy];
+    stockChart.periodSelector = periodSelector;
+    
+    
+    NSLog(@"\n%@", [stockChart javascriptRepresentation]);
 }
 
 @end

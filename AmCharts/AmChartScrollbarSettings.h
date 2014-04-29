@@ -64,7 +64,7 @@
  Specifies which graph will be displayed in the scrollbar.
  @version 3.4.8
  */
-@property(strong) AmGraph * graph;
+@property(strong) NSString * graph;
 
 /**
  Graph fill opacity.

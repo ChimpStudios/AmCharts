@@ -20,7 +20,7 @@
 #import "AmSerialChart.h"
 #import "AmStockEventSettings.h"
 #import "AmValueAxesSettings.h"
-
+#import "AmStockPanel.h"
 
 @implementation AmStockChart
 
@@ -72,7 +72,14 @@
 	}
 
 	if (self.comparedDataSets) {
-		[dictRep setObject:self.comparedDataSets forKey:@"comparedDataSets"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.comparedDataSets.count];
+        for (AmDataSet *dataSet in self.comparedDataSets) {
+            // only add appropriate class items
+            if ([dataSet.class isSubclassOfClass:[AmDataSet class]]) {
+                [tmpArr addObject:[dataSet dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"comparedDataSets"];
 	}
 
 	if (self.dataDateFormat) {
@@ -80,7 +87,14 @@
 	}
 
 	if (self.dataSets) {
-		[dictRep setObject:self.dataSets forKey:@"dataSets"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.dataSets.count];
+        for (AmDataSet *dataSet in self.dataSets) {
+            // only add appropriate class items
+            if ([dataSet.class isSubclassOfClass:[AmDataSet class]]) {
+                [tmpArr addObject:[dataSet dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"dataSets"];
 	}
 
 	if (self.dataSetSelector) {
@@ -112,7 +126,14 @@
 	[dictRep setObject:@(self.mouseWheelScrollEnabled) forKey:@"mouseWheelScrollEnabled"];
 
 	if (self.panels) {
-		[dictRep setObject:self.panels forKey:@"panels"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.panels.count];
+        for (AmStockPanel *stockPanel in self.panels) {
+            // only add appropriate class items
+            if ([stockPanel.class isSubclassOfClass:[AmStockPanel class]]) {
+                [tmpArr addObject:[stockPanel dictionaryRepresentation]];
+            }
+        }
+		[dictRep setObject:tmpArr forKey:@"panels"];
 	}
 
 	if (self.panelsSettings) {
@@ -158,9 +179,7 @@
 
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
-
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amStockChart\": %@", [dictRep JSONString]];
-	return jsonRep;
+    return [dictRep JSONString];
 }
 
 @end
