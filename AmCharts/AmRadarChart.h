@@ -13,37 +13,31 @@
 
 /**
  Field in your data provider containing categories.
- @version 3.4.8
  */
 @property(strong) NSString * categoryField;
 
 /**
  Bottom margin of the chart.
- @version 3.4.8
  */
 @property(strong) NSNumber * marginBottom;
 
 /**
  Left margin of the chart.
- @version 3.4.8
  */
 @property(strong) NSNumber * marginLeft;
 
 /**
  Right margin of the chart.
- @version 3.4.8
  */
 @property(strong) NSNumber * marginRight;
 
 /**
  Top margin of the chart.
- @version 3.4.8
  */
 @property(strong) NSNumber * marginTop;
 
 /**
  Radius of a radar.
- @version 3.4.8
  */
 @property(strong) NSString * radius;
 

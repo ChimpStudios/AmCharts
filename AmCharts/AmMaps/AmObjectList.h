@@ -13,7 +13,6 @@
 
 /**
  Id or reference to div which will hold ObjectList.
- @version 3.4.8
  */
 @property(strong) NSString * container;
 

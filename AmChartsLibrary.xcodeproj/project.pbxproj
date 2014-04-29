@@ -77,6 +77,8 @@
 		1151A57E190E9E9E004D52EC /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A541190E9E9E004D52EC /* AmValueAxesSettings.m */; };
 		1151A57F190E9E9E004D52EC /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A543190E9E9E004D52EC /* AmValueAxis.m */; };
 		1151A580190E9E9E004D52EC /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A545190E9E9E004D52EC /* AmXYChart.m */; };
+		11547467191012790003E1F5 /* AmChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; };
+		11547469191012940003E1F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11547468191012940003E1F5 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,9 +111,9 @@
 		1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		1151A4BC190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsLibraryTests.m; sourceTree = "<group>"; };
-		1151A4CC190E9E9E004D52EC /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAngularGauge.h; sourceTree = "<group>"; };
+		1151A4CC190E9E9E004D52EC /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAngularGauge.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1151A4CD190E9E9E004D52EC /* AmAngularGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAngularGauge.m; sourceTree = "<group>"; };
-		1151A4CE190E9E9E004D52EC /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAxisBase.h; sourceTree = "<group>"; };
+		1151A4CE190E9E9E004D52EC /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAxisBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1151A4CF190E9E9E004D52EC /* AmAxisBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAxisBase.m; sourceTree = "<group>"; };
 		1151A4D0190E9E9E004D52EC /* AmBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmBalloon.h; sourceTree = "<group>"; };
 		1151A4D1190E9E9E004D52EC /* AmBalloon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmBalloon.m; sourceTree = "<group>"; };
@@ -162,7 +164,7 @@
 		1151A4FF190E9E9E004D52EC /* AmLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegend.m; sourceTree = "<group>"; };
 		1151A500190E9E9E004D52EC /* AmLegendSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLegendSettings.h; sourceTree = "<group>"; };
 		1151A501190E9E9E004D52EC /* AmLegendSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegendSettings.m; sourceTree = "<group>"; };
-		1151A503190E9E9E004D52EC /* AmAreasSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAreasSettings.h; sourceTree = "<group>"; };
+		1151A503190E9E9E004D52EC /* AmAreasSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAreasSettings.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1151A504190E9E9E004D52EC /* AmAreasSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAreasSettings.m; sourceTree = "<group>"; };
 		1151A505190E9E9E004D52EC /* AmImagesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmImagesSettings.h; sourceTree = "<group>"; };
 		1151A506190E9E9E004D52EC /* AmImagesSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmImagesSettings.m; sourceTree = "<group>"; };
@@ -229,6 +231,9 @@
 		1151A544190E9E9E004D52EC /* AmXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmXYChart.h; sourceTree = "<group>"; };
 		1151A545190E9E9E004D52EC /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
 		11547464191007F80003E1F5 /* AmCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCharts.h; sourceTree = "<group>"; };
+		11547465191012790003E1F5 /* AmChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartView.h; sourceTree = "<group>"; };
+		11547466191012790003E1F5 /* AmChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartView.m; sourceTree = "<group>"; };
+		11547468191012940003E1F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11547469191012940003E1F5 /* WebKit.framework in Frameworks */,
 				1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +281,7 @@
 		1151A493190E9E5A004D52EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11547468191012940003E1F5 /* WebKit.framework */,
 				1151A494190E9E5A004D52EC /* Cocoa.framework */,
 				1151A4B3190E9E5A004D52EC /* XCTest.framework */,
 				1151A496190E9E5A004D52EC /* Other Frameworks */,
@@ -342,6 +349,8 @@
 				115474621910023F0003E1F5 /* Charts */,
 				1151A502190E9E9E004D52EC /* Maps */,
 				1151A52F190E9E9E004D52EC /* Stock Charts */,
+				11547465191012790003E1F5 /* AmChartView.h */,
+				11547466191012790003E1F5 /* AmChartView.m */,
 			);
 			path = AmCharts;
 			sourceTree = "<group>";
@@ -604,6 +613,7 @@
 				1151A55D190E9E9E004D52EC /* AmLabel.m in Sources */,
 				1151A54F190E9E9E004D52EC /* AmChartCursor.m in Sources */,
 				1151A557190E9E9E004D52EC /* AmGaugeArrow.m in Sources */,
+				11547467191012790003E1F5 /* AmChartView.m in Sources */,
 				1151A56C190E9E9E004D52EC /* AmZoomControl.m in Sources */,
 				1151A54D190E9E9E004D52EC /* AmCategoryAxis.m in Sources */,
 				1151A55E190E9E9E004D52EC /* AmLegend.m in Sources */,

@@ -13,19 +13,16 @@
 
 /**
  Specifies if Scrollbar of X axis (horizontal) should be hidden.
- @version 3.4.8
  */
 @property(assign) BOOL hideXScrollbar;
 
 /**
  Specifies if Scrollbar of Y axis (vertical) should be hidden.
- @version 3.4.8
  */
 @property(assign) BOOL hideYScrollbar;
 
 /**
  Maximum zoom factor of the chart.
- @version 3.4.8
  */
 @property(strong) NSNumber * maxZoomFactor;
 
