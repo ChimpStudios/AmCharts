@@ -76,7 +76,7 @@
  Data provider of the map.
  @version 3.4.8
  */
-@property(strong) AmMapData * dataProvider;
+@property(strong) AmMapData * mapDataProvider;
 
 /**
  When developer mode is set to true, you can click anywhere on the map while SHIFT key is pressed to trigger a writeDevInfo event. All the information about current map position/zoom will be transferred to the event handler.

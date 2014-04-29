@@ -80,7 +80,7 @@
 	}
 
 	if (self.dataProvider) {
-		[dictRep setObject:[self.dataProvider dictionaryRepresentation] forKey:@"dataProvider"];
+		[dictRep setObject:[self.mapDataProvider dictionaryRepresentation] forKey:@"dataProvider"];
 	}
 
 	[dictRep setObject:@(self.developerMode) forKey:@"developerMode"];
