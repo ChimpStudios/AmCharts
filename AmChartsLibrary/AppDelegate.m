@@ -7,22 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AmSerialChart.h"
-#import "AmCategoryAxis.h"
-#import "AmValueAxis.h"
-#import "AmGraph.h"
-
-#import "AmStockChart.h"
-#import "AmDataSet.h"
-#import "AmStockPanel.h"
-#import "AmPanelSettings.h"
-#import "AmCategoryAxesSettings.h"
-#import "AmValueAxesSettings.h"
-#import "AmChartScrollbarSettings.h"
-#import "AmChartCursorSettings.h"
-#import "AmPeriodSelector.h"
-#import "AmStockLegend.h"
-#import "AmStockGraph.h"
+#import "AmCharts.h"
 
 @implementation AppDelegate
 
@@ -112,7 +97,7 @@
     stockChart.periodSelector = periodSelector;
     
     
-    NSLog(@"\n%@", [stockChart javascriptRepresentation]);
+    //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
 }
 
 @end

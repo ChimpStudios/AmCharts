@@ -228,6 +228,7 @@
 		1151A543190E9E9E004D52EC /* AmValueAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxis.m; sourceTree = "<group>"; };
 		1151A544190E9E9E004D52EC /* AmXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmXYChart.h; sourceTree = "<group>"; };
 		1151A545190E9E9E004D52EC /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
+		11547464191007F80003E1F5 /* AmCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCharts.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,9 +337,86 @@
 		1151A4CB190E9E9E004D52EC /* AmCharts */ = {
 			isa = PBXGroup;
 			children = (
+				11547464191007F80003E1F5 /* AmCharts.h */,
 				1151A4D2190E9E9E004D52EC /* AmCategories */,
-				1151A502190E9E9E004D52EC /* AmMaps */,
-				1151A52F190E9E9E004D52EC /* AmStocks */,
+				115474621910023F0003E1F5 /* Charts */,
+				1151A502190E9E9E004D52EC /* Maps */,
+				1151A52F190E9E9E004D52EC /* Stock Charts */,
+			);
+			path = AmCharts;
+			sourceTree = "<group>";
+		};
+		1151A4D2190E9E9E004D52EC /* AmCategories */ = {
+			isa = PBXGroup;
+			children = (
+				1151A4D3190E9E9E004D52EC /* AmCategories.h */,
+				1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */,
+				1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */,
+				1151A4D6190E9E9E004D52EC /* NSDictionary+JSONString.h */,
+				1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */,
+				1151A4D8190E9E9E004D52EC /* NSString+JSONString.h */,
+				1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */,
+			);
+			path = AmCategories;
+			sourceTree = "<group>";
+		};
+		1151A502190E9E9E004D52EC /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				1151A503190E9E9E004D52EC /* AmAreasSettings.h */,
+				1151A504190E9E9E004D52EC /* AmAreasSettings.m */,
+				1151A505190E9E9E004D52EC /* AmImagesSettings.h */,
+				1151A506190E9E9E004D52EC /* AmImagesSettings.m */,
+				1151A507190E9E9E004D52EC /* AmLinesSettings.h */,
+				1151A508190E9E9E004D52EC /* AmLinesSettings.m */,
+				1151A509190E9E9E004D52EC /* AmMap.h */,
+				1151A50A190E9E9E004D52EC /* AmMap.m */,
+				1151A50B190E9E9E004D52EC /* AmMapArea.h */,
+				1151A50C190E9E9E004D52EC /* AmMapArea.m */,
+				1151A50D190E9E9E004D52EC /* AmMapData.h */,
+				1151A50E190E9E9E004D52EC /* AmMapData.m */,
+				1151A50F190E9E9E004D52EC /* AmMapImage.h */,
+				1151A510190E9E9E004D52EC /* AmMapImage.m */,
+				1151A511190E9E9E004D52EC /* AmMapLine.h */,
+				1151A512190E9E9E004D52EC /* AmMapLine.m */,
+				1151A513190E9E9E004D52EC /* AmMapObject.h */,
+				1151A514190E9E9E004D52EC /* AmMapObject.m */,
+				1151A515190E9E9E004D52EC /* AmObjectList.h */,
+				1151A516190E9E9E004D52EC /* AmObjectList.m */,
+				1151A517190E9E9E004D52EC /* AmSmallMap.h */,
+				1151A518190E9E9E004D52EC /* AmSmallMap.m */,
+				1151A519190E9E9E004D52EC /* AmValueLegend.h */,
+				1151A51A190E9E9E004D52EC /* AmValueLegend.m */,
+				1151A51B190E9E9E004D52EC /* AmZoomControl.h */,
+				1151A51C190E9E9E004D52EC /* AmZoomControl.m */,
+			);
+			name = Maps;
+			path = AmMaps;
+			sourceTree = "<group>";
+		};
+		1151A52F190E9E9E004D52EC /* Stock Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1151A530190E9E9E004D52EC /* AmStockChart.h */,
+				1151A531190E9E9E004D52EC /* AmStockChart.m */,
+				1151A532190E9E9E004D52EC /* AmStockEvent.h */,
+				1151A533190E9E9E004D52EC /* AmStockEvent.m */,
+				1151A534190E9E9E004D52EC /* AmStockEventSettings.h */,
+				1151A535190E9E9E004D52EC /* AmStockEventSettings.m */,
+				1151A536190E9E9E004D52EC /* AmStockGraph.h */,
+				1151A537190E9E9E004D52EC /* AmStockGraph.m */,
+				1151A538190E9E9E004D52EC /* AmStockLegend.h */,
+				1151A539190E9E9E004D52EC /* AmStockLegend.m */,
+				1151A53A190E9E9E004D52EC /* AmStockPanel.h */,
+				1151A53B190E9E9E004D52EC /* AmStockPanel.m */,
+			);
+			name = "Stock Charts";
+			path = AmStocks;
+			sourceTree = "<group>";
+		};
+		115474621910023F0003E1F5 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
 				1151A4CC190E9E9E004D52EC /* AmAngularGauge.h */,
 				1151A4CD190E9E9E004D52EC /* AmAngularGauge.m */,
 				1151A4CE190E9E9E004D52EC /* AmAxisBase.h */,
@@ -414,73 +492,7 @@
 				1151A544190E9E9E004D52EC /* AmXYChart.h */,
 				1151A545190E9E9E004D52EC /* AmXYChart.m */,
 			);
-			path = AmCharts;
-			sourceTree = "<group>";
-		};
-		1151A4D2190E9E9E004D52EC /* AmCategories */ = {
-			isa = PBXGroup;
-			children = (
-				1151A4D3190E9E9E004D52EC /* AmCategories.h */,
-				1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */,
-				1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */,
-				1151A4D6190E9E9E004D52EC /* NSDictionary+JSONString.h */,
-				1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */,
-				1151A4D8190E9E9E004D52EC /* NSString+JSONString.h */,
-				1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */,
-			);
-			path = AmCategories;
-			sourceTree = "<group>";
-		};
-		1151A502190E9E9E004D52EC /* AmMaps */ = {
-			isa = PBXGroup;
-			children = (
-				1151A503190E9E9E004D52EC /* AmAreasSettings.h */,
-				1151A504190E9E9E004D52EC /* AmAreasSettings.m */,
-				1151A505190E9E9E004D52EC /* AmImagesSettings.h */,
-				1151A506190E9E9E004D52EC /* AmImagesSettings.m */,
-				1151A507190E9E9E004D52EC /* AmLinesSettings.h */,
-				1151A508190E9E9E004D52EC /* AmLinesSettings.m */,
-				1151A509190E9E9E004D52EC /* AmMap.h */,
-				1151A50A190E9E9E004D52EC /* AmMap.m */,
-				1151A50B190E9E9E004D52EC /* AmMapArea.h */,
-				1151A50C190E9E9E004D52EC /* AmMapArea.m */,
-				1151A50D190E9E9E004D52EC /* AmMapData.h */,
-				1151A50E190E9E9E004D52EC /* AmMapData.m */,
-				1151A50F190E9E9E004D52EC /* AmMapImage.h */,
-				1151A510190E9E9E004D52EC /* AmMapImage.m */,
-				1151A511190E9E9E004D52EC /* AmMapLine.h */,
-				1151A512190E9E9E004D52EC /* AmMapLine.m */,
-				1151A513190E9E9E004D52EC /* AmMapObject.h */,
-				1151A514190E9E9E004D52EC /* AmMapObject.m */,
-				1151A515190E9E9E004D52EC /* AmObjectList.h */,
-				1151A516190E9E9E004D52EC /* AmObjectList.m */,
-				1151A517190E9E9E004D52EC /* AmSmallMap.h */,
-				1151A518190E9E9E004D52EC /* AmSmallMap.m */,
-				1151A519190E9E9E004D52EC /* AmValueLegend.h */,
-				1151A51A190E9E9E004D52EC /* AmValueLegend.m */,
-				1151A51B190E9E9E004D52EC /* AmZoomControl.h */,
-				1151A51C190E9E9E004D52EC /* AmZoomControl.m */,
-			);
-			path = AmMaps;
-			sourceTree = "<group>";
-		};
-		1151A52F190E9E9E004D52EC /* AmStocks */ = {
-			isa = PBXGroup;
-			children = (
-				1151A530190E9E9E004D52EC /* AmStockChart.h */,
-				1151A531190E9E9E004D52EC /* AmStockChart.m */,
-				1151A532190E9E9E004D52EC /* AmStockEvent.h */,
-				1151A533190E9E9E004D52EC /* AmStockEvent.m */,
-				1151A534190E9E9E004D52EC /* AmStockEventSettings.h */,
-				1151A535190E9E9E004D52EC /* AmStockEventSettings.m */,
-				1151A536190E9E9E004D52EC /* AmStockGraph.h */,
-				1151A537190E9E9E004D52EC /* AmStockGraph.m */,
-				1151A538190E9E9E004D52EC /* AmStockLegend.h */,
-				1151A539190E9E9E004D52EC /* AmStockLegend.m */,
-				1151A53A190E9E9E004D52EC /* AmStockPanel.h */,
-				1151A53B190E9E9E004D52EC /* AmStockPanel.m */,
-			);
-			path = AmStocks;
+			name = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -854,6 +866,7 @@
 				1151A4C4190E9E5A004D52EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1151A4C5190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -862,6 +875,7 @@
 				1151A4C7190E9E5A004D52EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
