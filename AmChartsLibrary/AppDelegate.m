@@ -14,7 +14,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    
+    /*
     AmSerialChart *chart = [[AmSerialChart alloc] init];
     chart.type = @"serial";
     chart.dataProvider = [@[@{@"year" : @"2005", @"income" : @"23.5"},
@@ -46,6 +46,7 @@
     
     [self.chartView setChart:chart];
     [self.chartView drawChart];
+     */
    // NSLog(@"\n%@", [chart javascriptRepresentation]);
      
     /*
@@ -101,6 +102,22 @@
     //[self.chartView setChart:stockChart];
     //[self.chartView drawChart];
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
+    
+    AmPieChart *pieChart = [[AmPieChart alloc] init];
+    pieChart.type = @"pie";
+    pieChart.theme = @"none";
+    NSMutableArray *dataProvider = [[NSMutableArray alloc] init];
+    [dataProvider addObject:@{@"country" : @"Lithuania", @"litres" : @(501.9)}];
+    [dataProvider addObject:@{@"country" : @"Czech Republic", @"litres" : @(301.9)}];
+    [dataProvider addObject:@{@"country" : @"Ireland", @"litres" : @(201.1)}];
+    pieChart.dataProvider = dataProvider;
+    
+    pieChart.valueField = @"litres";
+    pieChart.titleField = @"country";
+    
+   // NSLog(@"\n%@", [pieChart javascriptRepresentation]);
+    [self.chartView setChart:pieChart];
+    [self.chartView drawChart];
 }
 
 @end
