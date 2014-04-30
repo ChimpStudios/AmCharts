@@ -14,7 +14,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    /*
+    
     AmSerialChart *chart = [[AmSerialChart alloc] init];
     chart.type = @"serial";
     chart.dataProvider = [@[@{@"year" : @"2005", @"income" : @"23.5"},
@@ -44,12 +44,14 @@
     graph.balloonText = @"[[title]] in [[category]]:<b>[[value]]</b>";
     chart.graphs = [@[graph] mutableCopy];
     
-    NSLog(@"\n%@", [chart javascriptRepresentation]);
-     */
-    
+    [self.chartView setChart:chart];
+    [self.chartView drawChart];
+   // NSLog(@"\n%@", [chart javascriptRepresentation]);
+     
+    /*
     AmStockChart *stockChart = [[AmStockChart alloc] init];
     stockChart.type = @"stock";
-    stockChart.pathToImages = @"../amcharts/images/";
+    stockChart.pathToImages = @"amcharts/images/";
     stockChart.dataDateFormat = @"YYYY-MM-DD";
     AmDataSet *dataSet = [[AmDataSet alloc] init];
     
@@ -95,8 +97,9 @@
                                 @{@"period" : @"YYYY", @"count" : @(1), @"label" : @"1 year"},
                                 @{@"period" : @"YTD", @"label" : @"YTD"}] mutableCopy];
     stockChart.periodSelector = periodSelector;
-    
-    
+    */
+    //[self.chartView setChart:stockChart];
+    //[self.chartView drawChart];
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
 }
 

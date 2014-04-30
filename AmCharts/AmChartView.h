@@ -8,13 +8,26 @@
 
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
+
 #import "AmCharts.h"
 
-@interface AmChartView : WebView
+@protocol AmChartViewExport <JSExport>
+-(void)amChartsAreReady;
+@end
+
+@interface AmChartView : WebView <AmChartViewExport>
 
 /**
  chart must inherit from AmChart or AmStockChart
  */
 @property (strong, nonatomic) id chart;
+
+/**
+ Boolean value that signals whether AmCharts.ready() has fired yet
+ */
+@property (assign) BOOL isReady;
+
+- (void)drawChart;
 
 @end

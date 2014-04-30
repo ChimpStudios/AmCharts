@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Chimp Studios. All rights reserved.
 //
 
+#import "AmChartView.h"
+
 #import "AmAngularGauge.h"
 #import "AmBalloon.h"
 #import "AmChart.h"
