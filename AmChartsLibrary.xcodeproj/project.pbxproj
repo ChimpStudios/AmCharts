@@ -18,32 +18,9 @@
 		1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4BB190E9E5A004D52EC /* InfoPlist.strings */; };
 		1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */; };
-		1151A546190E9E9E004D52EC /* AmAngularGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4CD190E9E9E004D52EC /* AmAngularGauge.m */; };
-		1151A547190E9E9E004D52EC /* AmAxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4CF190E9E9E004D52EC /* AmAxisBase.m */; };
-		1151A548190E9E9E004D52EC /* AmBalloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D1190E9E9E004D52EC /* AmBalloon.m */; };
 		1151A549190E9E9E004D52EC /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
 		1151A54A190E9E9E004D52EC /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
 		1151A54B190E9E9E004D52EC /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
-		1151A54C190E9E9E004D52EC /* AmCategoryAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4DB190E9E9E004D52EC /* AmCategoryAxesSettings.m */; };
-		1151A54D190E9E9E004D52EC /* AmCategoryAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4DD190E9E9E004D52EC /* AmCategoryAxis.m */; };
-		1151A54E190E9E9E004D52EC /* AmChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4DF190E9E9E004D52EC /* AmChart.m */; };
-		1151A54F190E9E9E004D52EC /* AmChartCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4E1190E9E9E004D52EC /* AmChartCursor.m */; };
-		1151A550190E9E9E004D52EC /* AmChartCursorSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4E3190E9E9E004D52EC /* AmChartCursorSettings.m */; };
-		1151A551190E9E9E004D52EC /* AmChartScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4E5190E9E9E004D52EC /* AmChartScrollbar.m */; };
-		1151A552190E9E9E004D52EC /* AmChartScrollbarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4E7190E9E9E004D52EC /* AmChartScrollbarSettings.m */; };
-		1151A553190E9E9E004D52EC /* AmCoordinateChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4E9190E9E9E004D52EC /* AmCoordinateChart.m */; };
-		1151A554190E9E9E004D52EC /* AmDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4EB190E9E9E004D52EC /* AmDataSet.m */; };
-		1151A555190E9E9E004D52EC /* AmDataSetSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4ED190E9E9E004D52EC /* AmDataSetSelector.m */; };
-		1151A556190E9E9E004D52EC /* AmFunnelChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4EF190E9E9E004D52EC /* AmFunnelChart.m */; };
-		1151A557190E9E9E004D52EC /* AmGaugeArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4F1190E9E9E004D52EC /* AmGaugeArrow.m */; };
-		1151A558190E9E9E004D52EC /* AmGaugeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4F3190E9E9E004D52EC /* AmGaugeAxis.m */; };
-		1151A559190E9E9E004D52EC /* AmGaugeBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4F5190E9E9E004D52EC /* AmGaugeBand.m */; };
-		1151A55A190E9E9E004D52EC /* AmGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4F7190E9E9E004D52EC /* AmGraph.m */; };
-		1151A55B190E9E9E004D52EC /* AmGraphDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4F9190E9E9E004D52EC /* AmGraphDataItem.m */; };
-		1151A55C190E9E9E004D52EC /* AmGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4FB190E9E9E004D52EC /* AmGuide.m */; };
-		1151A55D190E9E9E004D52EC /* AmLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4FD190E9E9E004D52EC /* AmLabel.m */; };
-		1151A55E190E9E9E004D52EC /* AmLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4FF190E9E9E004D52EC /* AmLegend.m */; };
-		1151A55F190E9E9E004D52EC /* AmLegendSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A501190E9E9E004D52EC /* AmLegendSettings.m */; };
 		1151A560190E9E9E004D52EC /* AmAreasSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A504190E9E9E004D52EC /* AmAreasSettings.m */; };
 		1151A561190E9E9E004D52EC /* AmImagesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A506190E9E9E004D52EC /* AmImagesSettings.m */; };
 		1151A562190E9E9E004D52EC /* AmLinesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A508190E9E9E004D52EC /* AmLinesSettings.m */; };
@@ -57,29 +34,52 @@
 		1151A56A190E9E9E004D52EC /* AmSmallMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A518190E9E9E004D52EC /* AmSmallMap.m */; };
 		1151A56B190E9E9E004D52EC /* AmValueLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51A190E9E9E004D52EC /* AmValueLegend.m */; };
 		1151A56C190E9E9E004D52EC /* AmZoomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51C190E9E9E004D52EC /* AmZoomControl.m */; };
-		1151A56D190E9E9E004D52EC /* AmPanelSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51E190E9E9E004D52EC /* AmPanelSettings.m */; };
-		1151A56E190E9E9E004D52EC /* AmPeriodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A520190E9E9E004D52EC /* AmPeriodSelector.m */; };
-		1151A56F190E9E9E004D52EC /* AmPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A522190E9E9E004D52EC /* AmPieChart.m */; };
-		1151A570190E9E9E004D52EC /* AmRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A524190E9E9E004D52EC /* AmRadarChart.m */; };
-		1151A571190E9E9E004D52EC /* AmRectangularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A526190E9E9E004D52EC /* AmRectangularChart.m */; };
-		1151A572190E9E9E004D52EC /* AmSerialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A528190E9E9E004D52EC /* AmSerialChart.m */; };
-		1151A573190E9E9E004D52EC /* AmSerialDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A52A190E9E9E004D52EC /* AmSerialDataItem.m */; };
-		1151A574190E9E9E004D52EC /* AmSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A52C190E9E9E004D52EC /* AmSlice.m */; };
-		1151A575190E9E9E004D52EC /* AmSlicedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A52E190E9E9E004D52EC /* AmSlicedChart.m */; };
 		1151A576190E9E9E004D52EC /* AmStockChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A531190E9E9E004D52EC /* AmStockChart.m */; };
 		1151A577190E9E9E004D52EC /* AmStockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A533190E9E9E004D52EC /* AmStockEvent.m */; };
 		1151A578190E9E9E004D52EC /* AmStockEventSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A535190E9E9E004D52EC /* AmStockEventSettings.m */; };
 		1151A579190E9E9E004D52EC /* AmStockGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A537190E9E9E004D52EC /* AmStockGraph.m */; };
 		1151A57A190E9E9E004D52EC /* AmStockLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A539190E9E9E004D52EC /* AmStockLegend.m */; };
 		1151A57B190E9E9E004D52EC /* AmStockPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53B190E9E9E004D52EC /* AmStockPanel.m */; };
-		1151A57C190E9E9E004D52EC /* AmTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53D190E9E9E004D52EC /* AmTitle.m */; };
-		1151A57D190E9E9E004D52EC /* AmTrendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53F190E9E9E004D52EC /* AmTrendLine.m */; };
-		1151A57E190E9E9E004D52EC /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A541190E9E9E004D52EC /* AmValueAxesSettings.m */; };
-		1151A57F190E9E9E004D52EC /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A543190E9E9E004D52EC /* AmValueAxis.m */; };
-		1151A580190E9E9E004D52EC /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A545190E9E9E004D52EC /* AmXYChart.m */; };
 		11547467191012790003E1F5 /* AmChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; };
 		11547469191012940003E1F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11547468191012940003E1F5 /* WebKit.framework */; };
 		118929E119101C1900839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 118929E019101C1800839813 /* AmChartsWeb */; };
+		11892A2F191088AD00839813 /* AmAngularGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E6191088AD00839813 /* AmAngularGauge.m */; };
+		11892A30191088AD00839813 /* AmAxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E8191088AD00839813 /* AmAxisBase.m */; };
+		11892A31191088AD00839813 /* AmBalloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EA191088AD00839813 /* AmBalloon.m */; };
+		11892A32191088AD00839813 /* AmCategoryAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EC191088AD00839813 /* AmCategoryAxesSettings.m */; };
+		11892A33191088AD00839813 /* AmCategoryAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EE191088AD00839813 /* AmCategoryAxis.m */; };
+		11892A34191088AD00839813 /* AmChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F0191088AD00839813 /* AmChart.m */; };
+		11892A35191088AD00839813 /* AmChartCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F2191088AD00839813 /* AmChartCursor.m */; };
+		11892A36191088AD00839813 /* AmChartCursorSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F4191088AD00839813 /* AmChartCursorSettings.m */; };
+		11892A37191088AD00839813 /* AmChartScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F6191088AD00839813 /* AmChartScrollbar.m */; };
+		11892A38191088AD00839813 /* AmChartScrollbarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F8191088AD00839813 /* AmChartScrollbarSettings.m */; };
+		11892A39191088AD00839813 /* AmCoordinateChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FA191088AD00839813 /* AmCoordinateChart.m */; };
+		11892A3A191088AD00839813 /* AmDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FC191088AD00839813 /* AmDataSet.m */; };
+		11892A3B191088AD00839813 /* AmDataSetSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FE191088AD00839813 /* AmDataSetSelector.m */; };
+		11892A3C191088AD00839813 /* AmFunnelChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A00191088AD00839813 /* AmFunnelChart.m */; };
+		11892A3D191088AD00839813 /* AmGaugeArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A02191088AD00839813 /* AmGaugeArrow.m */; };
+		11892A3E191088AD00839813 /* AmGaugeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A04191088AD00839813 /* AmGaugeAxis.m */; };
+		11892A3F191088AD00839813 /* AmGaugeBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A06191088AD00839813 /* AmGaugeBand.m */; };
+		11892A40191088AD00839813 /* AmGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A08191088AD00839813 /* AmGraph.m */; };
+		11892A41191088AD00839813 /* AmGraphDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0A191088AD00839813 /* AmGraphDataItem.m */; };
+		11892A42191088AD00839813 /* AmGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0C191088AD00839813 /* AmGuide.m */; };
+		11892A43191088AD00839813 /* AmLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0E191088AD00839813 /* AmLabel.m */; };
+		11892A44191088AD00839813 /* AmLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A10191088AD00839813 /* AmLegend.m */; };
+		11892A45191088AD00839813 /* AmLegendSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A12191088AD00839813 /* AmLegendSettings.m */; };
+		11892A46191088AD00839813 /* AmPanelSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A14191088AD00839813 /* AmPanelSettings.m */; };
+		11892A47191088AD00839813 /* AmPeriodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A16191088AD00839813 /* AmPeriodSelector.m */; };
+		11892A48191088AD00839813 /* AmPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A18191088AD00839813 /* AmPieChart.m */; };
+		11892A49191088AD00839813 /* AmRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1A191088AD00839813 /* AmRadarChart.m */; };
+		11892A4A191088AD00839813 /* AmRectangularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1C191088AD00839813 /* AmRectangularChart.m */; };
+		11892A4B191088AD00839813 /* AmSerialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1E191088AD00839813 /* AmSerialChart.m */; };
+		11892A4C191088AD00839813 /* AmSerialDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A20191088AD00839813 /* AmSerialDataItem.m */; };
+		11892A4D191088AD00839813 /* AmSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A22191088AD00839813 /* AmSlice.m */; };
+		11892A4E191088AD00839813 /* AmSlicedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A24191088AD00839813 /* AmSlicedChart.m */; };
+		11892A4F191088AD00839813 /* AmTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A26191088AD00839813 /* AmTitle.m */; };
+		11892A50191088AD00839813 /* AmTrendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A28191088AD00839813 /* AmTrendLine.m */; };
+		11892A51191088AD00839813 /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2A191088AD00839813 /* AmValueAxesSettings.m */; };
+		11892A52191088AD00839813 /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2C191088AD00839813 /* AmValueAxis.m */; };
+		11892A53191088AD00839813 /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2E191088AD00839813 /* AmXYChart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,12 +112,6 @@
 		1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		1151A4BC190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsLibraryTests.m; sourceTree = "<group>"; };
-		1151A4CC190E9E9E004D52EC /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAngularGauge.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		1151A4CD190E9E9E004D52EC /* AmAngularGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAngularGauge.m; sourceTree = "<group>"; };
-		1151A4CE190E9E9E004D52EC /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAxisBase.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		1151A4CF190E9E9E004D52EC /* AmAxisBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAxisBase.m; sourceTree = "<group>"; };
-		1151A4D0190E9E9E004D52EC /* AmBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmBalloon.h; sourceTree = "<group>"; };
-		1151A4D1190E9E9E004D52EC /* AmBalloon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmBalloon.m; sourceTree = "<group>"; };
 		1151A4D3190E9E9E004D52EC /* AmCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategories.h; sourceTree = "<group>"; };
 		1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONString.h"; sourceTree = "<group>"; };
 		1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONString.m"; sourceTree = "<group>"; };
@@ -125,46 +119,6 @@
 		1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; };
 		1151A4D8190E9E9E004D52EC /* NSString+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONString.h"; sourceTree = "<group>"; };
 		1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONString.m"; sourceTree = "<group>"; };
-		1151A4DA190E9E9E004D52EC /* AmCategoryAxesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategoryAxesSettings.h; sourceTree = "<group>"; };
-		1151A4DB190E9E9E004D52EC /* AmCategoryAxesSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCategoryAxesSettings.m; sourceTree = "<group>"; };
-		1151A4DC190E9E9E004D52EC /* AmCategoryAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategoryAxis.h; sourceTree = "<group>"; };
-		1151A4DD190E9E9E004D52EC /* AmCategoryAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCategoryAxis.m; sourceTree = "<group>"; };
-		1151A4DE190E9E9E004D52EC /* AmChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChart.h; sourceTree = "<group>"; };
-		1151A4DF190E9E9E004D52EC /* AmChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChart.m; sourceTree = "<group>"; };
-		1151A4E0190E9E9E004D52EC /* AmChartCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartCursor.h; sourceTree = "<group>"; };
-		1151A4E1190E9E9E004D52EC /* AmChartCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartCursor.m; sourceTree = "<group>"; };
-		1151A4E2190E9E9E004D52EC /* AmChartCursorSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartCursorSettings.h; sourceTree = "<group>"; };
-		1151A4E3190E9E9E004D52EC /* AmChartCursorSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartCursorSettings.m; sourceTree = "<group>"; };
-		1151A4E4190E9E9E004D52EC /* AmChartScrollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartScrollbar.h; sourceTree = "<group>"; };
-		1151A4E5190E9E9E004D52EC /* AmChartScrollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartScrollbar.m; sourceTree = "<group>"; };
-		1151A4E6190E9E9E004D52EC /* AmChartScrollbarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartScrollbarSettings.h; sourceTree = "<group>"; };
-		1151A4E7190E9E9E004D52EC /* AmChartScrollbarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartScrollbarSettings.m; sourceTree = "<group>"; };
-		1151A4E8190E9E9E004D52EC /* AmCoordinateChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCoordinateChart.h; sourceTree = "<group>"; };
-		1151A4E9190E9E9E004D52EC /* AmCoordinateChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCoordinateChart.m; sourceTree = "<group>"; };
-		1151A4EA190E9E9E004D52EC /* AmDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmDataSet.h; sourceTree = "<group>"; };
-		1151A4EB190E9E9E004D52EC /* AmDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmDataSet.m; sourceTree = "<group>"; };
-		1151A4EC190E9E9E004D52EC /* AmDataSetSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmDataSetSelector.h; sourceTree = "<group>"; };
-		1151A4ED190E9E9E004D52EC /* AmDataSetSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmDataSetSelector.m; sourceTree = "<group>"; };
-		1151A4EE190E9E9E004D52EC /* AmFunnelChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmFunnelChart.h; sourceTree = "<group>"; };
-		1151A4EF190E9E9E004D52EC /* AmFunnelChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmFunnelChart.m; sourceTree = "<group>"; };
-		1151A4F0190E9E9E004D52EC /* AmGaugeArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeArrow.h; sourceTree = "<group>"; };
-		1151A4F1190E9E9E004D52EC /* AmGaugeArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeArrow.m; sourceTree = "<group>"; };
-		1151A4F2190E9E9E004D52EC /* AmGaugeAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeAxis.h; sourceTree = "<group>"; };
-		1151A4F3190E9E9E004D52EC /* AmGaugeAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeAxis.m; sourceTree = "<group>"; };
-		1151A4F4190E9E9E004D52EC /* AmGaugeBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeBand.h; sourceTree = "<group>"; };
-		1151A4F5190E9E9E004D52EC /* AmGaugeBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeBand.m; sourceTree = "<group>"; };
-		1151A4F6190E9E9E004D52EC /* AmGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGraph.h; sourceTree = "<group>"; };
-		1151A4F7190E9E9E004D52EC /* AmGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGraph.m; sourceTree = "<group>"; };
-		1151A4F8190E9E9E004D52EC /* AmGraphDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGraphDataItem.h; sourceTree = "<group>"; };
-		1151A4F9190E9E9E004D52EC /* AmGraphDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGraphDataItem.m; sourceTree = "<group>"; };
-		1151A4FA190E9E9E004D52EC /* AmGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGuide.h; sourceTree = "<group>"; };
-		1151A4FB190E9E9E004D52EC /* AmGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGuide.m; sourceTree = "<group>"; };
-		1151A4FC190E9E9E004D52EC /* AmLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLabel.h; sourceTree = "<group>"; };
-		1151A4FD190E9E9E004D52EC /* AmLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLabel.m; sourceTree = "<group>"; };
-		1151A4FE190E9E9E004D52EC /* AmLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLegend.h; sourceTree = "<group>"; };
-		1151A4FF190E9E9E004D52EC /* AmLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegend.m; sourceTree = "<group>"; };
-		1151A500190E9E9E004D52EC /* AmLegendSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLegendSettings.h; sourceTree = "<group>"; };
-		1151A501190E9E9E004D52EC /* AmLegendSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegendSettings.m; sourceTree = "<group>"; };
 		1151A503190E9E9E004D52EC /* AmAreasSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AmAreasSettings.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		1151A504190E9E9E004D52EC /* AmAreasSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAreasSettings.m; sourceTree = "<group>"; };
 		1151A505190E9E9E004D52EC /* AmImagesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmImagesSettings.h; sourceTree = "<group>"; };
@@ -191,24 +145,6 @@
 		1151A51A190E9E9E004D52EC /* AmValueLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueLegend.m; sourceTree = "<group>"; };
 		1151A51B190E9E9E004D52EC /* AmZoomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmZoomControl.h; sourceTree = "<group>"; };
 		1151A51C190E9E9E004D52EC /* AmZoomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmZoomControl.m; sourceTree = "<group>"; };
-		1151A51D190E9E9E004D52EC /* AmPanelSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPanelSettings.h; sourceTree = "<group>"; };
-		1151A51E190E9E9E004D52EC /* AmPanelSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPanelSettings.m; sourceTree = "<group>"; };
-		1151A51F190E9E9E004D52EC /* AmPeriodSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPeriodSelector.h; sourceTree = "<group>"; };
-		1151A520190E9E9E004D52EC /* AmPeriodSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPeriodSelector.m; sourceTree = "<group>"; };
-		1151A521190E9E9E004D52EC /* AmPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPieChart.h; sourceTree = "<group>"; };
-		1151A522190E9E9E004D52EC /* AmPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPieChart.m; sourceTree = "<group>"; };
-		1151A523190E9E9E004D52EC /* AmRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmRadarChart.h; sourceTree = "<group>"; };
-		1151A524190E9E9E004D52EC /* AmRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmRadarChart.m; sourceTree = "<group>"; };
-		1151A525190E9E9E004D52EC /* AmRectangularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmRectangularChart.h; sourceTree = "<group>"; };
-		1151A526190E9E9E004D52EC /* AmRectangularChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmRectangularChart.m; sourceTree = "<group>"; };
-		1151A527190E9E9E004D52EC /* AmSerialChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSerialChart.h; sourceTree = "<group>"; };
-		1151A528190E9E9E004D52EC /* AmSerialChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSerialChart.m; sourceTree = "<group>"; };
-		1151A529190E9E9E004D52EC /* AmSerialDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSerialDataItem.h; sourceTree = "<group>"; };
-		1151A52A190E9E9E004D52EC /* AmSerialDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSerialDataItem.m; sourceTree = "<group>"; };
-		1151A52B190E9E9E004D52EC /* AmSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSlice.h; sourceTree = "<group>"; };
-		1151A52C190E9E9E004D52EC /* AmSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSlice.m; sourceTree = "<group>"; };
-		1151A52D190E9E9E004D52EC /* AmSlicedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSlicedChart.h; sourceTree = "<group>"; };
-		1151A52E190E9E9E004D52EC /* AmSlicedChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSlicedChart.m; sourceTree = "<group>"; };
 		1151A530190E9E9E004D52EC /* AmStockChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmStockChart.h; sourceTree = "<group>"; };
 		1151A531190E9E9E004D52EC /* AmStockChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmStockChart.m; sourceTree = "<group>"; };
 		1151A532190E9E9E004D52EC /* AmStockEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmStockEvent.h; sourceTree = "<group>"; };
@@ -221,21 +157,85 @@
 		1151A539190E9E9E004D52EC /* AmStockLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmStockLegend.m; sourceTree = "<group>"; };
 		1151A53A190E9E9E004D52EC /* AmStockPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmStockPanel.h; sourceTree = "<group>"; };
 		1151A53B190E9E9E004D52EC /* AmStockPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmStockPanel.m; sourceTree = "<group>"; };
-		1151A53C190E9E9E004D52EC /* AmTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTitle.h; sourceTree = "<group>"; };
-		1151A53D190E9E9E004D52EC /* AmTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTitle.m; sourceTree = "<group>"; };
-		1151A53E190E9E9E004D52EC /* AmTrendLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTrendLine.h; sourceTree = "<group>"; };
-		1151A53F190E9E9E004D52EC /* AmTrendLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTrendLine.m; sourceTree = "<group>"; };
-		1151A540190E9E9E004D52EC /* AmValueAxesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmValueAxesSettings.h; sourceTree = "<group>"; };
-		1151A541190E9E9E004D52EC /* AmValueAxesSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxesSettings.m; sourceTree = "<group>"; };
-		1151A542190E9E9E004D52EC /* AmValueAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmValueAxis.h; sourceTree = "<group>"; };
-		1151A543190E9E9E004D52EC /* AmValueAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxis.m; sourceTree = "<group>"; };
-		1151A544190E9E9E004D52EC /* AmXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmXYChart.h; sourceTree = "<group>"; };
-		1151A545190E9E9E004D52EC /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
 		11547464191007F80003E1F5 /* AmCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCharts.h; sourceTree = "<group>"; };
 		11547465191012790003E1F5 /* AmChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartView.h; sourceTree = "<group>"; };
 		11547466191012790003E1F5 /* AmChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartView.m; sourceTree = "<group>"; };
 		11547468191012940003E1F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		118929E019101C1800839813 /* AmChartsWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmChartsWeb; sourceTree = "<group>"; };
+		118929E5191088AD00839813 /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAngularGauge.h; sourceTree = "<group>"; };
+		118929E6191088AD00839813 /* AmAngularGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAngularGauge.m; sourceTree = "<group>"; };
+		118929E7191088AD00839813 /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAxisBase.h; sourceTree = "<group>"; };
+		118929E8191088AD00839813 /* AmAxisBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAxisBase.m; sourceTree = "<group>"; };
+		118929E9191088AD00839813 /* AmBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmBalloon.h; sourceTree = "<group>"; };
+		118929EA191088AD00839813 /* AmBalloon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmBalloon.m; sourceTree = "<group>"; };
+		118929EB191088AD00839813 /* AmCategoryAxesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategoryAxesSettings.h; sourceTree = "<group>"; };
+		118929EC191088AD00839813 /* AmCategoryAxesSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCategoryAxesSettings.m; sourceTree = "<group>"; };
+		118929ED191088AD00839813 /* AmCategoryAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategoryAxis.h; sourceTree = "<group>"; };
+		118929EE191088AD00839813 /* AmCategoryAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCategoryAxis.m; sourceTree = "<group>"; };
+		118929EF191088AD00839813 /* AmChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChart.h; sourceTree = "<group>"; };
+		118929F0191088AD00839813 /* AmChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChart.m; sourceTree = "<group>"; };
+		118929F1191088AD00839813 /* AmChartCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartCursor.h; sourceTree = "<group>"; };
+		118929F2191088AD00839813 /* AmChartCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartCursor.m; sourceTree = "<group>"; };
+		118929F3191088AD00839813 /* AmChartCursorSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartCursorSettings.h; sourceTree = "<group>"; };
+		118929F4191088AD00839813 /* AmChartCursorSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartCursorSettings.m; sourceTree = "<group>"; };
+		118929F5191088AD00839813 /* AmChartScrollbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartScrollbar.h; sourceTree = "<group>"; };
+		118929F6191088AD00839813 /* AmChartScrollbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartScrollbar.m; sourceTree = "<group>"; };
+		118929F7191088AD00839813 /* AmChartScrollbarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartScrollbarSettings.h; sourceTree = "<group>"; };
+		118929F8191088AD00839813 /* AmChartScrollbarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartScrollbarSettings.m; sourceTree = "<group>"; };
+		118929F9191088AD00839813 /* AmCoordinateChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCoordinateChart.h; sourceTree = "<group>"; };
+		118929FA191088AD00839813 /* AmCoordinateChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmCoordinateChart.m; sourceTree = "<group>"; };
+		118929FB191088AD00839813 /* AmDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmDataSet.h; sourceTree = "<group>"; };
+		118929FC191088AD00839813 /* AmDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmDataSet.m; sourceTree = "<group>"; };
+		118929FD191088AD00839813 /* AmDataSetSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmDataSetSelector.h; sourceTree = "<group>"; };
+		118929FE191088AD00839813 /* AmDataSetSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmDataSetSelector.m; sourceTree = "<group>"; };
+		118929FF191088AD00839813 /* AmFunnelChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmFunnelChart.h; sourceTree = "<group>"; };
+		11892A00191088AD00839813 /* AmFunnelChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmFunnelChart.m; sourceTree = "<group>"; };
+		11892A01191088AD00839813 /* AmGaugeArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeArrow.h; sourceTree = "<group>"; };
+		11892A02191088AD00839813 /* AmGaugeArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeArrow.m; sourceTree = "<group>"; };
+		11892A03191088AD00839813 /* AmGaugeAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeAxis.h; sourceTree = "<group>"; };
+		11892A04191088AD00839813 /* AmGaugeAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeAxis.m; sourceTree = "<group>"; };
+		11892A05191088AD00839813 /* AmGaugeBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGaugeBand.h; sourceTree = "<group>"; };
+		11892A06191088AD00839813 /* AmGaugeBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGaugeBand.m; sourceTree = "<group>"; };
+		11892A07191088AD00839813 /* AmGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGraph.h; sourceTree = "<group>"; };
+		11892A08191088AD00839813 /* AmGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGraph.m; sourceTree = "<group>"; };
+		11892A09191088AD00839813 /* AmGraphDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGraphDataItem.h; sourceTree = "<group>"; };
+		11892A0A191088AD00839813 /* AmGraphDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGraphDataItem.m; sourceTree = "<group>"; };
+		11892A0B191088AD00839813 /* AmGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGuide.h; sourceTree = "<group>"; };
+		11892A0C191088AD00839813 /* AmGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGuide.m; sourceTree = "<group>"; };
+		11892A0D191088AD00839813 /* AmLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLabel.h; sourceTree = "<group>"; };
+		11892A0E191088AD00839813 /* AmLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLabel.m; sourceTree = "<group>"; };
+		11892A0F191088AD00839813 /* AmLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLegend.h; sourceTree = "<group>"; };
+		11892A10191088AD00839813 /* AmLegend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegend.m; sourceTree = "<group>"; };
+		11892A11191088AD00839813 /* AmLegendSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmLegendSettings.h; sourceTree = "<group>"; };
+		11892A12191088AD00839813 /* AmLegendSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmLegendSettings.m; sourceTree = "<group>"; };
+		11892A13191088AD00839813 /* AmPanelSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPanelSettings.h; sourceTree = "<group>"; };
+		11892A14191088AD00839813 /* AmPanelSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPanelSettings.m; sourceTree = "<group>"; };
+		11892A15191088AD00839813 /* AmPeriodSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPeriodSelector.h; sourceTree = "<group>"; };
+		11892A16191088AD00839813 /* AmPeriodSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPeriodSelector.m; sourceTree = "<group>"; };
+		11892A17191088AD00839813 /* AmPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPieChart.h; sourceTree = "<group>"; };
+		11892A18191088AD00839813 /* AmPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPieChart.m; sourceTree = "<group>"; };
+		11892A19191088AD00839813 /* AmRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmRadarChart.h; sourceTree = "<group>"; };
+		11892A1A191088AD00839813 /* AmRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmRadarChart.m; sourceTree = "<group>"; };
+		11892A1B191088AD00839813 /* AmRectangularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmRectangularChart.h; sourceTree = "<group>"; };
+		11892A1C191088AD00839813 /* AmRectangularChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmRectangularChart.m; sourceTree = "<group>"; };
+		11892A1D191088AD00839813 /* AmSerialChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSerialChart.h; sourceTree = "<group>"; };
+		11892A1E191088AD00839813 /* AmSerialChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSerialChart.m; sourceTree = "<group>"; };
+		11892A1F191088AD00839813 /* AmSerialDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSerialDataItem.h; sourceTree = "<group>"; };
+		11892A20191088AD00839813 /* AmSerialDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSerialDataItem.m; sourceTree = "<group>"; };
+		11892A21191088AD00839813 /* AmSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSlice.h; sourceTree = "<group>"; };
+		11892A22191088AD00839813 /* AmSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSlice.m; sourceTree = "<group>"; };
+		11892A23191088AD00839813 /* AmSlicedChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSlicedChart.h; sourceTree = "<group>"; };
+		11892A24191088AD00839813 /* AmSlicedChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSlicedChart.m; sourceTree = "<group>"; };
+		11892A25191088AD00839813 /* AmTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTitle.h; sourceTree = "<group>"; };
+		11892A26191088AD00839813 /* AmTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTitle.m; sourceTree = "<group>"; };
+		11892A27191088AD00839813 /* AmTrendLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTrendLine.h; sourceTree = "<group>"; };
+		11892A28191088AD00839813 /* AmTrendLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTrendLine.m; sourceTree = "<group>"; };
+		11892A29191088AD00839813 /* AmValueAxesSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmValueAxesSettings.h; sourceTree = "<group>"; };
+		11892A2A191088AD00839813 /* AmValueAxesSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxesSettings.m; sourceTree = "<group>"; };
+		11892A2B191088AD00839813 /* AmValueAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmValueAxis.h; sourceTree = "<group>"; };
+		11892A2C191088AD00839813 /* AmValueAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxis.m; sourceTree = "<group>"; };
+		11892A2D191088AD00839813 /* AmXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmXYChart.h; sourceTree = "<group>"; };
+		11892A2E191088AD00839813 /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,7 +348,7 @@
 			children = (
 				11547464191007F80003E1F5 /* AmCharts.h */,
 				1151A4D2190E9E9E004D52EC /* AmCategories */,
-				115474621910023F0003E1F5 /* Charts */,
+				118929E4191088AD00839813 /* Charts */,
 				1151A502190E9E9E004D52EC /* Maps */,
 				1151A52F190E9E9E004D52EC /* Stock Charts */,
 				11547465191012790003E1F5 /* AmChartView.h */,
@@ -426,85 +426,85 @@
 			path = AmStocks;
 			sourceTree = "<group>";
 		};
-		115474621910023F0003E1F5 /* Charts */ = {
+		118929E4191088AD00839813 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				1151A4CC190E9E9E004D52EC /* AmAngularGauge.h */,
-				1151A4CD190E9E9E004D52EC /* AmAngularGauge.m */,
-				1151A4CE190E9E9E004D52EC /* AmAxisBase.h */,
-				1151A4CF190E9E9E004D52EC /* AmAxisBase.m */,
-				1151A4D0190E9E9E004D52EC /* AmBalloon.h */,
-				1151A4D1190E9E9E004D52EC /* AmBalloon.m */,
-				1151A4DA190E9E9E004D52EC /* AmCategoryAxesSettings.h */,
-				1151A4DB190E9E9E004D52EC /* AmCategoryAxesSettings.m */,
-				1151A4DC190E9E9E004D52EC /* AmCategoryAxis.h */,
-				1151A4DD190E9E9E004D52EC /* AmCategoryAxis.m */,
-				1151A4DE190E9E9E004D52EC /* AmChart.h */,
-				1151A4DF190E9E9E004D52EC /* AmChart.m */,
-				1151A4E0190E9E9E004D52EC /* AmChartCursor.h */,
-				1151A4E1190E9E9E004D52EC /* AmChartCursor.m */,
-				1151A4E2190E9E9E004D52EC /* AmChartCursorSettings.h */,
-				1151A4E3190E9E9E004D52EC /* AmChartCursorSettings.m */,
-				1151A4E4190E9E9E004D52EC /* AmChartScrollbar.h */,
-				1151A4E5190E9E9E004D52EC /* AmChartScrollbar.m */,
-				1151A4E6190E9E9E004D52EC /* AmChartScrollbarSettings.h */,
-				1151A4E7190E9E9E004D52EC /* AmChartScrollbarSettings.m */,
-				1151A4E8190E9E9E004D52EC /* AmCoordinateChart.h */,
-				1151A4E9190E9E9E004D52EC /* AmCoordinateChart.m */,
-				1151A4EA190E9E9E004D52EC /* AmDataSet.h */,
-				1151A4EB190E9E9E004D52EC /* AmDataSet.m */,
-				1151A4EC190E9E9E004D52EC /* AmDataSetSelector.h */,
-				1151A4ED190E9E9E004D52EC /* AmDataSetSelector.m */,
-				1151A4EE190E9E9E004D52EC /* AmFunnelChart.h */,
-				1151A4EF190E9E9E004D52EC /* AmFunnelChart.m */,
-				1151A4F0190E9E9E004D52EC /* AmGaugeArrow.h */,
-				1151A4F1190E9E9E004D52EC /* AmGaugeArrow.m */,
-				1151A4F2190E9E9E004D52EC /* AmGaugeAxis.h */,
-				1151A4F3190E9E9E004D52EC /* AmGaugeAxis.m */,
-				1151A4F4190E9E9E004D52EC /* AmGaugeBand.h */,
-				1151A4F5190E9E9E004D52EC /* AmGaugeBand.m */,
-				1151A4F6190E9E9E004D52EC /* AmGraph.h */,
-				1151A4F7190E9E9E004D52EC /* AmGraph.m */,
-				1151A4F8190E9E9E004D52EC /* AmGraphDataItem.h */,
-				1151A4F9190E9E9E004D52EC /* AmGraphDataItem.m */,
-				1151A4FA190E9E9E004D52EC /* AmGuide.h */,
-				1151A4FB190E9E9E004D52EC /* AmGuide.m */,
-				1151A4FC190E9E9E004D52EC /* AmLabel.h */,
-				1151A4FD190E9E9E004D52EC /* AmLabel.m */,
-				1151A4FE190E9E9E004D52EC /* AmLegend.h */,
-				1151A4FF190E9E9E004D52EC /* AmLegend.m */,
-				1151A500190E9E9E004D52EC /* AmLegendSettings.h */,
-				1151A501190E9E9E004D52EC /* AmLegendSettings.m */,
-				1151A51D190E9E9E004D52EC /* AmPanelSettings.h */,
-				1151A51E190E9E9E004D52EC /* AmPanelSettings.m */,
-				1151A51F190E9E9E004D52EC /* AmPeriodSelector.h */,
-				1151A520190E9E9E004D52EC /* AmPeriodSelector.m */,
-				1151A521190E9E9E004D52EC /* AmPieChart.h */,
-				1151A522190E9E9E004D52EC /* AmPieChart.m */,
-				1151A523190E9E9E004D52EC /* AmRadarChart.h */,
-				1151A524190E9E9E004D52EC /* AmRadarChart.m */,
-				1151A525190E9E9E004D52EC /* AmRectangularChart.h */,
-				1151A526190E9E9E004D52EC /* AmRectangularChart.m */,
-				1151A527190E9E9E004D52EC /* AmSerialChart.h */,
-				1151A528190E9E9E004D52EC /* AmSerialChart.m */,
-				1151A529190E9E9E004D52EC /* AmSerialDataItem.h */,
-				1151A52A190E9E9E004D52EC /* AmSerialDataItem.m */,
-				1151A52B190E9E9E004D52EC /* AmSlice.h */,
-				1151A52C190E9E9E004D52EC /* AmSlice.m */,
-				1151A52D190E9E9E004D52EC /* AmSlicedChart.h */,
-				1151A52E190E9E9E004D52EC /* AmSlicedChart.m */,
-				1151A53C190E9E9E004D52EC /* AmTitle.h */,
-				1151A53D190E9E9E004D52EC /* AmTitle.m */,
-				1151A53E190E9E9E004D52EC /* AmTrendLine.h */,
-				1151A53F190E9E9E004D52EC /* AmTrendLine.m */,
-				1151A540190E9E9E004D52EC /* AmValueAxesSettings.h */,
-				1151A541190E9E9E004D52EC /* AmValueAxesSettings.m */,
-				1151A542190E9E9E004D52EC /* AmValueAxis.h */,
-				1151A543190E9E9E004D52EC /* AmValueAxis.m */,
-				1151A544190E9E9E004D52EC /* AmXYChart.h */,
-				1151A545190E9E9E004D52EC /* AmXYChart.m */,
+				118929E5191088AD00839813 /* AmAngularGauge.h */,
+				118929E6191088AD00839813 /* AmAngularGauge.m */,
+				118929E7191088AD00839813 /* AmAxisBase.h */,
+				118929E8191088AD00839813 /* AmAxisBase.m */,
+				118929E9191088AD00839813 /* AmBalloon.h */,
+				118929EA191088AD00839813 /* AmBalloon.m */,
+				118929EB191088AD00839813 /* AmCategoryAxesSettings.h */,
+				118929EC191088AD00839813 /* AmCategoryAxesSettings.m */,
+				118929ED191088AD00839813 /* AmCategoryAxis.h */,
+				118929EE191088AD00839813 /* AmCategoryAxis.m */,
+				118929EF191088AD00839813 /* AmChart.h */,
+				118929F0191088AD00839813 /* AmChart.m */,
+				118929F1191088AD00839813 /* AmChartCursor.h */,
+				118929F2191088AD00839813 /* AmChartCursor.m */,
+				118929F3191088AD00839813 /* AmChartCursorSettings.h */,
+				118929F4191088AD00839813 /* AmChartCursorSettings.m */,
+				118929F5191088AD00839813 /* AmChartScrollbar.h */,
+				118929F6191088AD00839813 /* AmChartScrollbar.m */,
+				118929F7191088AD00839813 /* AmChartScrollbarSettings.h */,
+				118929F8191088AD00839813 /* AmChartScrollbarSettings.m */,
+				118929F9191088AD00839813 /* AmCoordinateChart.h */,
+				118929FA191088AD00839813 /* AmCoordinateChart.m */,
+				118929FB191088AD00839813 /* AmDataSet.h */,
+				118929FC191088AD00839813 /* AmDataSet.m */,
+				118929FD191088AD00839813 /* AmDataSetSelector.h */,
+				118929FE191088AD00839813 /* AmDataSetSelector.m */,
+				118929FF191088AD00839813 /* AmFunnelChart.h */,
+				11892A00191088AD00839813 /* AmFunnelChart.m */,
+				11892A01191088AD00839813 /* AmGaugeArrow.h */,
+				11892A02191088AD00839813 /* AmGaugeArrow.m */,
+				11892A03191088AD00839813 /* AmGaugeAxis.h */,
+				11892A04191088AD00839813 /* AmGaugeAxis.m */,
+				11892A05191088AD00839813 /* AmGaugeBand.h */,
+				11892A06191088AD00839813 /* AmGaugeBand.m */,
+				11892A07191088AD00839813 /* AmGraph.h */,
+				11892A08191088AD00839813 /* AmGraph.m */,
+				11892A09191088AD00839813 /* AmGraphDataItem.h */,
+				11892A0A191088AD00839813 /* AmGraphDataItem.m */,
+				11892A0B191088AD00839813 /* AmGuide.h */,
+				11892A0C191088AD00839813 /* AmGuide.m */,
+				11892A0D191088AD00839813 /* AmLabel.h */,
+				11892A0E191088AD00839813 /* AmLabel.m */,
+				11892A0F191088AD00839813 /* AmLegend.h */,
+				11892A10191088AD00839813 /* AmLegend.m */,
+				11892A11191088AD00839813 /* AmLegendSettings.h */,
+				11892A12191088AD00839813 /* AmLegendSettings.m */,
+				11892A13191088AD00839813 /* AmPanelSettings.h */,
+				11892A14191088AD00839813 /* AmPanelSettings.m */,
+				11892A15191088AD00839813 /* AmPeriodSelector.h */,
+				11892A16191088AD00839813 /* AmPeriodSelector.m */,
+				11892A17191088AD00839813 /* AmPieChart.h */,
+				11892A18191088AD00839813 /* AmPieChart.m */,
+				11892A19191088AD00839813 /* AmRadarChart.h */,
+				11892A1A191088AD00839813 /* AmRadarChart.m */,
+				11892A1B191088AD00839813 /* AmRectangularChart.h */,
+				11892A1C191088AD00839813 /* AmRectangularChart.m */,
+				11892A1D191088AD00839813 /* AmSerialChart.h */,
+				11892A1E191088AD00839813 /* AmSerialChart.m */,
+				11892A1F191088AD00839813 /* AmSerialDataItem.h */,
+				11892A20191088AD00839813 /* AmSerialDataItem.m */,
+				11892A21191088AD00839813 /* AmSlice.h */,
+				11892A22191088AD00839813 /* AmSlice.m */,
+				11892A23191088AD00839813 /* AmSlicedChart.h */,
+				11892A24191088AD00839813 /* AmSlicedChart.m */,
+				11892A25191088AD00839813 /* AmTitle.h */,
+				11892A26191088AD00839813 /* AmTitle.m */,
+				11892A27191088AD00839813 /* AmTrendLine.h */,
+				11892A28191088AD00839813 /* AmTrendLine.m */,
+				11892A29191088AD00839813 /* AmValueAxesSettings.h */,
+				11892A2A191088AD00839813 /* AmValueAxesSettings.m */,
+				11892A2B191088AD00839813 /* AmValueAxis.h */,
+				11892A2C191088AD00839813 /* AmValueAxis.m */,
+				11892A2D191088AD00839813 /* AmXYChart.h */,
+				11892A2E191088AD00839813 /* AmXYChart.m */,
 			);
-			name = Charts;
+			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,68 +606,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1151A552190E9E9E004D52EC /* AmChartScrollbarSettings.m in Sources */,
-				1151A550190E9E9E004D52EC /* AmChartCursorSettings.m in Sources */,
+				11892A46191088AD00839813 /* AmPanelSettings.m in Sources */,
+				11892A33191088AD00839813 /* AmCategoryAxis.m in Sources */,
+				11892A44191088AD00839813 /* AmLegend.m in Sources */,
 				1151A568190E9E9E004D52EC /* AmMapObject.m in Sources */,
-				1151A57C190E9E9E004D52EC /* AmTitle.m in Sources */,
 				1151A566190E9E9E004D52EC /* AmMapImage.m in Sources */,
-				1151A572190E9E9E004D52EC /* AmSerialChart.m in Sources */,
-				1151A57E190E9E9E004D52EC /* AmValueAxesSettings.m in Sources */,
+				11892A51191088AD00839813 /* AmValueAxesSettings.m in Sources */,
+				11892A3D191088AD00839813 /* AmGaugeArrow.m in Sources */,
+				11892A4F191088AD00839813 /* AmTitle.m in Sources */,
 				1151A561190E9E9E004D52EC /* AmImagesSettings.m in Sources */,
-				1151A55D190E9E9E004D52EC /* AmLabel.m in Sources */,
-				1151A54F190E9E9E004D52EC /* AmChartCursor.m in Sources */,
-				1151A557190E9E9E004D52EC /* AmGaugeArrow.m in Sources */,
 				11547467191012790003E1F5 /* AmChartView.m in Sources */,
+				11892A40191088AD00839813 /* AmGraph.m in Sources */,
+				11892A3F191088AD00839813 /* AmGaugeBand.m in Sources */,
+				11892A38191088AD00839813 /* AmChartScrollbarSettings.m in Sources */,
+				11892A41191088AD00839813 /* AmGraphDataItem.m in Sources */,
 				1151A56C190E9E9E004D52EC /* AmZoomControl.m in Sources */,
-				1151A54D190E9E9E004D52EC /* AmCategoryAxis.m in Sources */,
-				1151A55E190E9E9E004D52EC /* AmLegend.m in Sources */,
-				1151A55F190E9E9E004D52EC /* AmLegendSettings.m in Sources */,
+				11892A53191088AD00839813 /* AmXYChart.m in Sources */,
 				1151A578190E9E9E004D52EC /* AmStockEventSettings.m in Sources */,
-				1151A55A190E9E9E004D52EC /* AmGraph.m in Sources */,
-				1151A551190E9E9E004D52EC /* AmChartScrollbar.m in Sources */,
+				11892A4C191088AD00839813 /* AmSerialDataItem.m in Sources */,
 				1151A562190E9E9E004D52EC /* AmLinesSettings.m in Sources */,
-				1151A55C190E9E9E004D52EC /* AmGuide.m in Sources */,
-				1151A56E190E9E9E004D52EC /* AmPeriodSelector.m in Sources */,
+				11892A35191088AD00839813 /* AmChartCursor.m in Sources */,
+				11892A4E191088AD00839813 /* AmSlicedChart.m in Sources */,
+				11892A39191088AD00839813 /* AmCoordinateChart.m in Sources */,
+				11892A4D191088AD00839813 /* AmSlice.m in Sources */,
+				11892A36191088AD00839813 /* AmChartCursorSettings.m in Sources */,
 				1151A57B190E9E9E004D52EC /* AmStockPanel.m in Sources */,
+				11892A37191088AD00839813 /* AmChartScrollbar.m in Sources */,
 				1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */,
 				1151A563190E9E9E004D52EC /* AmMap.m in Sources */,
-				1151A573190E9E9E004D52EC /* AmSerialDataItem.m in Sources */,
-				1151A553190E9E9E004D52EC /* AmCoordinateChart.m in Sources */,
 				1151A569190E9E9E004D52EC /* AmObjectList.m in Sources */,
+				11892A4A191088AD00839813 /* AmRectangularChart.m in Sources */,
 				1151A54A190E9E9E004D52EC /* NSDictionary+JSONString.m in Sources */,
-				1151A57D190E9E9E004D52EC /* AmTrendLine.m in Sources */,
-				1151A56D190E9E9E004D52EC /* AmPanelSettings.m in Sources */,
-				1151A574190E9E9E004D52EC /* AmSlice.m in Sources */,
-				1151A554190E9E9E004D52EC /* AmDataSet.m in Sources */,
-				1151A547190E9E9E004D52EC /* AmAxisBase.m in Sources */,
-				1151A546190E9E9E004D52EC /* AmAngularGauge.m in Sources */,
-				1151A580190E9E9E004D52EC /* AmXYChart.m in Sources */,
+				11892A34191088AD00839813 /* AmChart.m in Sources */,
 				1151A57A190E9E9E004D52EC /* AmStockLegend.m in Sources */,
-				1151A558190E9E9E004D52EC /* AmGaugeAxis.m in Sources */,
-				1151A575190E9E9E004D52EC /* AmSlicedChart.m in Sources */,
-				1151A571190E9E9E004D52EC /* AmRectangularChart.m in Sources */,
 				1151A54B190E9E9E004D52EC /* NSString+JSONString.m in Sources */,
 				1151A549190E9E9E004D52EC /* NSArray+JSONString.m in Sources */,
+				11892A52191088AD00839813 /* AmValueAxis.m in Sources */,
+				11892A30191088AD00839813 /* AmAxisBase.m in Sources */,
+				11892A48191088AD00839813 /* AmPieChart.m in Sources */,
+				11892A42191088AD00839813 /* AmGuide.m in Sources */,
+				11892A4B191088AD00839813 /* AmSerialChart.m in Sources */,
 				1151A4A1190E9E5A004D52EC /* main.m in Sources */,
-				1151A559190E9E9E004D52EC /* AmGaugeBand.m in Sources */,
+				11892A50191088AD00839813 /* AmTrendLine.m in Sources */,
+				11892A3A191088AD00839813 /* AmDataSet.m in Sources */,
 				1151A56B190E9E9E004D52EC /* AmValueLegend.m in Sources */,
 				1151A560190E9E9E004D52EC /* AmAreasSettings.m in Sources */,
+				11892A31191088AD00839813 /* AmBalloon.m in Sources */,
+				11892A3E191088AD00839813 /* AmGaugeAxis.m in Sources */,
+				11892A43191088AD00839813 /* AmLabel.m in Sources */,
 				1151A579190E9E9E004D52EC /* AmStockGraph.m in Sources */,
-				1151A56F190E9E9E004D52EC /* AmPieChart.m in Sources */,
-				1151A570190E9E9E004D52EC /* AmRadarChart.m in Sources */,
-				1151A556190E9E9E004D52EC /* AmFunnelChart.m in Sources */,
 				1151A577190E9E9E004D52EC /* AmStockEvent.m in Sources */,
 				1151A56A190E9E9E004D52EC /* AmSmallMap.m in Sources */,
-				1151A548190E9E9E004D52EC /* AmBalloon.m in Sources */,
 				1151A564190E9E9E004D52EC /* AmMapArea.m in Sources */,
-				1151A57F190E9E9E004D52EC /* AmValueAxis.m in Sources */,
-				1151A555190E9E9E004D52EC /* AmDataSetSelector.m in Sources */,
+				11892A3C191088AD00839813 /* AmFunnelChart.m in Sources */,
+				11892A49191088AD00839813 /* AmRadarChart.m in Sources */,
 				1151A565190E9E9E004D52EC /* AmMapData.m in Sources */,
-				1151A55B190E9E9E004D52EC /* AmGraphDataItem.m in Sources */,
-				1151A54C190E9E9E004D52EC /* AmCategoryAxesSettings.m in Sources */,
+				11892A3B191088AD00839813 /* AmDataSetSelector.m in Sources */,
+				11892A45191088AD00839813 /* AmLegendSettings.m in Sources */,
 				1151A567190E9E9E004D52EC /* AmMapLine.m in Sources */,
+				11892A2F191088AD00839813 /* AmAngularGauge.m in Sources */,
 				1151A576190E9E9E004D52EC /* AmStockChart.m in Sources */,
-				1151A54E190E9E9E004D52EC /* AmChart.m in Sources */,
+				11892A32191088AD00839813 /* AmCategoryAxesSettings.m in Sources */,
+				11892A47191088AD00839813 /* AmPeriodSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
