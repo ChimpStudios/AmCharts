@@ -30,7 +30,7 @@
     _context[@"amChartView"] = self;
     
     // load the chart.html page in preparation for future charting needs
-    NSString *localFilepath = [[NSBundle mainBundle] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+    NSString *localFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
     NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
     [self.mainFrame loadRequest:request];
