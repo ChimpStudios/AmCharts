@@ -7,6 +7,7 @@
 //
 
 #import "AmChartView.h"
+#import "AmCharts.h"
 
 @interface AmChartView()
 @property (strong) JSContext *context;

@@ -7,10 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <WebKit/WebKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
-
-#import "AmCharts.h"
+#import <WebKit/WebKit.h>
 
 @protocol AmChartViewExport <JSExport>
 -(void)amChartsAreReady;

@@ -839,8 +839,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 110386941912881900F917CE /* Build configuration list for PBXNativeTarget "AmCharts" */;
 			buildPhases = (
-				1103866D1912881900F917CE /* Sources */,
 				1103866E1912881900F917CE /* Frameworks */,
+				1103866D1912881900F917CE /* Sources */,
 				1103866F1912881900F917CE /* Headers */,
 				110386701912881900F917CE /* Resources */,
 			);
@@ -1369,6 +1369,7 @@
 				110386911912881900F917CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		110386951912881900F917CE /* Build configuration list for PBXNativeTarget "AmChartsTests" */ = {
 			isa = XCConfigurationList;
@@ -1377,6 +1378,7 @@
 				110386931912881900F917CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */ = {
 			isa = XCConfigurationList;
