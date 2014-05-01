@@ -192,6 +192,7 @@
 		1103878319128A5200F917CE /* AmChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11547465191012790003E1F5 /* AmChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1103878419128A5200F917CE /* AmChartView.m in Headers */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
+		110387FC1912B83400F917CE /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
 		1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		1151A49F190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A49D190E9E5A004D52EC /* InfoPlist.strings */; };
 		1151A4A1190E9E5A004D52EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A0190E9E5A004D52EC /* main.m */; };
@@ -950,6 +951,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110387FC1912B83400F917CE /* AmChartsWeb in Resources */,
 				110386791912881900F917CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
