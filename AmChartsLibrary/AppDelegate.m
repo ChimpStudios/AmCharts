@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AmCharts.h"
+#import <AmCharts/AmCharts.h>
 
 @implementation AppDelegate
 
@@ -98,10 +98,12 @@
                                 @{@"period" : @"YYYY", @"count" : @(1), @"label" : @"1 year"},
                                 @{@"period" : @"YTD", @"label" : @"YTD"}] mutableCopy];
     stockChart.periodSelector = periodSelector;
+    
+    [self.chartView setChart:stockChart];
+    [self.chartView drawChart];
     */
-    //[self.chartView setChart:stockChart];
-    //[self.chartView drawChart];
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
+    
     
     AmPieChart *pieChart = [[AmPieChart alloc] init];
     pieChart.type = @"pie";
@@ -118,6 +120,7 @@
    // NSLog(@"\n%@", [pieChart javascriptRepresentation]);
     [self.chartView setChart:pieChart];
     [self.chartView drawChart];
+    
 }
 
 @end

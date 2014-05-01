@@ -7,6 +7,191 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110386731912881900F917CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
+		110386791912881900F917CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110386771912881900F917CE /* InfoPlist.strings */; };
+		110386831912881900F917CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A4B3190E9E5A004D52EC /* XCTest.framework */; };
+		110386841912881900F917CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
+		110386871912881900F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
+		1103868D1912881900F917CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1103868B1912881900F917CE /* InfoPlist.strings */; };
+		1103868F1912881900F917CE /* AmChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1103868E1912881900F917CE /* AmChartsTests.m */; };
+		110386991912894D00F917CE /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
+		1103869B1912894D00F917CE /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
+		1103869D1912894D00F917CE /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
+		1103869F1912894D00F917CE /* AmAngularGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E6191088AD00839813 /* AmAngularGauge.m */; };
+		110386A11912894D00F917CE /* AmAxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E8191088AD00839813 /* AmAxisBase.m */; };
+		110386A31912894D00F917CE /* AmBalloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EA191088AD00839813 /* AmBalloon.m */; };
+		110386A51912894D00F917CE /* AmCategoryAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EC191088AD00839813 /* AmCategoryAxesSettings.m */; };
+		110386A71912894D00F917CE /* AmCategoryAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EE191088AD00839813 /* AmCategoryAxis.m */; };
+		110386A91912894D00F917CE /* AmChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F0191088AD00839813 /* AmChart.m */; };
+		110386AB1912894D00F917CE /* AmChartCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F2191088AD00839813 /* AmChartCursor.m */; };
+		110386AD1912894D00F917CE /* AmChartCursorSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F4191088AD00839813 /* AmChartCursorSettings.m */; };
+		110386AF1912894D00F917CE /* AmChartScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F6191088AD00839813 /* AmChartScrollbar.m */; };
+		110386B11912894D00F917CE /* AmChartScrollbarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F8191088AD00839813 /* AmChartScrollbarSettings.m */; };
+		110386B31912894D00F917CE /* AmCoordinateChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FA191088AD00839813 /* AmCoordinateChart.m */; };
+		110386B51912894D00F917CE /* AmDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FC191088AD00839813 /* AmDataSet.m */; };
+		110386B71912894D00F917CE /* AmDataSetSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FE191088AD00839813 /* AmDataSetSelector.m */; };
+		110386B91912894D00F917CE /* AmFunnelChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A00191088AD00839813 /* AmFunnelChart.m */; };
+		110386BB1912894D00F917CE /* AmGaugeArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A02191088AD00839813 /* AmGaugeArrow.m */; };
+		110386BD1912894D00F917CE /* AmGaugeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A04191088AD00839813 /* AmGaugeAxis.m */; };
+		110386BF1912894D00F917CE /* AmGaugeBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A06191088AD00839813 /* AmGaugeBand.m */; };
+		110386C11912894D00F917CE /* AmGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A08191088AD00839813 /* AmGraph.m */; };
+		110386C31912894D00F917CE /* AmGraphDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0A191088AD00839813 /* AmGraphDataItem.m */; };
+		110386C51912894D00F917CE /* AmGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0C191088AD00839813 /* AmGuide.m */; };
+		110386C71912894D00F917CE /* AmLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0E191088AD00839813 /* AmLabel.m */; };
+		110386C91912894D00F917CE /* AmLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A10191088AD00839813 /* AmLegend.m */; };
+		110386CB1912894D00F917CE /* AmLegendSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A12191088AD00839813 /* AmLegendSettings.m */; };
+		110386CD1912894D00F917CE /* AmPanelSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A14191088AD00839813 /* AmPanelSettings.m */; };
+		110386CF1912894D00F917CE /* AmPeriodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A16191088AD00839813 /* AmPeriodSelector.m */; };
+		110386D11912894D00F917CE /* AmPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A18191088AD00839813 /* AmPieChart.m */; };
+		110386D31912894D00F917CE /* AmRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1A191088AD00839813 /* AmRadarChart.m */; };
+		110386D51912894D00F917CE /* AmRectangularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1C191088AD00839813 /* AmRectangularChart.m */; };
+		110386D71912894D00F917CE /* AmSerialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1E191088AD00839813 /* AmSerialChart.m */; };
+		110386D91912894D00F917CE /* AmSerialDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A20191088AD00839813 /* AmSerialDataItem.m */; };
+		110386DB1912894D00F917CE /* AmSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A22191088AD00839813 /* AmSlice.m */; };
+		110386DD1912894D00F917CE /* AmSlicedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A24191088AD00839813 /* AmSlicedChart.m */; };
+		110386DF1912894D00F917CE /* AmTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A26191088AD00839813 /* AmTitle.m */; };
+		110386E11912894D00F917CE /* AmTrendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A28191088AD00839813 /* AmTrendLine.m */; };
+		110386E31912894D00F917CE /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2A191088AD00839813 /* AmValueAxesSettings.m */; };
+		110386E51912894D00F917CE /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2C191088AD00839813 /* AmValueAxis.m */; };
+		110386E71912894D00F917CE /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2E191088AD00839813 /* AmXYChart.m */; };
+		110386E91912894D00F917CE /* AmAreasSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A504190E9E9E004D52EC /* AmAreasSettings.m */; };
+		110386EB1912894D00F917CE /* AmImagesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A506190E9E9E004D52EC /* AmImagesSettings.m */; };
+		110386ED1912894D00F917CE /* AmLinesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A508190E9E9E004D52EC /* AmLinesSettings.m */; };
+		110386EF1912894D00F917CE /* AmMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50A190E9E9E004D52EC /* AmMap.m */; };
+		110386F11912894D00F917CE /* AmMapArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50C190E9E9E004D52EC /* AmMapArea.m */; };
+		110386F31912894D00F917CE /* AmMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50E190E9E9E004D52EC /* AmMapData.m */; };
+		110386F51912894D00F917CE /* AmMapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A510190E9E9E004D52EC /* AmMapImage.m */; };
+		110386F71912894D00F917CE /* AmMapLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A512190E9E9E004D52EC /* AmMapLine.m */; };
+		110386F91912894D00F917CE /* AmMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A514190E9E9E004D52EC /* AmMapObject.m */; };
+		110386FB1912894D00F917CE /* AmObjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A516190E9E9E004D52EC /* AmObjectList.m */; };
+		110386FD1912894D00F917CE /* AmSmallMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A518190E9E9E004D52EC /* AmSmallMap.m */; };
+		110386FF1912894E00F917CE /* AmValueLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51A190E9E9E004D52EC /* AmValueLegend.m */; };
+		110387011912894E00F917CE /* AmZoomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51C190E9E9E004D52EC /* AmZoomControl.m */; };
+		110387031912894E00F917CE /* AmStockChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A531190E9E9E004D52EC /* AmStockChart.m */; };
+		110387051912894E00F917CE /* AmStockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A533190E9E9E004D52EC /* AmStockEvent.m */; };
+		110387071912894E00F917CE /* AmStockEventSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A535190E9E9E004D52EC /* AmStockEventSettings.m */; };
+		110387091912894E00F917CE /* AmStockGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A537190E9E9E004D52EC /* AmStockGraph.m */; };
+		1103870B1912894E00F917CE /* AmStockLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A539190E9E9E004D52EC /* AmStockLegend.m */; };
+		1103870D1912894E00F917CE /* AmStockPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53B190E9E9E004D52EC /* AmStockPanel.m */; };
+		1103870F1912894E00F917CE /* AmChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; };
+		110387101912895A00F917CE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11547468191012940003E1F5 /* WebKit.framework */; };
+		110387111912896100F917CE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11892A541910915000839813 /* JavaScriptCore.framework */; };
+		110387121912896B00F917CE /* AmCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 11547464191007F80003E1F5 /* AmCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871319128A4300F917CE /* AmAngularGauge.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929E5191088AD00839813 /* AmAngularGauge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871419128A4300F917CE /* AmAngularGauge.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929E6191088AD00839813 /* AmAngularGauge.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871519128A4300F917CE /* AmAxisBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929E7191088AD00839813 /* AmAxisBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871619128A4300F917CE /* AmAxisBase.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929E8191088AD00839813 /* AmAxisBase.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871719128A4300F917CE /* AmBalloon.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929E9191088AD00839813 /* AmBalloon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871819128A4300F917CE /* AmBalloon.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929EA191088AD00839813 /* AmBalloon.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871919128A4400F917CE /* AmCategoryAxesSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929EB191088AD00839813 /* AmCategoryAxesSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871A19128A4400F917CE /* AmCategoryAxesSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929EC191088AD00839813 /* AmCategoryAxesSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871B19128A4400F917CE /* AmCategoryAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929ED191088AD00839813 /* AmCategoryAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871C19128A4400F917CE /* AmCategoryAxis.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929EE191088AD00839813 /* AmCategoryAxis.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871D19128A4400F917CE /* AmChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929EF191088AD00839813 /* AmChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871E19128A4400F917CE /* AmChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929F0191088AD00839813 /* AmChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103871F19128A4400F917CE /* AmChartCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929F1191088AD00839813 /* AmChartCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872019128A4400F917CE /* AmChartCursor.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929F2191088AD00839813 /* AmChartCursor.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872119128A4400F917CE /* AmChartCursorSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929F3191088AD00839813 /* AmChartCursorSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872219128A4400F917CE /* AmChartCursorSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929F4191088AD00839813 /* AmChartCursorSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872319128A4400F917CE /* AmChartScrollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929F5191088AD00839813 /* AmChartScrollbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872419128A4400F917CE /* AmChartScrollbar.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929F6191088AD00839813 /* AmChartScrollbar.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872519128A4400F917CE /* AmChartScrollbarSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929F7191088AD00839813 /* AmChartScrollbarSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872619128A4400F917CE /* AmChartScrollbarSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929F8191088AD00839813 /* AmChartScrollbarSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872719128A4500F917CE /* AmCoordinateChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929F9191088AD00839813 /* AmCoordinateChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872819128A4500F917CE /* AmCoordinateChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929FA191088AD00839813 /* AmCoordinateChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872919128A4500F917CE /* AmDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929FB191088AD00839813 /* AmDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872A19128A4500F917CE /* AmDataSet.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929FC191088AD00839813 /* AmDataSet.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872B19128A4500F917CE /* AmDataSetSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929FD191088AD00839813 /* AmDataSetSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872C19128A4500F917CE /* AmDataSetSelector.m in Headers */ = {isa = PBXBuildFile; fileRef = 118929FE191088AD00839813 /* AmDataSetSelector.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872D19128A4500F917CE /* AmFunnelChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 118929FF191088AD00839813 /* AmFunnelChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872E19128A4500F917CE /* AmFunnelChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A00191088AD00839813 /* AmFunnelChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103872F19128A4500F917CE /* AmGaugeArrow.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A01191088AD00839813 /* AmGaugeArrow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873019128A4500F917CE /* AmGaugeArrow.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A02191088AD00839813 /* AmGaugeArrow.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873119128A4500F917CE /* AmGaugeAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A03191088AD00839813 /* AmGaugeAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873219128A4600F917CE /* AmGaugeAxis.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A04191088AD00839813 /* AmGaugeAxis.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873319128A4600F917CE /* AmGaugeBand.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A05191088AD00839813 /* AmGaugeBand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873419128A4600F917CE /* AmGaugeBand.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A06191088AD00839813 /* AmGaugeBand.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873519128A4600F917CE /* AmGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A07191088AD00839813 /* AmGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873619128A4600F917CE /* AmGraph.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A08191088AD00839813 /* AmGraph.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873719128A4600F917CE /* AmGraphDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A09191088AD00839813 /* AmGraphDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873819128A4600F917CE /* AmGraphDataItem.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0A191088AD00839813 /* AmGraphDataItem.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873919128A4600F917CE /* AmGuide.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0B191088AD00839813 /* AmGuide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873A19128A4600F917CE /* AmGuide.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0C191088AD00839813 /* AmGuide.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873B19128A4600F917CE /* AmLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0D191088AD00839813 /* AmLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873C19128A4700F917CE /* AmLabel.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0E191088AD00839813 /* AmLabel.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873D19128A4700F917CE /* AmLegend.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A0F191088AD00839813 /* AmLegend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873E19128A4700F917CE /* AmLegend.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A10191088AD00839813 /* AmLegend.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103873F19128A4700F917CE /* AmLegendSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A11191088AD00839813 /* AmLegendSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874019128A4700F917CE /* AmLegendSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A12191088AD00839813 /* AmLegendSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874119128A4700F917CE /* AmPanelSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A13191088AD00839813 /* AmPanelSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874219128A4700F917CE /* AmPanelSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A14191088AD00839813 /* AmPanelSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874319128A4700F917CE /* AmPeriodSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A15191088AD00839813 /* AmPeriodSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874419128A4800F917CE /* AmPeriodSelector.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A16191088AD00839813 /* AmPeriodSelector.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874519128A4800F917CE /* AmPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A17191088AD00839813 /* AmPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874619128A4800F917CE /* AmPieChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A18191088AD00839813 /* AmPieChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874719128A4800F917CE /* AmRadarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A19191088AD00839813 /* AmRadarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874819128A4800F917CE /* AmRadarChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1A191088AD00839813 /* AmRadarChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874919128A4800F917CE /* AmRectangularChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1B191088AD00839813 /* AmRectangularChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874A19128A4800F917CE /* AmRectangularChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1C191088AD00839813 /* AmRectangularChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874B19128A4800F917CE /* AmSerialChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1D191088AD00839813 /* AmSerialChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874C19128A4900F917CE /* AmSerialChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1E191088AD00839813 /* AmSerialChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874D19128A4900F917CE /* AmSerialDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A1F191088AD00839813 /* AmSerialDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874E19128A4900F917CE /* AmSerialDataItem.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A20191088AD00839813 /* AmSerialDataItem.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103874F19128A4900F917CE /* AmSlice.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A21191088AD00839813 /* AmSlice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875019128A4900F917CE /* AmSlice.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A22191088AD00839813 /* AmSlice.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875119128A4900F917CE /* AmSlicedChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A23191088AD00839813 /* AmSlicedChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875219128A4900F917CE /* AmSlicedChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A24191088AD00839813 /* AmSlicedChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875319128A4900F917CE /* AmTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A25191088AD00839813 /* AmTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875419128A4A00F917CE /* AmTitle.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A26191088AD00839813 /* AmTitle.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875519128A4A00F917CE /* AmTrendLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A27191088AD00839813 /* AmTrendLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875619128A4A00F917CE /* AmTrendLine.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A28191088AD00839813 /* AmTrendLine.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875719128A4A00F917CE /* AmValueAxesSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A29191088AD00839813 /* AmValueAxesSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875819128A4A00F917CE /* AmValueAxesSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A2A191088AD00839813 /* AmValueAxesSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875919128A4A00F917CE /* AmValueAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A2B191088AD00839813 /* AmValueAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875A19128A4A00F917CE /* AmValueAxis.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A2C191088AD00839813 /* AmValueAxis.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875B19128A4B00F917CE /* AmXYChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 11892A2D191088AD00839813 /* AmXYChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875C19128A4B00F917CE /* AmXYChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 11892A2E191088AD00839813 /* AmXYChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875D19128A4B00F917CE /* AmAreasSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A503190E9E9E004D52EC /* AmAreasSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875E19128A4B00F917CE /* AmAreasSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A504190E9E9E004D52EC /* AmAreasSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103875F19128A4B00F917CE /* AmImagesSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A505190E9E9E004D52EC /* AmImagesSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876019128A4B00F917CE /* AmImagesSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A506190E9E9E004D52EC /* AmImagesSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876119128A4C00F917CE /* AmLinesSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A507190E9E9E004D52EC /* AmLinesSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876219128A4C00F917CE /* AmLinesSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A508190E9E9E004D52EC /* AmLinesSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876319128A4C00F917CE /* AmMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A509190E9E9E004D52EC /* AmMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876419128A4C00F917CE /* AmMap.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50A190E9E9E004D52EC /* AmMap.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876519128A4C00F917CE /* AmMapArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50B190E9E9E004D52EC /* AmMapArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876619128A4C00F917CE /* AmMapArea.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50C190E9E9E004D52EC /* AmMapArea.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876719128A4D00F917CE /* AmMapData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50D190E9E9E004D52EC /* AmMapData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876819128A4D00F917CE /* AmMapData.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50E190E9E9E004D52EC /* AmMapData.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876919128A4D00F917CE /* AmMapImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A50F190E9E9E004D52EC /* AmMapImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876A19128A4D00F917CE /* AmMapImage.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A510190E9E9E004D52EC /* AmMapImage.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876B19128A4D00F917CE /* AmMapLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A511190E9E9E004D52EC /* AmMapLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876C19128A4D00F917CE /* AmMapLine.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A512190E9E9E004D52EC /* AmMapLine.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876D19128A4E00F917CE /* AmMapObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A513190E9E9E004D52EC /* AmMapObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876E19128A4E00F917CE /* AmMapObject.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A514190E9E9E004D52EC /* AmMapObject.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103876F19128A4E00F917CE /* AmObjectList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A515190E9E9E004D52EC /* AmObjectList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877019128A4E00F917CE /* AmObjectList.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A516190E9E9E004D52EC /* AmObjectList.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877119128A4E00F917CE /* AmSmallMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A517190E9E9E004D52EC /* AmSmallMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877219128A4F00F917CE /* AmSmallMap.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A518190E9E9E004D52EC /* AmSmallMap.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877319128A4F00F917CE /* AmValueLegend.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A519190E9E9E004D52EC /* AmValueLegend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877419128A4F00F917CE /* AmValueLegend.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A51A190E9E9E004D52EC /* AmValueLegend.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877519128A4F00F917CE /* AmZoomControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A51B190E9E9E004D52EC /* AmZoomControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877619128A4F00F917CE /* AmZoomControl.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A51C190E9E9E004D52EC /* AmZoomControl.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877719128A5000F917CE /* AmStockChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A530190E9E9E004D52EC /* AmStockChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877819128A5000F917CE /* AmStockChart.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A531190E9E9E004D52EC /* AmStockChart.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877919128A5000F917CE /* AmStockEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A532190E9E9E004D52EC /* AmStockEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877A19128A5000F917CE /* AmStockEvent.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A533190E9E9E004D52EC /* AmStockEvent.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877B19128A5000F917CE /* AmStockEventSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A534190E9E9E004D52EC /* AmStockEventSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877C19128A5100F917CE /* AmStockEventSettings.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A535190E9E9E004D52EC /* AmStockEventSettings.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877D19128A5100F917CE /* AmStockGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A536190E9E9E004D52EC /* AmStockGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877E19128A5100F917CE /* AmStockGraph.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A537190E9E9E004D52EC /* AmStockGraph.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103877F19128A5100F917CE /* AmStockLegend.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A538190E9E9E004D52EC /* AmStockLegend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878019128A5100F917CE /* AmStockLegend.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A539190E9E9E004D52EC /* AmStockLegend.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878119128A5200F917CE /* AmStockPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1151A53A190E9E9E004D52EC /* AmStockPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878219128A5200F917CE /* AmStockPanel.m in Headers */ = {isa = PBXBuildFile; fileRef = 1151A53B190E9E9E004D52EC /* AmStockPanel.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878319128A5200F917CE /* AmChartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11547465191012790003E1F5 /* AmChartView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878419128A5200F917CE /* AmChartView.m in Headers */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
 		1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		1151A49F190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A49D190E9E5A004D52EC /* InfoPlist.strings */; };
 		1151A4A1190E9E5A004D52EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A0190E9E5A004D52EC /* main.m */; };
@@ -18,71 +203,24 @@
 		1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4BB190E9E5A004D52EC /* InfoPlist.strings */; };
 		1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */; };
-		1151A549190E9E9E004D52EC /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
-		1151A54A190E9E9E004D52EC /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
-		1151A54B190E9E9E004D52EC /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
-		1151A560190E9E9E004D52EC /* AmAreasSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A504190E9E9E004D52EC /* AmAreasSettings.m */; };
-		1151A561190E9E9E004D52EC /* AmImagesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A506190E9E9E004D52EC /* AmImagesSettings.m */; };
-		1151A562190E9E9E004D52EC /* AmLinesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A508190E9E9E004D52EC /* AmLinesSettings.m */; };
-		1151A563190E9E9E004D52EC /* AmMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50A190E9E9E004D52EC /* AmMap.m */; };
-		1151A564190E9E9E004D52EC /* AmMapArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50C190E9E9E004D52EC /* AmMapArea.m */; };
-		1151A565190E9E9E004D52EC /* AmMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50E190E9E9E004D52EC /* AmMapData.m */; };
-		1151A566190E9E9E004D52EC /* AmMapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A510190E9E9E004D52EC /* AmMapImage.m */; };
-		1151A567190E9E9E004D52EC /* AmMapLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A512190E9E9E004D52EC /* AmMapLine.m */; };
-		1151A568190E9E9E004D52EC /* AmMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A514190E9E9E004D52EC /* AmMapObject.m */; };
-		1151A569190E9E9E004D52EC /* AmObjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A516190E9E9E004D52EC /* AmObjectList.m */; };
-		1151A56A190E9E9E004D52EC /* AmSmallMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A518190E9E9E004D52EC /* AmSmallMap.m */; };
-		1151A56B190E9E9E004D52EC /* AmValueLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51A190E9E9E004D52EC /* AmValueLegend.m */; };
-		1151A56C190E9E9E004D52EC /* AmZoomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51C190E9E9E004D52EC /* AmZoomControl.m */; };
-		1151A576190E9E9E004D52EC /* AmStockChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A531190E9E9E004D52EC /* AmStockChart.m */; };
-		1151A577190E9E9E004D52EC /* AmStockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A533190E9E9E004D52EC /* AmStockEvent.m */; };
-		1151A578190E9E9E004D52EC /* AmStockEventSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A535190E9E9E004D52EC /* AmStockEventSettings.m */; };
-		1151A579190E9E9E004D52EC /* AmStockGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A537190E9E9E004D52EC /* AmStockGraph.m */; };
-		1151A57A190E9E9E004D52EC /* AmStockLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A539190E9E9E004D52EC /* AmStockLegend.m */; };
-		1151A57B190E9E9E004D52EC /* AmStockPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53B190E9E9E004D52EC /* AmStockPanel.m */; };
-		11547467191012790003E1F5 /* AmChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; };
-		11547469191012940003E1F5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11547468191012940003E1F5 /* WebKit.framework */; };
-		118929E119101C1900839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 118929E019101C1800839813 /* AmChartsWeb */; };
-		11892A2F191088AD00839813 /* AmAngularGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E6191088AD00839813 /* AmAngularGauge.m */; };
-		11892A30191088AD00839813 /* AmAxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E8191088AD00839813 /* AmAxisBase.m */; };
-		11892A31191088AD00839813 /* AmBalloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EA191088AD00839813 /* AmBalloon.m */; };
-		11892A32191088AD00839813 /* AmCategoryAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EC191088AD00839813 /* AmCategoryAxesSettings.m */; };
-		11892A33191088AD00839813 /* AmCategoryAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EE191088AD00839813 /* AmCategoryAxis.m */; };
-		11892A34191088AD00839813 /* AmChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F0191088AD00839813 /* AmChart.m */; };
-		11892A35191088AD00839813 /* AmChartCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F2191088AD00839813 /* AmChartCursor.m */; };
-		11892A36191088AD00839813 /* AmChartCursorSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F4191088AD00839813 /* AmChartCursorSettings.m */; };
-		11892A37191088AD00839813 /* AmChartScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F6191088AD00839813 /* AmChartScrollbar.m */; };
-		11892A38191088AD00839813 /* AmChartScrollbarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F8191088AD00839813 /* AmChartScrollbarSettings.m */; };
-		11892A39191088AD00839813 /* AmCoordinateChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FA191088AD00839813 /* AmCoordinateChart.m */; };
-		11892A3A191088AD00839813 /* AmDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FC191088AD00839813 /* AmDataSet.m */; };
-		11892A3B191088AD00839813 /* AmDataSetSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FE191088AD00839813 /* AmDataSetSelector.m */; };
-		11892A3C191088AD00839813 /* AmFunnelChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A00191088AD00839813 /* AmFunnelChart.m */; };
-		11892A3D191088AD00839813 /* AmGaugeArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A02191088AD00839813 /* AmGaugeArrow.m */; };
-		11892A3E191088AD00839813 /* AmGaugeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A04191088AD00839813 /* AmGaugeAxis.m */; };
-		11892A3F191088AD00839813 /* AmGaugeBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A06191088AD00839813 /* AmGaugeBand.m */; };
-		11892A40191088AD00839813 /* AmGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A08191088AD00839813 /* AmGraph.m */; };
-		11892A41191088AD00839813 /* AmGraphDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0A191088AD00839813 /* AmGraphDataItem.m */; };
-		11892A42191088AD00839813 /* AmGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0C191088AD00839813 /* AmGuide.m */; };
-		11892A43191088AD00839813 /* AmLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0E191088AD00839813 /* AmLabel.m */; };
-		11892A44191088AD00839813 /* AmLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A10191088AD00839813 /* AmLegend.m */; };
-		11892A45191088AD00839813 /* AmLegendSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A12191088AD00839813 /* AmLegendSettings.m */; };
-		11892A46191088AD00839813 /* AmPanelSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A14191088AD00839813 /* AmPanelSettings.m */; };
-		11892A47191088AD00839813 /* AmPeriodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A16191088AD00839813 /* AmPeriodSelector.m */; };
-		11892A48191088AD00839813 /* AmPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A18191088AD00839813 /* AmPieChart.m */; };
-		11892A49191088AD00839813 /* AmRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1A191088AD00839813 /* AmRadarChart.m */; };
-		11892A4A191088AD00839813 /* AmRectangularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1C191088AD00839813 /* AmRectangularChart.m */; };
-		11892A4B191088AD00839813 /* AmSerialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1E191088AD00839813 /* AmSerialChart.m */; };
-		11892A4C191088AD00839813 /* AmSerialDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A20191088AD00839813 /* AmSerialDataItem.m */; };
-		11892A4D191088AD00839813 /* AmSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A22191088AD00839813 /* AmSlice.m */; };
-		11892A4E191088AD00839813 /* AmSlicedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A24191088AD00839813 /* AmSlicedChart.m */; };
-		11892A4F191088AD00839813 /* AmTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A26191088AD00839813 /* AmTitle.m */; };
-		11892A50191088AD00839813 /* AmTrendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A28191088AD00839813 /* AmTrendLine.m */; };
-		11892A51191088AD00839813 /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2A191088AD00839813 /* AmValueAxesSettings.m */; };
-		11892A52191088AD00839813 /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2C191088AD00839813 /* AmValueAxis.m */; };
-		11892A53191088AD00839813 /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2E191088AD00839813 /* AmXYChart.m */; };
+		11892F61191093AE00839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		110386851912881900F917CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 110386711912881900F917CE;
+			remoteInfo = AmCharts;
+		};
+		1103878519128B2400F917CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 110386711912881900F917CE;
+			remoteInfo = AmCharts;
+		};
 		1151A4B6190E9E5A004D52EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
@@ -93,6 +231,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110386721912881900F917CE /* AmCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		110386761912881900F917CE /* AmCharts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmCharts-Info.plist"; sourceTree = "<group>"; };
+		110386781912881900F917CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1103867A1912881900F917CE /* AmCharts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmCharts-Prefix.pch"; sourceTree = "<group>"; };
+		110386821912881900F917CE /* AmChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1103868A1912881900F917CE /* AmChartsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsTests-Info.plist"; sourceTree = "<group>"; };
+		1103868C1912881900F917CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1103868E1912881900F917CE /* AmChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsTests.m; sourceTree = "<group>"; };
 		1151A491190E9E5A004D52EC /* AmChartsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmChartsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151A494190E9E5A004D52EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1151A497190E9E5A004D52EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -161,7 +307,6 @@
 		11547465191012790003E1F5 /* AmChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmChartView.h; sourceTree = "<group>"; };
 		11547466191012790003E1F5 /* AmChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartView.m; sourceTree = "<group>"; };
 		11547468191012940003E1F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		118929E019101C1800839813 /* AmChartsWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmChartsWeb; sourceTree = "<group>"; };
 		118929E5191088AD00839813 /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAngularGauge.h; sourceTree = "<group>"; };
 		118929E6191088AD00839813 /* AmAngularGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAngularGauge.m; sourceTree = "<group>"; };
 		118929E7191088AD00839813 /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAxisBase.h; sourceTree = "<group>"; };
@@ -236,14 +381,36 @@
 		11892A2C191088AD00839813 /* AmValueAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmValueAxis.m; sourceTree = "<group>"; };
 		11892A2D191088AD00839813 /* AmXYChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmXYChart.h; sourceTree = "<group>"; };
 		11892A2E191088AD00839813 /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
+		11892A541910915000839813 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		11892F60191093AE00839813 /* AmChartsWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmChartsWeb; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1103866E1912881900F917CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110387111912896100F917CE /* JavaScriptCore.framework in Frameworks */,
+				110387101912895A00F917CE /* WebKit.framework in Frameworks */,
+				110386731912881900F917CE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1103867F1912881900F917CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386841912881900F917CE /* Cocoa.framework in Frameworks */,
+				110386831912881900F917CE /* XCTest.framework in Frameworks */,
+				110386871912881900F917CE /* AmCharts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1151A48E190E9E5A004D52EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11547469191012940003E1F5 /* WebKit.framework in Frameworks */,
+				1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */,
 				1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,12 +427,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110386741912881900F917CE /* AmCharts */ = {
+			isa = PBXGroup;
+			children = (
+				11547464191007F80003E1F5 /* AmCharts.h */,
+				1151A4D2190E9E9E004D52EC /* AmCategories */,
+				118929E4191088AD00839813 /* Charts */,
+				1151A502190E9E9E004D52EC /* Maps */,
+				1151A52F190E9E9E004D52EC /* Stock Charts */,
+				11547465191012790003E1F5 /* AmChartView.h */,
+				11547466191012790003E1F5 /* AmChartView.m */,
+				11892F60191093AE00839813 /* AmChartsWeb */,
+				110386751912881900F917CE /* Supporting Files */,
+			);
+			path = AmCharts;
+			sourceTree = "<group>";
+		};
+		110386751912881900F917CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				110386761912881900F917CE /* AmCharts-Info.plist */,
+				110386771912881900F917CE /* InfoPlist.strings */,
+				1103867A1912881900F917CE /* AmCharts-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		110386881912881900F917CE /* AmChartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1103868E1912881900F917CE /* AmChartsTests.m */,
+				110386891912881900F917CE /* Supporting Files */,
+			);
+			path = AmChartsTests;
+			sourceTree = "<group>";
+		};
+		110386891912881900F917CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1103868A1912881900F917CE /* AmChartsTests-Info.plist */,
+				1103868B1912881900F917CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1151A488190E9E5A004D52EC = {
 			isa = PBXGroup;
 			children = (
-				1151A4CB190E9E9E004D52EC /* AmCharts */,
 				1151A49A190E9E5A004D52EC /* AmChartsLibrary */,
 				1151A4B8190E9E5A004D52EC /* AmChartsLibraryTests */,
+				110386741912881900F917CE /* AmCharts */,
+				110386881912881900F917CE /* AmChartsTests */,
 				1151A493190E9E5A004D52EC /* Frameworks */,
 				1151A492190E9E5A004D52EC /* Products */,
 			);
@@ -276,6 +488,8 @@
 			children = (
 				1151A491190E9E5A004D52EC /* AmChartsLibrary.app */,
 				1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */,
+				110386721912881900F917CE /* AmCharts.framework */,
+				110386821912881900F917CE /* AmChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +497,7 @@
 		1151A493190E9E5A004D52EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11892A541910915000839813 /* JavaScriptCore.framework */,
 				11547468191012940003E1F5 /* WebKit.framework */,
 				1151A494190E9E5A004D52EC /* Cocoa.framework */,
 				1151A4B3190E9E5A004D52EC /* XCTest.framework */,
@@ -341,21 +556,6 @@
 				1151A4BB190E9E5A004D52EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1151A4CB190E9E9E004D52EC /* AmCharts */ = {
-			isa = PBXGroup;
-			children = (
-				11547464191007F80003E1F5 /* AmCharts.h */,
-				1151A4D2190E9E9E004D52EC /* AmCategories */,
-				118929E4191088AD00839813 /* Charts */,
-				1151A502190E9E9E004D52EC /* Maps */,
-				1151A52F190E9E9E004D52EC /* Stock Charts */,
-				11547465191012790003E1F5 /* AmChartView.h */,
-				11547466191012790003E1F5 /* AmChartView.m */,
-				118929E019101C1800839813 /* AmChartsWeb */,
-			);
-			path = AmCharts;
 			sourceTree = "<group>";
 		};
 		1151A4D2190E9E9E004D52EC /* AmCategories */ = {
@@ -509,7 +709,168 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1103866F1912881900F917CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110387121912896B00F917CE /* AmCharts.h in Headers */,
+				1103871319128A4300F917CE /* AmAngularGauge.h in Headers */,
+				1103871419128A4300F917CE /* AmAngularGauge.m in Headers */,
+				1103871519128A4300F917CE /* AmAxisBase.h in Headers */,
+				1103871619128A4300F917CE /* AmAxisBase.m in Headers */,
+				1103871719128A4300F917CE /* AmBalloon.h in Headers */,
+				1103871819128A4300F917CE /* AmBalloon.m in Headers */,
+				1103871919128A4400F917CE /* AmCategoryAxesSettings.h in Headers */,
+				1103871A19128A4400F917CE /* AmCategoryAxesSettings.m in Headers */,
+				1103871B19128A4400F917CE /* AmCategoryAxis.h in Headers */,
+				1103871C19128A4400F917CE /* AmCategoryAxis.m in Headers */,
+				1103871D19128A4400F917CE /* AmChart.h in Headers */,
+				1103871E19128A4400F917CE /* AmChart.m in Headers */,
+				1103871F19128A4400F917CE /* AmChartCursor.h in Headers */,
+				1103872019128A4400F917CE /* AmChartCursor.m in Headers */,
+				1103872119128A4400F917CE /* AmChartCursorSettings.h in Headers */,
+				1103872219128A4400F917CE /* AmChartCursorSettings.m in Headers */,
+				1103872319128A4400F917CE /* AmChartScrollbar.h in Headers */,
+				1103872419128A4400F917CE /* AmChartScrollbar.m in Headers */,
+				1103872519128A4400F917CE /* AmChartScrollbarSettings.h in Headers */,
+				1103872619128A4400F917CE /* AmChartScrollbarSettings.m in Headers */,
+				1103872719128A4500F917CE /* AmCoordinateChart.h in Headers */,
+				1103872819128A4500F917CE /* AmCoordinateChart.m in Headers */,
+				1103872919128A4500F917CE /* AmDataSet.h in Headers */,
+				1103872A19128A4500F917CE /* AmDataSet.m in Headers */,
+				1103872B19128A4500F917CE /* AmDataSetSelector.h in Headers */,
+				1103872C19128A4500F917CE /* AmDataSetSelector.m in Headers */,
+				1103872D19128A4500F917CE /* AmFunnelChart.h in Headers */,
+				1103872E19128A4500F917CE /* AmFunnelChart.m in Headers */,
+				1103872F19128A4500F917CE /* AmGaugeArrow.h in Headers */,
+				1103873019128A4500F917CE /* AmGaugeArrow.m in Headers */,
+				1103873119128A4500F917CE /* AmGaugeAxis.h in Headers */,
+				1103873219128A4600F917CE /* AmGaugeAxis.m in Headers */,
+				1103873319128A4600F917CE /* AmGaugeBand.h in Headers */,
+				1103873419128A4600F917CE /* AmGaugeBand.m in Headers */,
+				1103873519128A4600F917CE /* AmGraph.h in Headers */,
+				1103873619128A4600F917CE /* AmGraph.m in Headers */,
+				1103873719128A4600F917CE /* AmGraphDataItem.h in Headers */,
+				1103873819128A4600F917CE /* AmGraphDataItem.m in Headers */,
+				1103873919128A4600F917CE /* AmGuide.h in Headers */,
+				1103873A19128A4600F917CE /* AmGuide.m in Headers */,
+				1103873B19128A4600F917CE /* AmLabel.h in Headers */,
+				1103873C19128A4700F917CE /* AmLabel.m in Headers */,
+				1103873D19128A4700F917CE /* AmLegend.h in Headers */,
+				1103873E19128A4700F917CE /* AmLegend.m in Headers */,
+				1103873F19128A4700F917CE /* AmLegendSettings.h in Headers */,
+				1103874019128A4700F917CE /* AmLegendSettings.m in Headers */,
+				1103874119128A4700F917CE /* AmPanelSettings.h in Headers */,
+				1103874219128A4700F917CE /* AmPanelSettings.m in Headers */,
+				1103874319128A4700F917CE /* AmPeriodSelector.h in Headers */,
+				1103874419128A4800F917CE /* AmPeriodSelector.m in Headers */,
+				1103874519128A4800F917CE /* AmPieChart.h in Headers */,
+				1103874619128A4800F917CE /* AmPieChart.m in Headers */,
+				1103874719128A4800F917CE /* AmRadarChart.h in Headers */,
+				1103874819128A4800F917CE /* AmRadarChart.m in Headers */,
+				1103874919128A4800F917CE /* AmRectangularChart.h in Headers */,
+				1103874A19128A4800F917CE /* AmRectangularChart.m in Headers */,
+				1103874B19128A4800F917CE /* AmSerialChart.h in Headers */,
+				1103874C19128A4900F917CE /* AmSerialChart.m in Headers */,
+				1103874D19128A4900F917CE /* AmSerialDataItem.h in Headers */,
+				1103874E19128A4900F917CE /* AmSerialDataItem.m in Headers */,
+				1103874F19128A4900F917CE /* AmSlice.h in Headers */,
+				1103875019128A4900F917CE /* AmSlice.m in Headers */,
+				1103875119128A4900F917CE /* AmSlicedChart.h in Headers */,
+				1103875219128A4900F917CE /* AmSlicedChart.m in Headers */,
+				1103875319128A4900F917CE /* AmTitle.h in Headers */,
+				1103875419128A4A00F917CE /* AmTitle.m in Headers */,
+				1103875519128A4A00F917CE /* AmTrendLine.h in Headers */,
+				1103875619128A4A00F917CE /* AmTrendLine.m in Headers */,
+				1103875719128A4A00F917CE /* AmValueAxesSettings.h in Headers */,
+				1103875819128A4A00F917CE /* AmValueAxesSettings.m in Headers */,
+				1103875919128A4A00F917CE /* AmValueAxis.h in Headers */,
+				1103875A19128A4A00F917CE /* AmValueAxis.m in Headers */,
+				1103875B19128A4B00F917CE /* AmXYChart.h in Headers */,
+				1103875C19128A4B00F917CE /* AmXYChart.m in Headers */,
+				1103875D19128A4B00F917CE /* AmAreasSettings.h in Headers */,
+				1103875E19128A4B00F917CE /* AmAreasSettings.m in Headers */,
+				1103875F19128A4B00F917CE /* AmImagesSettings.h in Headers */,
+				1103876019128A4B00F917CE /* AmImagesSettings.m in Headers */,
+				1103876119128A4C00F917CE /* AmLinesSettings.h in Headers */,
+				1103876219128A4C00F917CE /* AmLinesSettings.m in Headers */,
+				1103876319128A4C00F917CE /* AmMap.h in Headers */,
+				1103876419128A4C00F917CE /* AmMap.m in Headers */,
+				1103876519128A4C00F917CE /* AmMapArea.h in Headers */,
+				1103876619128A4C00F917CE /* AmMapArea.m in Headers */,
+				1103876719128A4D00F917CE /* AmMapData.h in Headers */,
+				1103876819128A4D00F917CE /* AmMapData.m in Headers */,
+				1103876919128A4D00F917CE /* AmMapImage.h in Headers */,
+				1103876A19128A4D00F917CE /* AmMapImage.m in Headers */,
+				1103876B19128A4D00F917CE /* AmMapLine.h in Headers */,
+				1103876C19128A4D00F917CE /* AmMapLine.m in Headers */,
+				1103876D19128A4E00F917CE /* AmMapObject.h in Headers */,
+				1103876E19128A4E00F917CE /* AmMapObject.m in Headers */,
+				1103876F19128A4E00F917CE /* AmObjectList.h in Headers */,
+				1103877019128A4E00F917CE /* AmObjectList.m in Headers */,
+				1103877119128A4E00F917CE /* AmSmallMap.h in Headers */,
+				1103877219128A4F00F917CE /* AmSmallMap.m in Headers */,
+				1103877319128A4F00F917CE /* AmValueLegend.h in Headers */,
+				1103877419128A4F00F917CE /* AmValueLegend.m in Headers */,
+				1103877519128A4F00F917CE /* AmZoomControl.h in Headers */,
+				1103877619128A4F00F917CE /* AmZoomControl.m in Headers */,
+				1103877719128A5000F917CE /* AmStockChart.h in Headers */,
+				1103877819128A5000F917CE /* AmStockChart.m in Headers */,
+				1103877919128A5000F917CE /* AmStockEvent.h in Headers */,
+				1103877A19128A5000F917CE /* AmStockEvent.m in Headers */,
+				1103877B19128A5000F917CE /* AmStockEventSettings.h in Headers */,
+				1103877C19128A5100F917CE /* AmStockEventSettings.m in Headers */,
+				1103877D19128A5100F917CE /* AmStockGraph.h in Headers */,
+				1103877E19128A5100F917CE /* AmStockGraph.m in Headers */,
+				1103877F19128A5100F917CE /* AmStockLegend.h in Headers */,
+				1103878019128A5100F917CE /* AmStockLegend.m in Headers */,
+				1103878119128A5200F917CE /* AmStockPanel.h in Headers */,
+				1103878219128A5200F917CE /* AmStockPanel.m in Headers */,
+				1103878319128A5200F917CE /* AmChartView.h in Headers */,
+				1103878419128A5200F917CE /* AmChartView.m in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		110386711912881900F917CE /* AmCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110386941912881900F917CE /* Build configuration list for PBXNativeTarget "AmCharts" */;
+			buildPhases = (
+				1103866D1912881900F917CE /* Sources */,
+				1103866E1912881900F917CE /* Frameworks */,
+				1103866F1912881900F917CE /* Headers */,
+				110386701912881900F917CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmCharts;
+			productName = AmCharts;
+			productReference = 110386721912881900F917CE /* AmCharts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		110386811912881900F917CE /* AmChartsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110386951912881900F917CE /* Build configuration list for PBXNativeTarget "AmChartsTests" */;
+			buildPhases = (
+				1103867E1912881900F917CE /* Sources */,
+				1103867F1912881900F917CE /* Frameworks */,
+				110386801912881900F917CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110386861912881900F917CE /* PBXTargetDependency */,
+			);
+			name = AmChartsTests;
+			productName = AmChartsTests;
+			productReference = 110386821912881900F917CE /* AmChartsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1151A490190E9E5A004D52EC /* AmChartsLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1151A4C2190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibrary" */;
@@ -521,6 +882,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1103878619128B2400F917CE /* PBXTargetDependency */,
 			);
 			name = AmChartsLibrary;
 			productName = AmChartsLibrary;
@@ -554,6 +916,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Chimp Studios";
 				TargetAttributes = {
+					110386811912881900F917CE = {
+						TestTargetID = 1151A490190E9E5A004D52EC;
+					};
 					1151A4B1190E9E5A004D52EC = {
 						TestTargetID = 1151A490190E9E5A004D52EC;
 					};
@@ -574,11 +939,29 @@
 			targets = (
 				1151A490190E9E5A004D52EC /* AmChartsLibrary */,
 				1151A4B1190E9E5A004D52EC /* AmChartsLibraryTests */,
+				110386711912881900F917CE /* AmCharts */,
+				110386811912881900F917CE /* AmChartsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		110386701912881900F917CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386791912881900F917CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110386801912881900F917CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1103868D1912881900F917CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1151A48F190E9E5A004D52EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,7 +970,7 @@
 				1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */,
 				1151A4A5190E9E5A004D52EC /* Credits.rtf in Resources */,
 				1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */,
-				118929E119101C1900839813 /* AmChartsWeb in Resources */,
+				11892F61191093AE00839813 /* AmChartsWeb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,72 +985,87 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1103866D1912881900F917CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110386991912894D00F917CE /* NSArray+JSONString.m in Sources */,
+				1103869B1912894D00F917CE /* NSDictionary+JSONString.m in Sources */,
+				1103869D1912894D00F917CE /* NSString+JSONString.m in Sources */,
+				1103869F1912894D00F917CE /* AmAngularGauge.m in Sources */,
+				110386A11912894D00F917CE /* AmAxisBase.m in Sources */,
+				110386A31912894D00F917CE /* AmBalloon.m in Sources */,
+				110386A51912894D00F917CE /* AmCategoryAxesSettings.m in Sources */,
+				110386A71912894D00F917CE /* AmCategoryAxis.m in Sources */,
+				110386A91912894D00F917CE /* AmChart.m in Sources */,
+				110386AB1912894D00F917CE /* AmChartCursor.m in Sources */,
+				110386AD1912894D00F917CE /* AmChartCursorSettings.m in Sources */,
+				110386AF1912894D00F917CE /* AmChartScrollbar.m in Sources */,
+				110386B11912894D00F917CE /* AmChartScrollbarSettings.m in Sources */,
+				110386B31912894D00F917CE /* AmCoordinateChart.m in Sources */,
+				110386B51912894D00F917CE /* AmDataSet.m in Sources */,
+				110386B71912894D00F917CE /* AmDataSetSelector.m in Sources */,
+				110386B91912894D00F917CE /* AmFunnelChart.m in Sources */,
+				110386BB1912894D00F917CE /* AmGaugeArrow.m in Sources */,
+				110386BD1912894D00F917CE /* AmGaugeAxis.m in Sources */,
+				110386BF1912894D00F917CE /* AmGaugeBand.m in Sources */,
+				110386C11912894D00F917CE /* AmGraph.m in Sources */,
+				110386C31912894D00F917CE /* AmGraphDataItem.m in Sources */,
+				110386C51912894D00F917CE /* AmGuide.m in Sources */,
+				110386C71912894D00F917CE /* AmLabel.m in Sources */,
+				110386C91912894D00F917CE /* AmLegend.m in Sources */,
+				110386CB1912894D00F917CE /* AmLegendSettings.m in Sources */,
+				110386CD1912894D00F917CE /* AmPanelSettings.m in Sources */,
+				110386CF1912894D00F917CE /* AmPeriodSelector.m in Sources */,
+				110386D11912894D00F917CE /* AmPieChart.m in Sources */,
+				110386D31912894D00F917CE /* AmRadarChart.m in Sources */,
+				110386D51912894D00F917CE /* AmRectangularChart.m in Sources */,
+				110386D71912894D00F917CE /* AmSerialChart.m in Sources */,
+				110386D91912894D00F917CE /* AmSerialDataItem.m in Sources */,
+				110386DB1912894D00F917CE /* AmSlice.m in Sources */,
+				110386DD1912894D00F917CE /* AmSlicedChart.m in Sources */,
+				110386DF1912894D00F917CE /* AmTitle.m in Sources */,
+				110386E11912894D00F917CE /* AmTrendLine.m in Sources */,
+				110386E31912894D00F917CE /* AmValueAxesSettings.m in Sources */,
+				110386E51912894D00F917CE /* AmValueAxis.m in Sources */,
+				110386E71912894D00F917CE /* AmXYChart.m in Sources */,
+				110386E91912894D00F917CE /* AmAreasSettings.m in Sources */,
+				110386EB1912894D00F917CE /* AmImagesSettings.m in Sources */,
+				110386ED1912894D00F917CE /* AmLinesSettings.m in Sources */,
+				110386EF1912894D00F917CE /* AmMap.m in Sources */,
+				110386F11912894D00F917CE /* AmMapArea.m in Sources */,
+				110386F31912894D00F917CE /* AmMapData.m in Sources */,
+				110386F51912894D00F917CE /* AmMapImage.m in Sources */,
+				110386F71912894D00F917CE /* AmMapLine.m in Sources */,
+				110386F91912894D00F917CE /* AmMapObject.m in Sources */,
+				110386FB1912894D00F917CE /* AmObjectList.m in Sources */,
+				110386FD1912894D00F917CE /* AmSmallMap.m in Sources */,
+				110386FF1912894E00F917CE /* AmValueLegend.m in Sources */,
+				110387011912894E00F917CE /* AmZoomControl.m in Sources */,
+				110387031912894E00F917CE /* AmStockChart.m in Sources */,
+				110387051912894E00F917CE /* AmStockEvent.m in Sources */,
+				110387071912894E00F917CE /* AmStockEventSettings.m in Sources */,
+				110387091912894E00F917CE /* AmStockGraph.m in Sources */,
+				1103870B1912894E00F917CE /* AmStockLegend.m in Sources */,
+				1103870D1912894E00F917CE /* AmStockPanel.m in Sources */,
+				1103870F1912894E00F917CE /* AmChartView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1103867E1912881900F917CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1103868F1912881900F917CE /* AmChartsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1151A48D190E9E5A004D52EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11892A46191088AD00839813 /* AmPanelSettings.m in Sources */,
-				11892A33191088AD00839813 /* AmCategoryAxis.m in Sources */,
-				11892A44191088AD00839813 /* AmLegend.m in Sources */,
-				1151A568190E9E9E004D52EC /* AmMapObject.m in Sources */,
-				1151A566190E9E9E004D52EC /* AmMapImage.m in Sources */,
-				11892A51191088AD00839813 /* AmValueAxesSettings.m in Sources */,
-				11892A3D191088AD00839813 /* AmGaugeArrow.m in Sources */,
-				11892A4F191088AD00839813 /* AmTitle.m in Sources */,
-				1151A561190E9E9E004D52EC /* AmImagesSettings.m in Sources */,
-				11547467191012790003E1F5 /* AmChartView.m in Sources */,
-				11892A40191088AD00839813 /* AmGraph.m in Sources */,
-				11892A3F191088AD00839813 /* AmGaugeBand.m in Sources */,
-				11892A38191088AD00839813 /* AmChartScrollbarSettings.m in Sources */,
-				11892A41191088AD00839813 /* AmGraphDataItem.m in Sources */,
-				1151A56C190E9E9E004D52EC /* AmZoomControl.m in Sources */,
-				11892A53191088AD00839813 /* AmXYChart.m in Sources */,
-				1151A578190E9E9E004D52EC /* AmStockEventSettings.m in Sources */,
-				11892A4C191088AD00839813 /* AmSerialDataItem.m in Sources */,
-				1151A562190E9E9E004D52EC /* AmLinesSettings.m in Sources */,
-				11892A35191088AD00839813 /* AmChartCursor.m in Sources */,
-				11892A4E191088AD00839813 /* AmSlicedChart.m in Sources */,
-				11892A39191088AD00839813 /* AmCoordinateChart.m in Sources */,
-				11892A4D191088AD00839813 /* AmSlice.m in Sources */,
-				11892A36191088AD00839813 /* AmChartCursorSettings.m in Sources */,
-				1151A57B190E9E9E004D52EC /* AmStockPanel.m in Sources */,
-				11892A37191088AD00839813 /* AmChartScrollbar.m in Sources */,
 				1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */,
-				1151A563190E9E9E004D52EC /* AmMap.m in Sources */,
-				1151A569190E9E9E004D52EC /* AmObjectList.m in Sources */,
-				11892A4A191088AD00839813 /* AmRectangularChart.m in Sources */,
-				1151A54A190E9E9E004D52EC /* NSDictionary+JSONString.m in Sources */,
-				11892A34191088AD00839813 /* AmChart.m in Sources */,
-				1151A57A190E9E9E004D52EC /* AmStockLegend.m in Sources */,
-				1151A54B190E9E9E004D52EC /* NSString+JSONString.m in Sources */,
-				1151A549190E9E9E004D52EC /* NSArray+JSONString.m in Sources */,
-				11892A52191088AD00839813 /* AmValueAxis.m in Sources */,
-				11892A30191088AD00839813 /* AmAxisBase.m in Sources */,
-				11892A48191088AD00839813 /* AmPieChart.m in Sources */,
-				11892A42191088AD00839813 /* AmGuide.m in Sources */,
-				11892A4B191088AD00839813 /* AmSerialChart.m in Sources */,
 				1151A4A1190E9E5A004D52EC /* main.m in Sources */,
-				11892A50191088AD00839813 /* AmTrendLine.m in Sources */,
-				11892A3A191088AD00839813 /* AmDataSet.m in Sources */,
-				1151A56B190E9E9E004D52EC /* AmValueLegend.m in Sources */,
-				1151A560190E9E9E004D52EC /* AmAreasSettings.m in Sources */,
-				11892A31191088AD00839813 /* AmBalloon.m in Sources */,
-				11892A3E191088AD00839813 /* AmGaugeAxis.m in Sources */,
-				11892A43191088AD00839813 /* AmLabel.m in Sources */,
-				1151A579190E9E9E004D52EC /* AmStockGraph.m in Sources */,
-				1151A577190E9E9E004D52EC /* AmStockEvent.m in Sources */,
-				1151A56A190E9E9E004D52EC /* AmSmallMap.m in Sources */,
-				1151A564190E9E9E004D52EC /* AmMapArea.m in Sources */,
-				11892A3C191088AD00839813 /* AmFunnelChart.m in Sources */,
-				11892A49191088AD00839813 /* AmRadarChart.m in Sources */,
-				1151A565190E9E9E004D52EC /* AmMapData.m in Sources */,
-				11892A3B191088AD00839813 /* AmDataSetSelector.m in Sources */,
-				11892A45191088AD00839813 /* AmLegendSettings.m in Sources */,
-				1151A567190E9E9E004D52EC /* AmMapLine.m in Sources */,
-				11892A2F191088AD00839813 /* AmAngularGauge.m in Sources */,
-				1151A576190E9E9E004D52EC /* AmStockChart.m in Sources */,
-				11892A32191088AD00839813 /* AmCategoryAxesSettings.m in Sources */,
-				11892A47191088AD00839813 /* AmPeriodSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +1080,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		110386861912881900F917CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 110386711912881900F917CE /* AmCharts */;
+			targetProxy = 110386851912881900F917CE /* PBXContainerItemProxy */;
+		};
+		1103878619128B2400F917CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 110386711912881900F917CE /* AmCharts */;
+			targetProxy = 1103878519128B2400F917CE /* PBXContainerItemProxy */;
+		};
 		1151A4B7190E9E5A004D52EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1151A490190E9E5A004D52EC /* AmChartsLibrary */;
@@ -690,6 +1098,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		110386771912881900F917CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110386781912881900F917CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1103868B1912881900F917CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1103868C1912881900F917CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		1151A49D190E9E5A004D52EC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -725,6 +1149,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		110386901912881900F917CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		110386911912881900F917CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		110386921912881900F917CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AmChartsTests/AmChartsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		110386931912881900F917CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				INFOPLIST_FILE = "AmChartsTests/AmChartsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		1151A4C0190E9E5A004D52EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -864,6 +1362,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		110386941912881900F917CE /* Build configuration list for PBXNativeTarget "AmCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110386901912881900F917CE /* Debug */,
+				110386911912881900F917CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		110386951912881900F917CE /* Build configuration list for PBXNativeTarget "AmChartsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110386921912881900F917CE /* Debug */,
+				110386931912881900F917CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

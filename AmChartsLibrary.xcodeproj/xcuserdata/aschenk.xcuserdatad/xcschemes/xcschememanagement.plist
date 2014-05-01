@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AmCharts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>AmChartsLibrary.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>110386711912881900F917CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>110386811912881900F917CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1151A490190E9E5A004D52EC</key>
 		<dict>
 			<key>primary</key>

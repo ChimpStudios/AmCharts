@@ -38,6 +38,16 @@
                ReferencedContainer = "container:AmChartsLibrary.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "110386811912881900F917CE"
+               BuildableName = "AmChartsTests.xctest"
+               BlueprintName = "AmChartsTests"
+               ReferencedContainer = "container:AmChartsLibrary.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
