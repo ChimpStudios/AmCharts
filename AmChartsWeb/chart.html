@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html style="height:97%;">
+<html style="min-height:100%; position:relative;">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>AmChart</title>
@@ -28,13 +28,13 @@
 			var chart;
 			
 			function generateChartWithJSONData(json) {
-				var chart = AmCharts.makeChart("chartdiv", json);
+				chart = AmCharts.makeChart("chartdiv", json);
 			}
 			
 		</script>
 	</head>
 	<body style="background-color:#FFFFFF; height:100%;">
-		<div id="chartdiv" style="min-width: 250px; width:100%; min-height: 250px; height:100%;"></div>
+		<div id="chartdiv" style="position:absolute; top: 5px; bottom:5px; left:5px; right:5px; overflow:hidden;"></div>
 	</body>
 
 </html>

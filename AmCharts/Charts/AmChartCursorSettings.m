@@ -68,6 +68,8 @@
 
 	[dictRep setObject:@(self.enabled) forKey:@"enabled"];
 
+    [dictRep setObject:@(self.fullWidth) forKey:@"fullWidth"];
+    
 	[dictRep setObject:@(self.pan) forKey:@"pan"];
 
 	[dictRep setObject:@(self.valueBalloonsEnabled) forKey:@"valueBalloonsEnabled"];

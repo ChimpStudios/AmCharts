@@ -86,8 +86,32 @@
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
     if ([frame isEqual:sender.mainFrame]) {
-        //_isReady = YES;
+        _isReady = YES;
     }
 }
 
+#pragma mark -
+#pragma mark - Layout / Resizing
+NSInteger layoutCallCount;
+- (void)setNeedsLayout:(BOOL)flag
+{
+    [super setNeedsLayout:flag];
+    layoutCallCount ++;
+    if (layoutCallCount > 2) {
+        [self validateChart];
+    } else {
+        [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                                 selector:@selector(validateChart)
+                                                   object:nil];
+        [self performSelector:@selector(validateChart)
+                   withObject:nil
+                   afterDelay:0.1];
+    }
+}
+
+- (void)validateChart
+{
+   [self stringByEvaluatingJavaScriptFromString:@"chart.validateNow();"];
+    layoutCallCount = 0;
+}
 @end

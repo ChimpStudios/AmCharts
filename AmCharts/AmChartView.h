@@ -10,11 +10,13 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <WebKit/WebKit.h>
 
+/*
 @protocol AmChartViewExport <JSExport>
 -(void)amChartsAreReady;
 @end
+*/
 
-@interface AmChartView : WebView <AmChartViewExport>
+@interface AmChartView : WebView //<AmChartViewExport>
 
 /**
  chart must inherit from AmChart or AmStockChart

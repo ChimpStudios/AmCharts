@@ -62,6 +62,11 @@
 @property(assign) BOOL enabled;
 
 /**
+ If set to true, instead of a cursor line user will see a fill which width will always be equal to the width of one data item. We'd recommend setting cusrsorAlpha to 0.1 or some other small number if using this feature.
+ */
+@property(assign) BOOL fullWidth;
+
+/**
  If this is set to true, the user will be able to pan the chart instead of zooming.
  */
 @property(assign) BOOL pan;
