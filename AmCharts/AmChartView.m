@@ -11,12 +11,42 @@
 
 @interface AmChartView()
 @property (strong) JSContext *context;
+@property (assign) BOOL hasSetup;
 @end
 
 @implementation AmChartView
 
-- (void)awakeFromNib
+- (id)init
 {
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+- (id)initWithFrame:(NSRect)frameRect
+{
+    self = [super initWithFrame:frameRect];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup
+{
+    if (self.hasSetup) {
+        return;
+    }
+    
     // set the delegates
     [self setFrameLoadDelegate:self];
     
@@ -34,6 +64,11 @@
     NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
     [self.mainFrame loadRequest:request];
+    self.hasSetup = YES;
+}
+- (void)awakeFromNib
+{
+    [self setup];
 }
 
 - (void)drawChart
