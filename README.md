@@ -42,7 +42,7 @@ if you are building an iOS app use this instead:
 #import <AmChartsMobile/AmCharts.h>
 ```
 
-Add an AmChartView (inherits from Webview) or AmMobileChartView (inherits from NSView) to your window.
+Add an AmChartView (inherits from Webview) or AmMobileChartView (inherits from UIView) to your window.
 
 Here are some examples of common charts.
 
