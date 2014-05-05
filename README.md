@@ -1,7 +1,7 @@
 AmCharts
 ========
 
-This is a Native Objective C wrapper for the AmCharts javascript charting library.  Both OS X and iOS are supported.  Use the AmCharts.Framework when working with OS X and the AmChartsMobile.a static library when targeting iOS.
+This is a Native Objective C wrapper for the AmCharts javascript charting library.  Both OS X (10.7+) and iOS (7.1+) are supported.  Use the AmCharts.Framework when working with OS X and the AmChartsMobile.a static library when targeting iOS.
 
 ## Screenshot
 ![AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/Line%20Chart.png)
@@ -41,6 +41,8 @@ if you are building an iOS app use this instead:
 ```
 #import <AmChartsMobile/AmCharts.h>
 ```
+
+Add an AmChartView (inherits from Webview) or AmMobileChartView (inherits from NSView) to your window.
 
 Here are some examples of common charts.
 
@@ -106,7 +108,7 @@ produces this bar chart:
 ![AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/Bar%20Chart.png)
 
 ## Questions
-The AmChart website has extensive [documentation](http://docs.amcharts.com/3/) as well as numerous [tutorials](http://www.amcharts.com/tutorials/).  If you find a bug in this wrapper library, send me a pull request with a fix, or at the very least do some detective work first before opening up an issue.
+This repo contains both a Mac and iOS example app.  You can check how they are set up to make sure that your own project is configured properly.  The AmChart website has extensive [documentation](http://docs.amcharts.com/3/) as well as numerous [tutorials](http://www.amcharts.com/tutorials/).  If you find a bug in this wrapper library, send me a pull request with a fix, or at the very least do some detective work first before opening up an issue.
 
 ## Legal
 The source for AmChartsLibrary (the objective-c wrapper) is released under the MIT license.  The original AmCharts javascript core is maintained under a separate license.  Check http://www.amcharts.com/online-store/ for further information.
