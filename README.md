@@ -18,11 +18,22 @@ This is a Native Objective C wrapper for the AmCharts javascript charting librar
 6. Set the destination to "Frameworks"
 7. Add the AmCharts.framework
 
+You can now start generating charts in your app!
+
 ### iOS
 
 ## Generating Charts
 
-Once the AmChart framework or library is included in your project.  Generating a chart is very simple.  Here are some examples of common charts.
+Once the AmChart framework or library is included in your project.  Generating a chart is very simple.  Import the framework 
+```
+#import <AmCharts/AmCharts.h>
+```
+if you are building an iOS app use this instead:
+```
+#import <AmChartsMobile/AmCharts.h>
+```
+
+Here are some examples of common charts.
 
 ##### Pie Chart
 
