@@ -8,9 +8,11 @@ This is a Native Objective C wrapper for the AmCharts javascript charting librar
 
 ## Getting Started
 
-### OS X
 1. Clone this repo
 2. In your Mac project Add the freshly cloned 'AmChartsLibrary.xcodeproj' to your workspace.  [Adding an Existing Project to a Workspace](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html)
+
+### OS X
+
 3. Add a link to the AmCharts.framework by selecting your target > General Pane > Linked Frameworks and Libraries
 ![OS X Integration](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/osx_integration_1.png)
 4. In "Build Phases" add the AmCharts.framework as a target dependency
@@ -21,6 +23,13 @@ This is a Native Objective C wrapper for the AmCharts javascript charting librar
 You can now start generating charts in your app!
 
 ### iOS
+
+3. Add a link to the libAmChartsMobile.a by selecting your target > General Pane > Linked Frameworks and Libraries
+4. Under "Build Settings" add -ObjC to "other linker flags"
+5. Under "Build Phases" add AmChartsMobile to the target dependencies
+6. Add a new "Copy Files Build Phase"
+7. Set Destination to "Resources" and add the "AmChartResources.bundle"
+![iOS Integration](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/ios_integration_1.png)
 
 ## Generating Charts
 
