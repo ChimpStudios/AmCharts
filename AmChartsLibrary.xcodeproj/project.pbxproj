@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		110386731912881900F917CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		110386791912881900F917CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110386771912881900F917CE /* InfoPlist.strings */; };
-		110386831912881900F917CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A4B3190E9E5A004D52EC /* XCTest.framework */; };
-		110386841912881900F917CE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
-		110386871912881900F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
-		1103868D1912881900F917CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1103868B1912881900F917CE /* InfoPlist.strings */; };
-		1103868F1912881900F917CE /* AmChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1103868E1912881900F917CE /* AmChartsTests.m */; };
 		110386991912894D00F917CE /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
 		1103869B1912894D00F917CE /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
 		1103869D1912894D00F917CE /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
@@ -193,6 +188,145 @@
 		1103878419128A5200F917CE /* AmChartView.m in Headers */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
 		110387FC1912B83400F917CE /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
+		111DF6F01917C92100E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
+		111DF6F21917C92100E11137 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F11917C92100E11137 /* CoreGraphics.framework */; };
+		111DF6F41917C92100E11137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F31917C92100E11137 /* UIKit.framework */; };
+		111DF6FA1917C92100E11137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111DF6F81917C92100E11137 /* InfoPlist.strings */; };
+		111DF6FC1917C92100E11137 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF6FB1917C92100E11137 /* main.m */; };
+		111DF7001917C92100E11137 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF6FF1917C92100E11137 /* AppDelegate.m */; };
+		111DF7031917C92100E11137 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111DF7011917C92100E11137 /* Main_iPhone.storyboard */; };
+		111DF7061917C92100E11137 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111DF7041917C92100E11137 /* Main_iPad.storyboard */; };
+		111DF7091917C92100E11137 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF7081917C92100E11137 /* ViewController.m */; };
+		111DF70B1917C92100E11137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111DF70A1917C92100E11137 /* Images.xcassets */; };
+		111DF7291917C94F00E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
+		111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF74A1917C98C00E11137 /* JavaScriptCore.framework */; };
+		111DF74C1917C9E200E11137 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
+		111DF74D1917C9E200E11137 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
+		111DF74E1917C9E200E11137 /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
+		111DF74F1917C9E200E11137 /* AmAngularGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E6191088AD00839813 /* AmAngularGauge.m */; };
+		111DF7501917C9E200E11137 /* AmAxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929E8191088AD00839813 /* AmAxisBase.m */; };
+		111DF7511917C9E200E11137 /* AmBalloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EA191088AD00839813 /* AmBalloon.m */; };
+		111DF7521917C9E200E11137 /* AmCategoryAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EC191088AD00839813 /* AmCategoryAxesSettings.m */; };
+		111DF7531917C9E200E11137 /* AmCategoryAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929EE191088AD00839813 /* AmCategoryAxis.m */; };
+		111DF7541917C9E200E11137 /* AmChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F0191088AD00839813 /* AmChart.m */; };
+		111DF7551917C9E200E11137 /* AmChartCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F2191088AD00839813 /* AmChartCursor.m */; };
+		111DF7561917C9E200E11137 /* AmChartCursorSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F4191088AD00839813 /* AmChartCursorSettings.m */; };
+		111DF7571917C9E200E11137 /* AmChartScrollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F6191088AD00839813 /* AmChartScrollbar.m */; };
+		111DF7581917C9E200E11137 /* AmChartScrollbarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929F8191088AD00839813 /* AmChartScrollbarSettings.m */; };
+		111DF7591917C9E200E11137 /* AmCoordinateChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FA191088AD00839813 /* AmCoordinateChart.m */; };
+		111DF75A1917C9E200E11137 /* AmDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FC191088AD00839813 /* AmDataSet.m */; };
+		111DF75B1917C9E200E11137 /* AmDataSetSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 118929FE191088AD00839813 /* AmDataSetSelector.m */; };
+		111DF75C1917C9E200E11137 /* AmFunnelChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A00191088AD00839813 /* AmFunnelChart.m */; };
+		111DF75D1917C9E200E11137 /* AmGaugeArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A02191088AD00839813 /* AmGaugeArrow.m */; };
+		111DF75E1917C9E200E11137 /* AmGaugeAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A04191088AD00839813 /* AmGaugeAxis.m */; };
+		111DF75F1917C9E200E11137 /* AmGaugeBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A06191088AD00839813 /* AmGaugeBand.m */; };
+		111DF7601917C9E200E11137 /* AmGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A08191088AD00839813 /* AmGraph.m */; };
+		111DF7611917C9E200E11137 /* AmGraphDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0A191088AD00839813 /* AmGraphDataItem.m */; };
+		111DF7621917C9E200E11137 /* AmGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0C191088AD00839813 /* AmGuide.m */; };
+		111DF7631917C9E200E11137 /* AmLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A0E191088AD00839813 /* AmLabel.m */; };
+		111DF7641917C9E200E11137 /* AmLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A10191088AD00839813 /* AmLegend.m */; };
+		111DF7651917C9E200E11137 /* AmLegendSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A12191088AD00839813 /* AmLegendSettings.m */; };
+		111DF7661917C9E200E11137 /* AmPanelSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A14191088AD00839813 /* AmPanelSettings.m */; };
+		111DF7671917C9E200E11137 /* AmPeriodSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A16191088AD00839813 /* AmPeriodSelector.m */; };
+		111DF7681917C9E200E11137 /* AmPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A18191088AD00839813 /* AmPieChart.m */; };
+		111DF7691917C9E200E11137 /* AmRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1A191088AD00839813 /* AmRadarChart.m */; };
+		111DF76A1917C9E200E11137 /* AmRectangularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1C191088AD00839813 /* AmRectangularChart.m */; };
+		111DF76B1917C9E200E11137 /* AmSerialChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A1E191088AD00839813 /* AmSerialChart.m */; };
+		111DF76C1917C9E200E11137 /* AmSerialDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A20191088AD00839813 /* AmSerialDataItem.m */; };
+		111DF76D1917C9E200E11137 /* AmSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A22191088AD00839813 /* AmSlice.m */; };
+		111DF76E1917C9E200E11137 /* AmSlicedChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A24191088AD00839813 /* AmSlicedChart.m */; };
+		111DF76F1917C9E200E11137 /* AmTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A26191088AD00839813 /* AmTitle.m */; };
+		111DF7701917C9E200E11137 /* AmTrendLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A28191088AD00839813 /* AmTrendLine.m */; };
+		111DF7711917C9E200E11137 /* AmValueAxesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2A191088AD00839813 /* AmValueAxesSettings.m */; };
+		111DF7721917C9E200E11137 /* AmValueAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2C191088AD00839813 /* AmValueAxis.m */; };
+		111DF7731917C9E200E11137 /* AmXYChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 11892A2E191088AD00839813 /* AmXYChart.m */; };
+		111DF7741917C9E200E11137 /* AmAreasSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A504190E9E9E004D52EC /* AmAreasSettings.m */; };
+		111DF7751917C9E200E11137 /* AmImagesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A506190E9E9E004D52EC /* AmImagesSettings.m */; };
+		111DF7761917C9E200E11137 /* AmLinesSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A508190E9E9E004D52EC /* AmLinesSettings.m */; };
+		111DF7771917C9E200E11137 /* AmMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50A190E9E9E004D52EC /* AmMap.m */; };
+		111DF7781917C9E200E11137 /* AmMapArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50C190E9E9E004D52EC /* AmMapArea.m */; };
+		111DF7791917C9E200E11137 /* AmMapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A50E190E9E9E004D52EC /* AmMapData.m */; };
+		111DF77A1917C9E200E11137 /* AmMapImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A510190E9E9E004D52EC /* AmMapImage.m */; };
+		111DF77B1917C9E200E11137 /* AmMapLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A512190E9E9E004D52EC /* AmMapLine.m */; };
+		111DF77C1917C9E200E11137 /* AmMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A514190E9E9E004D52EC /* AmMapObject.m */; };
+		111DF77D1917C9E200E11137 /* AmObjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A516190E9E9E004D52EC /* AmObjectList.m */; };
+		111DF77E1917C9E200E11137 /* AmSmallMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A518190E9E9E004D52EC /* AmSmallMap.m */; };
+		111DF77F1917C9E200E11137 /* AmValueLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51A190E9E9E004D52EC /* AmValueLegend.m */; };
+		111DF7801917C9E200E11137 /* AmZoomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A51C190E9E9E004D52EC /* AmZoomControl.m */; };
+		111DF7811917C9E200E11137 /* AmStockChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A531190E9E9E004D52EC /* AmStockChart.m */; };
+		111DF7821917C9E200E11137 /* AmStockEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A533190E9E9E004D52EC /* AmStockEvent.m */; };
+		111DF7831917C9E200E11137 /* AmStockEventSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A535190E9E9E004D52EC /* AmStockEventSettings.m */; };
+		111DF7841917C9E200E11137 /* AmStockGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A537190E9E9E004D52EC /* AmStockGraph.m */; };
+		111DF7851917C9E200E11137 /* AmStockLegend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A539190E9E9E004D52EC /* AmStockLegend.m */; };
+		111DF7861917C9E200E11137 /* AmStockPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A53B190E9E9E004D52EC /* AmStockPanel.m */; };
+		111DF7891917CA5C00E11137 /* AmCharts.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11547464191007F80003E1F5 /* AmCharts.h */; };
+		111DF78A1917CA5C00E11137 /* AmCategories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A4D3190E9E9E004D52EC /* AmCategories.h */; };
+		111DF78B1917CA5C00E11137 /* NSArray+JSONString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */; };
+		111DF78D1917CA5C00E11137 /* NSDictionary+JSONString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A4D6190E9E9E004D52EC /* NSDictionary+JSONString.h */; };
+		111DF78F1917CA5C00E11137 /* NSString+JSONString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A4D8190E9E9E004D52EC /* NSString+JSONString.h */; };
+		111DF7911917CA5C00E11137 /* AmAngularGauge.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929E5191088AD00839813 /* AmAngularGauge.h */; };
+		111DF7931917CA5C00E11137 /* AmAxisBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929E7191088AD00839813 /* AmAxisBase.h */; };
+		111DF7951917CA5C00E11137 /* AmBalloon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929E9191088AD00839813 /* AmBalloon.h */; };
+		111DF7971917CA5C00E11137 /* AmCategoryAxesSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929EB191088AD00839813 /* AmCategoryAxesSettings.h */; };
+		111DF7991917CA5C00E11137 /* AmCategoryAxis.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929ED191088AD00839813 /* AmCategoryAxis.h */; };
+		111DF79B1917CA5C00E11137 /* AmChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929EF191088AD00839813 /* AmChart.h */; };
+		111DF79D1917CA5C00E11137 /* AmChartCursor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929F1191088AD00839813 /* AmChartCursor.h */; };
+		111DF79F1917CA5C00E11137 /* AmChartCursorSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929F3191088AD00839813 /* AmChartCursorSettings.h */; };
+		111DF7A11917CA5C00E11137 /* AmChartScrollbar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929F5191088AD00839813 /* AmChartScrollbar.h */; };
+		111DF7A31917CA5C00E11137 /* AmChartScrollbarSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929F7191088AD00839813 /* AmChartScrollbarSettings.h */; };
+		111DF7A51917CA5C00E11137 /* AmCoordinateChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929F9191088AD00839813 /* AmCoordinateChart.h */; };
+		111DF7A71917CA5C00E11137 /* AmDataSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929FB191088AD00839813 /* AmDataSet.h */; };
+		111DF7A91917CA5C00E11137 /* AmDataSetSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929FD191088AD00839813 /* AmDataSetSelector.h */; };
+		111DF7AB1917CA5C00E11137 /* AmFunnelChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 118929FF191088AD00839813 /* AmFunnelChart.h */; };
+		111DF7AD1917CA5C00E11137 /* AmGaugeArrow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A01191088AD00839813 /* AmGaugeArrow.h */; };
+		111DF7AF1917CA5C00E11137 /* AmGaugeAxis.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A03191088AD00839813 /* AmGaugeAxis.h */; };
+		111DF7B11917CA5C00E11137 /* AmGaugeBand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A05191088AD00839813 /* AmGaugeBand.h */; };
+		111DF7B31917CA5C00E11137 /* AmGraph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A07191088AD00839813 /* AmGraph.h */; };
+		111DF7B51917CA5C00E11137 /* AmGraphDataItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A09191088AD00839813 /* AmGraphDataItem.h */; };
+		111DF7B71917CA5C00E11137 /* AmGuide.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A0B191088AD00839813 /* AmGuide.h */; };
+		111DF7B91917CA5C00E11137 /* AmLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A0D191088AD00839813 /* AmLabel.h */; };
+		111DF7BB1917CA5C00E11137 /* AmLegend.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A0F191088AD00839813 /* AmLegend.h */; };
+		111DF7BD1917CA5C00E11137 /* AmLegendSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A11191088AD00839813 /* AmLegendSettings.h */; };
+		111DF7BF1917CA5C00E11137 /* AmPanelSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A13191088AD00839813 /* AmPanelSettings.h */; };
+		111DF7C11917CA5C00E11137 /* AmPeriodSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A15191088AD00839813 /* AmPeriodSelector.h */; };
+		111DF7C31917CA5C00E11137 /* AmPieChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A17191088AD00839813 /* AmPieChart.h */; };
+		111DF7C51917CA5C00E11137 /* AmRadarChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A19191088AD00839813 /* AmRadarChart.h */; };
+		111DF7C71917CA5C00E11137 /* AmRectangularChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A1B191088AD00839813 /* AmRectangularChart.h */; };
+		111DF7C91917CA5C00E11137 /* AmSerialChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A1D191088AD00839813 /* AmSerialChart.h */; };
+		111DF7CB1917CA5C00E11137 /* AmSerialDataItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A1F191088AD00839813 /* AmSerialDataItem.h */; };
+		111DF7CD1917CA5C00E11137 /* AmSlice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A21191088AD00839813 /* AmSlice.h */; };
+		111DF7CF1917CA5C00E11137 /* AmSlicedChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A23191088AD00839813 /* AmSlicedChart.h */; };
+		111DF7D11917CA5C00E11137 /* AmTitle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A25191088AD00839813 /* AmTitle.h */; };
+		111DF7D31917CA5C00E11137 /* AmTrendLine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A27191088AD00839813 /* AmTrendLine.h */; };
+		111DF7D51917CA5C00E11137 /* AmValueAxesSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A29191088AD00839813 /* AmValueAxesSettings.h */; };
+		111DF7D71917CA5C00E11137 /* AmValueAxis.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A2B191088AD00839813 /* AmValueAxis.h */; };
+		111DF7D91917CA5C00E11137 /* AmXYChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11892A2D191088AD00839813 /* AmXYChart.h */; };
+		111DF7DB1917CA5C00E11137 /* AmAreasSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A503190E9E9E004D52EC /* AmAreasSettings.h */; };
+		111DF7DD1917CA5C00E11137 /* AmImagesSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A505190E9E9E004D52EC /* AmImagesSettings.h */; };
+		111DF7DF1917CA5C00E11137 /* AmLinesSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A507190E9E9E004D52EC /* AmLinesSettings.h */; };
+		111DF7E11917CA5C00E11137 /* AmMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A509190E9E9E004D52EC /* AmMap.h */; };
+		111DF7E31917CA5C00E11137 /* AmMapArea.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A50B190E9E9E004D52EC /* AmMapArea.h */; };
+		111DF7E51917CA5C00E11137 /* AmMapData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A50D190E9E9E004D52EC /* AmMapData.h */; };
+		111DF7E71917CA5C00E11137 /* AmMapImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A50F190E9E9E004D52EC /* AmMapImage.h */; };
+		111DF7E91917CA5C00E11137 /* AmMapLine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A511190E9E9E004D52EC /* AmMapLine.h */; };
+		111DF7EB1917CA5C00E11137 /* AmMapObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A513190E9E9E004D52EC /* AmMapObject.h */; };
+		111DF7ED1917CA5C00E11137 /* AmObjectList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A515190E9E9E004D52EC /* AmObjectList.h */; };
+		111DF7EF1917CA5C00E11137 /* AmSmallMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A517190E9E9E004D52EC /* AmSmallMap.h */; };
+		111DF7F11917CA5C00E11137 /* AmValueLegend.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A519190E9E9E004D52EC /* AmValueLegend.h */; };
+		111DF7F31917CA5C00E11137 /* AmZoomControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A51B190E9E9E004D52EC /* AmZoomControl.h */; };
+		111DF7F51917CA5C00E11137 /* AmStockChart.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A530190E9E9E004D52EC /* AmStockChart.h */; };
+		111DF7F71917CA5C00E11137 /* AmStockEvent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A532190E9E9E004D52EC /* AmStockEvent.h */; };
+		111DF7F91917CA5C00E11137 /* AmStockEventSettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A534190E9E9E004D52EC /* AmStockEventSettings.h */; };
+		111DF7FB1917CA5C00E11137 /* AmStockGraph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A536190E9E9E004D52EC /* AmStockGraph.h */; };
+		111DF7FD1917CA5C00E11137 /* AmStockLegend.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A538190E9E9E004D52EC /* AmStockLegend.h */; };
+		111DF7FF1917CA5C00E11137 /* AmStockPanel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1151A53A190E9E9E004D52EC /* AmStockPanel.h */; };
+		111DF80D1917D6B200E11137 /* libAmChartsMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF7281917C94F00E11137 /* libAmChartsMobile.a */; };
+		111DF8171917E3C700E11137 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF8161917E3C700E11137 /* CoreFoundation.framework */; };
+		111DF81D1917E3C700E11137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111DF81B1917E3C700E11137 /* InfoPlist.strings */; };
+		111DF8221917E46E00E11137 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
+		111DF8251917E60E00E11137 /* AmChartResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 111DF8151917E3C700E11137 /* AmChartResources.bundle */; };
+		111DF8281917E88800E11137 /* AmMobileChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8271917E88800E11137 /* AmMobileChartView.m */; };
+		111DF82A1917E9C000E11137 /* AmMobileChartView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 111DF8261917E88800E11137 /* AmMobileChartView.h */; };
 		1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
 		1151A49F190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A49D190E9E5A004D52EC /* InfoPlist.strings */; };
 		1151A4A1190E9E5A004D52EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A0190E9E5A004D52EC /* main.m */; };
@@ -200,21 +334,10 @@
 		1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A7190E9E5A004D52EC /* AppDelegate.m */; };
 		1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4A9190E9E5A004D52EC /* MainMenu.xib */; };
 		1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4AC190E9E5A004D52EC /* Images.xcassets */; };
-		1151A4B4190E9E5A004D52EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A4B3190E9E5A004D52EC /* XCTest.framework */; };
-		1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1151A494190E9E5A004D52EC /* Cocoa.framework */; };
-		1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4BB190E9E5A004D52EC /* InfoPlist.strings */; };
-		1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */; };
 		11892F61191093AE00839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		110386851912881900F917CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 110386711912881900F917CE;
-			remoteInfo = AmCharts;
-		};
 		1103878519128B2400F917CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
@@ -222,24 +345,119 @@
 			remoteGlobalIDString = 110386711912881900F917CE;
 			remoteInfo = AmCharts;
 		};
-		1151A4B6190E9E5A004D52EC /* PBXContainerItemProxy */ = {
+		111DF80E1917D6BE00E11137 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1151A490190E9E5A004D52EC;
-			remoteInfo = AmChartsLibrary;
+			remoteGlobalIDString = 111DF7271917C94F00E11137;
+			remoteInfo = AmChartsMobile;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		111DF7261917C94F00E11137 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				111DF7891917CA5C00E11137 /* AmCharts.h in CopyFiles */,
+				111DF82A1917E9C000E11137 /* AmMobileChartView.h in CopyFiles */,
+				111DF78A1917CA5C00E11137 /* AmCategories.h in CopyFiles */,
+				111DF78B1917CA5C00E11137 /* NSArray+JSONString.h in CopyFiles */,
+				111DF78D1917CA5C00E11137 /* NSDictionary+JSONString.h in CopyFiles */,
+				111DF78F1917CA5C00E11137 /* NSString+JSONString.h in CopyFiles */,
+				111DF7911917CA5C00E11137 /* AmAngularGauge.h in CopyFiles */,
+				111DF7931917CA5C00E11137 /* AmAxisBase.h in CopyFiles */,
+				111DF7951917CA5C00E11137 /* AmBalloon.h in CopyFiles */,
+				111DF7971917CA5C00E11137 /* AmCategoryAxesSettings.h in CopyFiles */,
+				111DF7991917CA5C00E11137 /* AmCategoryAxis.h in CopyFiles */,
+				111DF79B1917CA5C00E11137 /* AmChart.h in CopyFiles */,
+				111DF79D1917CA5C00E11137 /* AmChartCursor.h in CopyFiles */,
+				111DF79F1917CA5C00E11137 /* AmChartCursorSettings.h in CopyFiles */,
+				111DF7A11917CA5C00E11137 /* AmChartScrollbar.h in CopyFiles */,
+				111DF7A31917CA5C00E11137 /* AmChartScrollbarSettings.h in CopyFiles */,
+				111DF7A51917CA5C00E11137 /* AmCoordinateChart.h in CopyFiles */,
+				111DF7A71917CA5C00E11137 /* AmDataSet.h in CopyFiles */,
+				111DF7A91917CA5C00E11137 /* AmDataSetSelector.h in CopyFiles */,
+				111DF7AB1917CA5C00E11137 /* AmFunnelChart.h in CopyFiles */,
+				111DF7AD1917CA5C00E11137 /* AmGaugeArrow.h in CopyFiles */,
+				111DF7AF1917CA5C00E11137 /* AmGaugeAxis.h in CopyFiles */,
+				111DF7B11917CA5C00E11137 /* AmGaugeBand.h in CopyFiles */,
+				111DF7B31917CA5C00E11137 /* AmGraph.h in CopyFiles */,
+				111DF7B51917CA5C00E11137 /* AmGraphDataItem.h in CopyFiles */,
+				111DF7B71917CA5C00E11137 /* AmGuide.h in CopyFiles */,
+				111DF7B91917CA5C00E11137 /* AmLabel.h in CopyFiles */,
+				111DF7BB1917CA5C00E11137 /* AmLegend.h in CopyFiles */,
+				111DF7BD1917CA5C00E11137 /* AmLegendSettings.h in CopyFiles */,
+				111DF7BF1917CA5C00E11137 /* AmPanelSettings.h in CopyFiles */,
+				111DF7C11917CA5C00E11137 /* AmPeriodSelector.h in CopyFiles */,
+				111DF7C31917CA5C00E11137 /* AmPieChart.h in CopyFiles */,
+				111DF7C51917CA5C00E11137 /* AmRadarChart.h in CopyFiles */,
+				111DF7C71917CA5C00E11137 /* AmRectangularChart.h in CopyFiles */,
+				111DF7C91917CA5C00E11137 /* AmSerialChart.h in CopyFiles */,
+				111DF7CB1917CA5C00E11137 /* AmSerialDataItem.h in CopyFiles */,
+				111DF7CD1917CA5C00E11137 /* AmSlice.h in CopyFiles */,
+				111DF7CF1917CA5C00E11137 /* AmSlicedChart.h in CopyFiles */,
+				111DF7D11917CA5C00E11137 /* AmTitle.h in CopyFiles */,
+				111DF7D31917CA5C00E11137 /* AmTrendLine.h in CopyFiles */,
+				111DF7D51917CA5C00E11137 /* AmValueAxesSettings.h in CopyFiles */,
+				111DF7D71917CA5C00E11137 /* AmValueAxis.h in CopyFiles */,
+				111DF7D91917CA5C00E11137 /* AmXYChart.h in CopyFiles */,
+				111DF7DB1917CA5C00E11137 /* AmAreasSettings.h in CopyFiles */,
+				111DF7DD1917CA5C00E11137 /* AmImagesSettings.h in CopyFiles */,
+				111DF7DF1917CA5C00E11137 /* AmLinesSettings.h in CopyFiles */,
+				111DF7E11917CA5C00E11137 /* AmMap.h in CopyFiles */,
+				111DF7E31917CA5C00E11137 /* AmMapArea.h in CopyFiles */,
+				111DF7E51917CA5C00E11137 /* AmMapData.h in CopyFiles */,
+				111DF7E71917CA5C00E11137 /* AmMapImage.h in CopyFiles */,
+				111DF7E91917CA5C00E11137 /* AmMapLine.h in CopyFiles */,
+				111DF7EB1917CA5C00E11137 /* AmMapObject.h in CopyFiles */,
+				111DF7ED1917CA5C00E11137 /* AmObjectList.h in CopyFiles */,
+				111DF7EF1917CA5C00E11137 /* AmSmallMap.h in CopyFiles */,
+				111DF7F11917CA5C00E11137 /* AmValueLegend.h in CopyFiles */,
+				111DF7F31917CA5C00E11137 /* AmZoomControl.h in CopyFiles */,
+				111DF7F51917CA5C00E11137 /* AmStockChart.h in CopyFiles */,
+				111DF7F71917CA5C00E11137 /* AmStockEvent.h in CopyFiles */,
+				111DF7F91917CA5C00E11137 /* AmStockEventSettings.h in CopyFiles */,
+				111DF7FB1917CA5C00E11137 /* AmStockGraph.h in CopyFiles */,
+				111DF7FD1917CA5C00E11137 /* AmStockLegend.h in CopyFiles */,
+				111DF7FF1917CA5C00E11137 /* AmStockPanel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		110386721912881900F917CE /* AmCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		110386761912881900F917CE /* AmCharts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmCharts-Info.plist"; sourceTree = "<group>"; };
 		110386781912881900F917CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1103867A1912881900F917CE /* AmCharts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmCharts-Prefix.pch"; sourceTree = "<group>"; };
-		110386821912881900F917CE /* AmChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1103868A1912881900F917CE /* AmChartsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsTests-Info.plist"; sourceTree = "<group>"; };
-		1103868C1912881900F917CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1103868E1912881900F917CE /* AmChartsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsTests.m; sourceTree = "<group>"; };
+		111DF6EE1917C92100E11137 /* AmCharts iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AmCharts iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		111DF6EF1917C92100E11137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		111DF6F11917C92100E11137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		111DF6F31917C92100E11137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		111DF6F71917C92100E11137 /* AmCharts iOS Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmCharts iOS Example-Info.plist"; sourceTree = "<group>"; };
+		111DF6F91917C92100E11137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		111DF6FB1917C92100E11137 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		111DF6FD1917C92100E11137 /* AmCharts iOS Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmCharts iOS Example-Prefix.pch"; sourceTree = "<group>"; };
+		111DF6FE1917C92100E11137 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		111DF6FF1917C92100E11137 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		111DF7021917C92100E11137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		111DF7051917C92100E11137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		111DF7071917C92100E11137 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		111DF7081917C92100E11137 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		111DF70A1917C92100E11137 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		111DF7281917C94F00E11137 /* libAmChartsMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAmChartsMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		111DF72C1917C94F00E11137 /* AmChartsMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmChartsMobile-Prefix.pch"; sourceTree = "<group>"; };
+		111DF74A1917C98C00E11137 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		111DF8151917E3C700E11137 /* AmChartResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		111DF8161917E3C700E11137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		111DF81A1917E3C700E11137 /* AmChartResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartResources-Info.plist"; sourceTree = "<group>"; };
+		111DF81C1917E3C700E11137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		111DF81E1917E3C700E11137 /* AmChartResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmChartResources-Prefix.pch"; sourceTree = "<group>"; };
+		111DF8261917E88800E11137 /* AmMobileChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmMobileChartView.h; sourceTree = "<group>"; };
+		111DF8271917E88800E11137 /* AmMobileChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmMobileChartView.m; sourceTree = "<group>"; };
 		1151A491190E9E5A004D52EC /* AmChartsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmChartsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151A494190E9E5A004D52EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1151A497190E9E5A004D52EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -254,11 +472,7 @@
 		1151A4A7190E9E5A004D52EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1151A4AA190E9E5A004D52EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1151A4AC190E9E5A004D52EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartsLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151A4B3190E9E5A004D52EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartsLibraryTests-Info.plist"; sourceTree = "<group>"; };
-		1151A4BC190E9E5A004D52EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmChartsLibraryTests.m; sourceTree = "<group>"; };
 		1151A4D3190E9E9E004D52EC /* AmCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategories.h; sourceTree = "<group>"; };
 		1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONString.h"; sourceTree = "<group>"; };
 		1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONString.m"; sourceTree = "<group>"; };
@@ -397,13 +611,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1103867F1912881900F917CE /* Frameworks */ = {
+		111DF6EB1917C92100E11137 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110386841912881900F917CE /* Cocoa.framework in Frameworks */,
-				110386831912881900F917CE /* XCTest.framework in Frameworks */,
-				110386871912881900F917CE /* AmCharts.framework in Frameworks */,
+				111DF80D1917D6B200E11137 /* libAmChartsMobile.a in Frameworks */,
+				111DF6F21917C92100E11137 /* CoreGraphics.framework in Frameworks */,
+				111DF6F41917C92100E11137 /* UIKit.framework in Frameworks */,
+				111DF6F01917C92100E11137 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111DF7251917C94F00E11137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */,
+				111DF7291917C94F00E11137 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111DF8121917E3C700E11137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111DF8171917E3C700E11137 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,15 +645,6 @@
 			files = (
 				1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */,
 				1151A495190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1151A4AF190E9E5A004D52EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1151A4B5190E9E5A004D52EC /* Cocoa.framework in Frameworks */,
-				1151A4B4190E9E5A004D52EC /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,20 +677,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		110386881912881900F917CE /* AmChartsTests */ = {
+		111DF6F51917C92100E11137 /* AmCharts iOS Example */ = {
 			isa = PBXGroup;
 			children = (
-				1103868E1912881900F917CE /* AmChartsTests.m */,
-				110386891912881900F917CE /* Supporting Files */,
+				111DF6FE1917C92100E11137 /* AppDelegate.h */,
+				111DF6FF1917C92100E11137 /* AppDelegate.m */,
+				111DF7011917C92100E11137 /* Main_iPhone.storyboard */,
+				111DF7041917C92100E11137 /* Main_iPad.storyboard */,
+				111DF7071917C92100E11137 /* ViewController.h */,
+				111DF7081917C92100E11137 /* ViewController.m */,
+				111DF70A1917C92100E11137 /* Images.xcassets */,
+				111DF6F61917C92100E11137 /* Supporting Files */,
 			);
-			path = AmChartsTests;
+			path = "AmCharts iOS Example";
 			sourceTree = "<group>";
 		};
-		110386891912881900F917CE /* Supporting Files */ = {
+		111DF6F61917C92100E11137 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1103868A1912881900F917CE /* AmChartsTests-Info.plist */,
-				1103868B1912881900F917CE /* InfoPlist.strings */,
+				111DF6F71917C92100E11137 /* AmCharts iOS Example-Info.plist */,
+				111DF6F81917C92100E11137 /* InfoPlist.strings */,
+				111DF6FB1917C92100E11137 /* main.m */,
+				111DF6FD1917C92100E11137 /* AmCharts iOS Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		111DF72A1917C94F00E11137 /* AmChartsMobile */ = {
+			isa = PBXGroup;
+			children = (
+				111DF8261917E88800E11137 /* AmMobileChartView.h */,
+				111DF8271917E88800E11137 /* AmMobileChartView.m */,
+				111DF72B1917C94F00E11137 /* Supporting Files */,
+			);
+			path = AmChartsMobile;
+			sourceTree = "<group>";
+		};
+		111DF72B1917C94F00E11137 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				111DF72C1917C94F00E11137 /* AmChartsMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		111DF8181917E3C700E11137 /* AmChartResources */ = {
+			isa = PBXGroup;
+			children = (
+				111DF8191917E3C700E11137 /* Supporting Files */,
+			);
+			path = AmChartResources;
+			sourceTree = "<group>";
+		};
+		111DF8191917E3C700E11137 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				111DF81A1917E3C700E11137 /* AmChartResources-Info.plist */,
+				111DF81B1917E3C700E11137 /* InfoPlist.strings */,
+				111DF81E1917E3C700E11137 /* AmChartResources-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -476,9 +743,10 @@
 			isa = PBXGroup;
 			children = (
 				1151A49A190E9E5A004D52EC /* AmChartsLibrary */,
-				1151A4B8190E9E5A004D52EC /* AmChartsLibraryTests */,
+				111DF6F51917C92100E11137 /* AmCharts iOS Example */,
 				110386741912881900F917CE /* AmCharts */,
-				110386881912881900F917CE /* AmChartsTests */,
+				111DF72A1917C94F00E11137 /* AmChartsMobile */,
+				111DF8181917E3C700E11137 /* AmChartResources */,
 				1151A493190E9E5A004D52EC /* Frameworks */,
 				1151A492190E9E5A004D52EC /* Products */,
 			);
@@ -488,9 +756,10 @@
 			isa = PBXGroup;
 			children = (
 				1151A491190E9E5A004D52EC /* AmChartsLibrary.app */,
-				1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */,
 				110386721912881900F917CE /* AmCharts.framework */,
-				110386821912881900F917CE /* AmChartsTests.xctest */,
+				111DF6EE1917C92100E11137 /* AmCharts iOS Example.app */,
+				111DF7281917C94F00E11137 /* libAmChartsMobile.a */,
+				111DF8151917E3C700E11137 /* AmChartResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -498,10 +767,15 @@
 		1151A493190E9E5A004D52EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				111DF74A1917C98C00E11137 /* JavaScriptCore.framework */,
 				11892A541910915000839813 /* JavaScriptCore.framework */,
 				11547468191012940003E1F5 /* WebKit.framework */,
 				1151A494190E9E5A004D52EC /* Cocoa.framework */,
 				1151A4B3190E9E5A004D52EC /* XCTest.framework */,
+				111DF6EF1917C92100E11137 /* Foundation.framework */,
+				111DF6F11917C92100E11137 /* CoreGraphics.framework */,
+				111DF6F31917C92100E11137 /* UIKit.framework */,
+				111DF8161917E3C700E11137 /* CoreFoundation.framework */,
 				1151A496190E9E5A004D52EC /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -537,24 +811,6 @@
 				1151A4A0190E9E5A004D52EC /* main.m */,
 				1151A4A2190E9E5A004D52EC /* AmChartsLibrary-Prefix.pch */,
 				1151A4A3190E9E5A004D52EC /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1151A4B8190E9E5A004D52EC /* AmChartsLibraryTests */ = {
-			isa = PBXGroup;
-			children = (
-				1151A4BE190E9E5A004D52EC /* AmChartsLibraryTests.m */,
-				1151A4B9190E9E5A004D52EC /* Supporting Files */,
-			);
-			path = AmChartsLibraryTests;
-			sourceTree = "<group>";
-		};
-		1151A4B9190E9E5A004D52EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1151A4BA190E9E5A004D52EC /* AmChartsLibraryTests-Info.plist */,
-				1151A4BB190E9E5A004D52EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -854,23 +1110,57 @@
 			productReference = 110386721912881900F917CE /* AmCharts.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		110386811912881900F917CE /* AmChartsTests */ = {
+		111DF6ED1917C92100E11137 /* AmCharts iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 110386951912881900F917CE /* Build configuration list for PBXNativeTarget "AmChartsTests" */;
+			buildConfigurationList = 111DF7221917C92100E11137 /* Build configuration list for PBXNativeTarget "AmCharts iOS Example" */;
 			buildPhases = (
-				1103867E1912881900F917CE /* Sources */,
-				1103867F1912881900F917CE /* Frameworks */,
-				110386801912881900F917CE /* Resources */,
+				111DF6EA1917C92100E11137 /* Sources */,
+				111DF6EB1917C92100E11137 /* Frameworks */,
+				111DF6EC1917C92100E11137 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				110386861912881900F917CE /* PBXTargetDependency */,
+				111DF80F1917D6BE00E11137 /* PBXTargetDependency */,
 			);
-			name = AmChartsTests;
-			productName = AmChartsTests;
-			productReference = 110386821912881900F917CE /* AmChartsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "AmCharts iOS Example";
+			productName = "AmCharts iOS Example";
+			productReference = 111DF6EE1917C92100E11137 /* AmCharts iOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		111DF7271917C94F00E11137 /* AmChartsMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111DF7441917C95000E11137 /* Build configuration list for PBXNativeTarget "AmChartsMobile" */;
+			buildPhases = (
+				111DF7241917C94F00E11137 /* Sources */,
+				111DF7251917C94F00E11137 /* Frameworks */,
+				111DF7261917C94F00E11137 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmChartsMobile;
+			productName = AmChartsMobile;
+			productReference = 111DF7281917C94F00E11137 /* libAmChartsMobile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		111DF8141917E3C700E11137 /* AmChartResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111DF81F1917E3C700E11137 /* Build configuration list for PBXNativeTarget "AmChartResources" */;
+			buildPhases = (
+				111DF8111917E3C700E11137 /* Sources */,
+				111DF8121917E3C700E11137 /* Frameworks */,
+				111DF8131917E3C700E11137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmChartResources;
+			productName = AmChartResources;
+			productReference = 111DF8151917E3C700E11137 /* AmChartResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		1151A490190E9E5A004D52EC /* AmChartsLibrary */ = {
 			isa = PBXNativeTarget;
@@ -890,24 +1180,6 @@
 			productReference = 1151A491190E9E5A004D52EC /* AmChartsLibrary.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1151A4B1190E9E5A004D52EC /* AmChartsLibraryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1151A4C5190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibraryTests" */;
-			buildPhases = (
-				1151A4AE190E9E5A004D52EC /* Sources */,
-				1151A4AF190E9E5A004D52EC /* Frameworks */,
-				1151A4B0190E9E5A004D52EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1151A4B7190E9E5A004D52EC /* PBXTargetDependency */,
-			);
-			name = AmChartsLibraryTests;
-			productName = AmChartsLibraryTests;
-			productReference = 1151A4B2190E9E5A004D52EC /* AmChartsLibraryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -916,14 +1188,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Chimp Studios";
-				TargetAttributes = {
-					110386811912881900F917CE = {
-						TestTargetID = 1151A490190E9E5A004D52EC;
-					};
-					1151A4B1190E9E5A004D52EC = {
-						TestTargetID = 1151A490190E9E5A004D52EC;
-					};
-				};
 			};
 			buildConfigurationList = 1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -939,9 +1203,10 @@
 			projectRoot = "";
 			targets = (
 				1151A490190E9E5A004D52EC /* AmChartsLibrary */,
-				1151A4B1190E9E5A004D52EC /* AmChartsLibraryTests */,
+				111DF6ED1917C92100E11137 /* AmCharts iOS Example */,
 				110386711912881900F917CE /* AmCharts */,
-				110386811912881900F917CE /* AmChartsTests */,
+				111DF7271917C94F00E11137 /* AmChartsMobile */,
+				111DF8141917E3C700E11137 /* AmChartResources */,
 			);
 		};
 /* End PBXProject section */
@@ -956,11 +1221,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		110386801912881900F917CE /* Resources */ = {
+		111DF6EC1917C92100E11137 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1103868D1912881900F917CE /* InfoPlist.strings in Resources */,
+				111DF8251917E60E00E11137 /* AmChartResources.bundle in Resources */,
+				111DF7061917C92100E11137 /* Main_iPad.storyboard in Resources */,
+				111DF70B1917C92100E11137 /* Images.xcassets in Resources */,
+				111DF7031917C92100E11137 /* Main_iPhone.storyboard in Resources */,
+				111DF6FA1917C92100E11137 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111DF8131917E3C700E11137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111DF81D1917E3C700E11137 /* InfoPlist.strings in Resources */,
+				111DF8221917E46E00E11137 /* AmChartsWeb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,14 +1251,6 @@
 				1151A4A5190E9E5A004D52EC /* Credits.rtf in Resources */,
 				1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */,
 				11892F61191093AE00839813 /* AmChartsWeb in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1151A4B0190E9E5A004D52EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1151A4BD190E9E5A004D52EC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,11 +1324,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1103867E1912881900F917CE /* Sources */ = {
+		111DF6EA1917C92100E11137 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1103868F1912881900F917CE /* AmChartsTests.m in Sources */,
+				111DF7091917C92100E11137 /* ViewController.m in Sources */,
+				111DF7001917C92100E11137 /* AppDelegate.m in Sources */,
+				111DF6FC1917C92100E11137 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111DF7241917C94F00E11137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111DF74C1917C9E200E11137 /* NSArray+JSONString.m in Sources */,
+				111DF74D1917C9E200E11137 /* NSDictionary+JSONString.m in Sources */,
+				111DF74E1917C9E200E11137 /* NSString+JSONString.m in Sources */,
+				111DF74F1917C9E200E11137 /* AmAngularGauge.m in Sources */,
+				111DF7501917C9E200E11137 /* AmAxisBase.m in Sources */,
+				111DF7511917C9E200E11137 /* AmBalloon.m in Sources */,
+				111DF7521917C9E200E11137 /* AmCategoryAxesSettings.m in Sources */,
+				111DF7531917C9E200E11137 /* AmCategoryAxis.m in Sources */,
+				111DF7541917C9E200E11137 /* AmChart.m in Sources */,
+				111DF7551917C9E200E11137 /* AmChartCursor.m in Sources */,
+				111DF7561917C9E200E11137 /* AmChartCursorSettings.m in Sources */,
+				111DF7571917C9E200E11137 /* AmChartScrollbar.m in Sources */,
+				111DF7581917C9E200E11137 /* AmChartScrollbarSettings.m in Sources */,
+				111DF7591917C9E200E11137 /* AmCoordinateChart.m in Sources */,
+				111DF75A1917C9E200E11137 /* AmDataSet.m in Sources */,
+				111DF75B1917C9E200E11137 /* AmDataSetSelector.m in Sources */,
+				111DF75C1917C9E200E11137 /* AmFunnelChart.m in Sources */,
+				111DF75D1917C9E200E11137 /* AmGaugeArrow.m in Sources */,
+				111DF75E1917C9E200E11137 /* AmGaugeAxis.m in Sources */,
+				111DF75F1917C9E200E11137 /* AmGaugeBand.m in Sources */,
+				111DF7601917C9E200E11137 /* AmGraph.m in Sources */,
+				111DF7611917C9E200E11137 /* AmGraphDataItem.m in Sources */,
+				111DF7621917C9E200E11137 /* AmGuide.m in Sources */,
+				111DF7631917C9E200E11137 /* AmLabel.m in Sources */,
+				111DF7641917C9E200E11137 /* AmLegend.m in Sources */,
+				111DF7651917C9E200E11137 /* AmLegendSettings.m in Sources */,
+				111DF7661917C9E200E11137 /* AmPanelSettings.m in Sources */,
+				111DF7671917C9E200E11137 /* AmPeriodSelector.m in Sources */,
+				111DF7681917C9E200E11137 /* AmPieChart.m in Sources */,
+				111DF7691917C9E200E11137 /* AmRadarChart.m in Sources */,
+				111DF76A1917C9E200E11137 /* AmRectangularChart.m in Sources */,
+				111DF76B1917C9E200E11137 /* AmSerialChart.m in Sources */,
+				111DF76C1917C9E200E11137 /* AmSerialDataItem.m in Sources */,
+				111DF76D1917C9E200E11137 /* AmSlice.m in Sources */,
+				111DF76E1917C9E200E11137 /* AmSlicedChart.m in Sources */,
+				111DF8281917E88800E11137 /* AmMobileChartView.m in Sources */,
+				111DF76F1917C9E200E11137 /* AmTitle.m in Sources */,
+				111DF7701917C9E200E11137 /* AmTrendLine.m in Sources */,
+				111DF7711917C9E200E11137 /* AmValueAxesSettings.m in Sources */,
+				111DF7721917C9E200E11137 /* AmValueAxis.m in Sources */,
+				111DF7731917C9E200E11137 /* AmXYChart.m in Sources */,
+				111DF7741917C9E200E11137 /* AmAreasSettings.m in Sources */,
+				111DF7751917C9E200E11137 /* AmImagesSettings.m in Sources */,
+				111DF7761917C9E200E11137 /* AmLinesSettings.m in Sources */,
+				111DF7771917C9E200E11137 /* AmMap.m in Sources */,
+				111DF7781917C9E200E11137 /* AmMapArea.m in Sources */,
+				111DF7791917C9E200E11137 /* AmMapData.m in Sources */,
+				111DF77A1917C9E200E11137 /* AmMapImage.m in Sources */,
+				111DF77B1917C9E200E11137 /* AmMapLine.m in Sources */,
+				111DF77C1917C9E200E11137 /* AmMapObject.m in Sources */,
+				111DF77D1917C9E200E11137 /* AmObjectList.m in Sources */,
+				111DF77E1917C9E200E11137 /* AmSmallMap.m in Sources */,
+				111DF77F1917C9E200E11137 /* AmValueLegend.m in Sources */,
+				111DF7801917C9E200E11137 /* AmZoomControl.m in Sources */,
+				111DF7811917C9E200E11137 /* AmStockChart.m in Sources */,
+				111DF7821917C9E200E11137 /* AmStockEvent.m in Sources */,
+				111DF7831917C9E200E11137 /* AmStockEventSettings.m in Sources */,
+				111DF7841917C9E200E11137 /* AmStockGraph.m in Sources */,
+				111DF7851917C9E200E11137 /* AmStockLegend.m in Sources */,
+				111DF7861917C9E200E11137 /* AmStockPanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		111DF8111917E3C700E11137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1071,31 +1417,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1151A4AE190E9E5A004D52EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1151A4BF190E9E5A004D52EC /* AmChartsLibraryTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		110386861912881900F917CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 110386711912881900F917CE /* AmCharts */;
-			targetProxy = 110386851912881900F917CE /* PBXContainerItemProxy */;
-		};
 		1103878619128B2400F917CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 110386711912881900F917CE /* AmCharts */;
 			targetProxy = 1103878519128B2400F917CE /* PBXContainerItemProxy */;
 		};
-		1151A4B7190E9E5A004D52EC /* PBXTargetDependency */ = {
+		111DF80F1917D6BE00E11137 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1151A490190E9E5A004D52EC /* AmChartsLibrary */;
-			targetProxy = 1151A4B6190E9E5A004D52EC /* PBXContainerItemProxy */;
+			target = 111DF7271917C94F00E11137 /* AmChartsMobile */;
+			targetProxy = 111DF80E1917D6BE00E11137 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1108,10 +1441,34 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1103868B1912881900F917CE /* InfoPlist.strings */ = {
+		111DF6F81917C92100E11137 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1103868C1912881900F917CE /* en */,
+				111DF6F91917C92100E11137 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		111DF7011917C92100E11137 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111DF7021917C92100E11137 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		111DF7041917C92100E11137 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111DF7051917C92100E11137 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		111DF81B1917E3C700E11137 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111DF81C1917E3C700E11137 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1138,14 +1495,6 @@
 				1151A4AA190E9E5A004D52EC /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		1151A4BB190E9E5A004D52EC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1151A4BC190E9E5A004D52EC /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1185,43 +1534,123 @@
 			};
 			name = Release;
 		};
-		110386921912881900F917CE /* Debug */ = {
+		111DF71E1917C92100E11137 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
-				COMBINE_HIDPI_IMAGES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				GCC_PREFIX_HEADER = "AmCharts iOS Example/AmCharts iOS Example-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "AmChartsTests/AmChartsTests-Info.plist";
+				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		110386931912881900F917CE /* Release */ = {
+		111DF71F1917C92100E11137 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
-				COMBINE_HIDPI_IMAGES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
-				INFOPLIST_FILE = "AmChartsTests/AmChartsTests-Info.plist";
+				GCC_PREFIX_HEADER = "AmCharts iOS Example/AmCharts iOS Example-Prefix.pch";
+				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		111DF7451917C95000E11137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AmChartsMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsMobile/AmChartsMobile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DTARGET_OS_IPHONE=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		111DF7461917C95000E11137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AmChartsMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsMobile/AmChartsMobile-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DTARGET_OS_IPHONE=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		111DF8201917E3C700E11137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartResources/AmChartResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		111DF8211917E3C700E11137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartResources/AmChartResources-Prefix.pch";
+				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1321,46 +1750,6 @@
 			};
 			name = Release;
 		};
-		1151A4C6190E9E5A004D52EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AmChartsLibraryTests/AmChartsLibraryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		1151A4C7190E9E5A004D52EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmChartsLibrary.app/Contents/MacOS/AmChartsLibrary";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
-				INFOPLIST_FILE = "AmChartsLibraryTests/AmChartsLibraryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1373,11 +1762,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		110386951912881900F917CE /* Build configuration list for PBXNativeTarget "AmChartsTests" */ = {
+		111DF7221917C92100E11137 /* Build configuration list for PBXNativeTarget "AmCharts iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				110386921912881900F917CE /* Debug */,
-				110386931912881900F917CE /* Release */,
+				111DF71E1917C92100E11137 /* Debug */,
+				111DF71F1917C92100E11137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111DF7441917C95000E11137 /* Build configuration list for PBXNativeTarget "AmChartsMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111DF7451917C95000E11137 /* Debug */,
+				111DF7461917C95000E11137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111DF81F1917E3C700E11137 /* Build configuration list for PBXNativeTarget "AmChartResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111DF8201917E3C700E11137 /* Debug */,
+				111DF8211917E3C700E11137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1396,15 +1803,6 @@
 			buildConfigurations = (
 				1151A4C3190E9E5A004D52EC /* Debug */,
 				1151A4C4190E9E5A004D52EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1151A4C5190E9E5A004D52EC /* Build configuration list for PBXNativeTarget "AmChartsLibraryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1151A4C6190E9E5A004D52EC /* Debug */,
-				1151A4C7190E9E5A004D52EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

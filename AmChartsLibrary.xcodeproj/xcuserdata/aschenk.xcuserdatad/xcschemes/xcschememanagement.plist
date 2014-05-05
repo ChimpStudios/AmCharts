@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AmChartResources.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>AmCharts iOS Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>AmCharts.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -14,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AmChartsMobile.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +38,31 @@
 			<true/>
 		</dict>
 		<key>110386811912881900F917CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>111DF6ED1917C92100E11137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>111DF70F1917C92100E11137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>111DF7271917C94F00E11137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>111DF7341917C94F00E11137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>111DF8141917E3C700E11137</key>
 		<dict>
 			<key>primary</key>
 			<true/>

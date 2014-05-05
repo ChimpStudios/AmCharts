@@ -2,21 +2,23 @@
 //  AmChartView.h
 //  AmChartsLibrary
 //
-//  Created by Andrew on 4/29/14.
+//  Created by Andrew on 5/5/14.
 //  Copyright (c) 2014 Chimp Studios. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
-#import <WebKit/WebKit.h>
 
-/*
-@protocol AmChartViewExport <JSExport>
+@protocol AmChartViewMobileExport <JSExport>
 -(void)amChartsAreReady;
 @end
-*/
 
-@interface AmChartView : WebView //<AmChartViewExport>
+@interface AmMobileChartView : UIView < UIWebViewDelegate, AmChartViewMobileExport>
+
+/**
+ The UIWebView that handles drawing the chart
+ */
+@property (strong) UIWebView *chartView;
 
 /**
  chart must inherit from AmChart or AmStockChart
@@ -32,5 +34,6 @@
  Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
  */
 - (void)drawChart;
+
 
 @end

@@ -6,7 +6,15 @@
 //  Copyright (c) 2014 Chimp Studios. All rights reserved.
 //
 
+#import "TargetConditionals.h"
+
+#if TARGET_OS_IPHONE
+#import "AmMobileChartView.h"
+#elif TARGET_SIMULATOR_IPHONE
+#import "AmMobileChartView.h"
+#else
 #import "AmChartView.h"
+#endif
 
 #import "AmAngularGauge.h"
 #import "AmBalloon.h"
