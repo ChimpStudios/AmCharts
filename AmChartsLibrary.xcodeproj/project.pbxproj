@@ -523,6 +523,7 @@
 		11547466191012790003E1F5 /* AmChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmChartView.m; sourceTree = "<group>"; };
 		11547468191012940003E1F5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		11828B131917EDDB0054F13A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		11828B141917F4570054F13A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		118929E5191088AD00839813 /* AmAngularGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAngularGauge.h; sourceTree = "<group>"; };
 		118929E6191088AD00839813 /* AmAngularGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAngularGauge.m; sourceTree = "<group>"; };
 		118929E7191088AD00839813 /* AmAxisBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAxisBase.h; sourceTree = "<group>"; };
@@ -744,6 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				11828B131917EDDB0054F13A /* LICENSE.txt */,
+				11828B141917F4570054F13A /* README.md */,
 				1151A49A190E9E5A004D52EC /* AmChartsLibrary */,
 				111DF6F51917C92100E11137 /* AmCharts iOS Example */,
 				110386741912881900F917CE /* AmCharts */,
