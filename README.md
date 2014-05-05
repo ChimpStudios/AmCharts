@@ -1,7 +1,7 @@
 AmCharts
 ========
 
-This is a Native Objective C wrapper for the AmCharts javascript charting library.  Both OS X (10.7+) and iOS (7.1+) are supported.  Use the AmCharts.Framework when working with OS X and the AmChartsMobile.a static library when targeting iOS.
+This is a Native Objective C wrapper for the AmCharts javascript charting library.  Both OS X (10.7+) and iOS (7.1+) are supported.
 
 ## Screenshot
 ![AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/Line%20Chart.png)
@@ -9,7 +9,7 @@ This is a Native Objective C wrapper for the AmCharts javascript charting librar
 ## Getting Started
 
 1. Clone this repo
-2. In your Mac project Add the freshly cloned 'AmChartsLibrary.xcodeproj' to your workspace.  [Adding an Existing Project to a Workspace](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html)
+2. In your project Add the freshly cloned 'AmChartsLibrary.xcodeproj' to your workspace.  [Adding an Existing Project to a Workspace](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html)
 
 ### OS X
 
