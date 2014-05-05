@@ -117,7 +117,6 @@
     pieChart.valueField = @"litres";
     pieChart.titleField = @"country";
     
-   // NSLog(@"\n%@", [pieChart javascriptRepresentation]);
     [self.chartView setChart:pieChart];
     [self.chartView drawChart];
     
