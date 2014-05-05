@@ -9,6 +9,14 @@ This is a Native Objective C wrapper for the AmCharts javascript charting librar
 ## Getting Started
 
 ### OS X
+1. Clone this repo
+2. In your Mac project Add the freshly cloned 'AmChartsLibrary.xcodeproj' to your workspace.  [Adding an Existing Project to a Workspace](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html)
+3. Add a link to the AmCharts.framework by selecting your target > General Pane > Linked Frameworks and Libraries
+![OS X Integration](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/osx_integration_1.png)
+4. In "Build Phases" add the AmCharts.framework as a target dependency
+5. Add a new "Copy Files Build Phase"
+6. Set the destination to "Frameworks"
+7. Add the AmCharts.framework
 
 ### iOS
 
@@ -76,6 +84,9 @@ chart.graphs = [@[graph] mutableCopy];
 ```
 produces this bar chart:
 ![AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/Bar%20Chart.png)
+
+## Questions
+The AmChart website has extensive [documentation](http://docs.amcharts.com/3/) as well as numerous [tutorials](http://www.amcharts.com/tutorials/).  If you find a bug in this wrapper library, send me a pull request with a fix, or at the very least do some detective work first before opening up an issue.
 
 ## Legal
 The source for AmChartsLibrary (the objective-c wrapper) is released under the MIT license.  The original AmCharts javascript core is maintained under a separate license.  Check http://www.amcharts.com/online-store/ for further information.
