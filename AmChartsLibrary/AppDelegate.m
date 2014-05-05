@@ -46,10 +46,10 @@
     
     [self.chartView setChart:chart];
     [self.chartView drawChart];
-     */
+    */
    // NSLog(@"\n%@", [chart javascriptRepresentation]);
      
-    /*
+    
     AmStockChart *stockChart = [[AmStockChart alloc] init];
     stockChart.type = @"stock";
     stockChart.pathToImages = @"amcharts/images/";
@@ -79,9 +79,9 @@
     AmStockGraph *stockGraph = [[AmStockGraph alloc] init];
     stockGraph.uid = @"graph1";
     stockGraph.valueField = @"value";
-    stockGraph.type = @"column";
+    stockGraph.type = @"line";
     stockGraph.title = @"MyGraph";
-    stockGraph.fillAlphas = @(1);
+    stockGraph.fillAlphas = @(0.1);
     panel.stockGraphs = [@[stockGraph] mutableCopy];
     stockChart.panels = [@[panel] mutableCopy];
     
@@ -101,10 +101,10 @@
     
     [self.chartView setChart:stockChart];
     [self.chartView drawChart];
-    */
+    
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
     
-    
+    /*
     AmPieChart *pieChart = [[AmPieChart alloc] init];
     pieChart.type = @"pie";
     pieChart.theme = @"none";
@@ -119,7 +119,7 @@
     
     [self.chartView setChart:pieChart];
     [self.chartView drawChart];
-    
+    */
 }
 
 @end
