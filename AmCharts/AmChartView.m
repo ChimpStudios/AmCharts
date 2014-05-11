@@ -59,8 +59,12 @@
     
     _context[@"amChartView"] = self;
     
+    if (!self.templateFilepath) {
+      self.templateFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+    }
+    
     // load the chart.html page in preparation for future charting needs
-    NSString *localFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+    NSString *localFilepath = self.templateFilepath;
     NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
     [self.mainFrame loadRequest:request];
@@ -103,6 +107,13 @@
             NSLog(@"chart must inherit from AmChart or AmStockChart");
 #endif
         }
+    }
+}
+- (void)setTemplateFilepath:(NSString *)templateFilepath
+{
+    if (_templateFilepath != templateFilepath) {
+        _templateFilepath = templateFilepath;
+        [self setup];
     }
 }
 

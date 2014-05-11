@@ -29,6 +29,11 @@
 @property (assign) BOOL isReady;
 
 /**
+ filepath for HTML webview contents.  Set this is you want to use a custom HTML file for chart rendering.
+ */
+@property (strong, nonatomic) NSString *templateFilepath;
+
+/**
  Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
  */
 - (void)drawChart;
