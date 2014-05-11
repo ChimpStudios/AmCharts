@@ -38,6 +38,7 @@
 		self.mouseWheelScrollEnabled = false;
 		self.panelsSettings = [[AmPanelSettings alloc] init];
 		self.stockEventsSettings = [[AmStockEventSettings alloc] init];
+        self.theme = @"none";
 		self.valueAxesSettings = [[AmValueAxesSettings alloc] init];
 		self.zoomOutOnDataSetChange = false;
 	}
@@ -160,6 +161,10 @@
 		[dictRep setObject:[self.stockEventsSettings dictionaryRepresentation] forKey:@"stockEventsSettings"];
 	}
 
+    if (self.theme) {
+		[dictRep setObject:self.theme forKey:@"theme"];
+	}
+    
 	if (self.type) {
 		[dictRep setObject:self.type forKey:@"type"];
 	}

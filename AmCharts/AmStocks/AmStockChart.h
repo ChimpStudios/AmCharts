@@ -149,6 +149,11 @@
 @property(strong) AmStockEventSettings * stockEventsSettings;
 
 /**
+ You can set theme for all the charts on your page by setting: AmCharts.theme = AmCharts.themes.light; // or some other theme. If you are creating charts using JavaScript API, not JSON, then this is quite a comfortable way, as you won't need to pass theme to each object you create. Note, you should set theme before write method is called. There is no way to change theme of already created chart, you have to create chart's instance once more if you want to change theme.
+ */
+@property(strong) NSString *theme;
+
+/**
  Read-only. Type of the chart.
  */
 @property(strong) NSString * type;

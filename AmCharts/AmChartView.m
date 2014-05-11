@@ -113,6 +113,7 @@
 {
     if (_templateFilepath != templateFilepath) {
         _templateFilepath = templateFilepath;
+        self.hasSetup = NO;
         [self setup];
     }
 }
