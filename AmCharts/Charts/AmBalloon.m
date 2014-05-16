@@ -16,25 +16,25 @@
 	self = [super init];
 	if (self) {
 		self.adjustBorderColor = true;
-		self.animationDuration = @(0.3);
-		self.borderAlpha = @(1);
-		self.borderColor = @"#FFFFFF";
-		self.borderThickness = @(2);
-		self.color = @"#000000";
-		self.cornerRadius = @(0);
-		self.fadeOutDuration = @(0.3);
-		self.fillAlpha = @(0.8);
-		self.fillColor = @"#FFFFFF";
-		self.fixedPosition = false;
-		self.horizontalPadding = @(8);
-		self.offsetX = @(1);
-		self.offsetY = @(6);
-		self.pointerWidth = @(6);
-		self.shadowAlpha = @(0.4);
-		self.shadowColor = @"#000000";
-		self.showBullet = false;
-		self.textAlign = @"middle";
-		self.verticalPadding = @(4);
+//		self.animationDuration = @(0.3);
+//		self.borderAlpha = @(1);
+//		self.borderColor = @"#FFFFFF";
+//		self.borderThickness = @(2);
+//		self.color = @"#000000";
+//		self.cornerRadius = @(0);
+//		self.fadeOutDuration = @(0.3);
+//		self.fillAlpha = @(0.8);
+//		self.fillColor = @"#FFFFFF";
+//		self.fixedPosition = false;
+//		self.horizontalPadding = @(8);
+//		self.offsetX = @(1);
+//		self.offsetY = @(6);
+//		self.pointerWidth = @(6);
+//		self.shadowAlpha = @(0.4);
+//		self.shadowColor = @"#000000";
+//		self.showBullet = false;
+//		self.textAlign = @"middle";
+//		self.verticalPadding = @(4);
 	}
 	return self;
 }

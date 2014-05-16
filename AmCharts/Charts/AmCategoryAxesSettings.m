@@ -16,19 +16,19 @@
 	self = [super init];
 	if (self) {
 		self.autoGridCount = true;
-		self.axisAlpha = @(0);
-		self.axisHeight = @(28);
-		self.equalSpacing = false;
-		self.gridCount = @(10);
-		self.groupToPeriods = [@[@"ss", @"10ss", @"30ss", @"mm", @"10mm", @"30mm", @"hh", @"DD", @"WW", @"MM", @"YYYY"] mutableCopy];
-		self.inside = false;
+//		self.axisAlpha = @(0);
+//		self.axisHeight = @(28);
+//		self.equalSpacing = false;
+//		self.gridCount = @(10);
+//		self.groupToPeriods = [@[@"ss", @"10ss", @"30ss", @"mm", @"10mm", @"30mm", @"hh", @"DD", @"WW", @"MM", @"YYYY"] mutableCopy];
+//		self.inside = false;
 		self.labelsEnabled = true;
 		self.markPeriodChange = true;
-		self.maxSeries = @(150);
-		self.minPeriod = @"DD";
-		self.startOnAxis = false;
-		self.tickLength = @(0);
-		self.twoLineMode = false;
+//		self.maxSeries = @(150);
+//		self.minPeriod = @"DD";
+//		self.startOnAxis = false;
+//		self.tickLength = @(0);
+//		self.twoLineMode = false;
 	}
 	return self;
 }

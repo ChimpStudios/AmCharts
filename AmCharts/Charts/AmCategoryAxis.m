@@ -14,28 +14,28 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoWrap = false;
+//		self.autoWrap = false;
 		self.boldPeriodBeginning = true;
 		self.centerLabelOnFullPeriod = true;
-		self.dateFormats = [@[
-              @{@"period":@"fff",@"format":@"JJ:NN:SS"},
-              @{@"period":@"ss",@"format":@"JJ:NN:SS"},
-              @{@"period":@"mm",@"format":@"JJ:NN"},
-              @{@"period":@"hh",@"format":@"JJ:NN"},
-              @{@"period":@"DD",@"format":@"MMM DD"},
-              @{@"period":@"WW",@"format":@"MMM DD"},
-              @{@"period":@"MM",@"format":@"MMM"},
-              @{@"period":@"YYYY",@"format":@"YYYY"}
-          ] mutableCopy];
-		self.equalSpacing = false;
-		self.firstDayOfWeek  = @(1);
-		self.gridPosition = @"middle";
+//		self.dateFormats = [@[
+//              @{@"period":@"fff",@"format":@"JJ:NN:SS"},
+//              @{@"period":@"ss",@"format":@"JJ:NN:SS"},
+//              @{@"period":@"mm",@"format":@"JJ:NN"},
+//              @{@"period":@"hh",@"format":@"JJ:NN"},
+//              @{@"period":@"DD",@"format":@"MMM DD"},
+//              @{@"period":@"WW",@"format":@"MMM DD"},
+//              @{@"period":@"MM",@"format":@"MMM"},
+//              @{@"period":@"YYYY",@"format":@"YYYY"}
+//          ] mutableCopy];
+//		self.equalSpacing = false;
+//		self.firstDayOfWeek  = @(1);
+//		self.gridPosition = @"middle";
 		self.markPeriodChange = true;
-		self.minPeriod = @"DD";
-		self.parseDates = false;
-		self.position = @"bottom";
-		self.startOnAxis = false;
-		self.twoLineMode  = false;
+//		self.minPeriod = @"DD";
+//		self.parseDates = false;
+//		self.position = @"bottom";
+//		self.startOnAxis = false;
+//		self.twoLineMode  = false;
 	}
 	return self;
 }

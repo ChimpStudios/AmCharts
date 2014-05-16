@@ -17,12 +17,12 @@
 	self = [super init];
 	if (self) {
 		self.autoGridCount = true;
-		self.dragIconHeight = @(18);
-		self.dragIconWidth = @(11);
+//		self.dragIconHeight = @(18);
+//		self.dragIconWidth = @(11);
 		self.enabled = true;
-		self.height = @(40);
-		self.hideResizeGrips = false;
-		self.position = @"bottom";
+//		self.height = @(40);
+//		self.hideResizeGrips = false;
+//		self.position = @"bottom";
 		self.updateOnReleaseOnly = true;
 	}
 	return self;

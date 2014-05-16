@@ -15,16 +15,16 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.dateFormat = @"DD-MM-YYYY";
-		self.fromText = @"From:";
+//		self.dateFormat = @"DD-MM-YYYY";
+//		self.fromText = @"From:";
 		self.hideOutOfScopePeriods = true;
 		self.inputFieldsEnabled = true;
-		self.inputFieldWidth = @(100);
-		self.periodsText = @"Zoom:";
-		self.position = @"bottom";
-		self.selectFromStart = false;
-		self.toText = @"To:";
-		self.width = @(180);
+//		self.inputFieldWidth = @(100);
+//		self.periodsText = @"Zoom:";
+//		self.position = @"bottom";
+//		self.selectFromStart = false;
+//		self.toText = @"To:";
+//		self.width = @(180);
 	}
 	return self;
 }

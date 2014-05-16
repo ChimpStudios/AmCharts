@@ -17,19 +17,19 @@
 	self = [super init];
 	if (self) {
 		self.adjustSize = true;
-		self.clockWiseOnly = false;
-		self.faceAlpha = @(0);
-		self.faceBorderAlpha = @(0);
-		self.faceBorderColor = @"#555555";
-		self.faceBorderWidth = @(1);
-		self.faceColor = @"#FAFAFA";
-		self.marginBottom = @(10);
-		self.marginLeft = @(10);
-		self.marginRight = @(10);
-		self.marginTop = @(10);
-		self.minRadius = @(10);
-		self.startDuration = @(1);
-		self.startEffect = @"easeInSine";
+//		self.clockWiseOnly = false;
+//		self.faceAlpha = @(0);
+//		self.faceBorderAlpha = @(0);
+//		self.faceBorderColor = @"#555555";
+//		self.faceBorderWidth = @(1);
+//		self.faceColor = @"#FAFAFA";
+//		self.marginBottom = @(10);
+//		self.marginLeft = @(10);
+//		self.marginRight = @(10);
+//		self.marginTop = @(10);
+//		self.minRadius = @(10);
+//		self.startDuration = @(1);
+//		self.startEffect = @"easeInSine";
 	}
 	return self;
 }

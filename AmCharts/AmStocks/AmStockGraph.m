@@ -14,12 +14,12 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.comparable = false;
-		self.compareFromStart = false;
-		self.compareGraphType = @"line";
+//		self.comparable = false;
+//		self.compareFromStart = false;
+//		self.compareGraphType = @"line";
 		self.compareGraphVisibleInLegend = true;
-		self.periodValue = @"Close";
-		self.showEventsOnComparedGraphs = false;
+//		self.periodValue = @"Close";
+//		self.showEventsOnComparedGraphs = false;
 		self.useDataSetColors = true;
 	}
 	return self;

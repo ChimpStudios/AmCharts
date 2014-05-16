@@ -16,9 +16,9 @@
 	self = [super init];
 	if (self) {
 		self.autoGridCount = true;
-		self.axisAlpha = @(0);
+//		self.axisAlpha = @(0);
 		self.inside = true;
-		self.tickLength = @(0);
+//		self.tickLength = @(0);
 	}
 	return self;
 }

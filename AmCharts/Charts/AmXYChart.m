@@ -15,9 +15,9 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.hideXScrollbar = false;
-		self.hideYScrollbar = false;
-		self.maxZoomFactor = @(20);
+//		self.hideXScrollbar = false;
+//		self.hideYScrollbar = false;
+//		self.maxZoomFactor = @(20);
 	}
 	return self;
 }

@@ -15,10 +15,10 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.equalWidths = false;
-		self.marginBottom = @(0);
-		self.marginTop = @(0);
-		self.textClickEnabled = false;
+//		self.equalWidths = false;
+//		self.marginBottom = @(0);
+//		self.marginTop = @(0);
+//		self.textClickEnabled = false;
 	}
 	return self;
 }

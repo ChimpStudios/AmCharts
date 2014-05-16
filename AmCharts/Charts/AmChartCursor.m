@@ -14,25 +14,25 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.adjustment = @(0);
-		self.animationDuration = @(0.3);
-		self.bulletsEnabled = false;
-		self.bulletSize = @(8);
-		self.categoryBalloonAlpha = @(1);
-		self.categoryBalloonDateFormat = @"MMM DD, YYYY";
+//		self.adjustment = @(0);
+//		self.animationDuration = @(0.3);
+//		self.bulletsEnabled = false;
+//		self.bulletSize = @(8);
+//		self.categoryBalloonAlpha = @(1);
+//		self.categoryBalloonDateFormat = @"MMM DD, YYYY";
 		self.categoryBalloonEnabled = true;
-		self.color = @"#FFFFFF";
-		self.cursorAlpha = @(1);
-		self.cursorColor = @"#CC0000";
-		self.cursorPosition = @"middle";
+		//self.color = @"#FFFFFF";
+		//self.cursorAlpha = @(1);
+		//self.cursorColor = @"#CC0000";
+//		self.cursorPosition = @"middle";
 		self.enabled = true;
-		self.fullWidth = false;
-		self.graphBulletSize = @(1.7);
-		self.oneBalloonOnly = false;
-		self.pan = false;
-		self.selectionAlpha = @(0.2);
-		self.selectWithoutZooming = false;
-		self.showNextAvailable = false;
+//		self.fullWidth = false;
+//		self.graphBulletSize = @(1.7);
+//		self.oneBalloonOnly = false;
+//		self.pan = false;
+//		self.selectionAlpha = @(0.2);
+//		self.selectWithoutZooming = false;
+//		self.showNextAvailable = false;
 		self.valueBalloonsEnabled = true;
 		self.zoomable = true;
 	}

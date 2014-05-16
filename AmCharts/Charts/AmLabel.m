@@ -15,10 +15,10 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.align = @"left";
-		self.alpha = @(1);
-		self.bold = false;
-		self.rotation = @(0);
+//		self.align = @"left";
+//		self.alpha = @(1);
+//		self.bold = false;
+//		self.rotation = @(0);
 	}
 	return self;
 }

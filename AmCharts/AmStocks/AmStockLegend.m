@@ -15,8 +15,8 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.valueTextComparing = @"[[percents.value]]%";
-		self.valueTextRegular = @"[[value]]";
+//		self.valueTextComparing = @"[[percents.value]]%";
+//		self.valueTextRegular = @"[[value]]";
 	}
 	return self;
 }

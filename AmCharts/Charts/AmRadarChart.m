@@ -15,11 +15,11 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.marginBottom = @(0);
-		self.marginLeft = @(0);
-		self.marginRight = @(0);
-		self.marginTop = @(0);
-		self.radius = @"35%";
+//		self.marginBottom = @(0);
+//		self.marginLeft = @(0);
+//		self.marginRight = @(0);
+//		self.marginTop = @(0);
+//		self.radius = @"35%";
 	}
 	return self;
 }

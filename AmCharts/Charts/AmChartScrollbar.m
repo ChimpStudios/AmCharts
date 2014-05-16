@@ -17,31 +17,31 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoGridCount = false;
-		self.backgroundAlpha = @(1);
-		self.backgroundColor = @"#D4D4D4";
-		self.color = @"#FFFFFF";
-		self.dragIconHeight = @(25);
-		self.dragIconWidth = @(18);
-		self.graphFillAlpha = @(1);
-		self.graphFillColor = @"#BBBBBB";
-		self.graphLineAlpha = @(0);
-		self.graphLineColor = @"#BBBBBB";
-		self.gridAlpha = @(0.7);
-		self.gridColor = @"#FFFFFF";
-		self.gridCount = @(0);
-		self.hideResizeGrips = false;
-		self.offset = @(0);
+		//self.autoGridCount = false;
+		//self.backgroundAlpha = @(1);
+		//self.backgroundColor = @"#D4D4D4";
+		//self.color = @"#FFFFFF";
+		//self.dragIconHeight = @(25);
+		//self.dragIconWidth = @(18);
+		//self.graphFillAlpha = @(1);
+		//self.graphFillColor = @"#BBBBBB";
+		//self.graphLineAlpha = @(0);
+		//self.graphLineColor = @"#BBBBBB";
+		//self.gridAlpha = @(0.7);
+		//self.gridColor = @"#FFFFFF";
+		//self.gridCount = @(0);
+		//self.hideResizeGrips = false;
+		//self.offset = @(0);
 		self.resizeEnabled = true;
-		self.scrollbarHeight = @(20);
-		self.scrollDuration = @(1);
-		self.selectedBackgroundAlpha = @(1);
-		self.selectedBackgroundColor = @"#EFEFEF";
-		self.selectedGraphFillAlpha = @(1);
-		self.selectedGraphFillColor = @"#888888";
-		self.selectedGraphLineAlpha = @(0);
-		self.selectedGraphLineColor = @"#888888";
-		self.updateOnReleaseOnly = false;
+		//self.scrollbarHeight = @(20);
+		//self.scrollDuration = @(1);
+		//self.selectedBackgroundAlpha = @(1);
+		//self.selectedBackgroundColor = @"#EFEFEF";
+		//self.selectedGraphFillAlpha = @(1);
+		//self.selectedGraphFillColor = @"#888888";
+		//self.selectedGraphLineAlpha = @(0);
+		//self.selectedGraphLineColor = @"#888888";
+		//self.updateOnReleaseOnly = false;
 	}
 	return self;
 }

@@ -17,11 +17,11 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.dashLength = @(0);
-		self.isProtected = false;
-		self.lineAlpha = @(1);
-		self.lineColor = @"#00CC00";
-		self.lineThickness = @(1);
+//		self.dashLength = @(0);
+//		self.isProtected = false;
+//		self.lineAlpha = @(1);
+//		self.lineColor = @"#00CC00";
+//		self.lineThickness = @(1);
 		self.valueAxis = [[AmValueAxis alloc] init];
 		self.valueAxisX = [[AmValueAxis alloc] init];
 	}

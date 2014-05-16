@@ -15,17 +15,17 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.balloonText = @"[[title]]: [[value]]\n[[description]]";
-		self.baseWidth = @"100%";
-		self.labelPosition = @"center";
-		self.labelText = @"[[title]]: [[value]]";
-		self.neckHeight = @"0";
-		self.neckWidth = @"0";
-		self.pullDistance = @"30";
-		self.rotate = false;
-		self.startX = @(0);
-		self.startY = @(0);
-		self.valueRepresents = @"height";
+//		self.balloonText = @"[[title]]: [[value]]\n[[description]]";
+//		self.baseWidth = @"100%";
+//		self.labelPosition = @"center";
+//		self.labelText = @"[[title]]: [[value]]";
+//		self.neckHeight = @"0";
+//		self.neckWidth = @"0";
+//		self.pullDistance = @"30";
+//		self.rotate = false;
+//		self.startX = @(0);
+//		self.startY = @(0);
+//		self.valueRepresents = @"height";
 	}
 	return self;
 }

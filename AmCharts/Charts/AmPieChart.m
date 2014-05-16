@@ -15,17 +15,17 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.angle = @(0);
-		self.balloonText = @"[[title]]: [[percents]]% ([[value]])\n[[description]]";
-		self.depth3D = @(0);
-		self.innerRadius = @"0";
-		self.labelRadius = @(20);
-		self.labelText = @"[[title]]: [[percents]]%";
-		self.minRadius = @(10);
-		self.pieAlpha = @(1);
-		self.pullOutRadius = @"20%";
-		self.startAngle = @(90);
-		self.startRadius = @"500%";
+//		self.angle = @(0);
+//		self.balloonText = @"[[title]]: [[percents]]% ([[value]])\n[[description]]";
+//		self.depth3D = @(0);
+//		self.innerRadius = @"0";
+//		self.labelRadius = @(20);
+//		self.labelText = @"[[title]]: [[percents]]%";
+//		self.minRadius = @(10);
+//		self.pieAlpha = @(1);
+//		self.pullOutRadius = @"20%";
+//		self.startAngle = @(90);
+//		self.startRadius = @"500%";
 	}
 	return self;
 }

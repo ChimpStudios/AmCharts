@@ -16,23 +16,23 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.axisTitleOffset = @(10);
-		self.baseValue = @(0);
-		self.durationUnits = @"{DD:'d. ', hh:':', mm:':',ss:''}";
-		self.gridType = @"polygons";
-		self.includeGuidesInMinMax = false;
-		self.includeHidden = false;
-		self.integersOnly = false;
-		self.logarithmic = false;
-		self.minMaxMultiplier = @(1);
-		self.position = @"left";
+//		self.axisTitleOffset = @(10);
+//		self.baseValue = @(0);
+//		self.durationUnits = @"{DD:'d. ', hh:':', mm:':',ss:''}";
+//		self.gridType = @"polygons";
+//		self.includeGuidesInMinMax = false;
+//		self.includeHidden = false;
+//		self.integersOnly = false;
+//		self.logarithmic = false;
+//		self.minMaxMultiplier = @(1);
+//		self.position = @"left";
 		self.radarCategoriesEnabled = true;
-		self.recalculateToPercents = false;
-		self.reversed = false;
-		self.stackType = @"none";
-		self.unitPosition = @"right";
-		self.usePrefixes = false;
-		self.useScientificNotation = false;
+//		self.recalculateToPercents = false;
+//		self.reversed = false;
+//		self.stackType = @"none";
+//		self.unitPosition = @"right";
+//		self.usePrefixes = false;
+//		self.useScientificNotation = false;
 	}
 	return self;
 }

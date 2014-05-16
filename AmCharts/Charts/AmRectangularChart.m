@@ -17,27 +17,27 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.angle = @(0);
-		self.autoMarginOffset = @(10);
+//		self.angle = @(0);
+//		self.autoMarginOffset = @(10);
 		self.autoMargins = true;
-		self.depth3D = @(0);
-		self.marginBottom = @(20);
-		self.marginLeft = @(20);
-		self.marginRight = @(20);
-		self.marginsUpdated = false;
-		self.marginTop = @(20);
-		self.plotAreaBorderAlpha = @(0);
-		self.plotAreaBorderColor = @"#000000";
-		self.plotAreaFillAlphas = @(0);
-		self.plotAreaFillColors = @"#FFFFFF";
-		self.plotAreaGradientAngle = @(0);
-		self.zoomOutButtonAlpha = @(0);
-		self.zoomOutButtonColor = @"#e5e5e5";
-		self.zoomOutButtonImage = @"lens.png";
-		self.zoomOutButtonImageSize = @(17);
-		self.zoomOutButtonPadding = @(8);
-		self.zoomOutButtonRollOverAlpha = @(1);
-		self.zoomOutText = @"Show all";
+//		self.depth3D = @(0);
+//		self.marginBottom = @(20);
+//		self.marginLeft = @(20);
+//		self.marginRight = @(20);
+//		self.marginsUpdated = false;
+//		self.marginTop = @(20);
+//		self.plotAreaBorderAlpha = @(0);
+//		self.plotAreaBorderColor = @"#000000";
+//		self.plotAreaFillAlphas = @(0);
+//		self.plotAreaFillColors = @"#FFFFFF";
+//		self.plotAreaGradientAngle = @(0);
+//		self.zoomOutButtonAlpha = @(0);
+//		//self.zoomOutButtonColor = @"#e5e5e5";
+//		//self.zoomOutButtonImage = @"lens.png";
+//		self.zoomOutButtonImageSize = @(17);
+//		self.zoomOutButtonPadding = @(8);
+//		//self.zoomOutButtonRollOverAlpha = @(1);
+//		self.zoomOutText = @"Show all";
 	}
 	return self;
 }

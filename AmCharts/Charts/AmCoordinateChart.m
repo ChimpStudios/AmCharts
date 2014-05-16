@@ -17,6 +17,7 @@
 - (id)init {
 	self = [super init];
 	if (self) {
+        /*
 		self.colors = [@[@"#FF6600",
                          @"#FCD202",
                          @"#B0DE09",
@@ -30,14 +31,15 @@
                          @"#999999",
                          @"#333333",
                          @"#990000"] mutableCopy];
-		self.gridAboveGraphs = false;
-		self.guides = [@[] mutableCopy];
+         */
+//		self.gridAboveGraphs = false;
+//		self.guides = [@[] mutableCopy];
 		self.sequencedAnimation = true;
-		self.startAlpha = @(1);
-		self.startDuration = @(0);
-		self.startEffect = @"elastic";
-		self.urlTarget = @"_self";
-		self.valueAxes = [@[] mutableCopy];
+//		self.startAlpha = @(1);
+//		self.startDuration = @(0);
+//		self.startEffect = @"elastic";
+//		self.urlTarget = @"_self";
+//		self.valueAxes = [@[] mutableCopy];
 	}
 	return self;
 }

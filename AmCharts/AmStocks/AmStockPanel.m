@@ -17,17 +17,17 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.allowTurningOff = false;
-		self.drawingIconsEnabled = false;
-		self.eraseAll = false;
-		self.iconSize = @(18);
-		self.recalculateToPercents = @"whenComparing";
+//		self.allowTurningOff = false;
+//		self.drawingIconsEnabled = false;
+//		self.eraseAll = false;
+//		self.iconSize = @(18);
+//		self.recalculateToPercents = @"whenComparing";
 		self.showCategoryAxis = true;
 		self.showComparedOnTop = true;
-		self.trendLineAlpha = @(1);
-		self.trendLineColor = @"#00CC00";
-		self.trendLineDashLength = @(0);
-		self.trendLineThickness = @(2);
+//		self.trendLineAlpha = @(1);
+//		self.trendLineColor = @"#00CC00";
+//		self.trendLineDashLength = @(0);
+//		self.trendLineThickness = @(2);
 	}
 	return self;
 }

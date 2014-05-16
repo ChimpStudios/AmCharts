@@ -16,14 +16,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.balloonDateFormat = @"MMM DD, YYYY";
+//		self.balloonDateFormat = @"MMM DD, YYYY";
 		self.categoryAxis = [[AmCategoryAxis alloc] init];
-		self.columnSpacing = @(5);
-		self.columnSpacing3D = @(0);
-		self.columnWidth = @(0.8);
-		self.minSelectedTime = @(0);
-		self.mouseWheelScrollEnabled = false;
-		self.rotate = false;
+//		self.columnSpacing = @(5);
+//		self.columnSpacing3D = @(0);
+//		self.columnWidth = @(0.8);
+//		self.minSelectedTime = @(0);
+//		self.mouseWheelScrollEnabled = false;
+//		self.rotate = false;
 		self.zoomOutOnDataUpdate = true;
 	}
 	return self;

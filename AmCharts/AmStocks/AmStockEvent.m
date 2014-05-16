@@ -16,14 +16,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.backgroundAlpha = @(1);
-		self.backgroundColor = @"#DADADA";
-		self.borderAlpha = @(1);
-		self.borderColor = @"#888888";
-		self.color = @"#000000";
-		self.rollOverColor = @"#CC0000";
-		self.showOnAxis = false;
-		self.type = @"sign";
+//		self.backgroundAlpha = @(1);
+//		self.backgroundColor = @"#DADADA";
+//		self.borderAlpha = @(1);
+//		self.borderColor = @"#888888";
+//		self.color = @"#000000";
+//		self.rollOverColor = @"#CC0000";
+//		self.showOnAxis = false;
+//		self.type = @"sign";
 	}
 	return self;
 }

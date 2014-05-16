@@ -31,16 +31,16 @@
 		self.categoryAxesSettings = [[AmCategoryAxesSettings alloc] init];
 		self.chartCursorSettings = [[AmChartCursorSettings alloc] init];
 		self.chartScrollbarSettings = [[AmChartScrollbarSettings alloc] init];
-		self.colors = [@[@"#FF6600", @"#FCD202", @"#B0DE09", @"#0D8ECF", @"#2A0CD0", @"#CD0D74", @"#CC0000", @"#00CC00", @"#0000CC", @"#DDDDDD", @"#999999", @"#333333", @"#990000"] mutableCopy];
-		self.firstDayOfWeek = @(1);
-		self.glueToTheEnd = false;
+		//self.colors = [@[@"#FF6600", @"#FCD202", @"#B0DE09", @"#0D8ECF", @"#2A0CD0", @"#CD0D74", @"#CC0000", @"#00CC00", @"#0000CC", @"#DDDDDD", @"#999999", @"#333333", @"#990000"] mutableCopy];
+//		self.firstDayOfWeek = @(1);
+//		self.glueToTheEnd = false;
 		self.legendSettings = [[AmLegendSettings alloc] init];
-		self.mouseWheelScrollEnabled = false;
+		//self.mouseWheelScrollEnabled = false;
 		self.panelsSettings = [[AmPanelSettings alloc] init];
 		self.stockEventsSettings = [[AmStockEventSettings alloc] init];
-        self.theme = @"none";
+//        self.theme = @"none";
 		self.valueAxesSettings = [[AmValueAxesSettings alloc] init];
-		self.zoomOutOnDataSetChange = false;
+//		self.zoomOutOnDataSetChange = false;
 	}
 	return self;
 }
@@ -68,7 +68,7 @@
 		[dictRep setObject:[self.chartScrollbarSettings dictionaryRepresentation] forKey:@"chartScrollbarSettings"];
 	}
 
-	if (self.colors) {
+	if (self.colors && (!self.theme || [self.theme.lowercaseString isEqualToString:@"none"])) {
 		[dictRep setObject:self.colors forKey:@"colors"];
 	}
 

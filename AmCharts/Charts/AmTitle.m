@@ -15,8 +15,8 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.alpha = @(1);
-		self.bold = false;
+//		self.alpha = @(1);
+//		self.bold = false;
 	}
 	return self;
 }

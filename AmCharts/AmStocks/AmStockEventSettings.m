@@ -15,13 +15,13 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.backgroundAlpha = @(1);
-		self.backgroundColor = @"#DADADA";
-		self.balloonColor = @"#CC0000";
-		self.borderAlpha = @(1);
-		self.borderColor = @"#888888";
-		self.rollOverColor = @"#CC0000";
-		self.type = @"sign";
+//		self.backgroundAlpha = @(1);
+//		self.backgroundColor = @"#DADADA";
+//		self.balloonColor = @"#CC0000";
+//		self.borderAlpha = @(1);
+//		self.borderColor = @"#888888";
+//		self.rollOverColor = @"#CC0000";
+//		self.type = @"sign";
 	}
 	return self;
 }

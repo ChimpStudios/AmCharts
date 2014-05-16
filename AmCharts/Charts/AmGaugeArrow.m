@@ -16,18 +16,18 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.alpha = @(1);
+//		self.alpha = @(1);
 		self.axis = [[AmGaugeAxis alloc] init];
-		self.borderAlpha = @(1);
-		self.clockWiseOnly = false;
-		self.color = @"#000000";
-		self.innerRadius = @"0";
-		self.nailAlpha = @(1);
-		self.nailBorderAlpha = @(0);
-		self.nailBorderThickness = @(1);
-		self.nailRadius = @(8);
-		self.radius = @"90%";
-		self.startWidth = @(8);
+//		self.borderAlpha = @(1);
+//		self.clockWiseOnly = false;
+//		self.color = @"#000000";
+//		self.innerRadius = @"0";
+//		self.nailAlpha = @(1);
+//		self.nailBorderAlpha = @(0);
+//		self.nailBorderThickness = @(1);
+//		self.nailRadius = @(8);
+//		self.radius = @"90%";
+//		self.startWidth = @(8);
 	}
 	return self;
 }
