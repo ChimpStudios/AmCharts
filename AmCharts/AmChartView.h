@@ -34,6 +34,11 @@
 @property (strong, nonatomic) NSString *templateFilepath;
 
 /**
+ Set the CSS background color of the body element.  'black', '#ffffff', 'rba(0,255,0)'
+ */
+@property (strong, nonatomic) NSString *bodyBackgroundColor;
+
+/**
  Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
  */
 - (void)drawChart;

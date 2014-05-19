@@ -117,6 +117,15 @@
         [self setup];
     }
 }
+- (void)setBodyBackgroundColor:(NSString *)bodyBackgroundColor
+{
+    if (bodyBackgroundColor && bodyBackgroundColor.length > 0) {
+        [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.body.style.backgroundColor = '%@';", bodyBackgroundColor]];
+    } else {
+        // default to white
+        [self stringByEvaluatingJavaScriptFromString:@"document.body.style.backgroundColor = 'white';"];
+    }
+}
 
 #pragma mark -
 #pragma mark - AmChartViewExport
