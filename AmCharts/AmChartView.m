@@ -119,6 +119,17 @@
 }
 - (void)setBodyBackgroundColor:(NSString *)bodyBackgroundColor
 {
+    if (!self.isReady) {
+        [self performSelector:@selector(setBodyBackgroundColor:)
+                   withObject:bodyBackgroundColor
+                   afterDelay:0.1];
+        return;
+    }
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                             selector:@selector(setBodyBackgroundColor:)
+                                               object:nil];
+    
     if (bodyBackgroundColor && bodyBackgroundColor.length > 0) {
         [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.body.style.backgroundColor = '%@';", bodyBackgroundColor]];
     } else {
