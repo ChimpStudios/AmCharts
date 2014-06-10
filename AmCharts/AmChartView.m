@@ -10,7 +10,6 @@
 #import "AmCharts.h"
 
 @interface AmChartView()
-@property (strong) JSContext *context;
 @property (assign) BOOL hasSetup;
 @end
 
@@ -58,6 +57,7 @@
     }
     
     _context[@"amChartView"] = self;
+    _context[@"jsDelegate"] = _jsDelegate;
     
     if (!self.templateFilepath) {
       self.templateFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
@@ -109,6 +109,13 @@
         }
     }
 }
+- (void)setJsDelegate:(id)jsDelegate
+{
+    if (_jsDelegate != jsDelegate) {
+        _jsDelegate = jsDelegate;
+        _context[@"jsDelegate"] = _jsDelegate;
+    }
+}
 - (void)setTemplateFilepath:(NSString *)templateFilepath
 {
     if (_templateFilepath != templateFilepath) {
@@ -158,21 +165,36 @@
 }
 
 #pragma mark -
+#pragma mark - FrameLoadDelegate
+- (void)webView:(WebView *)webView didCreateJavaScriptContext:(JSContext *)context forFrame:(WebFrame *)frame
+{
+#if DEBUG
+    if ([frame isEqualTo:[webView mainFrame]]) {
+        context[@"window"][@"onerror"] = ^(JSValue *message, JSValue *file, JSValue *line) {
+            NSLog(@"%@", message);
+        };
+    }
+#endif
+}
+
+#pragma mark -
 #pragma mark - Layout / Resizing
 NSInteger layoutCallCount;
 - (void)setNeedsLayout:(BOOL)flag
 {
     [super setNeedsLayout:flag];
-    layoutCallCount ++;
-    if (layoutCallCount > 2) {
-        [self validateChart];
-    } else {
-        [NSObject cancelPreviousPerformRequestsWithTarget:self
-                                                 selector:@selector(validateChart)
-                                                   object:nil];
-        [self performSelector:@selector(validateChart)
-                   withObject:nil
-                   afterDelay:0.1];
+    if (self.isReady) {
+        layoutCallCount ++;
+        if (layoutCallCount > 2) {
+            [self validateChart];
+        } else {
+            [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                                     selector:@selector(validateChart)
+                                                       object:nil];
+            [self performSelector:@selector(validateChart)
+                       withObject:nil
+                       afterDelay:0.1];
+        }
     }
 }
 
