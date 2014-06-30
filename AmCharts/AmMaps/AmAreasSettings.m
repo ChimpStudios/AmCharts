@@ -15,22 +15,22 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.alpha = @(1);
-		self.autoZoom = false;
-		self.balloonText = @"[[title]]";
-		self.color = @"#FFCC00";
-		self.colorSolid = @"#990000";
-		self.descriptionWindowWidth = @(250);
-		self.outlineAlpha = @(1);
-		self.outlineColor = @"#FFFFFF";
-		self.outlineThickness = @(0.5);
-		self.rollOverOutlineColor = @"#CC0000";
-		self.selectable = false;
-		self.selectedColor = @"#CC0000";
-		self.unlistedAreasAlpha = @(1);
-		self.unlistedAreasColor = @"#DDDDDD";
-		self.unlistedAreasOutlineAlpha = @(1);
-		self.unlistedAreasOutlineColor = @"#FFFFFF";
+		//self.alpha = @(1);
+		//self.autoZoom = false;
+		//self.balloonText = @"[[title]]";
+		//self.color = @"#FFCC00";
+		//self.colorSolid = @"#990000";
+		//self.descriptionWindowWidth = @(250);
+		//self.outlineAlpha = @(1);
+		//self.outlineColor = @"#FFFFFF";
+		//self.outlineThickness = @(0.5);
+		//self.rollOverOutlineColor = @"#CC0000";
+		//self.selectable = false;
+		//self.selectedColor = @"#CC0000";
+		//self.unlistedAreasAlpha = @(1);
+		//self.unlistedAreasColor = @"#DDDDDD";
+		//self.unlistedAreasOutlineAlpha = @(1);
+		//self.unlistedAreasOutlineColor = @"#FFFFFF";
 	}
 	return self;
 }

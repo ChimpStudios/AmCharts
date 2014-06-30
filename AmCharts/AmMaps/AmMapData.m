@@ -15,12 +15,12 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.bottomLatitude = @(-90);
-		self.getAreasFromMap = false;
-		self.leftLongitude = @(-180);
-		self.projection = @"mercator";
-		self.rightLongitude = @(180);
-		self.topLatitude = @(90);
+//		self.bottomLatitude = @(-90);
+//		self.getAreasFromMap = false;
+//		self.leftLongitude = @(-180);
+//		self.projection = @"mercator";
+//		self.rightLongitude = @(180);
+//		self.topLatitude = @(90);
 	}
 	return self;
 }

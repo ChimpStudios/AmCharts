@@ -15,19 +15,19 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.alpha = @(1);
-		self.balloonText = @"[[title]]";
+//		self.alpha = @(1);
+//		self.balloonText = @"[[title]]";
 		self.centered = true;
-		self.color = @"#000000";
-		self.descriptionWindowWidth = @(250);
-		self.labelColor = @"#000000";
-		self.labelFontSize = @(11);
-		self.labelPosition = @"right";
-		self.labelRollOverColor = @"#00CC00";
-		self.outlineAlpha = @(0);
-		self.outlineThickness = @(1);
-		self.rollOverScale = @(1);
-		self.selectedScale = @(1);
+//		self.color = @"#000000";
+//		self.descriptionWindowWidth = @(250);
+//		self.labelColor = @"#000000";
+//		self.labelFontSize = @(11);
+//		self.labelPosition = @"right";
+//		self.labelRollOverColor = @"#00CC00";
+//		self.outlineAlpha = @(0);
+//		self.outlineThickness = @(1);
+//		self.rollOverScale = @(1);
+//		self.selectedScale = @(1);
 	}
 	return self;
 }

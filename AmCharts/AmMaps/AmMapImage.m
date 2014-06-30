@@ -15,10 +15,10 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.labelShiftX = @(0);
-		self.labelShiftY = @(0);
-		self.scale = @(1);
-		self.widthAndHeightUnits = @"pixels";
+//		self.labelShiftX = @(0);
+//		self.labelShiftY = @(0);
+//		self.scale = @(1);
+//		self.widthAndHeightUnits = @"pixels";
 	}
 	return self;
 }

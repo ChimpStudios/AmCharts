@@ -199,7 +199,7 @@
 		111DF7091917C92100E11137 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF7081917C92100E11137 /* ViewController.m */; };
 		111DF70B1917C92100E11137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111DF70A1917C92100E11137 /* Images.xcassets */; };
 		111DF7291917C94F00E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
-		111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF74A1917C98C00E11137 /* JavaScriptCore.framework */; };
+		111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF74A1917C98C00E11137 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		111DF74C1917C9E200E11137 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
 		111DF74D1917C9E200E11137 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
 		111DF74E1917C9E200E11137 /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };

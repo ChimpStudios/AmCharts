@@ -15,17 +15,17 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.borderAlpha = @(1);
-		self.borderColor = @"#FFFFFF";
-		self.borderThickness = @(1);
-		self.bottom = @(10);
-		self.color = @"#000000";
-		self.fontSize = @(11);
-		self.height = @(12);
-		self.left = @(10);
-		self.minValue = @"0";
-		self.showAsGradient = false;
-		self.width = @(200);
+//		self.borderAlpha = @(1);
+//		self.borderColor = @"#FFFFFF";
+//		self.borderThickness = @(1);
+//		self.bottom = @(10);
+//		self.color = @"#000000";
+//		self.fontSize = @(11);
+//		self.height = @(12);
+//		self.left = @(10);
+//		self.minValue = @"0";
+//		self.showAsGradient = false;
+//		self.width = @(200);
 	}
 	return self;
 }

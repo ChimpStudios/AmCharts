@@ -10,26 +10,24 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <WebKit/WebKit.h>
 
-//#if NSAppKitVersionNumber > NSAppKitVersionNumber10_8
+// Check if JSExport functionality is available
+#if !JSC_OBJC_API_ENABLED
+@protocol JSExport
+@end
+#endif
+
 @protocol AmChartViewExport <JSExport>
 -(void)amChartsAreReady;
 @end
-//#endif
 
-@interface AmChartView : WebView
-//#if NSAppKitVersionNumber > NSAppKitVersionNumber10_8
-<AmChartViewExport>
-//#endif
+
+@interface AmChartView : WebView <AmChartViewExport>
 
 /**
  delegate that conforms to JSExport protocol
  Use in combination with templateFilepath to create your own html chart page with custom javascript listeners and callbacks
  */
-@property (weak, nonatomic) id
-//#if NSAppKitVersionNumber > NSAppKitVersionNumber10_8
-<JSExport>
-//#endif
-jsDelegate;
+@property (weak, nonatomic) id<JSExport> jsDelegate;
 
 @property (strong) JSContext *context;
 

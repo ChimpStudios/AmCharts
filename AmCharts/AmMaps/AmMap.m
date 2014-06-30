@@ -24,29 +24,29 @@
 	self = [super init];
 	if (self) {
 		self.allowClickOnSelectedObject = true;
-		self.allowMultipleDescriptionWindows = false;
+//		self.allowMultipleDescriptionWindows = false;
 		self.areasSettings = [[AmAreasSettings alloc] init];
-		self.backgroundZoomsToTop = false;
+//		self.backgroundZoomsToTop = false;
 		self.centerMap = true;
-		self.colorSteps = @(5);
-		self.developerMode = false;
+//		self.colorSteps = @(5);
+//		self.developerMode = false;
 		self.dragMap = true;
 		self.fitMapToContainer = true;
 		self.imagesSettings = [[AmImagesSettings alloc] init];
 		self.linesAboveImages = true;
 		self.linesSettings = [[AmLinesSettings alloc] init];
-		self.minValue = @(0);
-		self.mouseWheelZoomEnabled = false;
+//		self.minValue = @(0);
+//		self.mouseWheelZoomEnabled = false;
 		self.showAreasInList = true;
 		self.showBalloonOnSelectedObject = true;
-		self.showDescriptionOnHover = false;
-		self.showImagesInList  = false;
-		self.showLinesInList = false;
-		self.showObjectsAfterZoom = false;
+//		self.showDescriptionOnHover = false;
+//		self.showImagesInList  = false;
+//		self.showLinesInList = false;
+//		self.showObjectsAfterZoom = false;
 		self.useHandCursorOnClickableOjects = true;
 		self.useObjectColorForBalloon = true;
 		self.zoomControl = [[AmZoomControl alloc] init];
-		self.zoomDuration = @(1);
+//		self.zoomDuration = @(1);
 		self.zoomOnDoubleClick = true;
 	}
 	return self;
@@ -79,9 +79,14 @@
 		[dictRep setObject:self.colorSteps forKey:@"colorSteps"];
 	}
 
+    
 	if (self.dataProvider) {
-		[dictRep setObject:[self.mapDataProvider dictionaryRepresentation] forKey:@"dataProvider"];
+		//[dictRep setObject:self.dataProvider forKey:@"dataProvider"];
+#ifdef DEBUG
+        NSLog(@"Use mapDataProvider instead of dataProvider");
+#endif
 	}
+    
 
 	[dictRep setObject:@(self.developerMode) forKey:@"developerMode"];
 
@@ -99,6 +104,10 @@
 		[dictRep setObject:[self.linesSettings dictionaryRepresentation] forKey:@"linesSettings"];
 	}
 
+    if (self.mapDataProvider) {
+		[dictRep setObject:[self.mapDataProvider dictionaryRepresentation] forKey:@"dataProvider"];
+	}
+    
 	if (self.mapVar) {
 		[dictRep setObject:self.mapVar forKey:@"mapVar"];
 	}
@@ -157,7 +166,7 @@
 - (NSString *)javascriptRepresentation {
 	NSDictionary *dictRep = [self dictionaryRepresentation];
 
-	NSString *jsonRep = [NSString stringWithFormat:@"\"amMap\": %@", [dictRep JSONString]];
+	NSString *jsonRep = [NSString stringWithFormat:@"%@", [dictRep JSONString]];
 	return jsonRep;
 }
 

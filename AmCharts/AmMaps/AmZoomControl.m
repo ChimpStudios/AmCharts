@@ -15,32 +15,32 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.buttonBorderAlpha = @(1);
-		self.buttonBorderThickness = @(1);
-		self.buttonColorHover = @"#FF0000";
-		self.buttonCornerRadius = @(0);
-		self.buttonFillAlpha = @(1);
-		self.buttonFillColor = @"#990000";
-		self.buttonIconAlpha  = @(1);
-		self.buttonIconColor = @"#FFFFFF";
-		self.buttonRollOverColor = @"#CC0000";
-		self.buttonSize = @(18);
-		self.gridAlpha = @(1);
-		self.gridBackgroundAlpha = @(0.15);
-		self.gridBackgroundColor = @"#000000";
-		self.gridColor = @"#FFFFFF";
-		self.gridHeight = @(150);
-		self.homeIconColor = @"#FFFFFF";
-		self.homeIconFile = @"homeIcon.gif";
-		self.iconSize = @(11);
-		self.left = @(10);
-		self.maxZoomLevel = @(64);
-		self.minZoomLevel = @(1);
+//		self.buttonBorderAlpha = @(1);
+//		self.buttonBorderThickness = @(1);
+//		self.buttonColorHover = @"#FF0000";
+//		self.buttonCornerRadius = @(0);
+//		self.buttonFillAlpha = @(1);
+//		self.buttonFillColor = @"#990000";
+//		self.buttonIconAlpha  = @(1);
+//		self.buttonIconColor = @"#FFFFFF";
+//		self.buttonRollOverColor = @"#CC0000";
+//		self.buttonSize = @(18);
+//		self.gridAlpha = @(1);
+//		self.gridBackgroundAlpha = @(0.15);
+//		self.gridBackgroundColor = @"#000000";
+//		self.gridColor = @"#FFFFFF";
+//		self.gridHeight = @(150);
+//		self.homeIconColor = @"#FFFFFF";
+//		self.homeIconFile = @"homeIcon.gif";
+//		self.iconSize = @(11);
+//		self.left = @(10);
+//		self.maxZoomLevel = @(64);
+//		self.minZoomLevel = @(1);
 		self.panControlEnabled = true;
-		self.panStepSize = @(0.1);
-		self.top = @(10);
+//		self.panStepSize = @(0.1);
+//		self.top = @(10);
 		self.zoomControlEnabled  = true;
-		self.zoomFactor = @(2);
+//		self.zoomFactor = @(2);
 	}
 	return self;
 }

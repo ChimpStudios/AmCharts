@@ -15,14 +15,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.arrow = @"none";
-		self.arrowAlpha = @(1);
-		self.arrowSize = @(10);
-		self.balloonText = @"[[title]]";
-		self.color = @"#990000";
-		self.dashLength = @(0);
-		self.descriptionWindowWidth = @(250);
-		self.thickness = @(1);
+//		self.arrow = @"none";
+//		self.arrowAlpha = @(1);
+//		self.arrowSize = @(10);
+//		self.balloonText = @"[[title]]";
+//		self.color = @"#990000";
+//		self.dashLength = @(0);
+//		self.descriptionWindowWidth = @(250);
+//		self.thickness = @(1);
 	}
 	return self;
 }

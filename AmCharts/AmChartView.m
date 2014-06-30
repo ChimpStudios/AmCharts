@@ -15,6 +15,11 @@
 
 @implementation AmChartView
 
+- (void)dealloc
+{
+  //  NSLog(@"dealloc");
+}
+
 - (id)init
 {
     self = [super init];
@@ -126,16 +131,23 @@
 }
 - (void)setBodyBackgroundColor:(NSString *)bodyBackgroundColor
 {
-    if (!self.isReady) {
-        [self performSelector:@selector(setBodyBackgroundColor:)
-                   withObject:bodyBackgroundColor
-                   afterDelay:0.1];
+    if (!_isReady) {
+        if (_bodyBackgroundColor != bodyBackgroundColor) {
+            _bodyBackgroundColor = bodyBackgroundColor;
+            
+            if (bodyBackgroundColor && bodyBackgroundColor.length > 0) {
+                [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.body.style.backgroundColor = '%@';", bodyBackgroundColor]];
+            } else {
+                // default to white
+                [self stringByEvaluatingJavaScriptFromString:@"document.body.style.backgroundColor = 'white';"];
+            }
+        }
         return;
     }
     
-    [NSObject cancelPreviousPerformRequestsWithTarget:self
-                                             selector:@selector(setBodyBackgroundColor:)
-                                               object:nil];
+    if (_bodyBackgroundColor != bodyBackgroundColor) {
+        _bodyBackgroundColor = bodyBackgroundColor;
+    }
     
     if (bodyBackgroundColor && bodyBackgroundColor.length > 0) {
         [self stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.body.style.backgroundColor = '%@';", bodyBackgroundColor]];
@@ -150,8 +162,10 @@
 -(void)amChartsAreReady
 {
     if (!_isReady) {
-        self.isReady = YES;
-        NSLog(@"AmCharts is ready!");
+        [self willChangeValueForKey:@"isReady"];
+        _isReady = YES;
+        [self setBodyBackgroundColor:_bodyBackgroundColor];
+        [self didChangeValueForKey:@"isReady"];
     }
 }
 
@@ -203,4 +217,5 @@ NSInteger layoutCallCount;
    [self stringByEvaluatingJavaScriptFromString:@"chart.validateNow();"];
     layoutCallCount = 0;
 }
+
 @end

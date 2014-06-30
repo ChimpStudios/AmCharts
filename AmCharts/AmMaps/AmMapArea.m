@@ -15,7 +15,7 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoZoom = false;
+//		self.autoZoom = false;
 	}
 	return self;
 }

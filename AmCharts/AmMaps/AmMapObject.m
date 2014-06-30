@@ -19,12 +19,12 @@
 	if (self) {
 		self.fixedSize = true;
 		self.mouseEnabled = true;
-		self.passZoomValuesToTarget = false;
+//		self.passZoomValuesToTarget = false;
 		self.remainVisible = true;
-		self.selectable = false;
-		self.showAsSelected = false;
-		self.urlTarget = @"_self";
-		self.useTargetsZoomValues = false;
+//		self.selectable = false;
+//		self.showAsSelected = false;
+//		self.urlTarget = @"_self";
+//		self.useTargetsZoomValues = false;
 	}
 	return self;
 }
