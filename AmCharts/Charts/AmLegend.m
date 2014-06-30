@@ -111,6 +111,10 @@
 	if (self.labelText) {
 		[dictRep setObject:self.labelText forKey:@"labelText"];
 	}
+    
+    if (self.labelWidth) {
+		[dictRep setObject:self.labelWidth forKey:@"labelWidth"];
+	}
 
 	if (self.left) {
 		[dictRep setObject:self.left forKey:@"left"];
@@ -216,6 +220,10 @@
 
 	if (self.valueAlign) {
 		[dictRep setObject:self.valueAlign forKey:@"valueAlign"];
+	}
+    
+    if (self.valueFunction) {
+		[dictRep setObject:self.valueFunction forKey:@"valueFunction"];
 	}
 
 	if (self.valueText) {

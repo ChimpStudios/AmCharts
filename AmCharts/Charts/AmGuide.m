@@ -50,6 +50,8 @@
 		[dictRep setObject:self.date forKey:@"date"];
 	}
 
+    [dictRep setObject:@(self.expand) forKey:@"expand"];
+    
 	if (self.fillAlpha) {
 		[dictRep setObject:self.fillAlpha forKey:@"fillAlpha"];
 	}

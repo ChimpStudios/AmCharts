@@ -83,6 +83,11 @@
 @property(strong) NSString * labelText;
 
 /**
+ If width of the label is bigger than labelWidth, it will be wrapped.
+ */
+@property(strong) NSNumber * labelWidth;
+
+/**
  In case legend position is set to "absolute", you can set distance from left side of the chart, in pixels.
  */
 @property(strong) NSNumber * left;
@@ -231,6 +236,11 @@
  Alignment of the value text. Possible values are "left" and "right".
  */
 @property(strong) NSString * valueAlign;
+
+/**
+ You can use it to format value labels in any way you want. Legend will call this method and will pass GraphDataItem and formatted text of currently hovered item (works only with ChartCursor added to the chart). This method should return string which will be displayed as value in the legend.
+ */
+@property(strong) NSString * valueFunction;
 
 /**
  The text which will be displayed in the value portion of the legend. You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].

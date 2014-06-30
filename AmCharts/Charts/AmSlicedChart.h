@@ -97,6 +97,11 @@
 @property(strong) NSNumber * hoverAlpha;
 
 /**
+ You can use it to format data labels in any way you want. Chart will call this method and will pass Slice object and formatted text as attributes. This function should return string which will be displayed as label.
+ */
+@property(strong) NSString * labelFunction;
+
+/**
  Specifies whether data labels are visible.
  */
 @property(assign) BOOL labelsEnabled;
@@ -130,6 +135,11 @@
  Top margin of the chart.
  */
 @property(strong) NSNumber * marginTop;
+
+/**
+ If width of the label is bigger than maxLabelWidth, it will be wrapped.
+ */
+@property(strong) NSNumber * maxLabelWidth;
 
 /**
  Outline opacity. Value range is 0 - 1.

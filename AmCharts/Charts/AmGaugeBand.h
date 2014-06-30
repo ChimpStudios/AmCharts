@@ -17,6 +17,11 @@
 @property(strong) NSNumber * alpha;
 
 /**
+ When rolled-over, band will display balloon if you set some text for this property.
+ */
+@property(strong) NSString * balloonText;
+
+/**
  Color of a band.
  */
 @property(strong) NSString * color;

@@ -78,9 +78,13 @@
 	if (self.gridPosition) {
 		[dictRep setObject:self.gridPosition forKey:@"gridPosition"];
 	}
+    
+    if (self.labelColorField) {
+		[dictRep setObject:self.labelColorField forKey:@"labelColorField"];
+	}
 
 	if (self.labelFunction) {
-		[dictRep setObject:[self.labelFunction dictionaryRepresentation] forKey:@"labelFunction"];
+		[dictRep setObject:self.labelFunction forKey:@"labelFunction"];
 	}
 
 	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];
@@ -97,6 +101,10 @@
 
 	[dictRep setObject:@(self.startOnAxis) forKey:@"startOnAxis"];
 
+    if (self.tickPosition) {
+		[dictRep setObject:self.tickPosition forKey:@"tickPosition"];
+	}
+    
 	[dictRep setObject:@(self.twoLineMode) forKey:@"twoLineMode"];
 
 	return dictRep;

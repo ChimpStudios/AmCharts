@@ -116,6 +116,10 @@
 		[dictRep setObject:self.hoverAlpha forKey:@"hoverAlpha"];
 	}
 
+    if (self.labelFunction) {
+		[dictRep setObject:self.labelFunction forKey:@"labelFunction"];
+	}
+    
 	[dictRep setObject:@(self.labelsEnabled) forKey:@"labelsEnabled"];
 
 	if (self.labelTickAlpha) {
@@ -140,6 +144,10 @@
 
 	if (self.marginTop) {
 		[dictRep setObject:self.marginTop forKey:@"marginTop"];
+	}
+    
+    if (self.maxLabelWidth) {
+		[dictRep setObject:self.maxLabelWidth forKey:@"maxLabelWidth"];
 	}
 
 	if (self.outlineAlpha) {

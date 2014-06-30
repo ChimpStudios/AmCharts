@@ -125,6 +125,10 @@
 	if (self.labelFrequency) {
 		[dictRep setObject:self.labelFrequency forKey:@"labelFrequency"];
 	}
+    
+    if (self.labelOffset) {
+		[dictRep setObject:self.labelOffset forKey:@"labelOffset"];
+	}
 
 	if (self.labelRotation) {
 		[dictRep setObject:self.labelRotation forKey:@"labelRotation"];

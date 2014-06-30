@@ -66,6 +66,10 @@
 	if (self.rollOverColor) {
 		[dictRep setObject:self.rollOverColor forKey:@"rollOverColor"];
 	}
+    
+    if (self.showAt) {
+		[dictRep setObject:self.showAt forKey:@"showAt"];
+	}
 
 	[dictRep setObject:@(self.showOnAxis) forKey:@"showOnAxis"];
 
@@ -83,6 +87,10 @@
 
 	if (self.urlTarget) {
 		[dictRep setObject:self.urlTarget forKey:@"urlTarget"];
+	}
+    
+    if (self.value) {
+		[dictRep setObject:self.value forKey:@"value"];
 	}
 
 	return dictRep;

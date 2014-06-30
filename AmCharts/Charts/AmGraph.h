@@ -184,6 +184,11 @@
 @property(strong) NSString * fillColorsField;
 
 /**
+ XY chart only. If you set this property to id or reference of your X or Y axis, and the fillAlphas is > 0, the area between graph and axis will be filled with color, like in this demo.
+ */
+@property(strong) NSString * fillToAxis;
+
+/**
  You can set another graph here and if fillAlpha is &gt;0, the area from this graph to fillToGraph will be filled (instead of filling the area to the X axis).
  */
 @property(strong) AmGraph * fillToGraph;
@@ -227,6 +232,11 @@
  Name of label color field in data provider.
  */
 @property(strong) NSString * labelColorField;
+
+/**
+ You can use it to format labels of data items in any way you want. Graph will call this function and pass reference to GraphDataItem and formatted text as attributes. This function should return string which will be displayed as label.
+ */
+@property(strong) NSString * labelFunction;
 
 /**
  Position of value label. Possible values are: "bottom", "top", "right", "left", "inside", "middle". Sometimes position is changed by the chart, depending on a graph type, rotation, etc.
@@ -399,6 +409,11 @@
 @property(assign) BOOL stackable;
 
 /**
+ If you set it to false, the graph will not be hidden when user clicks on legend entry.
+ */
+@property(assign) BOOL switchable;
+
+/**
  Graph title.
  */
 @property(strong) NSString * title;
@@ -417,6 +432,11 @@
  Target to open URLs in, i.e. _blank, _top, etc.
  */
 @property(strong) NSString * urlTarget;
+
+/**
+ If negativeLineColor and/or negativeFillColors are set and useNegativeColorIfDown is set to true (default is false), the line, step and column graphs will use these colors for lines, bullets or columns if previous value is bigger than current value. In case you set openField for the graph, the graph will compare current value with openField value instead of comparing to previous value. 
+ */
+@property(assign) BOOL useNegativeColorIfDown;
 
 /**
  Specifies which value axis the graph will use. Will use the first value axis if not set. You can use reference to the real ValueAxis object or set value axis id.

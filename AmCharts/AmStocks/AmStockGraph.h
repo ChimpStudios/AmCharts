@@ -18,17 +18,22 @@
 /**
  Opacity of bullet border of comparing graph.
  */
-@property(strong) NSNumber * comparedGraphBulletBorderAlpha;
+@property(strong) NSNumber * compareGraphBulletBorderAlpha;
 
 /**
  Color of bullet border of comparing graph.
  */
-@property(strong) NSString * comparedGraphBulletBorderColor;
+@property(strong) NSString * compareGraphBulletBorderColor;
 
 /**
  Thickness of bullet border of comparing graph.
  */
-@property(strong) NSNumber * comparedGraphBulletBorderThickness;
+@property(strong) NSNumber * compareGraphBulletBorderThickness;
+
+/**
+ Color of compared graphs' bullets.
+ */
+@property(strong) NSString * compareGraphBulletColor;
 
 /**
  Specifies a field to be used to generate comparing graph. Note, this field is not the one used in your dataProvider, but toField from FieldMapping object.
@@ -48,7 +53,7 @@
 /**
  If you set some function, the graph will call it and pass GraphDataItem and AmGraph object to it. This function should return a string which will be displayed in a balloon. This will be used for graphs from compared data sets only. Use balloonFunction for main data set's graphs.
  */
-@property(assign) id compareGraphBalloonFunction;
+@property(strong) NSString * compareGraphBalloonFunction;
 
 /**
  Balloon text of comparing graph.

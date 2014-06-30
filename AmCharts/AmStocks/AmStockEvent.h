@@ -58,6 +58,11 @@
 @property(strong) NSString * rollOverColor;
 
 /**
+ Allows placing event bullets at open/close/low/high values.
+ */
+@property(strong) NSString * showAt;
+
+/**
  Specifies if the event should be displayed on category axis
  */
 @property(assign) BOOL showOnAxis;
@@ -81,6 +86,11 @@
  target of url, "_blank" for example.
  */
 @property(strong) NSString * urlTarget;
+
+/**
+ Allows placing event bullets at specified value.
+ */
+@property(strong) NSNumber * value;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

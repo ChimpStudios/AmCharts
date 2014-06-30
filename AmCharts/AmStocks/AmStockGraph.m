@@ -30,16 +30,20 @@
 
 	[dictRep setObject:@(self.comparable) forKey:@"comparable"];
 
-	if (self.comparedGraphBulletBorderAlpha) {
-		[dictRep setObject:self.comparedGraphBulletBorderAlpha forKey:@"comparedGraphBulletBorderAlpha"];
+	if (self.compareGraphBulletBorderAlpha) {
+		[dictRep setObject:self.compareGraphBulletBorderAlpha forKey:@"compareGraphBulletBorderAlpha"];
 	}
 
-	if (self.comparedGraphBulletBorderColor) {
-		[dictRep setObject:self.comparedGraphBulletBorderColor forKey:@"comparedGraphBulletBorderColor"];
+	if (self.compareGraphBulletBorderColor) {
+		[dictRep setObject:self.compareGraphBulletBorderColor forKey:@"compareGraphBulletBorderColor"];
 	}
 
-	if (self.comparedGraphBulletBorderThickness) {
-		[dictRep setObject:self.comparedGraphBulletBorderThickness forKey:@"comparedGraphBulletBorderThickness"];
+	if (self.compareGraphBulletBorderThickness) {
+		[dictRep setObject:self.compareGraphBulletBorderThickness forKey:@"compareGraphBulletBorderThickness"];
+	}
+    
+    if (self.compareGraphBulletColor) {
+		[dictRep setObject:self.compareGraphBulletColor forKey:@"compareGraphBulletColor"];
 	}
 
 	if (self.compareField) {
@@ -53,7 +57,7 @@
 	}
 
 	if (self.compareGraphBalloonFunction) {
-		[dictRep setObject:[self.compareGraphBalloonFunction dictionaryRepresentation] forKey:@"compareGraphBalloonFunction"];
+		[dictRep setObject:self.compareGraphBalloonFunction forKey:@"compareGraphBalloonFunction"];
 	}
 
 	if (self.compareGraphBalloonText) {

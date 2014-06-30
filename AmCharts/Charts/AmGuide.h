@@ -48,6 +48,11 @@
 @property(strong) NSDate * date;
 
 /**
+ Works if a guide is added to CategoryAxis and this axis is non-date-based. If you set it to true, the guide will start (or be placed, if it's not a fill) on the beginning of the category cell and will end at the end of toCategory cell.
+ */
+@property(assign) BOOL expand;
+
+/**
  Fill opacity. Value range is 0 - 1.
  */
 @property(strong) NSNumber * fillAlpha;

@@ -54,6 +54,7 @@
 //		self.showBulletsAt  = @"close";
 //		self.showHandOnHover = false;
 		self.stackable = true;
+        self.switchable = true;
 //		self.type = @"line";
 		self.visibleInLegend = true;
          
@@ -188,6 +189,10 @@
 		[dictRep setObject:self.fillAlphas forKey:@"fillAlphas"];
 	}
 
+    if (self.fillToAxis) {
+		[dictRep setObject:self.fillToAxis forKey:@"fillToAxis"];
+	}
+    
 	if (self.fillColors) {
 		[dictRep setObject:self.fillColors forKey:@"fillColors"];
 	}
@@ -226,6 +231,10 @@
 
 	if (self.labelColorField) {
 		[dictRep setObject:self.labelColorField forKey:@"labelColorField"];
+	}
+    
+    if (self.labelFunction) {
+		[dictRep setObject:self.labelFunction forKey:@"labelFunction"];
 	}
 
 	if (self.labelPosition) {
@@ -351,6 +360,8 @@
 	[dictRep setObject:@(self.showHandOnHover) forKey:@"showHandOnHover"];
 
 	[dictRep setObject:@(self.stackable) forKey:@"stackable"];
+    
+    [dictRep setObject:@(self.switchable) forKey:@"switchable"];
 
 	if (self.title) {
 		[dictRep setObject:self.title forKey:@"title"];
@@ -367,6 +378,8 @@
 	if (self.urlTarget) {
 		[dictRep setObject:self.urlTarget forKey:@"urlTarget"];
 	}
+    
+    [dictRep setObject:@(self.useNegativeColorIfDown) forKey:@"useNegativeColorIfDown"];
 
 	if (self.valueAxis) {
 		[dictRep setObject:self.valueAxis forKey:@"valueAxis"];

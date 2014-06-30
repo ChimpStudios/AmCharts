@@ -94,6 +94,10 @@
 
 	[dictRep setObject:@(self.fullWidth) forKey:@"fullWidth"];
 
+    if (self.graphBulletAlpha) {
+		[dictRep setObject:self.graphBulletAlpha forKey:@"graphBulletAlpha"];
+	}
+    
 	if (self.graphBulletSize) {
 		[dictRep setObject:self.graphBulletSize forKey:@"graphBulletSize"];
 	}

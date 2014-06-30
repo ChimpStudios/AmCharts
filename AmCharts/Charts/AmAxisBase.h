@@ -107,6 +107,11 @@
 @property(strong) NSNumber * labelFrequency;
 
 /**
+ You can use it to adjust position of axes labels. Works both with CategoryAxis and ValueAxis.
+ */
+@property(strong) NSNumber * labelOffset;
+
+/**
  Rotation angle of a label. Only horizontal axis' values can be rotated. If you set this for vertical axis, the setting will be ignored. Possible values from -90 to 90.
  */
 @property(strong) NSNumber * labelRotation;

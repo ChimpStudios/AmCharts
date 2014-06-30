@@ -25,6 +25,10 @@
 	if (self.alpha) {
 		[dictRep setObject:self.alpha forKey:@"alpha"];
 	}
+    
+    if (self.balloonText) {
+		[dictRep setObject:self.balloonText forKey:@"balloonText"];
+	}
 
 	if (self.color) {
 		[dictRep setObject:self.color forKey:@"color"];

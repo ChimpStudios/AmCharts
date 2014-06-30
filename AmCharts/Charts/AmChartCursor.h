@@ -86,6 +86,11 @@
 @property(assign) BOOL fullWidth;
 
 /**
+ If you make graph's bullets invisible by setting their opacity to 0 and will set graphBulletAlpha to 1, the bullets will only appear at the cursor's position.
+ */
+@property(strong) NSNumber * graphBulletAlpha;
+
+/**
  Size of a graph's bullet (if available) at the cursor position. If you don't want the bullet to change it's size, set this property to 1.
  */
 @property(strong) NSNumber * graphBulletSize;

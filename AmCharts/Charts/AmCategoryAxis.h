@@ -74,6 +74,11 @@
 @property(strong) NSString * gridPosition;
 
 /**
+ You can use it to set color of a axis label. Works only with non-date-based data.
+ */
+@property(strong) NSString * labelColorField;
+
+/**
  You can use this function to format Category axis labels. If this function is set, then it is called with the following parameters passed:<br>
                 <br>
                 if dates are not parsed:<br>
@@ -84,7 +89,7 @@
                 <br>
                 Your function should return string which will be displayed on the axis.
  */
-@property(assign) id labelFunction;
+@property(strong) NSString *labelFunction;
 
 /**
  If you set it to false, the start of longer periods won't use a different date format and won't be bold.
@@ -112,6 +117,11 @@
  Specifies whether the graph should start on axis or not. In case you display columns, it is recommended to set this to false. If parseDates is set to true, startOnAxis will allways be false, unless equalSpacing is set to true.
  */
 @property(assign) BOOL startOnAxis;
+
+/**
+ Position of a axis tick. Works only with non-date-based data.  Default value is "middle"
+ */
+@property(strong) NSString * tickPosition;
 
 /**
  Works only when parseDates is set to true and equalSpacing is false. If you set it to true, at the position where bigger period changes, category axis will display date strings of bot small and big period, in two rows.
