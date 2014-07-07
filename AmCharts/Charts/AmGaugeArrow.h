@@ -1,10 +1,10 @@
-// 
+//
 //  AmGaugeArrow.h
 //  AmCharts
-// 
+//
 //  Created by Andrew on 4/28/14.
 //  Copyright (c) 2014 Chimp Studios. All rights reserved.
-// 
+//
 
 #import <Foundation/Foundation.h>
 
@@ -36,6 +36,11 @@
  Color of an arrow.
  */
 @property(strong) NSString * color;
+
+/**
+ Unique id of an arrow.
+ */
+@property(strong) NSString * uid;
 
 /**
  Inner radius of an arrow.
@@ -71,6 +76,11 @@
  Width of arrow root.
  */
 @property(strong) NSNumber * startWidth;
+
+/**
+ Value to which the arrow should point at.
+ */
+@property(strong) NSNumber * value;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;
