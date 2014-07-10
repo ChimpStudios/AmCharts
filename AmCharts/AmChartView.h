@@ -51,6 +51,8 @@
  */
 @property (strong, nonatomic) NSString *bodyBackgroundColor;
 
+@property (assign) NSInteger tag;
+
 /**
  Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
  */
