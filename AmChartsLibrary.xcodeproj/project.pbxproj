@@ -335,6 +335,9 @@
 		1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4A9190E9E5A004D52EC /* MainMenu.xib */; };
 		1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4AC190E9E5A004D52EC /* Images.xcassets */; };
 		11892F61191093AE00839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
+		11A2CE48196F567A00DCA68C /* AmExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A2CE46196F567A00DCA68C /* AmExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11A2CE49196F567A00DCA68C /* AmExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2CE47196F567A00DCA68C /* AmExport.m */; };
+		11A2CE4A196F567A00DCA68C /* AmExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2CE47196F567A00DCA68C /* AmExport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -601,6 +604,8 @@
 		11892A2E191088AD00839813 /* AmXYChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmXYChart.m; sourceTree = "<group>"; };
 		11892A541910915000839813 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		11892F60191093AE00839813 /* AmChartsWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AmChartsWeb; sourceTree = SOURCE_ROOT; };
+		11A2CE46196F567A00DCA68C /* AmExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmExport.h; sourceTree = "<group>"; };
+		11A2CE47196F567A00DCA68C /* AmExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmExport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -918,6 +923,8 @@
 				118929FC191088AD00839813 /* AmDataSet.m */,
 				118929FD191088AD00839813 /* AmDataSetSelector.h */,
 				118929FE191088AD00839813 /* AmDataSetSelector.m */,
+				11A2CE46196F567A00DCA68C /* AmExport.h */,
+				11A2CE47196F567A00DCA68C /* AmExport.m */,
 				118929FF191088AD00839813 /* AmFunnelChart.h */,
 				11892A00191088AD00839813 /* AmFunnelChart.m */,
 				11892A01191088AD00839813 /* AmGaugeArrow.h */,
@@ -977,6 +984,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A2CE48196F567A00DCA68C /* AmExport.h in Headers */,
 				110387121912896B00F917CE /* AmCharts.h in Headers */,
 				1103871319128A4300F917CE /* AmAngularGauge.h in Headers */,
 				1103871419128A4300F917CE /* AmAngularGauge.m in Headers */,
@@ -1319,6 +1327,7 @@
 				110386FB1912894D00F917CE /* AmObjectList.m in Sources */,
 				110386FD1912894D00F917CE /* AmSmallMap.m in Sources */,
 				110386FF1912894E00F917CE /* AmValueLegend.m in Sources */,
+				11A2CE49196F567A00DCA68C /* AmExport.m in Sources */,
 				110387011912894E00F917CE /* AmZoomControl.m in Sources */,
 				110387031912894E00F917CE /* AmStockChart.m in Sources */,
 				110387051912894E00F917CE /* AmStockEvent.m in Sources */,
@@ -1396,6 +1405,7 @@
 				111DF77C1917C9E200E11137 /* AmMapObject.m in Sources */,
 				111DF77D1917C9E200E11137 /* AmObjectList.m in Sources */,
 				111DF77E1917C9E200E11137 /* AmSmallMap.m in Sources */,
+				11A2CE4A196F567A00DCA68C /* AmExport.m in Sources */,
 				111DF77F1917C9E200E11137 /* AmValueLegend.m in Sources */,
 				111DF7801917C9E200E11137 /* AmZoomControl.m in Sources */,
 				111DF7811917C9E200E11137 /* AmStockChart.m in Sources */,

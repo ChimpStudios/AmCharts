@@ -12,6 +12,7 @@
 #import "AmLegend.h"
 #import "AmTitle.h"
 #import "AmLabel.h"
+#import "AmExport.h"
 
 @implementation AmChart
 
@@ -77,6 +78,10 @@
         }
 		[dictRep setObject:tmpArr forKey:@"allLabels"];
 	}
+    
+    if (self.amExport) {
+        [dictRep setObject:[self.amExport dictionaryRepresentation] forKey:@"amExport"];
+    }
 
 	if (self.backgroundAlpha) {
 		[dictRep setObject:self.backgroundAlpha forKey:@"backgroundAlpha"];

@@ -16,6 +16,7 @@
 #import "AmChartView.h"
 #endif
 
+#import "AmExport.h"
 #import "AmAngularGauge.h"
 #import "AmBalloon.h"
 #import "AmChart.h"

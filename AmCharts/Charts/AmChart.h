@@ -10,6 +10,7 @@
 
 @class AmBalloon;
 @class AmLegend;
+@class AmExport;
 
 @interface AmChart : NSObject
 
@@ -18,6 +19,11 @@
     {"x": 20, "y": 20, "text": "this is label", "align": "left", "size": 12, "color": "#CC0000", "alpha": 1, "rotation": 0, "bold": true, "url": "http://www.amcharts.com"}
  */
 @property(strong) NSMutableArray * allLabels;
+
+/**
+ AAmExport object.
+ */
+@property(strong) AmExport * amExport;
 
 /**
  Opacity of background. Set it to &gt;0 value if you want backgroundColor to work. However we recommend changing div's background-color style for changing background color.
