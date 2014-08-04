@@ -334,6 +334,7 @@
 		1151A4A8190E9E5A004D52EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4A7190E9E5A004D52EC /* AppDelegate.m */; };
 		1151A4AB190E9E5A004D52EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4A9190E9E5A004D52EC /* MainMenu.xib */; };
 		1151A4AD190E9E5A004D52EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151A4AC190E9E5A004D52EC /* Images.xcassets */; };
+		118902EC198FDACC008D2C30 /* AmExport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11A2CE46196F567A00DCA68C /* AmExport.h */; };
 		11892F61191093AE00839813 /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
 		11A2CE48196F567A00DCA68C /* AmExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A2CE46196F567A00DCA68C /* AmExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11A2CE49196F567A00DCA68C /* AmExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2CE47196F567A00DCA68C /* AmExport.m */; };
@@ -364,6 +365,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				118902EC198FDACC008D2C30 /* AmExport.h in CopyFiles */,
 				111DF7891917CA5C00E11137 /* AmCharts.h in CopyFiles */,
 				111DF82A1917E9C000E11137 /* AmMobileChartView.h in CopyFiles */,
 				111DF78A1917CA5C00E11137 /* AmCategories.h in CopyFiles */,
