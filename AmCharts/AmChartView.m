@@ -199,7 +199,7 @@ NSInteger layoutCallCount;
     [super setNeedsLayout:flag];
     if (self.isReady) {
         layoutCallCount ++;
-        if (layoutCallCount > 2) {
+        if (layoutCallCount > 4) {
             [self validateChart];
         } else {
             [NSObject cancelPreviousPerformRequestsWithTarget:self
@@ -214,7 +214,10 @@ NSInteger layoutCallCount;
 
 - (void)validateChart
 {
-   [self stringByEvaluatingJavaScriptFromString:@"chart.validateNow();"];
+    [self stringByEvaluatingJavaScriptFromString:@"chart.invalidateSize();"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self stringByEvaluatingJavaScriptFromString:@"if (chart.periodSelector) {chart.periodSelector.setDefaultPeriod();}"];
+    });
     layoutCallCount = 0;
 }
 
