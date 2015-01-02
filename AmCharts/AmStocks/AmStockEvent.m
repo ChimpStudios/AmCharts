@@ -55,8 +55,8 @@
 		[dictRep setObject:self.date forKey:@"date"];
 	}
 
-	if (self.description) {
-		[dictRep setObject:self.description forKey:@"description"];
+	if (self.amDescription) {
+		[dictRep setObject:self.amDescription forKey:@"description"];
 	}
 
 	if (self.graph) {

@@ -35,7 +35,7 @@
 /**
  Description of MapObject. Description is displayed in DescriptionWindow (when user clicks on an object). It can also be displayed in a roll-over balloon. DescriptionWindow can display HTML formatted code.
  */
-@property(strong) NSString * description;
+@property(strong) NSString * amDescription;
 
 /**
  Height of description window.

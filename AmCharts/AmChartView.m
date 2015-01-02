@@ -158,6 +158,13 @@
 }
 
 #pragma mark -
+#pragma mark - Getters
+- (NSInteger)tag
+{
+    return _mTag;
+}
+
+#pragma mark -
 #pragma mark - AmChartViewExport
 -(void)amChartsAreReady
 {

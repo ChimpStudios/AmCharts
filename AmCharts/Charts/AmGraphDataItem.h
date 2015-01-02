@@ -50,7 +50,7 @@
 /**
  Description.
  */
-@property(strong) NSString * description;
+@property(strong) NSString * amDescription;
 
 /**
  Array of colors of the data item, used by column and candlestick chart only.

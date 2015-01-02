@@ -51,8 +51,8 @@
 		[dictRep setObject:self.dataContext forKey:@"dataContext"];
 	}
 
-	if (self.description) {
-		[dictRep setObject:self.description forKey:@"description"];
+	if (self.amDescription) {
+		[dictRep setObject:self.amDescription forKey:@"description"];
 	}
 
 	if (self.fillColors) {

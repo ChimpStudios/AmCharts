@@ -45,7 +45,7 @@
 /**
  A description that will be shown in a balloon when user rolls over mouse cursor over event icon.
  */
-@property(strong) NSString * description;
+@property(strong) NSString * amDescription;
 
 /**
  graph on which event will be displayed. You can use a reference to the stock graph object or id of the graph.

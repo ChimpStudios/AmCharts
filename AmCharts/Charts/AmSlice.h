@@ -29,7 +29,7 @@
 /**
  Slice description.
  */
-@property(strong) NSString * description;
+@property(strong) NSString * amDescription;
 
 /**
  Specifies whether the slice is hidden

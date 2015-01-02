@@ -48,8 +48,8 @@
 		[dictRep setObject:self.customData forKey:@"customData"];
 	}
 
-	if (self.description) {
-		[dictRep setObject:self.description forKey:@"description"];
+	if (self.amDescription) {
+		[dictRep setObject:self.amDescription forKey:@"description"];
 	}
 
 	if (self.descriptionWindowHeight) {
