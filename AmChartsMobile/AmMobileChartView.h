@@ -26,6 +26,11 @@
 @property (strong, nonatomic) id chart;
 
 /**
+ filepath for HTML webview contents.  Set this is you want to use a custom HTML file for chart rendering.
+ */
+@property (strong, nonatomic) NSString *templateFilepath;
+
+/**
  Boolean value that signals whether AmCharts.ready() has fired yet
  */
 @property (assign) BOOL isReady;

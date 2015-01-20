@@ -11,6 +11,8 @@
 
 @interface AmMobileChartView()
 @property (strong) JSContext *context;
+
+@property (assign) BOOL hasSetup;
 @end
 
 @implementation AmMobileChartView
@@ -20,19 +22,63 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.chartView = [[UIWebView alloc] initWithFrame:frame];
-        [self addSubview:self.chartView];
-        self.chartView.delegate = self;
-        
-        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AmChartResources" withExtension:@"bundle"]];
-        NSString *localFilepath = [bundle pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
-        NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
-        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
-        [self.chartView loadRequest:request];
+        [self setup];
     }
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    if (_hasSetup) {
+        return;
+    }
+    self.hasSetup = YES;
+    
+    self.chartView = [[UIWebView alloc] initWithFrame:self.frame];
+    [self addSubview:self.chartView];
+    self.chartView.delegate = self;
+    
+    
+    if (!self.templateFilepath) {
+        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AmChartResources" withExtension:@"bundle"]];
+        self.templateFilepath = [bundle pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+    }
+    
+    NSURL *localURL = [NSURL fileURLWithPath:self.templateFilepath];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
+    [self.chartView loadRequest:request];
+}
+
+- (void)awakeFromNib
+{
+    [self setup];
+}
+
+- (void)setTemplateFilepath:(NSString *)templateFilepath
+{
+    if (_templateFilepath != templateFilepath) {
+        _templateFilepath = templateFilepath;
+        self.hasSetup = NO;
+        [self setup];
+    }
+}
 
 - (void)drawChart
 {

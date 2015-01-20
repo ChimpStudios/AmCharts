@@ -50,6 +50,8 @@
     if (self.hasSetup) {
         return;
     }
+    self.hasSetup = YES;
+    
     
     // set the delegates
     [self setFrameLoadDelegate:self];
@@ -73,7 +75,7 @@
     NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
     [self.mainFrame loadRequest:request];
-    self.hasSetup = YES;
+    
 }
 - (void)awakeFromNib
 {
