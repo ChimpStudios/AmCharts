@@ -62,8 +62,7 @@
     }
     
     NSURL *localURL = [NSURL fileURLWithPath:self.templateFilepath];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
-    [self.chartView loadRequest:request];
+    [self.chartView loadHTMLString:[NSString stringWithContentsOfFile:self.templateFilepath encoding:NSUTF8StringEncoding error:nil] baseURL:localURL];
 }
 
 - (void)awakeFromNib
@@ -88,8 +87,8 @@
     } else if (_chart) {
 #ifdef DEBUG
         NSLog(@"AmCharts is not ready yet!");
-        [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
 #endif
+        [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
     } else if (_isReady) {
 #ifdef DEBUG
         NSLog(@"No chart has been assigned");

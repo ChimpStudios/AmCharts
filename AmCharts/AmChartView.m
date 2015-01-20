@@ -73,8 +73,10 @@
     // load the chart.html page in preparation for future charting needs
     NSString *localFilepath = self.templateFilepath;
     NSURL *localURL = [NSURL fileURLWithPath:localFilepath];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
-    [self.mainFrame loadRequest:request];
+  //  NSURLRequest *request = [[NSURLRequest alloc] initWithURL:localURL];
+   // [self.mainFrame loadRequest:request];
+    
+    [self.mainFrame loadHTMLString:[NSString stringWithContentsOfFile:self.templateFilepath encoding:NSUTF8StringEncoding error:nil] baseURL:localURL];
     
 }
 - (void)awakeFromNib
@@ -90,12 +92,10 @@
     } else if (_chart) {
 #ifdef DEBUG
         NSLog(@"AmCharts is not ready yet!");
+#endif
         [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
-#endif
     } else if (_isReady) {
-#ifdef DEBUG
         NSLog(@"No chart has been assigned");
-#endif
     }
 }
 
