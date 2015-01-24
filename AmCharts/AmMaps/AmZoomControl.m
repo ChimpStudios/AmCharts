@@ -142,7 +142,7 @@
 		[dictRep setObject:self.top forKey:@"top"];
 	}
 
-	[dictRep setObject:@(self.zoomControlEnabled ) forKey:@"zoomControlEnabled "];
+	[dictRep setObject:@(self.zoomControlEnabled ) forKey:@"zoomControlEnabled"];
 
 	if (self.zoomFactor) {
 		[dictRep setObject:self.zoomFactor forKey:@"zoomFactor"];

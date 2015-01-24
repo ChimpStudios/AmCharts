@@ -49,7 +49,7 @@
     */
    // NSLog(@"\n%@", [chart javascriptRepresentation]);
      
-    
+    /*
     AmStockChart *stockChart = [[AmStockChart alloc] init];
     stockChart.type = @"stock";
     stockChart.pathToImages = @"amcharts/images/";
@@ -103,6 +103,7 @@
     [self.chartView drawChart];
     
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
+    */
     
     /*
     AmPieChart *pieChart = [[AmPieChart alloc] init];
@@ -120,6 +121,28 @@
     [self.chartView setChart:pieChart];
     [self.chartView drawChart];
     */
+    
+    AmMap *map = [[AmMap alloc] init];
+    map.type = @"map";
+    map.theme = @"none";
+    map.pathToImages = @"ammap/images/";
+    
+    AmMapData *mapData = [[AmMapData alloc] init];
+    mapData.map = @"worldLow";
+    mapData.getAreasFromMap = true;
+    
+    map.mapDataProvider = mapData;
+    
+    AmAreasSettings *areaSettings = [[AmAreasSettings alloc] init];
+    areaSettings.autoZoom = true;
+    areaSettings.selectedColor = @"#CC0000";
+    
+    AmSmallMap *smallMap = [[AmSmallMap alloc] init];
+    
+    map.smallMap = smallMap;
+    
+    [self.chartView setChart:map];
+    [self.chartView drawChart];
 }
 
 @end

@@ -356,6 +356,13 @@
 			remoteGlobalIDString = 111DF7271917C94F00E11137;
 			remoteInfo = AmChartsMobile;
 		};
+		11A31CBC1A732D4600163B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1151A489190E9E5A004D52EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 111DF8141917E3C700E11137;
+			remoteInfo = AmChartResources;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1137,6 +1144,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				11A31CBD1A732D4600163B23 /* PBXTargetDependency */,
 				111DF80F1917D6BE00E11137 /* PBXTargetDependency */,
 			);
 			name = "AmCharts iOS Example";
@@ -1447,6 +1455,11 @@
 			isa = PBXTargetDependency;
 			target = 111DF7271917C94F00E11137 /* AmChartsMobile */;
 			targetProxy = 111DF80E1917D6BE00E11137 /* PBXContainerItemProxy */;
+		};
+		11A31CBD1A732D4600163B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 111DF8141917E3C700E11137 /* AmChartResources */;
+			targetProxy = 11A31CBC1A732D4600163B23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
