@@ -134,7 +134,7 @@ map.smallMap = smallMap;
 [self.chartView drawChart];
 ```
 produces this map:
-~[AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/World%20Map.png)
+![AmCharts in Cocoa App](https://raw.githubusercontent.com/ChimpStudios/AmCharts/master/Readme/World%20Map.png)
 
 ## Questions
 This repo contains both a Mac and iOS example app.  You can check how they are set up to make sure that your own project is configured properly.  The AmChart website has extensive [documentation](http://docs.amcharts.com/3/) as well as numerous [tutorials](http://www.amcharts.com/tutorials/).  If you find a bug in this wrapper library, send me a pull request with a fix, or at the very least do some detective work first before opening up an issue.
