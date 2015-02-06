@@ -91,6 +91,10 @@
 	if (self.compareGraphLineAlpha) {
 		[dictRep setObject:self.compareGraphLineAlpha forKey:@"compareGraphLineAlpha"];
 	}
+    
+    if (self.compareGraphLineColor) {
+        [dictRep setObject:self.compareGraphLineColor forKey:@"compareGraphLineColor"];
+    }
 
 	if (self.compareGraphLineThickness) {
 		[dictRep setObject:self.compareGraphLineThickness forKey:@"compareGraphLineThickness"];

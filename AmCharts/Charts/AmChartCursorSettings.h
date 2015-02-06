@@ -12,6 +12,11 @@
 @interface AmChartCursorSettings : NSObject
 
 /**
+ defines if the balloon should be shown above the datapoint or sideways
+ */
+@property(strong) NSString * balloonPointerOrientation;
+
+/**
  Specifies if bullet for each graph will follow the cursor.
  */
 @property(assign) BOOL bulletsEnabled;
@@ -62,6 +67,11 @@
 @property(assign) BOOL enabled;
 
 /**
+ Size of a graph's bullet (if available) at the cursor position. If you don't want the bullet to change it's size, set this property to 1.
+ */
+@property(strong) NSNumber * graphBulletSize;
+
+/**
  If set to true, instead of a cursor line user will see a fill which width will always be equal to the width of one data item. We'd recommend setting cusrsorAlpha to 0.1 or some other small number if using this feature.
  */
 @property(assign) BOOL fullWidth;
@@ -75,6 +85,21 @@
  Specifies whether value balloons are enabled. In case they are not, the balloons might be displayed anyway, when the user rolls-over the column or bullet.
  */
 @property(assign) BOOL valueBalloonsEnabled;
+
+/**
+ Opacity of value line. Will use cursorAlpha value if not set.
+ */
+@property(strong) NSNumber * valueLineAlpha;
+
+/**
+ Specifies if value balloon next to value axis labels should be displayed. If you have more than one axis, set valueLineAxis property to indicate which axis should display the balloon.
+ */
+@property(assign) BOOL valueLineBalloonEnabled;
+
+/**
+ Specifies if cursor of Serial chart should display horizontal (or vertical if chart is rotated) line. This line might help users to compare distant values of a chart. You can also enable value balloon on this line by setting valueLineAxis property of ChartCursor.
+ */
+@property(assign) BOOL valueLineEnabled;
 
 /**
  Specifies if the user can zoom-in the chart. If pan is set to true, zoomable is switched to false automatically.

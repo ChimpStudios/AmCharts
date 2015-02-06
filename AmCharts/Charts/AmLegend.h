@@ -63,6 +63,11 @@
 @property(strong) NSString * divId;
 
 /**
+ Specifies if legend is enabled or not.
+ */
+@property(assign) BOOL enabled;
+
+/**
  Specifies if each of legend entry should be equal to the most wide entry. Won't look good if legend has more than one line.
  */
 @property(assign) BOOL equalWidths;

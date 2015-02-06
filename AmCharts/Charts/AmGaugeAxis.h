@@ -212,6 +212,11 @@
 @property(strong) NSString * unitPosition;
 
 /**
+ Specifies if small and big numbers should use prefixes to make them more readable.
+ */
+@property(assign) BOOL usePrefixes;
+
+/**
  Interval, at which ticks with values should be placed.
  */
 @property(strong) NSNumber * valueInterval;

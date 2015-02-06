@@ -11,8 +11,15 @@
 @class AmBalloon;
 @class AmLegend;
 @class AmExport;
+@class AmResponsive;
 
 @interface AmChart : NSObject
+
+
+/**
+ Specifies, if class names should be added to chart elements.
+ */
+@property(assign) BOOL addClassNames;
 
 /**
  Array of Labels. Example of label object, with all possible properties:<br>
@@ -21,7 +28,7 @@
 @property(strong) NSMutableArray * allLabels;
 
 /**
- AAmExport object.
+ AmExport object.
  */
 @property(strong) AmExport * amExport;
 
@@ -49,6 +56,11 @@
  Color of chart's border. You should set borderAlpha &gt;0 in order border to be visible. We recommend setting border color directly on a chart's DIV instead of using this property.
  */
 @property(strong) NSString * borderColor;
+
+/**
+ This prefix is added to all class names which are added to all visual elements of a chart in case addClassNames is set to true.
+ */
+@property(strong) NSString * classNamePrefix;
 
 /**
  Text color.
@@ -144,6 +156,11 @@
  Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc. Prefixes are used on value axes and in the legend. To enable prefixes, set usePrefixes property to true.
  */
 @property(strong) NSMutableArray * prefixesOfSmallNumbers;
+
+/**
+ Object responsible for automatic plugin resizing
+ */
+@property(strong) AmResponsive * responsive;
 
 /**
  Theme of a chart. Config files of themes can be found in amcharts/themes/ folder. More info about using themes.

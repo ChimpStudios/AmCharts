@@ -20,8 +20,20 @@
 @class AmSerialChart;
 @class AmStockEventSettings;
 @class AmValueAxesSettings;
+@class AmExport;
+@class AmResponsive;
 
 @interface AmStockChart : NSObject
+
+/**
+ Specifies, if class names should be added to chart elements.
+ */
+@property(assign) BOOL addClassNames;
+
+/**
+ AmExport object.
+ */
+@property(strong) AmExport * amExport;
 
 /**
  Specifies if animation was already played. Animation is only played once, when chart is rendered for the first time. If you want the animation to be repeated, set this property to false.
@@ -52,6 +64,11 @@
  Chart scrollbar settings.
  */
 @property(strong) AmChartScrollbarSettings * chartScrollbarSettings;
+
+/**
+ This prefix is added to all class names which are added to all visual elements of a chart in case addClassNames is set to true.
+ */
+@property(strong) NSString * classNamePrefix;
 
 /**
  Array of colors used by data sets if no color was set explicitly on data set itself.
@@ -87,6 +104,11 @@
  Object of export config. Will enable saving chart as an image for all modern browsers except IE9 (IE10+ works fine).
  */
 @property(strong) NSString * exportConfig;
+
+/**
+ Specifies if the chart should always display full first and last data item when data is grouped to a longer period if the chart is zoomed from the beginning or end of the data.
+ */
+@property(assign) BOOL extendToFullPeriod;
 
 /**
  Defines on which day week starts. 0 - Sunday, 1 - Monday...
@@ -132,6 +154,11 @@
  Period selector object. You can add it if you want user's to be able to enter date ranges or zoom chart with predefined period buttons.
  */
 @property(strong) AmPeriodSelector * periodSelector;
+
+/**
+ Object responsible for automatic plugin resizing
+ */
+@property(strong) AmResponsive * responsive;
 
 /**
  Read-only. Scrollbar's chart object.

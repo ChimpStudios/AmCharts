@@ -22,6 +22,7 @@
 //		self.borderAlpha = @(0);
 		//self.borderColor = @"#000000";
 		//self.color = @"#000000";
+        self.enabled = true;
 		self.equalWidths = true;
 //		self.fontSize = @(11);
 //		self.horizontalGap = @(0);
@@ -97,6 +98,8 @@
 	if (self.divId) {
 		[dictRep setObject:self.divId forKey:@"divId"];
 	}
+    
+    [dictRep setObject:@(self.enabled) forKey:@"enabled"];
 
 	[dictRep setObject:@(self.equalWidths) forKey:@"equalWidths"];
 

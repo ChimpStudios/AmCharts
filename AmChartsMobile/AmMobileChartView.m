@@ -85,10 +85,13 @@
         NSString *scrpt = [NSString stringWithFormat:@"generateChartWithJSONData(%@);", [_chart javascriptRepresentation]];
         [self.chartView stringByEvaluatingJavaScriptFromString:scrpt];
     } else if (_chart) {
+        /*
 #ifdef DEBUG
         NSLog(@"AmCharts is not ready yet!");
 #endif
+         */
         [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
+         
     } else if (_isReady) {
 #ifdef DEBUG
         NSLog(@"No chart has been assigned");
@@ -133,7 +136,7 @@
 }
 -(void)webViewDidFinishLoad:(UIWebView *)view{
     self.isReady = YES;
-    
+
     self.context = [view valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"]; // Undocumented access to UIWebView's JSContext
     self.context[@"ios"] = self;
 }

@@ -49,6 +49,11 @@
 @property(strong) NSNumber * dragIconWidth;
 
 /**
+ Specifies if scrollbar is enabled. You can hide/show scrollbar using this property without actually removing it.
+ */
+@property(assign) BOOL enabled;
+
+/**
  Specifies which graph will be displayed in the scrollbar. Only Serial chart's scrollbar can display a graph.
  */
 @property(strong) AmGraph * graph;

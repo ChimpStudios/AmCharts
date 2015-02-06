@@ -205,10 +205,22 @@
 		[dictRep setObject:[self.fillToGraph dictionaryRepresentation] forKey:@"fillToGraph"];
 	}
 
+    if (self.fixedColumnWidth) {
+        [dictRep setObject:self.fixedColumnWidth forKey:@"fixedColumnWidth"];
+    }
+    
 	if (self.fontSize) {
 		[dictRep setObject:self.fontSize forKey:@"fontSize"];
 	}
 
+    if (self.gapField) {
+        [dictRep setObject:self.gapField forKey:@"gapField"];
+    }
+    
+    if (self.gapPeriod) {
+        [dictRep setObject:self.gapPeriod forKey:@"gapPeriod"];
+    }
+    
 	if (self.gradientOrientation) {
 		[dictRep setObject:self.gradientOrientation forKey:@"gradientOrientation"];
 	}
@@ -229,6 +241,10 @@
 
 	[dictRep setObject:@(self.includeInMinMax) forKey:@"includeInMinMax"];
 
+    if (self.labelAnchor) {
+        [dictRep setObject:self.labelAnchor forKey:@"labelAnchor"];
+    }
+    
 	if (self.labelColorField) {
 		[dictRep setObject:self.labelColorField forKey:@"labelColorField"];
 	}
@@ -236,10 +252,18 @@
     if (self.labelFunction) {
 		[dictRep setObject:self.labelFunction forKey:@"labelFunction"];
 	}
+    
+    if (self.labelOffset) {
+        [dictRep setObject:self.labelOffset forKey:@"labelOffset"];
+    }
 
 	if (self.labelPosition) {
 		[dictRep setObject:self.labelPosition forKey:@"labelPosition"];
 	}
+    
+    if (self.labelRotation) {
+        [dictRep setObject:self.labelRotation forKey:@"labelRotation"];
+    }
 
 	if (self.labelText) {
 		[dictRep setObject:self.labelText forKey:@"labelText"];
@@ -344,6 +368,8 @@
 	if (self.precision) {
 		[dictRep setObject:self.precision forKey:@"precision"];
 	}
+    
+    [dictRep setObject:@(self.proCandlesticks) forKey:@"proCandlesticks"];
 
 	[dictRep setObject:@(self.showAllValueLabels) forKey:@"showAllValueLabels"];
 
@@ -358,14 +384,24 @@
 	}
 
 	[dictRep setObject:@(self.showHandOnHover) forKey:@"showHandOnHover"];
+    
+    [dictRep setObject:@(self.showOnAxis) forKey:@"showOnAxis"];
 
 	[dictRep setObject:@(self.stackable) forKey:@"stackable"];
+    
+    if (self.stepDirection) {
+        [dictRep setObject:self.stepDirection forKey:@"stepDirection"];
+    }
     
     [dictRep setObject:@(self.switchable) forKey:@"switchable"];
 
 	if (self.title) {
 		[dictRep setObject:self.title forKey:@"title"];
 	}
+    
+    if (self.topRadius) {
+        [dictRep setObject:self.topRadius forKey:@"topRadius"];
+    }
 
 	if (self.type) {
 		[dictRep setObject:self.type forKey:@"type"];

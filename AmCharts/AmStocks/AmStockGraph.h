@@ -16,26 +16,6 @@
 @property(assign) BOOL comparable;
 
 /**
- Opacity of bullet border of comparing graph.
- */
-@property(strong) NSNumber * compareGraphBulletBorderAlpha;
-
-/**
- Color of bullet border of comparing graph.
- */
-@property(strong) NSString * compareGraphBulletBorderColor;
-
-/**
- Thickness of bullet border of comparing graph.
- */
-@property(strong) NSNumber * compareGraphBulletBorderThickness;
-
-/**
- Color of compared graphs' bullets.
- */
-@property(strong) NSString * compareGraphBulletColor;
-
-/**
  Specifies a field to be used to generate comparing graph. Note, this field is not the one used in your dataProvider, but toField from FieldMapping object.
  */
 @property(strong) NSString * compareField;
@@ -66,6 +46,26 @@
 @property(strong) NSString * compareGraphBullet;
 
 /**
+ Opacity of bullet border of comparing graph.
+ */
+@property(strong) NSNumber * compareGraphBulletBorderAlpha;
+
+/**
+ Color of bullet border of comparing graph.
+ */
+@property(strong) NSString * compareGraphBulletBorderColor;
+
+/**
+ Thickness of bullet border of comparing graph.
+ */
+@property(strong) NSNumber * compareGraphBulletBorderThickness;
+
+/**
+ Color of compared graphs' bullets.
+ */
+@property(strong) NSString * compareGraphBulletColor;
+
+/**
  Bullet size of comparing graph.
  */
 @property(strong) NSNumber * compareGraphBulletSize;
@@ -94,6 +94,11 @@
  Opacity of comparing graph line.
  */
 @property(strong) NSNumber * compareGraphLineAlpha;
+
+/**
+ Color of compare graph (by default data set color is used)
+ */
+@property(strong) NSString * compareGraphLineColor;
 
 /**
  Thickness of compare graph.

@@ -8,6 +8,7 @@
 
 #import "AmChartCursor.h"
 #import "AmCategories.h"
+#import "AmValueAxis.h"
 
 @implementation AmChartCursor
 
@@ -16,6 +17,8 @@
 	if (self) {
 //		self.adjustment = @(0);
 //		self.animationDuration = @(0.3);
+        self.avoidBalloonOverlapping = true;
+//      self.balloonPointerOrientation = @"horizontal";
 //		self.bulletsEnabled = false;
 //		self.bulletSize = @(8);
 //		self.categoryBalloonAlpha = @(1);
@@ -50,6 +53,12 @@
 		[dictRep setObject:self.animationDuration forKey:@"animationDuration"];
 	}
 
+    [dictRep setObject:@(self.avoidBalloonOverlapping) forKey:@"avoidBalloonOverlapping"];
+    
+    if (self.balloonPointerOrientation) {
+        [dictRep setObject:self.balloonPointerOrientation forKey:@"balloonPointerOrientation"];
+    }
+    
 	[dictRep setObject:@(self.bulletsEnabled) forKey:@"bulletsEnabled"];
 
 	if (self.bulletSize) {
@@ -116,6 +125,18 @@
 
 	[dictRep setObject:@(self.valueBalloonsEnabled) forKey:@"valueBalloonsEnabled"];
 
+    if (self.valueLineAlpha) {
+        [dictRep setObject:self.valueLineAlpha forKey:@"valueLineAlpha"];
+    }
+    
+    if (self.valueLineAxis) {
+        [dictRep setObject:[self.valueLineAxis dictionaryRepresentation] forKey:@"valueLineAxis"];
+    }
+    
+    [dictRep setObject:@(self.valueLineBalloonEnabled) forKey:@"valueLineBalloonEnabled"];
+    
+    [dictRep setObject:@(self.valueLineEnabled) forKey:@"valueLineEnabled"];
+    
 	[dictRep setObject:@(self.zoomable) forKey:@"zoomable"];
 
 	[dictRep setObject:@(self.zooming) forKey:@"zooming"];

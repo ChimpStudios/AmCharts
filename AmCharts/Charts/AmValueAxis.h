@@ -155,6 +155,16 @@
 @property(strong) NSString * totalTextColor;
 
 /**
+ Distance from data point to total text.
+ */
+@property(strong) NSNumber * totalTextOffset;
+
+/**
+ This allows you to have logarithmic value axis and have zero values in the data. You must set it to >0 value in order to work.
+ */
+@property(strong) NSNumber * treatZeroAs;
+
+/**
  Unit which will be added to the value label.
  */
 @property(strong) NSString * unit;

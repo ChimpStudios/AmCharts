@@ -23,6 +23,7 @@
 		//self.color = @"#FFFFFF";
 		//self.dragIconHeight = @(25);
 		//self.dragIconWidth = @(18);
+        self.enabled = true;
 		//self.graphFillAlpha = @(1);
 		//self.graphFillColor = @"#BBBBBB";
 		//self.graphLineAlpha = @(0);
@@ -75,6 +76,8 @@
 		[dictRep setObject:self.dragIconWidth forKey:@"dragIconWidth"];
 	}
 
+    [dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    
 	if (self.graph) {
 		[dictRep setObject:[self.graph dictionaryRepresentation] forKey:@"graph"];
 	}

@@ -194,9 +194,24 @@
 @property(strong) AmGraph * fillToGraph;
 
 /**
+ Column width in pixels. If you set this property, columns will be of a fixed width and won't adjust to the available space.
+ */
+@property(strong) NSNumber * fixedColumnWidth;
+
+/**
  Size of value labels text. Will use chart's fontSize if not set.
  */
 @property(strong) NSNumber * fontSize;
+
+/**
+ Name of the gap field in your dataProvider. You can force graph to show gap at a desired data point using this feature.
+ */
+@property(strong) NSString * gapField;
+
+/**
+ Using this property you can specify when graph should display gap - if the time difference between data points is bigger than duration of minPeriod * gapPeriod, and connect property of a graph is set to false, graph will display gap.
+ */
+@property(strong) NSNumber * gapPeriod;
 
 /**
  Orientation of the gradient fills (only for "column" graph type). Possible values are "vertical" and "horizontal".
@@ -229,6 +244,11 @@
 @property(assign) BOOL includeInMinMax;
 
 /**
+ Data label text anchor.
+ */
+@property(strong) NSString * labelAnchor;
+
+/**
  Name of label color field in data provider.
  */
 @property(strong) NSString * labelColorField;
@@ -239,9 +259,19 @@
 @property(strong) NSString * labelFunction;
 
 /**
+ Offset of data label.
+ */
+@property(strong) NSNumber * labelOffset;
+
+/**
  Position of value label. Possible values are: "bottom", "top", "right", "left", "inside", "middle". Sometimes position is changed by the chart, depending on a graph type, rotation, etc.
  */
 @property(strong) NSString * labelPosition;
+
+/**
+ Rotation of a data label.
+ */
+@property(strong) NSNumber * labelRotation;
 
 /**
  Value label text. You can use tags like [[value]], [[description]], [[percents]], [[open]], [[category]].
@@ -379,6 +409,11 @@
 @property(strong) NSNumber * precision;
 
 /**
+ If this is set to true, candlesticks will be colored in a different manner - if current close is less than current open, the candlestick will be empty, otherwise - filled with color. If previous close is less than current close, the candlestick will use positive color, otherwise - negative color.
+ */
+@property(assign) BOOL proCandlesticks;
+
+/**
  If graph's type is column and labelText is set, graph hides labels which do not fit into the column's space. If you don't want these labels to be hidden, set this to true.
  */
 @property(assign) BOOL showAllValueLabels;
@@ -404,9 +439,19 @@
 @property(assign) BOOL showHandOnHover;
 
 /**
+ It can only be used together with topRadius (when columns look like cylinders). If you set it to true, the cylinder will be lowered down so that the center of it's bottom circle would be right on category axis.
+ */
+@property(assign) BOOL showOnAxis;
+
+/**
  If the value axis of this graph has stack types like "regular" or "100%" You can exclude this graph from stacking.
  */
 @property(assign) BOOL stackable;
+
+/**
+ Step graph only. Specifies to which direction step should be drawn.
+ */
+@property(strong) NSString * stepDirection;
 
 /**
  If you set it to false, the graph will not be hidden when user clicks on legend entry.
@@ -417,6 +462,11 @@
  Graph title.
  */
 @property(strong) NSString * title;
+
+/**
+ If you set this to 1, columns will become cylinders (must set depth3D and angle properties of a chart to >0 values in order this to be visible). you can make columns look like cones (set topRadius to 0) or even like some glasses (set to bigger than 1). We strongly recommend setting grid opacity to 0 in order this to look good.
+ */
+@property(strong) NSNumber * topRadius;
 
 /**
  Type of the graph. Possible values are: "line", "column", "step", "smoothedLine", "candlestick", "ohlc". XY and Radar charts can only display "line" type graphs.

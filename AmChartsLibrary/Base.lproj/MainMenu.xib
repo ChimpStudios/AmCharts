@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="5056"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="6254"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,10 +12,13 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="chartView" destination="k80-Q8-msY" id="dCX-vH-u0k"/>
+                <outlet property="chartVw2" destination="etC-oi-L1y" id="Ypk-HJ-0W2"/>
+                <outlet property="chartVw3" destination="MU4-XS-U5u" id="Ykk-fQ-b4T"/>
+                <outlet property="chartVw4" destination="anY-CG-5D4" id="Fbg-ip-ZiN"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -671,25 +675,57 @@
         <window title="AmChartsLibrary" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1600" height="878"/>
+            <rect key="contentRect" x="252" y="118" width="800" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1600" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="k80-Q8-msY" customClass="AmChartView">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                        <rect key="frame" x="0.0" y="305" width="395" height="295"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="etC-oi-L1y" customClass="AmChartView">
+                        <rect key="frame" x="405" y="305" width="395" height="295"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="MU4-XS-U5u" customClass="AmChartView">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="295"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
+                    </webView>
+                    <webView translatesAutoresizingMaskIntoConstraints="NO" id="anY-CG-5D4" customClass="AmChartView">
+                        <rect key="frame" x="405" y="0.0" width="395" height="295"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
                     </webView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="k80-Q8-msY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="CAw-wt-XAM"/>
-                    <constraint firstItem="k80-Q8-msY" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="R7z-Ao-xv3"/>
-                    <constraint firstAttribute="trailing" secondItem="k80-Q8-msY" secondAttribute="trailing" id="aTa-7M-jQA"/>
-                    <constraint firstAttribute="bottom" secondItem="k80-Q8-msY" secondAttribute="bottom" id="hU3-FE-3cb"/>
+                    <constraint firstItem="anY-CG-5D4" firstAttribute="top" secondItem="etC-oi-L1y" secondAttribute="bottom" constant="10" id="Gga-Id-ugq"/>
+                    <constraint firstItem="MU4-XS-U5u" firstAttribute="top" secondItem="k80-Q8-msY" secondAttribute="bottom" constant="10" id="IgU-i0-Icx"/>
+                    <constraint firstItem="k80-Q8-msY" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="Iwk-Jb-4oy"/>
+                    <constraint firstAttribute="bottom" secondItem="MU4-XS-U5u" secondAttribute="bottom" id="KaF-vY-hSM"/>
+                    <constraint firstAttribute="bottom" secondItem="anY-CG-5D4" secondAttribute="bottom" id="Kp6-nl-7Mc"/>
+                    <constraint firstAttribute="trailing" secondItem="etC-oi-L1y" secondAttribute="trailing" id="PDk-8i-2m7"/>
+                    <constraint firstItem="etC-oi-L1y" firstAttribute="width" secondItem="k80-Q8-msY" secondAttribute="width" id="QYC-Re-VkD"/>
+                    <constraint firstItem="etC-oi-L1y" firstAttribute="height" secondItem="anY-CG-5D4" secondAttribute="height" id="TUT-J9-Vyz"/>
+                    <constraint firstItem="k80-Q8-msY" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="YtY-uG-pq1"/>
+                    <constraint firstItem="MU4-XS-U5u" firstAttribute="width" secondItem="anY-CG-5D4" secondAttribute="width" id="aC2-BK-EEp"/>
+                    <constraint firstItem="etC-oi-L1y" firstAttribute="leading" secondItem="k80-Q8-msY" secondAttribute="trailing" constant="10" id="cCt-hM-sX9"/>
+                    <constraint firstItem="MU4-XS-U5u" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="dHG-ZU-cpC"/>
+                    <constraint firstAttribute="trailing" secondItem="anY-CG-5D4" secondAttribute="trailing" id="dU0-LX-GoS"/>
+                    <constraint firstItem="k80-Q8-msY" firstAttribute="height" secondItem="MU4-XS-U5u" secondAttribute="height" id="dny-MW-r0Z"/>
+                    <constraint firstItem="etC-oi-L1y" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="gGV-sw-o9d"/>
+                    <constraint firstItem="anY-CG-5D4" firstAttribute="leading" secondItem="MU4-XS-U5u" secondAttribute="trailing" constant="10" id="qrt-C1-Rnq"/>
                 </constraints>
             </view>
+            <point key="canvasLocation" x="480.5" y="430"/>
         </window>
     </objects>
 </document>

@@ -36,6 +36,10 @@
 
 	[dictRep setObject:@(self.bulletsEnabled) forKey:@"bulletsEnabled"];
 
+    if (self.balloonPointerOrientation) {
+        [dictRep setObject:self.balloonPointerOrientation forKey:@"balloonPointerOrientation"];
+    }
+    
 	if (self.bulletSize) {
 		[dictRep setObject:self.bulletSize forKey:@"bulletSize"];
 	}
@@ -68,12 +72,24 @@
 
 	[dictRep setObject:@(self.enabled) forKey:@"enabled"];
 
+    if (self.graphBulletSize) {
+        [dictRep setObject:self.graphBulletSize forKey:@"graphBulletSize"];
+    }
+    
     [dictRep setObject:@(self.fullWidth) forKey:@"fullWidth"];
     
 	[dictRep setObject:@(self.pan) forKey:@"pan"];
 
 	[dictRep setObject:@(self.valueBalloonsEnabled) forKey:@"valueBalloonsEnabled"];
 
+    if (self.valueLineAlpha) {
+        [dictRep setObject:self.valueLineAlpha forKey:@"valueLineAlpha"];
+    }
+    
+    [dictRep setObject:@(self.valueLineBalloonEnabled) forKey:@"valueLineBalloonEnabled"];
+    
+    [dictRep setObject:@(self.valueLineEnabled) forKey:@"valueLineEnabled"];
+    
 	[dictRep setObject:@(self.zoomable) forKey:@"zoomable"];
 
 	return dictRep;

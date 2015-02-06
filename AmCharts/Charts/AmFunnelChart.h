@@ -12,6 +12,11 @@
 @interface AmFunnelChart : AmSlicedChart
 
 /**
+ The angle of the 3D part of the chart. This creates a 3D effect (if the "depth3D" is > 0).
+ */
+@property(strong) NSNumber * angle;
+
+/**
  Balloon text. The following tags can be used: [[value]], [[title]], [[percents]], [[description]]  or any other field name from your data provider. HTML tags can also be used.
  */
 @property(strong) NSString * balloonText;
@@ -20,6 +25,11 @@
  Width of a base (first slice) of a chart. "100%" means it will occupy all available space.
  */
 @property(strong) NSString * baseWidth;
+
+/**
+ The depth of funnel/pyramid. Set angle to >0 value in order this to work. Note, neckHeight/neckWidth will become 0 if you set these properties to bigger than 0 values.
+ */
+@property(strong) NSNumber * depth3D;
 
 /**
  Specifies where labels should be placed. Allowed values are left / center / right. If you set left or right, you should increase left or right margin in order labels to be visible.

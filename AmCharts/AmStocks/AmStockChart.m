@@ -21,6 +21,8 @@
 #import "AmStockEventSettings.h"
 #import "AmValueAxesSettings.h"
 #import "AmStockPanel.h"
+#import "AmExport.h"
+#import "AmResponsive.h"
 
 @implementation AmStockChart
 
@@ -32,11 +34,13 @@
 		self.chartCursorSettings = [[AmChartCursorSettings alloc] init];
 		self.chartScrollbarSettings = [[AmChartScrollbarSettings alloc] init];
 		//self.colors = [@[@"#FF6600", @"#FCD202", @"#B0DE09", @"#0D8ECF", @"#2A0CD0", @"#CD0D74", @"#CC0000", @"#00CC00", @"#0000CC", @"#DDDDDD", @"#999999", @"#333333", @"#990000"] mutableCopy];
+        self.extendToFullPeriod = true;
 //		self.firstDayOfWeek = @(1);
 //		self.glueToTheEnd = false;
 		self.legendSettings = [[AmLegendSettings alloc] init];
 		//self.mouseWheelScrollEnabled = false;
 		self.panelsSettings = [[AmPanelSettings alloc] init];
+        self.responsive = [[AmResponsive alloc] init];
 		self.stockEventsSettings = [[AmStockEventSettings alloc] init];
 //        self.theme = @"none";
 		self.valueAxesSettings = [[AmValueAxesSettings alloc] init];
@@ -48,6 +52,12 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
+    [dictRep setObject:@(self.addClassNames) forKey:@"addClassNames"];
+    
+    if (self.amExport) {
+        [dictRep setObject:[self.amExport dictionaryRepresentation] forKey:@"amExport"];
+    }
+    
 	[dictRep setObject:@(self.animationPlayed) forKey:@"animationPlayed"];
 
 	if (self.balloon) {
@@ -68,6 +78,10 @@
 		[dictRep setObject:[self.chartScrollbarSettings dictionaryRepresentation] forKey:@"chartScrollbarSettings"];
 	}
 
+    if (self.classNamePrefix) {
+        [dictRep setObject:self.classNamePrefix forKey:@"classNamePrefix"];
+    }
+    
 	if (self.colors && (!self.theme || [self.theme.lowercaseString isEqualToString:@"none"])) {
 		[dictRep setObject:self.colors forKey:@"colors"];
 	}
@@ -109,6 +123,8 @@
 	if (self.exportConfig) {
 		[dictRep setObject:self.exportConfig forKey:@"exportConfig"];
 	}
+    
+    [dictRep setObject:@(self.extendToFullPeriod) forKey:@"extendToFullPeriod"];
 
 	if (self.firstDayOfWeek) {
 		[dictRep setObject:self.firstDayOfWeek forKey:@"firstDayOfWeek"];
@@ -148,6 +164,10 @@
 	if (self.periodSelector) {
 		[dictRep setObject:[self.periodSelector dictionaryRepresentation] forKey:@"periodSelector"];
 	}
+    
+    if (self.responsive) {
+        [dictRep setObject:[self.responsive dictionaryRepresentation] forKey:@"responsive"];
+    }
 
 	if (self.scrollbarChart) {
 		[dictRep setObject:[self.scrollbarChart dictionaryRepresentation] forKey:@"scrollbarChart"];

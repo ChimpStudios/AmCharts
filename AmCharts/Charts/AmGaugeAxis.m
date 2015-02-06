@@ -207,6 +207,8 @@
 		[dictRep setObject:self.unitPosition forKey:@"unitPosition"];
 	}
 
+    [dictRep setObject:@(self.usePrefixes) forKey:@"usePrefixes"];
+    
 	if (self.valueInterval) {
 		[dictRep setObject:self.valueInterval forKey:@"valueInterval"];
 	}

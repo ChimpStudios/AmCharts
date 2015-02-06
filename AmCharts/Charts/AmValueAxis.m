@@ -137,6 +137,14 @@
 	if (self.totalTextColor) {
 		[dictRep setObject:self.totalTextColor forKey:@"totalTextColor"];
 	}
+    
+    if (self.totalTextOffset) {
+        [dictRep setObject:self.totalTextOffset forKey:@"totalTextOffset"];
+    }
+    
+    if (self.treatZeroAs) {
+        [dictRep setObject:self.treatZeroAs forKey:@"treatZeroAs"];
+    }
 
 	if (self.unit) {
 		[dictRep setObject:self.unit forKey:@"unit"];

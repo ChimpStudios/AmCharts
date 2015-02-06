@@ -13,6 +13,7 @@
 #import "AmTitle.h"
 #import "AmLabel.h"
 #import "AmExport.h"
+#import "AmResponsive.h"
 
 @implementation AmChart
 
@@ -57,6 +58,7 @@
 //                                         @{@"number":@"1e-6", @"prefix":@"μ"},
 //                                         @{@"number":@"1e-3", @"prefix":@"m"}
 //                                         ] mutableCopy];
+        self.responsive = [[AmResponsive alloc] init];
 //		self.theme = @"none";
 //		self.thousandsSeparator = @",";
 //		self.titles = [@[] mutableCopy];
@@ -68,6 +70,8 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
+    [dictRep setObject:@(self.addClassNames) forKey:@"addClassNames"];
+    
 	if (self.allLabels) {
         NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.allLabels.count];
         for (AmLabel *label in self.allLabels) {
@@ -102,6 +106,10 @@
 	if (self.borderColor) {
 		[dictRep setObject:self.borderColor forKey:@"borderColor"];
 	}
+    
+    if (self.classNamePrefix) {
+        [dictRep setObject:self.classNamePrefix forKey:@"classNamePrefix"];
+    }
 
 	if (self.color) {
 		[dictRep setObject:self.color forKey:@"color"];
@@ -174,6 +182,10 @@
 	if (self.prefixesOfSmallNumbers) {
 		[dictRep setObject:self.prefixesOfSmallNumbers forKey:@"prefixesOfSmallNumbers"];
 	}
+    
+    if (self.responsive) {
+        [dictRep setObject:[self.responsive dictionaryRepresentation] forKey:@"responsive"];
+    }
 
 	if (self.theme) {
 		[dictRep setObject:self.theme forKey:@"theme"];

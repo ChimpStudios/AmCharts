@@ -33,6 +33,10 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[super dictionaryRepresentation] mutableCopy];
 
+    if (self.angle) {
+        [dictRep setObject:self.angle forKey:@"angle"];
+    }
+    
 	if (self.balloonText) {
 		[dictRep setObject:self.balloonText forKey:@"balloonText"];
 	}
@@ -40,6 +44,10 @@
 	if (self.baseWidth) {
 		[dictRep setObject:self.baseWidth forKey:@"baseWidth"];
 	}
+    
+    if (self.depth3D) {
+        [dictRep setObject:self.depth3D forKey:@"depth3D"];
+    }
 
 	if (self.labelPosition) {
 		[dictRep setObject:self.labelPosition forKey:@"labelPosition"];

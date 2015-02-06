@@ -14,11 +14,19 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    /*
+    
+    [self drawSerialChart];
+    [self drawStockChart];
+    [self drawPieChart];
+    [self drawMap];
+}
+
+- (void)drawSerialChart
+{
     AmSerialChart *chart = [[AmSerialChart alloc] init];
     chart.type = @"serial";
     chart.dataProvider = [@[@{@"year" : @"2005", @"income" : @"23.5"},
-                           @{@"year" : @"2006", @"income" : @"26.2"},
+                            @{@"year" : @"2006", @"income" : @"26.2"},
                             @{@"year" : @"2007", @"income" : @"30.1"},
                             @{@"year" : @"2008", @"income" : @"32.0"},
                             @{@"year" : @"2009", @"income" : @"31.6"},
@@ -46,10 +54,12 @@
     
     [self.chartView setChart:chart];
     [self.chartView drawChart];
-    */
-   // NSLog(@"\n%@", [chart javascriptRepresentation]);
-     
-    /*
+    
+    // NSLog(@"\n%@", [chart javascriptRepresentation]);
+}
+
+- (void)drawStockChart
+{
     AmStockChart *stockChart = [[AmStockChart alloc] init];
     stockChart.type = @"stock";
     stockChart.pathToImages = @"amcharts/images/";
@@ -99,13 +109,14 @@
                                 @{@"period" : @"YTD", @"label" : @"YTD"}] mutableCopy];
     stockChart.periodSelector = periodSelector;
     
-    [self.chartView setChart:stockChart];
-    [self.chartView drawChart];
+    [self.chartVw2 setChart:stockChart];
+    [self.chartVw2 drawChart];
     
     //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
-    */
-    
-    /*
+}
+
+- (void)drawPieChart
+{
     AmPieChart *pieChart = [[AmPieChart alloc] init];
     pieChart.type = @"pie";
     pieChart.theme = @"none";
@@ -118,10 +129,12 @@
     pieChart.valueField = @"litres";
     pieChart.titleField = @"country";
     
-    [self.chartView setChart:pieChart];
-    [self.chartView drawChart];
-    */
-    
+    [self.chartVw3 setChart:pieChart];
+    [self.chartVw3 drawChart];
+}
+
+- (void)drawMap
+{
     AmMap *map = [[AmMap alloc] init];
     map.type = @"map";
     map.theme = @"none";
@@ -141,8 +154,8 @@
     
     map.smallMap = smallMap;
     
-    [self.chartView setChart:map];
-    [self.chartView drawChart];
+    [self.chartVw4 setChart:map];
+    [self.chartVw4 drawChart];
 }
 
 @end

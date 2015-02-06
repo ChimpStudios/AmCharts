@@ -13,5 +13,5 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet AmChartView *chartView;
+@property (weak) IBOutlet AmChartView *chartView, *chartVw2, *chartVw3, *chartVw4;
 @end

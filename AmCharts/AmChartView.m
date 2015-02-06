@@ -91,7 +91,7 @@
         [_context evaluateScript:scrpt];
     } else if (_chart) {
 #ifdef DEBUG
-        NSLog(@"AmCharts is not ready yet!");
+  //      NSLog(@"AmCharts is not ready yet!");
 #endif
         [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
     } else if (_isReady) {
@@ -202,22 +202,38 @@
 
 #pragma mark -
 #pragma mark - Layout / Resizing
+/**
+ Starting in v3.13, chart views now use a responsive resizing plugin.
+ */
+
 NSInteger layoutCallCount;
 - (void)setNeedsLayout:(BOOL)flag
 {
     [super setNeedsLayout:flag];
-    if (self.isReady) {
-        layoutCallCount ++;
-        if (layoutCallCount > 4) {
-            [self validateChart];
-        } else {
-            [NSObject cancelPreviousPerformRequestsWithTarget:self
-                                                     selector:@selector(validateChart)
-                                                       object:nil];
-            [self performSelector:@selector(validateChart)
-                       withObject:nil
-                       afterDelay:0.1];
+    if (!self.chart || !_isReady) {
+        return;
+    }
+    
+    if ([[_chart class] isSubclassOfClass:[AmChart class]] ||
+        [[_chart class] isSubclassOfClass:[AmStockChart class]]) {
+        AmChart *chart = (AmChart *)_chart;
+        if ([chart respondsToSelector:@selector(responsive)]) {
+            if (chart.responsive && chart.responsive.enabled) {
+                return; // dynamic resizing plugin is enabled.
+            }
         }
+    }
+    
+    layoutCallCount ++;
+    if (layoutCallCount > 4) {
+        [self validateChart];
+    } else {
+        [NSObject cancelPreviousPerformRequestsWithTarget:self
+                                                 selector:@selector(validateChart)
+                                                   object:nil];
+        [self performSelector:@selector(validateChart)
+                   withObject:nil
+                   afterDelay:0.1];
     }
 }
 

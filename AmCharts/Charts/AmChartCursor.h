@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class AmValueAxis;
+
 @interface AmChartCursor : NSObject
 
 /**
@@ -19,6 +21,16 @@
  Duration of animation of a line, in seconds.
  */
 @property(strong) NSNumber * animationDuration;
+
+/**
+ Specifies if cursor should arrange balloons so they won't overlap. If chart is rotated, it might be good idea to turn this off.
+ */
+@property(assign) BOOL avoidBalloonOverlapping;
+
+/**
+ defines if the balloon should be shown above the datapoint or sideways
+ */
+@property(strong) NSString * balloonPointerOrientation;
 
 /**
  Specifies if bullet for each graph will follow the cursor.
@@ -124,6 +136,26 @@
  Specifies whether value balloons are enabled. In case they are not, the balloons might be displayed anyway, when the user rolls-over the column or bullet.
  */
 @property(assign) BOOL valueBalloonsEnabled;
+
+/**
+ Opacity of value line. Will use cursorAlpha value if not set.
+ */
+@property(strong) NSNumber * valueLineAlpha;
+
+/**
+ Axis of value line. If you set valueLineBalloonEnabled to true, but you have more than one axis, you can use this property to indicate which axis should display balloon.
+ */
+@property(strong) AmValueAxis * valueLineAxis;
+
+/**
+ Specifies if value balloon next to value axis labels should be displayed. If you have more than one axis, set valueLineAxis property to indicate which axis should display the balloon.
+ */
+@property(assign) BOOL valueLineBalloonEnabled;
+
+/**
+ Specifies if cursor of Serial chart should display horizontal (or vertical if chart is rotated) line. This line might help users to compare distant values of a chart. You can also enable value balloon on this line by setting valueLineAxis property of ChartCursor.
+ */
+@property(assign) BOOL valueLineEnabled;
 
 /**
  Specifies if the user can zoom-in the chart. If pan is set to true, zoomable is switched to false automatically.

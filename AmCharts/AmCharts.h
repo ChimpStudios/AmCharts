@@ -73,4 +73,5 @@
 #import "AmSmallMap.h"
 #import "AmValueLegend.h"
 #import "AmZoomControl.h"
+#import "AmResponsive.h"
 

@@ -1,13 +1,13 @@
 *********************************************************************************
 Third party software used:
 
-Jason S. Kerchner base class (http://livingmachines.net)
-Licensed under BSD license: http://livingmachines.net/license/
-
-David Knape & Patrick Mineault Bezier curves drawing logic.
-
-Code optimization made using Closure Compiling service:
-http://closure-compiler.appspot.com/home
+    Jason S. Kerchner base class (http://livingmachines.net)
+    Licensed under BSD license: http://livingmachines.net/license/
+    
+    David Knape & Patrick Mineault Bezier curves drawing logic.
+    
+    Code optimization made using Closure Compiling service:
+    http://closure-compiler.appspot.com/home
 
 Libraries used for exporting charts as image/pdf/svg:
 

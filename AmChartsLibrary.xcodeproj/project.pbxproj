@@ -188,6 +188,10 @@
 		1103878419128A5200F917CE /* AmChartView.m in Headers */ = {isa = PBXBuildFile; fileRef = 11547466191012790003E1F5 /* AmChartView.m */; settings = {ATTRIBUTES = (Public, ); }; };
 		1103878719128B6F00F917CE /* AmCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110386721912881900F917CE /* AmCharts.framework */; };
 		110387FC1912B83400F917CE /* AmChartsWeb in Resources */ = {isa = PBXBuildFile; fileRef = 11892F60191093AE00839813 /* AmChartsWeb */; };
+		11120B901A855A7800C2E31C /* AmResponsive.h in Headers */ = {isa = PBXBuildFile; fileRef = 11120B8E1A855A7800C2E31C /* AmResponsive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11120B911A855A7800C2E31C /* AmResponsive.m in Sources */ = {isa = PBXBuildFile; fileRef = 11120B8F1A855A7800C2E31C /* AmResponsive.m */; };
+		11120B921A855A7800C2E31C /* AmResponsive.m in Sources */ = {isa = PBXBuildFile; fileRef = 11120B8F1A855A7800C2E31C /* AmResponsive.m */; };
+		11120B931A855CE100C2E31C /* AmResponsive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11120B8E1A855A7800C2E31C /* AmResponsive.h */; };
 		111DF6F01917C92100E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
 		111DF6F21917C92100E11137 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F11917C92100E11137 /* CoreGraphics.framework */; };
 		111DF6F41917C92100E11137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F31917C92100E11137 /* UIKit.framework */; };
@@ -372,6 +376,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				11120B931A855CE100C2E31C /* AmResponsive.h in CopyFiles */,
 				118902EC198FDACC008D2C30 /* AmExport.h in CopyFiles */,
 				111DF7891917CA5C00E11137 /* AmCharts.h in CopyFiles */,
 				111DF82A1917E9C000E11137 /* AmMobileChartView.h in CopyFiles */,
@@ -445,6 +450,8 @@
 		110386761912881900F917CE /* AmCharts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmCharts-Info.plist"; sourceTree = "<group>"; };
 		110386781912881900F917CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1103867A1912881900F917CE /* AmCharts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmCharts-Prefix.pch"; sourceTree = "<group>"; };
+		11120B8E1A855A7800C2E31C /* AmResponsive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmResponsive.h; sourceTree = "<group>"; };
+		11120B8F1A855A7800C2E31C /* AmResponsive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmResponsive.m; sourceTree = "<group>"; };
 		111DF6EE1917C92100E11137 /* AmCharts iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AmCharts iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DF6EF1917C92100E11137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		111DF6F11917C92100E11137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -982,6 +989,8 @@
 				11892A2C191088AD00839813 /* AmValueAxis.m */,
 				11892A2D191088AD00839813 /* AmXYChart.h */,
 				11892A2E191088AD00839813 /* AmXYChart.m */,
+				11120B8E1A855A7800C2E31C /* AmResponsive.h */,
+				11120B8F1A855A7800C2E31C /* AmResponsive.m */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -1049,6 +1058,7 @@
 				1103874619128A4800F917CE /* AmPieChart.m in Headers */,
 				1103874719128A4800F917CE /* AmRadarChart.h in Headers */,
 				1103874819128A4800F917CE /* AmRadarChart.m in Headers */,
+				11120B901A855A7800C2E31C /* AmResponsive.h in Headers */,
 				1103874919128A4800F917CE /* AmRectangularChart.h in Headers */,
 				1103874A19128A4800F917CE /* AmRectangularChart.m in Headers */,
 				1103874B19128A4800F917CE /* AmSerialChart.h in Headers */,
@@ -1316,6 +1326,7 @@
 				110386D11912894D00F917CE /* AmPieChart.m in Sources */,
 				110386D31912894D00F917CE /* AmRadarChart.m in Sources */,
 				110386D51912894D00F917CE /* AmRectangularChart.m in Sources */,
+				11120B911A855A7800C2E31C /* AmResponsive.m in Sources */,
 				110386D71912894D00F917CE /* AmSerialChart.m in Sources */,
 				110386D91912894D00F917CE /* AmSerialDataItem.m in Sources */,
 				110386DB1912894D00F917CE /* AmSlice.m in Sources */,
@@ -1394,6 +1405,7 @@
 				111DF7681917C9E200E11137 /* AmPieChart.m in Sources */,
 				111DF7691917C9E200E11137 /* AmRadarChart.m in Sources */,
 				111DF76A1917C9E200E11137 /* AmRectangularChart.m in Sources */,
+				11120B921A855A7800C2E31C /* AmResponsive.m in Sources */,
 				111DF76B1917C9E200E11137 /* AmSerialChart.m in Sources */,
 				111DF76C1917C9E200E11137 /* AmSerialDataItem.m in Sources */,
 				111DF76D1917C9E200E11137 /* AmSlice.m in Sources */,
