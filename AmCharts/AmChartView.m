@@ -17,7 +17,10 @@
 
 - (void)dealloc
 {
-  //  NSLog(@"dealloc");
+    NSLog(@"AmChartView dealloc");
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    self.frameLoadDelegate = nil;
+    self.UIDelegate = nil;
 }
 
 - (id)init
@@ -55,6 +58,7 @@
     
     // set the delegates
     [self setFrameLoadDelegate:self];
+    [self setUIDelegate:self];
     
     // grab the JSContext
     _context = [JSContext contextWithJSGlobalContextRef:self.mainFrame.globalContext];
@@ -63,7 +67,8 @@
         return;
     }
     
-    _context[@"amChartView"] = self;
+    __unsafe_unretained typeof(self) weakSelf = self;
+    _context[@"amChartView"] = weakSelf;
     _context[@"jsDelegate"] = _jsDelegate;
     
     if (!self.templateFilepath) {
@@ -96,6 +101,19 @@
         [self performSelector:@selector(drawChart) withObject:nil afterDelay:1.0];
     } else if (_isReady) {
         NSLog(@"No chart has been assigned");
+    }
+}
+
+- (void)drawChartWithJSON:(NSString *)json
+{
+    if (_isReady) {
+        NSString *scrpt = [NSString stringWithFormat:@"generateChartWithJSONData(%@);", json];
+        [_context evaluateScript:scrpt];
+    } else if (json) {
+#ifdef DEBUG
+        //      NSLog(@"AmCharts is not ready yet!");
+#endif
+        [self performSelector:@selector(drawChartWithJSON:) withObject:json afterDelay:1.0];
     }
 }
 
@@ -192,12 +210,23 @@
 - (void)webView:(WebView *)webView didCreateJavaScriptContext:(JSContext *)context forFrame:(WebFrame *)frame
 {
 #if DEBUG
+    
     if ([frame isEqualTo:[webView mainFrame]]) {
         context[@"window"][@"onerror"] = ^(JSValue *message, JSValue *file, JSValue *line) {
             NSLog(@"%@", message);
         };
     }
+     
 #endif
+}
+
+#pragma mark -
+#pragma mark - UIDelegate
+- (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element
+    defaultMenuItems:(NSArray *)defaultMenuItems
+{
+    // disable right-click context menu
+    return nil;
 }
 
 #pragma mark -
@@ -210,6 +239,7 @@ NSInteger layoutCallCount;
 - (void)setNeedsLayout:(BOOL)flag
 {
     [super setNeedsLayout:flag];
+    
     if (!self.chart || !_isReady) {
         return;
     }
@@ -239,7 +269,7 @@ NSInteger layoutCallCount;
 
 - (void)validateChart
 {
-    [self stringByEvaluatingJavaScriptFromString:@"chart.invalidateSize();"];
+    [self stringByEvaluatingJavaScriptFromString:@"chart.validateSize();"];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self stringByEvaluatingJavaScriptFromString:@"if (chart.periodSelector) {chart.periodSelector.setDefaultPeriod();}"];
     });

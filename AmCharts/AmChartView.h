@@ -58,4 +58,9 @@
  */
 - (void)drawChart;
 
+/*
+ Renders a chart with the supplied json string
+ */
+- (void)drawChartWithJSON:(NSString *)json;
+
 @end

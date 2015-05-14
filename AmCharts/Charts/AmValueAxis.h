@@ -99,11 +99,6 @@
 @property(strong) NSNumber * minMaxMultiplier;
 
 /**
- Possible values are: "top", "bottom", "left", "right". If axis is vertical, default position is "left". If axis is horizontal, default position is "bottom".
- */
-@property(strong) NSString * position;
-
-/**
  Precision (number of decimals) of values.
  */
 @property(strong) NSNumber * precision;

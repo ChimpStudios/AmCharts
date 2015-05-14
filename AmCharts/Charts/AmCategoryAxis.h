@@ -109,11 +109,6 @@
 @property(assign) BOOL parseDates;
 
 /**
- Possible values are: "top", "bottom", "left", "right". If axis is vertical, default position is "left". If axis is horizontal, default position is "bottom".
- */
-@property(strong) NSString * position;
-
-/**
  Specifies whether the graph should start on axis or not. In case you display columns, it is recommended to set this to false. If parseDates is set to true, startOnAxis will allways be false, unless equalSpacing is set to true.
  */
 @property(assign) BOOL startOnAxis;
