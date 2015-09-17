@@ -14,7 +14,7 @@
 /**
  Specifies whether number of gridCount is specified automatically, according to the axis size.
  */
-@property(assign) BOOL autoGridCount;
+@property(assign) NSNumber * autoGridCount;
 
 /**
  Axis opacity.
@@ -54,7 +54,7 @@
 /**
  If you want data points to be placed at equal intervals (omiting dates with no data), set equalSpacing to true.
  */
-@property(assign) BOOL equalSpacing;
+@property(assign) NSNumber * equalSpacing;
 
 /**
  Fill opacity. Every second space between grid lines can be filled with fillColor.
@@ -99,7 +99,7 @@
 /**
  Specifies whether values should be placed inside or outside of plot area.
  */
-@property(assign) BOOL inside;
+@property(assign) NSNumber * inside;
 
 /**
  Rotation angle of a label.
@@ -109,12 +109,12 @@
 /**
  Specifies whether axis displays category axis' labels and value axis' values.
  */
-@property(assign) BOOL labelsEnabled;
+@property(assign) NSNumber * labelsEnabled;
 
 /**
  Specifies if period period should be marked with a different date format.
  */
-@property(assign) BOOL markPeriodChange;
+@property(assign) NSNumber * markPeriodChange;
 
 /**
  Maximum series shown at a time. In case there are more data points in the selection than maxSeries, the chart will group data to longer periods, for example - you have 250 days in the selection, and maxSeries is 150 - the chart will group data to weeks.
@@ -136,7 +136,7 @@ It's also possible to supply a number for increments, i.e. "15mm" which will ins
 /**
  Specifies whether the graph should start on axis or not. In case you display columns, it is recommended to set this to false. startOnAxis can be set to true only if equalSpacing is set to true.
  */
-@property(assign) BOOL startOnAxis;
+@property(assign) NSNumber * startOnAxis;
 
 /**
  Tick length.
@@ -146,7 +146,7 @@ It's also possible to supply a number for increments, i.e. "15mm" which will ins
 /**
  Works only when parseDates is set to true and equalSpacing is false. If you set it to true, at the position where bigger period changes, category axis will display date strings of bot small and big period, in two rows.
  */
-@property(assign) BOOL twoLineMode;
+@property(assign) NSNumber * twoLineMode;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

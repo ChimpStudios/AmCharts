@@ -16,14 +16,14 @@
 	self = [super init];
 	if (self) {
 //		self.align = @"left";
-		self.autoMargins = true;
+//		self.autoMargins = true;
 		//self.backgroundAlpha = @(0);
 		//self.backgroundColor = @"#FFFFFF";
 //		self.borderAlpha = @(0);
 		//self.borderColor = @"#000000";
 		//self.color = @"#000000";
-        self.enabled = true;
-		self.equalWidths = true;
+//        self.enabled = true;
+//		self.equalWidths = true;
 //		self.fontSize = @(11);
 //		self.horizontalGap = @(0);
 //		self.labelText = @"[[title]]";
@@ -41,9 +41,9 @@
 //		self.reversedOrder = false;
 //		//self.rollOverColor = @"#CC0000";
 //		self.rollOverGraphAlpha = @(1);
-		self.showEntries = true;
+//		self.showEntries = true;
 //		self.spacing = @(10);
-		self.switchable = true;
+//		self.switchable = true;
 //		//self.switchColor = @"#FFFFFF";
 //		self.switchType = @"x";
 //		self.textClickEnabled = false;
@@ -65,7 +65,9 @@
 		[dictRep setObject:self.align forKey:@"align"];
 	}
 
-	[dictRep setObject:@(self.autoMargins) forKey:@"autoMargins"];
+    if (self.autoMargins) {
+        [dictRep setObject:self.autoMargins forKey:@"autoMargins"];
+    }
 
 	if (self.backgroundAlpha) {
 		[dictRep setObject:self.backgroundAlpha forKey:@"backgroundAlpha"];
@@ -99,9 +101,13 @@
 		[dictRep setObject:self.divId forKey:@"divId"];
 	}
     
-    [dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    if (self.enabled) {
+        [dictRep setObject:self.enabled forKey:@"enabled"];
+    }
 
-	[dictRep setObject:@(self.equalWidths) forKey:@"equalWidths"];
+    if (self.equalWidths) {
+        [dictRep setObject:self.equalWidths forKey:@"equalWidths"];
+    }
 
 	if (self.fontSize) {
 		[dictRep setObject:self.fontSize forKey:@"fontSize"];
@@ -179,7 +185,9 @@
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.reversedOrder) forKey:@"reversedOrder"];
+    if (self.reversedOrder) {
+        [dictRep setObject:self.reversedOrder forKey:@"reversedOrder"];
+    }
 
 	if (self.right) {
 		[dictRep setObject:self.right forKey:@"right"];
@@ -193,13 +201,17 @@
 		[dictRep setObject:self.rollOverGraphAlpha forKey:@"rollOverGraphAlpha"];
 	}
 
-	[dictRep setObject:@(self.showEntries) forKey:@"showEntries"];
+    if (self.showEntries) {
+        [dictRep setObject:self.showEntries forKey:@"showEntries"];
+    }
 
 	if (self.spacing) {
 		[dictRep setObject:self.spacing forKey:@"spacing"];
 	}
 
-	[dictRep setObject:@(self.switchable) forKey:@"switchable"];
+    if (self.switchable) {
+        [dictRep setObject:self.switchable forKey:@"switchable"];
+    }
 
 	if (self.switchColor) {
 		[dictRep setObject:self.switchColor forKey:@"switchColor"];
@@ -209,17 +221,25 @@
 		[dictRep setObject:self.switchType forKey:@"switchType"];
 	}
 
-	[dictRep setObject:@(self.textClickEnabled) forKey:@"textClickEnabled"];
+    if (self.textClickEnabled) {
+        [dictRep setObject:self.textClickEnabled forKey:@"textClickEnabled"];
+    }
 
 	if (self.top) {
 		[dictRep setObject:self.top forKey:@"top"];
 	}
 
-	[dictRep setObject:@(self.useGraphSettings) forKey:@"useGraphSettings"];
+    if (self.useGraphSettings) {
+        [dictRep setObject:self.useGraphSettings forKey:@"useGraphSettings"];
+    }
 
-	[dictRep setObject:@(self.useMarkerColorForLabels) forKey:@"useMarkerColorForLabels"];
+    if (self.useMarkerColorForLabels) {
+        [dictRep setObject:self.useMarkerColorForLabels forKey:@"useMarkerColorForLabels"];
+    }
 
-	[dictRep setObject:@(self.useMarkerColorForValues) forKey:@"useMarkerColorForValues"];
+    if (self.useMarkerColorForValues) {
+        [dictRep setObject:self.useMarkerColorForValues forKey:@"useMarkerColorForValues"];
+    }
 
 	if (self.valueAlign) {
 		[dictRep setObject:self.valueAlign forKey:@"valueAlign"];

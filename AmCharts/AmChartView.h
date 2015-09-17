@@ -53,10 +53,23 @@
 
 @property (assign) NSInteger mTag;
 
+@property (assign) BOOL isLoadingIncrementally;
+
 /**
  Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
  */
 - (void)drawChart;
+
+/**
+ Renders chart by sending JSON chart configuration string to javascript AmCharts.makeChart()
+ Differs from drawChart: by limiting the initial data set to specified viewport.  Then loads the rest
+ of the data after the chart renders for the first time.  Faster initial load times for large data sets.
+ */
+- (void)drawChartAsynchronouslyWithInitialViewport:(NSDate *)start to:(NSDate *)end;
+
+// should call finishIncrementalCharting once the initial load is complete
+// add a listener to the html
+- (void)finishIncrementalCharting;
 
 /*
  Renders a chart with the supplied json string

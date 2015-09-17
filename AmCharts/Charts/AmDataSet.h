@@ -24,7 +24,7 @@
 /**
  Whether this data set is selected for comparing. If you change this property, you should call stockChart.validateData() method in order the changes to be applied.
  */
-@property(assign) BOOL compared;
+@property(assign) NSNumber * compared;
 
 /**
  Data provider of the data set.
@@ -39,12 +39,12 @@
 /**
  Specifies whether this data set should be visible in "compare to" list.
  */
-@property(assign) BOOL showInCompare;
+@property(assign) NSNumber * showInCompare;
 
 /**
  Specifies whether this data set should be visible in "select" dropdown.
  */
-@property(assign) BOOL showInSelect;
+@property(assign) NSNumber * showInSelect;
 
 /**
  Array of StockEvent objects.

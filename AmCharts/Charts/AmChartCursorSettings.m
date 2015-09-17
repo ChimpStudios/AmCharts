@@ -25,7 +25,7 @@
 //              @{@"period":@"ss", @"format":@"JJ:NN:SS"},
 //              @{@"period":@"fff", @"format":@"JJ:NN:SS"}
 //              ] mutableCopy];
-		self.enabled = true;
+//		self.enabled = true;
 //		self.valueBalloonsEnabled = false;
 	}
 	return self;
@@ -34,7 +34,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.bulletsEnabled) forKey:@"bulletsEnabled"];
+    if (self.bulletsEnabled) {
+        [dictRep setObject:self.bulletsEnabled forKey:@"bulletsEnabled"];
+    }
 
     if (self.balloonPointerOrientation) {
         [dictRep setObject:self.balloonPointerOrientation forKey:@"balloonPointerOrientation"];
@@ -56,7 +58,9 @@
 		[dictRep setObject:self.categoryBalloonDateFormats forKey:@"categoryBalloonDateFormats"];
 	}
 
-	[dictRep setObject:@(self.categoryBalloonEnabled) forKey:@"categoryBalloonEnabled"];
+    if (self.categoryBalloonEnabled) {
+        [dictRep setObject:self.categoryBalloonEnabled forKey:@"categoryBalloonEnabled"];
+    }
 
 	if (self.cursorAlpha) {
 		[dictRep setObject:self.cursorAlpha forKey:@"cursorAlpha"];
@@ -70,27 +74,41 @@
 		[dictRep setObject:self.cursorPosition forKey:@"cursorPosition"];
 	}
 
-	[dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    if (self.enabled) {
+        [dictRep setObject:self.enabled forKey:@"enabled"];
+    }
 
     if (self.graphBulletSize) {
         [dictRep setObject:self.graphBulletSize forKey:@"graphBulletSize"];
     }
     
-    [dictRep setObject:@(self.fullWidth) forKey:@"fullWidth"];
+    if (self.fullWidth) {
+        [dictRep setObject:self.fullWidth forKey:@"fullWidth"];
+    }
     
-	[dictRep setObject:@(self.pan) forKey:@"pan"];
+    if (self.pan) {
+        [dictRep setObject:self.pan forKey:@"pan"];
+    }
 
-	[dictRep setObject:@(self.valueBalloonsEnabled) forKey:@"valueBalloonsEnabled"];
+    if (self.valueBalloonsEnabled) {
+        [dictRep setObject:self.valueBalloonsEnabled forKey:@"valueBalloonsEnabled"];
+    }
 
     if (self.valueLineAlpha) {
         [dictRep setObject:self.valueLineAlpha forKey:@"valueLineAlpha"];
     }
     
-    [dictRep setObject:@(self.valueLineBalloonEnabled) forKey:@"valueLineBalloonEnabled"];
+    if (self.valueLineBalloonEnabled) {
+       [dictRep setObject:self.valueLineBalloonEnabled forKey:@"valueLineBalloonEnabled"];
+    }
     
-    [dictRep setObject:@(self.valueLineEnabled) forKey:@"valueLineEnabled"];
+    if (self.valueLineEnabled) {
+        [dictRep setObject:self.valueLineEnabled forKey:@"valueLineEnabled"];
+    }
     
-	[dictRep setObject:@(self.zoomable) forKey:@"zoomable"];
+    if (self.zoomable) {
+        [dictRep setObject:self.zoomable forKey:@"zoomable"];
+    }
 
 	return dictRep;
 }

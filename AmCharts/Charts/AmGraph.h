@@ -36,7 +36,7 @@
 /**
  Specifies if the line graph should be placed behind column graphs
  */
-@property(assign) BOOL behindColumns;
+@property(assign) NSNumber * behindColumns;
 
 /**
  Type of the bullets. Possible values are: "none", "round", "square", "triangleUp", "triangleDown", "triangleLeft", "triangleRight", "bubble", "diamond",   "xError", "yError" and "custom".
@@ -101,7 +101,7 @@
 /**
  In case you want to place this graph's columns in front of other columns, set this to false. In case "true", the columns will be clustered next to each other.
  */
-@property(assign) BOOL clustered;
+@property(assign) NSNumber * clustered;
 
 /**
  Color of value labels. Will use chart's color if not set.
@@ -121,7 +121,7 @@
 /**
  Specifies whether to connect data points if data is missing. The default value is true.
  */
-@property(assign) BOOL connect;
+@property(assign) NSNumber * connect;
 
 /**
  Corner radius of column. It can be set both in pixels or in percents. The chart's depth and angle styles must be set to 0. The default value is 0. Note, cornerRadiusTop will be applied for all corners of the column, JavaScript charts do not have a possibility to set separate corner radius for top and bottom. As we want all the property names to be the same both on JS and Flex, we didn't change this too.
@@ -221,7 +221,7 @@
 /**
  Specifies whether the graph is hidden. Do not use this to show/hide the graph, use hideGraph(graph) and showGraph(graph) methods instead.
  */
-@property(assign) BOOL hidden;
+@property(assign) NSNumber * hidden;
 
 /**
  If there are more data points than hideBulletsCount, the bullets will not be shown. 0 means the bullets will always be visible.
@@ -241,7 +241,7 @@
 /**
  Whether to include this graph when calculating min and max value of the axis.
  */
-@property(assign) BOOL includeInMinMax;
+@property(assign) NSNumber * includeInMinMax;
 
 /**
  Data label text anchor.
@@ -371,12 +371,12 @@
 /**
  If you set it to true, column chart will begin new stack. This allows having Clustered and Stacked column/bar chart.
  */
-@property(assign) BOOL newStack;
+@property(assign) NSNumber * amNewStack;
 
 /**
  In case you want to have a step line graph without risers, you should set this to true.
  */
-@property(assign) BOOL noStepRisers;
+@property(assign) NSNumber * noStepRisers;
 
 /**
  Name of the open field (used by floating columns, candlesticks and ohlc) in your dataProvider.
@@ -411,17 +411,17 @@
 /**
  If this is set to true, candlesticks will be colored in a different manner - if current close is less than current open, the candlestick will be empty, otherwise - filled with color. If previous close is less than current close, the candlestick will use positive color, otherwise - negative color.
  */
-@property(assign) BOOL proCandlesticks;
+@property(assign) NSNumber * proCandlesticks;
 
 /**
  If graph's type is column and labelText is set, graph hides labels which do not fit into the column's space. If you don't want these labels to be hidden, set this to true.
  */
-@property(assign) BOOL showAllValueLabels;
+@property(assign) NSNumber * showAllValueLabels;
 
 /**
  Specifies whether the value balloon of this graph is shown when mouse is over data item or chart's indicator is over some series.
  */
-@property(assign) BOOL showBalloon;
+@property(assign) NSNumber * showBalloon;
 
 /**
  Specifies graphs value at which cursor is showed. This is only important for candlestick and ohlc charts, also if column chart has "open" value. Possible values are: "open", "close", "high", "low".
@@ -436,17 +436,17 @@
 /**
  If you want mouse pointer to change to hand when hovering the graph, set this property to true. 
  */
-@property(assign) BOOL showHandOnHover;
+@property(assign) NSNumber * showHandOnHover;
 
 /**
  It can only be used together with topRadius (when columns look like cylinders). If you set it to true, the cylinder will be lowered down so that the center of it's bottom circle would be right on category axis.
  */
-@property(assign) BOOL showOnAxis;
+@property(assign) NSNumber * showOnAxis;
 
 /**
  If the value axis of this graph has stack types like "regular" or "100%" You can exclude this graph from stacking.
  */
-@property(assign) BOOL stackable;
+@property(assign) NSNumber * stackable;
 
 /**
  Step graph only. Specifies to which direction step should be drawn.
@@ -456,7 +456,7 @@
 /**
  If you set it to false, the graph will not be hidden when user clicks on legend entry.
  */
-@property(assign) BOOL switchable;
+@property(assign) NSNumber * switchable;
 
 /**
  Graph title.
@@ -486,7 +486,7 @@
 /**
  If negativeLineColor and/or negativeFillColors are set and useNegativeColorIfDown is set to true (default is false), the line, step and column graphs will use these colors for lines, bullets or columns if previous value is bigger than current value. In case you set openField for the graph, the graph will compare current value with openField value instead of comparing to previous value. 
  */
-@property(assign) BOOL useNegativeColorIfDown;
+@property(assign) NSNumber * useNegativeColorIfDown;
 
 /**
  Specifies which value axis the graph will use. Will use the first value axis if not set. You can use reference to the real ValueAxis object or set value axis id.
@@ -501,7 +501,7 @@
 /**
  Specifies whether this graph should be shown in the Legend.
  */
-@property(assign) BOOL visibleInLegend;
+@property(assign) NSNumber * visibleInLegend;
 
 /**
  XY chart only. A horizontal value axis object to attach graph to.

@@ -47,7 +47,7 @@
     }
     </style>
 
-    <script type="text/javascript">
+    <script>
     $(function () {
         $(".resizable").resizable({
             animate: true,
@@ -88,6 +88,7 @@
       <select id="type" onchange="setType(this.options[this.selectedIndex].value);">
         <option value="pie1.html" selected="selected">Pie #1 (Simple w/ legend)</option>
         <option value="pie2.html"/>Pie #2 (3D w/ legend)</option>
+        <option value="pie3.html"/>Pie #3 (several instances)</option>
         <option value="serial1.html">Serial #1 (Area)</option>
         <option value="serial2.html">Serial #2 (Bar &amp; Line)</option>
         <option value="serial3.html">Serial #3 (Line w/ zoom)</option>
@@ -95,6 +96,7 @@
         <option value="radar.html">Radar</option>
         <option value="gauge.html">Gauge</option>
         <option value="funnel.html">Funnel</option>
+        <option value="gantt.html">GANTT</option>
         <option value="stock.html">Stock</option>
         <option value="map.html">Map</option>
       </select>

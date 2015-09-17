@@ -22,27 +22,27 @@
 //		self.bandOutlineAlpha = @(0);
 //		self.bandOutlineColor = @"#000000";
 //		self.bandOutlineThickness = @(0);
-		self.bottomTextBold = true;
+//		self.bottomTextBold = true;
 //		self.bottomTextYOffset = @(0);
 //		self.centerX = @"0%";
 //		self.centerY = @"0%";
 //		self.endAngle = @(120);
 //		self.gridCount = @(5);
-		self.gridInside = true;
-		self.inside = true;
+//		self.gridInside = true;
+//		self.inside = true;
 //		self.labelFrequency = @(1);
 //		self.labelOffset = @(15);
 //		self.minorTickLength = @(5);
 //		self.radius = @"95%";
-		self.showFirstLabel = true;
-		self.showLastLabel = true;
+//		self.showFirstLabel = true;
+//		self.showLastLabel = true;
 //		self.startAngle = @(-120);
 //		self.startValue = @(0);
 //		self.tickAlpha = @(1);
 //		self.tickColor = @"#555555";
 //		self.tickLength = @(10);
 //		self.tickThickness = @(1);
-		self.topTextBold = true;
+//		self.topTextBold = true;
 //		self.topTextYOffset = @(0);
 //		self.unitPosition = @"right";
 	}
@@ -95,7 +95,9 @@
 		[dictRep setObject:self.bottomText forKey:@"bottomText"];
 	}
 
-	[dictRep setObject:@(self.bottomTextBold) forKey:@"bottomTextBold"];
+    if (self.bottomTextBold) {
+        [dictRep setObject:self.bottomTextBold forKey:@"bottomTextBold"];
+    }
 
 	if (self.bottomTextColor) {
 		[dictRep setObject:self.bottomTextColor forKey:@"bottomTextColor"];
@@ -129,9 +131,13 @@
 		[dictRep setObject:self.gridCount forKey:@"gridCount"];
 	}
 
-	[dictRep setObject:@(self.gridInside) forKey:@"gridInside"];
+    if (self.gridInside) {
+       [dictRep setObject:self.gridInside forKey:@"gridInside"];
+    }
 
-	[dictRep setObject:@(self.inside) forKey:@"inside"];
+    if (self.inside) {
+       [dictRep setObject:self.inside forKey:@"inside"];
+    }
 
 	if (self.labelFrequency) {
 		[dictRep setObject:self.labelFrequency forKey:@"labelFrequency"];
@@ -153,10 +159,14 @@
 		[dictRep setObject:self.radius forKey:@"radius"];
 	}
 
-	[dictRep setObject:@(self.showFirstLabel) forKey:@"showFirstLabel"];
-
-	[dictRep setObject:@(self.showLastLabel) forKey:@"showLastLabel"];
-
+    if (self.showFirstLabel) {
+        [dictRep setObject:self.showFirstLabel forKey:@"showFirstLabel"];
+    }
+	
+    if (self.showLastLabel) {
+        [dictRep setObject:self.showLastLabel forKey:@"showLastLabel"];
+    }
+	
 	if (self.startAngle) {
 		[dictRep setObject:self.startAngle forKey:@"startAngle"];
 	}
@@ -185,7 +195,9 @@
 		[dictRep setObject:self.topText forKey:@"topText"];
 	}
 
-	[dictRep setObject:@(self.topTextBold) forKey:@"topTextBold"];
+    if (self.topTextBold) {
+        [dictRep setObject:self.topTextBold forKey:@"topTextBold"];
+    }
 
 	if (self.topTextColor) {
 		[dictRep setObject:self.topTextColor forKey:@"topTextColor"];
@@ -207,7 +219,9 @@
 		[dictRep setObject:self.unitPosition forKey:@"unitPosition"];
 	}
 
-    [dictRep setObject:@(self.usePrefixes) forKey:@"usePrefixes"];
+    if (self.usePrefixes) {
+        [dictRep setObject:self.usePrefixes forKey:@"usePrefixes"];
+    }
     
 	if (self.valueInterval) {
 		[dictRep setObject:self.valueInterval forKey:@"valueInterval"];

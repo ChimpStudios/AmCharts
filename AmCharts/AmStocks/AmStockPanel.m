@@ -22,8 +22,8 @@
 //		self.eraseAll = false;
 //		self.iconSize = @(18);
 //		self.recalculateToPercents = @"whenComparing";
-		self.showCategoryAxis = true;
-		self.showComparedOnTop = true;
+//		self.showCategoryAxis = true;
+//		self.showComparedOnTop = true;
 //		self.trendLineAlpha = @(1);
 //		self.trendLineColor = @"#00CC00";
 //		self.trendLineDashLength = @(0);
@@ -35,15 +35,21 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[super dictionaryRepresentation] mutableCopy];
 
-	[dictRep setObject:@(self.allowTurningOff) forKey:@"allowTurningOff"];
+    if (self.allowTurningOff) {
+        [dictRep setObject:self.allowTurningOff forKey:@"allowTurningOff"];
+    }
 
-	[dictRep setObject:@(self.drawingIconsEnabled) forKey:@"drawingIconsEnabled"];
+    if (self.drawingIconsEnabled) {
+        [dictRep setObject:self.drawingIconsEnabled forKey:@"drawingIconsEnabled"];
+    }
 
 	if (self.drawOnAxis) {
 		[dictRep setObject:[self.drawOnAxis dictionaryRepresentation] forKey:@"drawOnAxis"];
 	}
 
-	[dictRep setObject:@(self.eraseAll) forKey:@"eraseAll"];
+    if (self.eraseAll) {
+        [dictRep setObject:self.eraseAll forKey:@"eraseAll"];
+    }
 
 	if (self.iconSize) {
 		[dictRep setObject:self.iconSize forKey:@"iconSize"];
@@ -57,9 +63,13 @@
 		[dictRep setObject:self.recalculateToPercents forKey:@"recalculateToPercents"];
 	}
 
-	[dictRep setObject:@(self.showCategoryAxis) forKey:@"showCategoryAxis"];
+    if (self.showCategoryAxis) {
+        [dictRep setObject:self.showCategoryAxis forKey:@"showCategoryAxis"];
+    }
 
-	[dictRep setObject:@(self.showComparedOnTop) forKey:@"showComparedOnTop"];
+    if (self.showComparedOnTop) {
+        [dictRep setObject:self.showComparedOnTop forKey:@"showComparedOnTop"];
+    }
 
 	if (self.stockGraphs) {
         NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.stockGraphs.count];

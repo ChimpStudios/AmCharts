@@ -29,12 +29,12 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.balloon = [[AmBalloon alloc] init];
+		//self.balloon = [[AmBalloon alloc] init];
 		self.categoryAxesSettings = [[AmCategoryAxesSettings alloc] init];
 		self.chartCursorSettings = [[AmChartCursorSettings alloc] init];
 		self.chartScrollbarSettings = [[AmChartScrollbarSettings alloc] init];
 		//self.colors = [@[@"#FF6600", @"#FCD202", @"#B0DE09", @"#0D8ECF", @"#2A0CD0", @"#CD0D74", @"#CC0000", @"#00CC00", @"#0000CC", @"#DDDDDD", @"#999999", @"#333333", @"#990000"] mutableCopy];
-        self.extendToFullPeriod = true;
+//        self.extendToFullPeriod = true;
 //		self.firstDayOfWeek = @(1);
 //		self.glueToTheEnd = false;
 		self.legendSettings = [[AmLegendSettings alloc] init];
@@ -52,13 +52,17 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-    [dictRep setObject:@(self.addClassNames) forKey:@"addClassNames"];
+    if (self.addClassNames) {
+        [dictRep setObject:self.addClassNames forKey:@"addClassNames"];
+    }
     
     if (self.amExport) {
         [dictRep setObject:[self.amExport dictionaryRepresentation] forKey:@"amExport"];
     }
     
-	[dictRep setObject:@(self.animationPlayed) forKey:@"animationPlayed"];
+    if (self.animationPlayed) {
+        [dictRep setObject:self.animationPlayed forKey:@"animationPlayed"];
+    }
 
 	if (self.balloon) {
 		[dictRep setObject:[self.balloon dictionaryRepresentation] forKey:@"balloon"];
@@ -68,7 +72,9 @@
 		[dictRep setObject:[self.categoryAxesSettings dictionaryRepresentation] forKey:@"categoryAxesSettings"];
 	}
 
-	[dictRep setObject:@(self.chartCreated) forKey:@"chartCreated"];
+    if (self.chartCreated) {
+        [dictRep setObject:self.chartCreated forKey:@"chartCreated"];
+    }
 
 	if (self.chartCursorSettings) {
 		[dictRep setObject:[self.chartCursorSettings dictionaryRepresentation] forKey:@"chartCursorSettings"];
@@ -124,13 +130,17 @@
 		[dictRep setObject:self.exportConfig forKey:@"exportConfig"];
 	}
     
-    [dictRep setObject:@(self.extendToFullPeriod) forKey:@"extendToFullPeriod"];
+    if (self.extendToFullPeriod) {
+        [dictRep setObject:self.extendToFullPeriod forKey:@"extendToFullPeriod"];
+    }
 
 	if (self.firstDayOfWeek) {
 		[dictRep setObject:self.firstDayOfWeek forKey:@"firstDayOfWeek"];
 	}
 
-	[dictRep setObject:@(self.glueToTheEnd) forKey:@"glueToTheEnd"];
+    if (self.glueToTheEnd) {
+        [dictRep setObject:self.glueToTheEnd forKey:@"glueToTheEnd"];
+    }
 
 	if (self.legendSettings) {
 		[dictRep setObject:[self.legendSettings dictionaryRepresentation] forKey:@"legendSettings"];
@@ -140,7 +150,9 @@
 		[dictRep setObject:[self.mainDataSet dictionaryRepresentation] forKey:@"mainDataSet"];
 	}
 
-	[dictRep setObject:@(self.mouseWheelScrollEnabled) forKey:@"mouseWheelScrollEnabled"];
+    if (self.mouseWheelScrollEnabled) {
+        [dictRep setObject:self.mouseWheelScrollEnabled forKey:@"mouseWheelScrollEnabled"];
+    }
 
 	if (self.panels) {
         NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.panels.count];
@@ -197,7 +209,9 @@
 		[dictRep setObject:self.version forKey:@"version"];
 	}
 
-	[dictRep setObject:@(self.zoomOutOnDataSetChange) forKey:@"zoomOutOnDataSetChange"];
+    if (self.zoomOutOnDataSetChange) {
+        [dictRep setObject:self.zoomOutOnDataSetChange forKey:@"zoomOutOnDataSetChange"];
+    }
 
 	return dictRep;
 }

@@ -19,7 +19,7 @@
 /**
  Specifies, if class names should be added to chart elements.
  */
-@property(assign) BOOL addClassNames;
+@property(assign) NSNumber * addClassNames;
 
 /**
  Array of Labels. Example of label object, with all possible properties:<br>
@@ -100,7 +100,7 @@
 /**
  If you set this to true, the lines of the chart will be distorted and will produce hand-drawn effect. Try to adjust chart.handDrawScatter and chart.handDrawThickness properties for a more scattered result.
  */
-@property(assign) BOOL handDrawn;
+@property(assign) NSNumber * handDrawn;
 
 /**
  Defines by how many pixels hand-drawn line (when handDrawn is set to true) will fluctuate.
@@ -130,7 +130,7 @@
 /**
  This setting affects touch-screen devices only. If a chart is on a page, and panEventsEnabled are set to true, the page won't move if the user touches the chart first. If a chart is big enough and occupies all the screen of your touch device, the user won’t be able to move the page at all. If you think that selecting/panning the chart or moving/pinching the map is a primary purpose of your users, you should set panEventsEnabled to true, otherwise - false.
  */
-@property(assign) BOOL panEventsEnabled;
+@property(assign) NSNumber * panEventsEnabled;
 
 /**
  Specifies path to the folder where images like resize grips, lens and similar are.
@@ -185,7 +185,7 @@
 /**
  If true, prefixes will be used for big and small numbers. You can set arrays of prefixes via prefixesOfSmallNumbers and prefixesOfBigNumbers properties.
  */
-@property(assign) BOOL usePrefixes;
+@property(assign) NSNumber * usePrefixes;
 
 /**
  Read-only. Indicates current version of a script.

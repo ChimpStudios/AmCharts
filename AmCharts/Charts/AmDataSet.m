@@ -15,9 +15,9 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.compared = false;
-		self.showInCompare = true;
-		self.showInSelect = true;
+//		self.compared = false;
+//		self.showInCompare = true;
+//		self.showInSelect = true;
 	}
 	return self;
 }
@@ -33,8 +33,10 @@
 		[dictRep setObject:self.color forKey:@"color"];
 	}
 
-	[dictRep setObject:@(self.compared) forKey:@"compared"];
-
+    if (self.compared) {
+       [dictRep setObject:self.compared forKey:@"compared"];
+    }
+	
 	if (self.dataProvider) {
 		[dictRep setObject:self.dataProvider forKey:@"dataProvider"];
 	}
@@ -43,10 +45,14 @@
 		[dictRep setObject:self.fieldMappings forKey:@"fieldMappings"];
 	}
 
-	[dictRep setObject:@(self.showInCompare) forKey:@"showInCompare"];
-
-	[dictRep setObject:@(self.showInSelect) forKey:@"showInSelect"];
-
+    if (self.showInCompare) {
+        [dictRep setObject:self.showInCompare forKey:@"showInCompare"];
+    }
+	
+    if (self.showInSelect) {
+        [dictRep setObject:self.showInSelect forKey:@"showInSelect"];
+    }
+	
 	if (self.stockEvents) {
 		[dictRep setObject:self.stockEvents forKey:@"stockEvents"];
 	}

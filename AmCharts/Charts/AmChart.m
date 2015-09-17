@@ -23,7 +23,7 @@
 //		self.allLabels = [@[] mutableCopy];
 //		self.backgroundAlpha = @(0);
 //		self.backgroundColor = @"#FFFFFF";
-		self.balloon = [[AmBalloon alloc] init];
+	//	self.balloon = [[AmBalloon alloc] init];
 //		self.borderAlpha = @(0);
 //		self.borderColor = @"#000000";
 //		//self.color = @"#000000";
@@ -35,7 +35,7 @@
 //		self.handDrawScatter = @(2);
 //		self.handDrawThickness = @(1);
 //		self.hideBalloonTime = @(150);
-		self.panEventsEnabled = true;
+//		self.panEventsEnabled = true;
 //		self.percentPrecision = @(2);
 //		self.precision = @(-1);
 //        self.prefixesOfBigNumbers = [@[
@@ -70,7 +70,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-    [dictRep setObject:@(self.addClassNames) forKey:@"addClassNames"];
+    if (self.addClassNames) {
+        [dictRep setObject:self.addClassNames forKey:@"addClassNames"];
+    }
     
 	if (self.allLabels) {
         NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.allLabels.count];
@@ -139,8 +141,10 @@
 		[dictRep setObject:self.fontSize forKey:@"fontSize"];
 	}
 
-	[dictRep setObject:@(self.handDrawn) forKey:@"handDrawn"];
-
+    if (self.handDrawn) {
+       [dictRep setObject:self.handDrawn forKey:@"handDrawn"];
+    }
+	
 	if (self.handDrawScatter) {
 		[dictRep setObject:self.handDrawScatter forKey:@"handDrawScatter"];
 	}
@@ -161,7 +165,9 @@
 		[dictRep setObject:self.legendDiv forKey:@"legendDiv"];
 	}
 
-	[dictRep setObject:@(self.panEventsEnabled) forKey:@"panEventsEnabled"];
+    if (self.panEventsEnabled) {
+        [dictRep setObject:self.panEventsEnabled forKey:@"panEventsEnabled"];
+    }
 
 	if (self.pathToImages) {
 		[dictRep setObject:self.pathToImages forKey:@"pathToImages"];
@@ -210,7 +216,9 @@
 		[dictRep setObject:self.type forKey:@"type"];
 	}
 
-	[dictRep setObject:@(self.usePrefixes) forKey:@"usePrefixes"];
+    if (self.usePrefixes) {
+        [dictRep setObject:self.usePrefixes forKey:@"usePrefixes"];
+    }
 
 	if (self.version) {
 		[dictRep setObject:self.version forKey:@"version"];

@@ -14,6 +14,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    self.window.title = @"AmCharts Library v3.15.0";
     
     [self drawSerialChart];
     [self drawStockChart];
@@ -55,7 +56,7 @@
     [self.chartView setChart:chart];
     [self.chartView drawChart];
     
-    // NSLog(@"\n%@", [chart javascriptRepresentation]);
+   //  NSLog(@"\n%@", [chart javascriptRepresentation]);
 }
 
 - (void)drawStockChart
@@ -67,7 +68,7 @@
     AmDataSet *dataSet = [[AmDataSet alloc] init];
     
     NSMutableArray *dataProvider = [[NSMutableArray alloc] init];
-    [dataProvider addObject:@{@"date": @"2011-06-01", @"val": @(10)}];
+    [dataProvider addObject:@{@"date": @"2011-06-01", @"val": @(5)}];
     [dataProvider addObject:@{@"date": @"2011-06-02", @"val": @(11)}];
     [dataProvider addObject:@{@"date": @"2011-06-03", @"val": @(12)}];
     [dataProvider addObject:@{@"date": @"2011-06-04", @"val": @(11)}];
@@ -85,6 +86,7 @@
     
     AmStockPanel *panel = [[AmStockPanel alloc] init];
     panel.legend = [[AmStockLegend alloc] init];
+    panel.showCategoryAxis = @(true);
     
     AmStockGraph *stockGraph = [[AmStockGraph alloc] init];
     stockGraph.uid = @"graph1";
@@ -92,6 +94,13 @@
     stockGraph.type = @"line";
     stockGraph.title = @"MyGraph";
     stockGraph.fillAlphas = @(0.1);
+    stockGraph.bullet = @"round";
+    
+    AmChartCursor *cursor = [[AmChartCursor alloc] init];
+    cursor.selectWithoutZooming = @(YES);
+    cursor.cursorPosition = @"mouse";
+    panel.chartCursor = cursor;
+    
     panel.stockGraphs = [@[stockGraph] mutableCopy];
     stockChart.panels = [@[panel] mutableCopy];
     
@@ -112,7 +121,7 @@
     [self.chartVw2 setChart:stockChart];
     [self.chartVw2 drawChart];
     
-    //NSLog(@"\n%@", [stockChart javascriptRepresentation]);
+    NSLog(@"\n%@", [stockChart javascriptRepresentation]);
 }
 
 - (void)drawPieChart

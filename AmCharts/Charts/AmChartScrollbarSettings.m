@@ -16,14 +16,14 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoGridCount = true;
+//		self.autoGridCount = true;
 //		self.dragIconHeight = @(18);
 //		self.dragIconWidth = @(11);
-		self.enabled = true;
+//		self.enabled = true;
 //		self.height = @(40);
 //		self.hideResizeGrips = false;
 //		self.position = @"bottom";
-		self.updateOnReleaseOnly = true;
+//		self.updateOnReleaseOnly = true;
 	}
 	return self;
 }
@@ -31,7 +31,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.autoGridCount) forKey:@"autoGridCount"];
+    if (self.autoGridCount) {
+        [dictRep setObject:self.autoGridCount forKey:@"autoGridCount"];
+    }
 
 	if (self.backgroundAlpha) {
 		[dictRep setObject:self.backgroundAlpha forKey:@"backgroundAlpha"];
@@ -53,7 +55,9 @@
 		[dictRep setObject:self.dragIconWidth forKey:@"dragIconWidth"];
 	}
 
-	[dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    if (self.enabled) {
+        [dictRep setObject:self.enabled forKey:@"enabled"];
+    }
 
 	if (self.fontSize) {
 		[dictRep setObject:self.fontSize forKey:@"fontSize"];
@@ -99,9 +103,13 @@
 		[dictRep setObject:self.height forKey:@"height"];
 	}
 
-	[dictRep setObject:@(self.hideResizeGrips) forKey:@"hideResizeGrips"];
-
-	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];
+    if (self.hideResizeGrips) {
+        [dictRep setObject:self.hideResizeGrips forKey:@"hideResizeGrips"];
+    }
+	
+    if (self.markPeriodChange) {
+        [dictRep setObject:self.markPeriodChange forKey:@"markPeriodChange"];
+    }
 
 	if (self.position) {
 		[dictRep setObject:self.position forKey:@"position"];
@@ -135,7 +143,9 @@
 		[dictRep setObject:self.selectedGraphLineColor forKey:@"selectedGraphLineColor"];
 	}
 
-	[dictRep setObject:@(self.updateOnReleaseOnly) forKey:@"updateOnReleaseOnly"];
+    if (self.updateOnReleaseOnly) {
+        [dictRep setObject:self.updateOnReleaseOnly forKey:@"updateOnReleaseOnly"];
+    }
 
 	if (self.usePeriod) {
 		[dictRep setObject:self.usePeriod forKey:@"usePeriod"];

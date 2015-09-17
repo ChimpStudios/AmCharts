@@ -19,7 +19,7 @@
 /**
  Used if chart is Serial or XY. In case true, margins of the legend are adjusted and made equal to chart's margins.
  */
-@property(assign) BOOL autoMargins;
+@property(assign) NSNumber * autoMargins;
 
 /**
  Opacity of legend's background. Value range is 0 - 1
@@ -65,12 +65,12 @@
 /**
  Specifies if legend is enabled or not.
  */
-@property(assign) BOOL enabled;
+@property(assign) NSNumber * enabled;
 
 /**
  Specifies if each of legend entry should be equal to the most wide entry. Won't look good if legend has more than one line.
  */
-@property(assign) BOOL equalWidths;
+@property(assign) NSNumber * equalWidths;
 
 /**
  Font size.
@@ -170,7 +170,7 @@
 /**
  Specifies whether legend entries should be placed in reversed order.
  */
-@property(assign) BOOL reversedOrder;
+@property(assign) NSNumber * reversedOrder;
 
 /**
  In case legend position is set to "absolute", you can set distance from right side of the chart, in pixels.
@@ -190,7 +190,7 @@
 /**
  You can use this property to turn all the legend entries off.
  */
-@property(assign) BOOL showEntries;
+@property(assign) NSNumber * showEntries;
 
 /**
  Horizontal space between legend items, in pixels.
@@ -200,7 +200,7 @@
 /**
  Whether showing/hiding of graphs by clicking on the legend marker is enabled or not. In case legend is used with AmMap, this is set to false automatically.
  */
-@property(assign) BOOL switchable;
+@property(assign) NSNumber * switchable;
 
 /**
  Legend switch color.
@@ -215,7 +215,7 @@
 /**
  If true, clicking on the text will show/hide balloon of the graph. Otherwise it will show/hide graph/slice, if switchable is set to true.
  */
-@property(assign) BOOL textClickEnabled;
+@property(assign) NSNumber * textClickEnabled;
 
 /**
  In case legend position is set to "absolute", you can set distance from top of the chart, in pixels.
@@ -225,17 +225,17 @@
 /**
  Legend markers can mirror graph’s settings, displaying a line and a real bullet as in the graph itself. Set this property to true if you want to enable this feature.
  */
-@property(assign) BOOL useGraphSettings;
+@property(assign) NSNumber * useGraphSettings;
 
 /**
  Labels will use marker color if you set this to true.
  */
-@property(assign) BOOL useMarkerColorForLabels;
+@property(assign) NSNumber * useMarkerColorForLabels;
 
 /**
  Specifies if legend values should be use same color as corresponding markers.
  */
-@property(assign) BOOL useMarkerColorForValues;
+@property(assign) NSNumber * useMarkerColorForValues;
 
 /**
  Alignment of the value text. Possible values are "left" and "right".

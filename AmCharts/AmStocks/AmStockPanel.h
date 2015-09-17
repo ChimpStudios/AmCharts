@@ -16,12 +16,12 @@
 /**
  Specifies whether x button will be displayed near the panel. This button allows turning panel off.
  */
-@property(assign) BOOL allowTurningOff;
+@property(assign) NSNumber * allowTurningOff;
 
 /**
  If true, drawing icons will be displayed in top-right corner.
  */
-@property(assign) BOOL drawingIconsEnabled;
+@property(assign) NSNumber * drawingIconsEnabled;
 
 /**
  Specifies on which value axis user can draw trend lines. Set drawingIconsEnabled to true if you want drawing icons to be visible. First value axis will be used if not set here. You can use a reference to the value axis object or id of value axis.
@@ -31,7 +31,7 @@
 /**
  Specifies if all trend lines should be erased when erase button is clicked. If false, trend lines can be erased one by one.
  */
-@property(assign) BOOL eraseAll;
+@property(assign) NSNumber * eraseAll;
 
 /**
  Size of trend line drawing icons. If you change this size, you should update icon images if you want them to look properly.
@@ -51,12 +51,12 @@
 /**
  Specifies whether this panel will show category axis.
  */
-@property(assign) BOOL showCategoryAxis;
+@property(assign) NSNumber * showCategoryAxis;
 
 /**
  Specifies if compared graphs should be shown above or behind the main graph.
  */
-@property(assign) BOOL showComparedOnTop;
+@property(assign) NSNumber * showComparedOnTop;
 
 /**
  Array of stock graphs.

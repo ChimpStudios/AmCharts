@@ -14,7 +14,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.enabled = true;
+  //      self.enabled = true;
     }
     return self;
 }
@@ -22,7 +22,9 @@
 - (NSDictionary *)dictionaryRepresentation {
     NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
     
-    [dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    if (self.enabled) {
+        [dictRep setObject:self.enabled forKey:@"enabled"];
+    }
     
     return dictRep;
 }

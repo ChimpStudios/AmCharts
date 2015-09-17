@@ -19,7 +19,7 @@
 	if (self) {
 //		self.angle = @(0);
 //		self.autoMarginOffset = @(10);
-		self.autoMargins = true;
+//		self.autoMargins = true;
 //		self.depth3D = @(0);
 //		self.marginBottom = @(20);
 //		self.marginLeft = @(20);
@@ -53,7 +53,9 @@
 		[dictRep setObject:self.autoMarginOffset forKey:@"autoMarginOffset"];
 	}
 
-	[dictRep setObject:@(self.autoMargins) forKey:@"autoMargins"];
+    if (self.autoMargins) {
+        [dictRep setObject:self.autoMargins forKey:@"autoMargins"];
+    }
 
 	if (self.chartCursor) {
 		[dictRep setObject:[self.chartCursor dictionaryRepresentation] forKey:@"chartCursor"];
@@ -79,7 +81,9 @@
 		[dictRep setObject:self.marginRight forKey:@"marginRight"];
 	}
 
-	[dictRep setObject:@(self.marginsUpdated) forKey:@"marginsUpdated"];
+    if (self.marginsUpdated) {
+        [dictRep setObject:self.marginsUpdated forKey:@"marginsUpdated"];
+    }
 
 	if (self.marginTop) {
 		[dictRep setObject:self.marginTop forKey:@"marginTop"];

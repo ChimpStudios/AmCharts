@@ -25,7 +25,7 @@
 /**
  Date to which trend line should be drawn. It can be date string (using the same date format as chart.dataDateFormat) or date object.
  */
-@property(strong) NSDate * finalDate;
+@property(strong) NSString * finalDate;
 
 /**
  Value at which trend line should end.
@@ -50,7 +50,7 @@
 /**
  Date from which trend line should start. It can be date string (using the same date format as chart.dataDateFormat) or date object.
  */
-@property(strong) NSDate * initialDate;
+@property(strong) NSString * initialDate;
 
 /**
  Value from which trend line should start.
@@ -65,7 +65,7 @@
 /**
  Used by Stock chart. If this property is set to true, this trend line won't be removed when clicked on eraser tool.
  */
-@property(assign) BOOL isProtected;
+@property(assign) NSNumber * isProtected;
 
 /**
  Line opacity.
@@ -85,12 +85,12 @@
 /**
  Value axis of the trend line. Will use first value axis of the chart if not set any. You can use a reference to the value axis object or id of value axis.
  */
-@property(strong) AmValueAxis * valueAxis;
+@property(strong) NSString * valueAxis;
 
 /**
  Used by XY chart only. X axis of trend line. Will use first X axis of the chart if not set any. You can use a reference to the value axis object or id of value axis.
  */
-@property(strong) AmValueAxis * valueAxisX;
+@property(strong) NSString * valueAxisX;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

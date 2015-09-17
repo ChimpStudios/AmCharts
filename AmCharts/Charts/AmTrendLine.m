@@ -22,8 +22,8 @@
 //		self.lineAlpha = @(1);
 //		self.lineColor = @"#00CC00";
 //		self.lineThickness = @(1);
-		self.valueAxis = [[AmValueAxis alloc] init];
-		self.valueAxisX = [[AmValueAxis alloc] init];
+//		self.valueAxis = nil;
+//		self.valueAxisX = nil;
 	}
 	return self;
 }
@@ -71,7 +71,9 @@
 		[dictRep setObject:self.initialXValue forKey:@"initialXValue"];
 	}
 
-	[dictRep setObject:@(self.isProtected) forKey:@"isProtected"];
+    if (self.isProtected) {
+        [dictRep setObject:self.isProtected forKey:@"isProtected"];
+    }
 
 	if (self.lineAlpha) {
 		[dictRep setObject:self.lineAlpha forKey:@"lineAlpha"];
@@ -86,11 +88,11 @@
 	}
 
 	if (self.valueAxis) {
-		[dictRep setObject:[self.valueAxis dictionaryRepresentation] forKey:@"valueAxis"];
+		[dictRep setObject:self.valueAxis forKey:@"valueAxis"];
 	}
 
 	if (self.valueAxisX) {
-		[dictRep setObject:[self.valueAxisX dictionaryRepresentation] forKey:@"valueAxisX"];
+		[dictRep setObject:self.valueAxisX forKey:@"valueAxisX"];
 	}
 
 	return dictRep;

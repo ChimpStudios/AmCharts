@@ -34,7 +34,7 @@
          */
 //		self.gridAboveGraphs = false;
 //		self.guides = [@[] mutableCopy];
-		self.sequencedAnimation = true;
+//		self.sequencedAnimation = true;
 //		self.startAlpha = @(1);
 //		self.startDuration = @(0);
 //		self.startEffect = @"elastic";
@@ -66,7 +66,9 @@
 		[dictRep setObject:tmpArr forKey:@"graphs"];
 	}
 
-	[dictRep setObject:@(self.gridAboveGraphs) forKey:@"gridAboveGraphs"];
+    if (self.gridAboveGraphs) {
+        [dictRep setObject:self.gridAboveGraphs forKey:@"gridAboveGraphs"];
+    }
 
 	if (self.guides) {
         NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.guides.count];
@@ -79,7 +81,9 @@
 		[dictRep setObject:tmpArr forKey:@"guides"];
 	}
 
-	[dictRep setObject:@(self.sequencedAnimation) forKey:@"sequencedAnimation"];
+    if (self.sequencedAnimation) {
+        [dictRep setObject:self.sequencedAnimation forKey:@"sequencedAnimation"];
+    }
 
 	if (self.startAlpha) {
 		[dictRep setObject:self.startAlpha forKey:@"startAlpha"];

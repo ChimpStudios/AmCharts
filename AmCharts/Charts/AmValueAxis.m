@@ -26,7 +26,7 @@
 //		self.logarithmic = false;
 //		self.minMaxMultiplier = @(1);
 //		self.position = @"left";
-		self.radarCategoriesEnabled = true;
+//		self.radarCategoriesEnabled = true;
 //		self.recalculateToPercents = false;
 //		self.reversed = false;
 //		self.stackType = @"none";
@@ -68,17 +68,25 @@
 		[dictRep setObject:self.uid forKey:@"id"];
 	}
 
-	[dictRep setObject:@(self.includeGuidesInMinMax) forKey:@"includeGuidesInMinMax"];
-
-	[dictRep setObject:@(self.includeHidden) forKey:@"includeHidden"];
-
-	[dictRep setObject:@(self.integersOnly) forKey:@"integersOnly"];
+    if (self.includeGuidesInMinMax) {
+        [dictRep setObject:self.includeGuidesInMinMax forKey:@"includeGuidesInMinMax"];
+    }
+	
+    if (self.includeHidden) {
+        [dictRep setObject:self.includeHidden forKey:@"includeHidden"];
+    }
+	
+    if (self.integersOnly) {
+        [dictRep setObject:self.integersOnly forKey:@"integersOnly"];
+    }
 
 	if (self.labelFunction) {
 		[dictRep setObject:[self.labelFunction dictionaryRepresentation] forKey:@"labelFunction"];
 	}
 
-	[dictRep setObject:@(self.logarithmic) forKey:@"logarithmic"];
+    if (self.logarithmic) {
+        [dictRep setObject:self.logarithmic forKey:@"logarithmic"];
+    }
 
 	if (self.max) {
 		[dictRep setObject:self.max forKey:@"max"];
@@ -108,11 +116,17 @@
 		[dictRep setObject:self.precision forKey:@"precision"];
 	}
 
-	[dictRep setObject:@(self.radarCategoriesEnabled) forKey:@"radarCategoriesEnabled"];
+    if (self.radarCategoriesEnabled) {
+        [dictRep setObject:self.radarCategoriesEnabled forKey:@"radarCategoriesEnabled"];
+    }
 
-	[dictRep setObject:@(self.recalculateToPercents) forKey:@"recalculateToPercents"];
-
-	[dictRep setObject:@(self.reversed) forKey:@"reversed"];
+    if (self.recalculateToPercents) {
+        [dictRep setObject:self.recalculateToPercents forKey:@"recalculateToPercents"];
+    }
+	
+    if (self.reversed) {
+        [dictRep setObject:self.reversed forKey:@"reversed"];
+    }
 
 	if (self.stackType) {
 		[dictRep setObject:self.stackType forKey:@"stackType"];
@@ -154,9 +168,13 @@
 		[dictRep setObject:self.unitPosition forKey:@"unitPosition"];
 	}
 
-	[dictRep setObject:@(self.usePrefixes) forKey:@"usePrefixes"];
-
-	[dictRep setObject:@(self.useScientificNotation) forKey:@"useScientificNotation"];
+    if (self.usePrefixes) {
+        [dictRep setObject:self.usePrefixes forKey:@"usePrefixes"];
+    }
+	
+    if (self.useScientificNotation) {
+        [dictRep setObject:self.useScientificNotation forKey:@"useScientificNotation"];
+    }
 
 	return dictRep;
 }

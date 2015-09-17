@@ -19,7 +19,7 @@
 /**
  Specifies if bullet for each graph will follow the cursor.
  */
-@property(assign) BOOL bulletsEnabled;
+@property(assign) NSNumber * bulletsEnabled;
 
 /**
  Size of bullets, following the cursor.
@@ -44,7 +44,7 @@
 /**
  Specifies whether category balloon is enabled.
  */
-@property(assign) BOOL categoryBalloonEnabled;
+@property(assign) NSNumber * categoryBalloonEnabled;
 
 /**
  Opacity of the cursor line.
@@ -64,7 +64,7 @@
 /**
  Set this to "false" if you don't want chart cursor to appear in your charts.
  */
-@property(assign) BOOL enabled;
+@property(assign) NSNumber * enabled;
 
 /**
  Size of a graph's bullet (if available) at the cursor position. If you don't want the bullet to change it's size, set this property to 1.
@@ -74,17 +74,17 @@
 /**
  If set to true, instead of a cursor line user will see a fill which width will always be equal to the width of one data item. We'd recommend setting cusrsorAlpha to 0.1 or some other small number if using this feature.
  */
-@property(assign) BOOL fullWidth;
+@property(assign) NSNumber * fullWidth;
 
 /**
  If this is set to true, the user will be able to pan the chart instead of zooming.
  */
-@property(assign) BOOL pan;
+@property(assign) NSNumber * pan;
 
 /**
  Specifies whether value balloons are enabled. In case they are not, the balloons might be displayed anyway, when the user rolls-over the column or bullet.
  */
-@property(assign) BOOL valueBalloonsEnabled;
+@property(assign) NSNumber * valueBalloonsEnabled;
 
 /**
  Opacity of value line. Will use cursorAlpha value if not set.
@@ -94,17 +94,17 @@
 /**
  Specifies if value balloon next to value axis labels should be displayed. If you have more than one axis, set valueLineAxis property to indicate which axis should display the balloon.
  */
-@property(assign) BOOL valueLineBalloonEnabled;
+@property(assign) NSNumber * valueLineBalloonEnabled;
 
 /**
  Specifies if cursor of Serial chart should display horizontal (or vertical if chart is rotated) line. This line might help users to compare distant values of a chart. You can also enable value balloon on this line by setting valueLineAxis property of ChartCursor.
  */
-@property(assign) BOOL valueLineEnabled;
+@property(assign) NSNumber * valueLineEnabled;
 
 /**
  Specifies if the user can zoom-in the chart. If pan is set to true, zoomable is switched to false automatically.
  */
-@property(assign) BOOL zoomable;
+@property(assign) NSNumber * zoomable;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

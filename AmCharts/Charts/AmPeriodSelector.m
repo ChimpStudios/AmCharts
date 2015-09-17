@@ -17,8 +17,8 @@
 	if (self) {
 //		self.dateFormat = @"DD-MM-YYYY";
 //		self.fromText = @"From:";
-		self.hideOutOfScopePeriods = true;
-		self.inputFieldsEnabled = true;
+//		self.hideOutOfScopePeriods = true;
+//		self.inputFieldsEnabled = true;
 //		self.inputFieldWidth = @(100);
 //		self.periodsText = @"Zoom:";
 //		self.position = @"bottom";
@@ -40,9 +40,13 @@
 		[dictRep setObject:self.fromText forKey:@"fromText"];
 	}
 
-	[dictRep setObject:@(self.hideOutOfScopePeriods) forKey:@"hideOutOfScopePeriods"];
-
-	[dictRep setObject:@(self.inputFieldsEnabled) forKey:@"inputFieldsEnabled"];
+    if (self.hideOutOfScopePeriods) {
+        [dictRep setObject:self.hideOutOfScopePeriods forKey:@"hideOutOfScopePeriods"];
+    }
+	
+    if (self.inputFieldsEnabled) {
+        [dictRep setObject:self.inputFieldsEnabled forKey:@"inputFieldsEnabled"];
+    }
 
 	if (self.inputFieldWidth) {
 		[dictRep setObject:self.inputFieldWidth forKey:@"inputFieldWidth"];
@@ -60,7 +64,9 @@
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.selectFromStart) forKey:@"selectFromStart"];
+    if (self.selectFromStart) {
+        [dictRep setObject:self.selectFromStart forKey:@"selectFromStart"];
+    }
 
 	if (self.toText) {
 		[dictRep setObject:self.toText forKey:@"toText"];

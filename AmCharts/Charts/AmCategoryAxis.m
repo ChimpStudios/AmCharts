@@ -15,8 +15,8 @@
 	self = [super init];
 	if (self) {
 //		self.autoWrap = false;
-		self.boldPeriodBeginning = true;
-		self.centerLabelOnFullPeriod = true;
+//		self.boldPeriodBeginning = true;
+//		self.centerLabelOnFullPeriod = true;
 //		self.dateFormats = [@[
 //              @{@"period":@"fff",@"format":@"JJ:NN:SS"},
 //              @{@"period":@"ss",@"format":@"JJ:NN:SS"},
@@ -30,7 +30,7 @@
 //		self.equalSpacing = false;
 //		self.firstDayOfWeek  = @(1);
 //		self.gridPosition = @"middle";
-		self.markPeriodChange = true;
+//		self.markPeriodChange = true;
 //		self.minPeriod = @"DD";
 //		self.parseDates = false;
 //		self.position = @"bottom";
@@ -51,21 +51,25 @@
 		[dictRep setObject:self.autoRotateCount forKey:@"autoRotateCount"];
 	}
 
-	[dictRep setObject:@(self.autoWrap) forKey:@"autoWrap"];
+    if (self.autoWrap) {
+        [dictRep setObject:self.autoWrap forKey:@"autoWrap"];
+    }
 
-	[dictRep setObject:@(self.boldPeriodBeginning) forKey:@"boldPeriodBeginning"];
+    if (self.boldPeriodBeginning) {
+        [dictRep setObject:self.boldPeriodBeginning forKey:@"boldPeriodBeginning"];
+    }
 
 	if (self.categoryFunction) {
 		[dictRep setObject:[self.categoryFunction dictionaryRepresentation] forKey:@"categoryFunction"];
 	}
 
-	[dictRep setObject:@(self.centerLabelOnFullPeriod) forKey:@"centerLabelOnFullPeriod"];
+    if (self.centerLabelOnFullPeriod) {
+        [dictRep setObject:self.centerLabelOnFullPeriod forKey:@"centerLabelOnFullPeriod"];
+    }
 
-	if (self.dateFormats) {
-		[dictRep setObject:self.dateFormats forKey:@"dateFormats"];
-	}
-
-	[dictRep setObject:@(self.equalSpacing) forKey:@"equalSpacing"];
+    if (self.equalSpacing) {
+        [dictRep setObject:self.equalSpacing forKey:@"equalSpacing"];
+    }
 
 	if (self.firstDayOfWeek ) {
 		[dictRep setObject:self.firstDayOfWeek  forKey:@"firstDayOfWeek"];
@@ -87,25 +91,33 @@
 		[dictRep setObject:self.labelFunction forKey:@"labelFunction"];
 	}
 
-	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];
+    if (self.markPeriodChange) {
+        [dictRep setObject:self.markPeriodChange forKey:@"markPeriodChange"];
+    }
 
 	if (self.minPeriod) {
 		[dictRep setObject:self.minPeriod forKey:@"minPeriod"];
 	}
 
-	[dictRep setObject:@(self.parseDates) forKey:@"parseDates"];
+    if (self.parseDates) {
+        [dictRep setObject:self.parseDates forKey:@"parseDates"];
+    }
 
 	if (self.position) {
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.startOnAxis) forKey:@"startOnAxis"];
+    if (self.startOnAxis) {
+        [dictRep setObject:self.startOnAxis forKey:@"startOnAxis"];
+    }
 
     if (self.tickPosition) {
 		[dictRep setObject:self.tickPosition forKey:@"tickPosition"];
 	}
     
-	[dictRep setObject:@(self.twoLineMode) forKey:@"twoLineMode"];
+    if (self.twoLineMode) {
+        [dictRep setObject:self.twoLineMode forKey:@"twoLineMode"];
+    }
 
 	return dictRep;
 }

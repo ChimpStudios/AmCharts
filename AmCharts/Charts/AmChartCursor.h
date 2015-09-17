@@ -25,7 +25,7 @@
 /**
  Specifies if cursor should arrange balloons so they won't overlap. If chart is rotated, it might be good idea to turn this off.
  */
-@property(assign) BOOL avoidBalloonOverlapping;
+@property(assign) NSNumber * avoidBalloonOverlapping;
 
 /**
  defines if the balloon should be shown above the datapoint or sideways
@@ -35,7 +35,7 @@
 /**
  Specifies if bullet for each graph will follow the cursor.
  */
-@property(assign) BOOL bulletsEnabled;
+@property(assign) NSNumber * bulletsEnabled;
 
 /**
  Size of bullets, following the cursor.
@@ -60,7 +60,7 @@
 /**
  Specifies whether category balloon is enabled.
  */
-@property(assign) BOOL categoryBalloonEnabled;
+@property(assign) NSNumber * categoryBalloonEnabled;
 
 /**
  Allows formatting any category balloon text you want. categoryBalloonFunction should return a string which will be displayed in a balloon. When categoryBalloonFunction is called, category value (or date) is passed as an argument.
@@ -90,12 +90,12 @@
 /**
  Specifies whether cursor is enabled.
  */
-@property(assign) BOOL enabled;
+@property(assign) NSNumber * enabled;
 
 /**
  If set to true, instead of a cursor line user will see a fill which width will always be equal to the width of one data item. We'd recommend setting cusrsorAlpha to 0.1 or some other small number if using this feature.
  */
-@property(assign) BOOL fullWidth;
+@property(assign) NSNumber * fullWidth;
 
 /**
  If you make graph's bullets invisible by setting their opacity to 0 and will set graphBulletAlpha to 1, the bullets will only appear at the cursor's position.
@@ -110,12 +110,12 @@
 /**
  If this is set to true, only one balloon at a time will be displayed. Note, this is quite CPU consuming.
  */
-@property(assign) BOOL oneBalloonOnly;
+@property(assign) NSNumber * oneBalloonOnly;
 
 /**
  If this is set to true, the user will be able to pan the chart (Serial only) instead of zooming.
  */
-@property(assign) BOOL pan;
+@property(assign) NSNumber * pan;
 
 /**
  Opacity of the selection.
@@ -125,17 +125,17 @@
 /**
  Specifies if cursor should only mark selected area but not zoom-in after user releases mouse button.
  */
-@property(assign) BOOL selectWithoutZooming;
+@property(assign) NSNumber * selectWithoutZooming;
 
 /**
  If true, the graph will display balloon on next available data point if currently hovered item doesn't have value for this graph.
  */
-@property(assign) BOOL showNextAvailable;
+@property(assign) NSNumber * showNextAvailable;
 
 /**
  Specifies whether value balloons are enabled. In case they are not, the balloons might be displayed anyway, when the user rolls-over the column or bullet.
  */
-@property(assign) BOOL valueBalloonsEnabled;
+@property(assign) NSNumber * valueBalloonsEnabled;
 
 /**
  Opacity of value line. Will use cursorAlpha value if not set.
@@ -150,22 +150,22 @@
 /**
  Specifies if value balloon next to value axis labels should be displayed. If you have more than one axis, set valueLineAxis property to indicate which axis should display the balloon.
  */
-@property(assign) BOOL valueLineBalloonEnabled;
+@property(assign) NSNumber * valueLineBalloonEnabled;
 
 /**
  Specifies if cursor of Serial chart should display horizontal (or vertical if chart is rotated) line. This line might help users to compare distant values of a chart. You can also enable value balloon on this line by setting valueLineAxis property of ChartCursor.
  */
-@property(assign) BOOL valueLineEnabled;
+@property(assign) NSNumber * valueLineEnabled;
 
 /**
  Specifies if the user can zoom-in the chart. If pan is set to true, zoomable is switched to false automatically.
  */
-@property(assign) BOOL zoomable;
+@property(assign) NSNumber * zoomable;
 
 /**
  Read-only. Indicates if currently user is selecting some chart area to zoom-in.
  */
-@property(assign) BOOL zooming;
+@property(assign) NSNumber * zooming;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

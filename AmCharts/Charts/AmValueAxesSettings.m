@@ -15,9 +15,9 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoGridCount = true;
+	//	self.autoGridCount = @(true);
 //		self.axisAlpha = @(0);
-		self.inside = true;
+	//	self.inside = @(true);
 //		self.tickLength = @(0);
 	}
 	return self;
@@ -26,7 +26,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.autoGridCount) forKey:@"autoGridCount"];
+    if (self.autoGridCount) {
+        [dictRep setObject:self.autoGridCount forKey:@"autoGridCount"];
+    }
 
 	if (self.axisAlpha) {
 		[dictRep setObject:self.axisAlpha forKey:@"axisAlpha"];
@@ -72,21 +74,33 @@
 		[dictRep setObject:self.gridThickness forKey:@"gridThickness"];
 	}
 
-	[dictRep setObject:@(self.includeGuidesInMinMax) forKey:@"includeGuidesInMinMax"];
+    if (self.includeGuidesInMinMax) {
+       [dictRep setObject:self.includeGuidesInMinMax forKey:@"includeGuidesInMinMax"];
+    }
+	
+    if (self.includeHidden) {
+        [dictRep setObject:self.includeHidden forKey:@"includeHidden"];
+    }
 
-	[dictRep setObject:@(self.includeHidden) forKey:@"includeHidden"];
-
-	[dictRep setObject:@(self.inside) forKey:@"inside"];
-
-	[dictRep setObject:@(self.integersOnly) forKey:@"integersOnly"];
+    if (self.inside) {
+        [dictRep setObject:self.inside forKey:@"inside"];
+    }
+	
+    if (self.integersOnly) {
+        [dictRep setObject:self.integersOnly forKey:@"integersOnly"];
+    }
 
 	if (self.labelFrequency) {
 		[dictRep setObject:self.labelFrequency forKey:@"labelFrequency"];
 	}
 
-	[dictRep setObject:@(self.labelsEnabled) forKey:@"labelsEnabled"];
-
-	[dictRep setObject:@(self.logarithmic) forKey:@"logarithmic"];
+    if (self.labelsEnabled) {
+        [dictRep setObject:self.labelsEnabled forKey:@"labelsEnabled"];
+    }
+	
+    if (self.logarithmic) {
+        [dictRep setObject:self.logarithmic forKey:@"logarithmic"];
+    }
 
 	if (self.offset) {
 		[dictRep setObject:self.offset forKey:@"offset"];
@@ -96,11 +110,17 @@
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.reversed) forKey:@"reversed"];
-
-	[dictRep setObject:@(self.showFirstLabel) forKey:@"showFirstLabel"];
-
-	[dictRep setObject:@(self.showLastLabel) forKey:@"showLastLabel"];
+    if (self.reversed) {
+        [dictRep setObject:self.reversed forKey:@"reversed"];
+    }
+	
+    if (self.showFirstLabel) {
+        [dictRep setObject:self.showFirstLabel forKey:@"showFirstLabel"];
+    }
+	
+    if (self.showLastLabel) {
+        [dictRep setObject:self.showLastLabel forKey:@"showLastLabel"];
+    }
 
 	if (self.stackType) {
 		[dictRep setObject:self.stackType forKey:@"stackType"];

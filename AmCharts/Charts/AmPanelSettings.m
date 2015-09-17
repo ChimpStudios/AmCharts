@@ -112,7 +112,9 @@
 		[dictRep setObject:self.panelSpacing forKey:@"panelSpacing"];
 	}
 
-	[dictRep setObject:@(self.panEventsEnabled) forKey:@"panEventsEnabled"];
+    if (self.panEventsEnabled) {
+       [dictRep setObject:self.panEventsEnabled forKey:@"panEventsEnabled"];
+    }
 
 	if (self.percentPrecision) {
 		[dictRep setObject:self.percentPrecision forKey:@"percentPrecision"];
@@ -150,7 +152,9 @@
 		[dictRep setObject:self.recalculateToPercents forKey:@"recalculateToPercents"];
 	}
 
-	[dictRep setObject:@(self.sequencedAnimation) forKey:@"sequencedAnimation"];
+    if (self.sequencedAnimation) {
+        [dictRep setObject:self.sequencedAnimation forKey:@"sequencedAnimation"];
+    }
 
 	if (self.startAlpha) {
 		[dictRep setObject:self.startAlpha forKey:@"startAlpha"];
@@ -168,7 +172,9 @@
 		[dictRep setObject:self.thousandsSeparator forKey:@"thousandsSeparator"];
 	}
 
-	[dictRep setObject:@(self.usePrefixes) forKey:@"usePrefixes"];
+    if (self.usePrefixes) {
+        [dictRep setObject:self.usePrefixes forKey:@"usePrefixes"];
+    }
 
 	return dictRep;
 }

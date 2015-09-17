@@ -15,15 +15,15 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoGridCount = true;
+//		self.autoGridCount = true;
 //		self.axisAlpha = @(0);
 //		self.axisHeight = @(28);
 //		self.equalSpacing = false;
 //		self.gridCount = @(10);
 //		self.groupToPeriods = [@[@"ss", @"10ss", @"30ss", @"mm", @"10mm", @"30mm", @"hh", @"DD", @"WW", @"MM", @"YYYY"] mutableCopy];
 //		self.inside = false;
-		self.labelsEnabled = true;
-		self.markPeriodChange = true;
+//		self.labelsEnabled = true;
+//		self.markPeriodChange = true;
 //		self.maxSeries = @(150);
 //		self.minPeriod = @"DD";
 //		self.startOnAxis = false;
@@ -36,7 +36,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.autoGridCount) forKey:@"autoGridCount"];
+    if (self.autoGridCount) {
+        [dictRep setObject:self.autoGridCount forKey:@"autoGridCount"];
+    }
 
 	if (self.axisAlpha) {
 		[dictRep setObject:self.axisAlpha forKey:@"axisAlpha"];
@@ -66,7 +68,9 @@
 		[dictRep setObject:self.dateFormats forKey:@"dateFormats"];
 	}
 
-	[dictRep setObject:@(self.equalSpacing) forKey:@"equalSpacing"];
+    if (self.equalSpacing) {
+        [dictRep setObject:self.equalSpacing forKey:@"equalSpacing"];
+    }
 
 	if (self.fillAlpha) {
 		[dictRep setObject:self.fillAlpha forKey:@"fillAlpha"];
@@ -100,15 +104,21 @@
 		[dictRep setObject:self.groupToPeriods forKey:@"groupToPeriods"];
 	}
 
-	[dictRep setObject:@(self.inside) forKey:@"inside"];
+    if (self.inside) {
+       [dictRep setObject:self.inside forKey:@"inside"];
+    }
 
 	if (self.labelRotation) {
 		[dictRep setObject:self.labelRotation forKey:@"labelRotation"];
 	}
 
-	[dictRep setObject:@(self.labelsEnabled) forKey:@"labelsEnabled"];
+    if (self.labelsEnabled) {
+        [dictRep setObject:self.labelsEnabled forKey:@"labelsEnabled"];
+    }
 
-	[dictRep setObject:@(self.markPeriodChange) forKey:@"markPeriodChange"];
+    if (self.markPeriodChange) {
+        [dictRep setObject:self.markPeriodChange forKey:@"markPeriodChange"];
+    }
 
 	if (self.maxSeries) {
 		[dictRep setObject:self.maxSeries forKey:@"maxSeries"];
@@ -122,13 +132,17 @@
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.startOnAxis) forKey:@"startOnAxis"];
+    if (self.startOnAxis) {
+        [dictRep setObject:self.startOnAxis forKey:@"startOnAxis"];
+    }
 
 	if (self.tickLength) {
 		[dictRep setObject:self.tickLength forKey:@"tickLength"];
 	}
 
-	[dictRep setObject:@(self.twoLineMode) forKey:@"twoLineMode"];
+    if (self.twoLineMode) {
+        [dictRep setObject:self.twoLineMode forKey:@"twoLineMode"];
+    }	
 
 	return dictRep;
 }

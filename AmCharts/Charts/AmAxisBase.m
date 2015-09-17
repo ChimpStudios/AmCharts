@@ -15,7 +15,7 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.autoGridCount = true;
+		//self.autoGridCount = true;
 		//self.axisAlpha = @(1);
 		//self.axisColor = @"#000000";
 //		self.axisThickness = @(1);
@@ -31,17 +31,17 @@
 //		self.inside = false;
 //		self.labelFrequency = @(1);
 //		self.labelRotation = @(0);
-		self.labelsEnabled = true;
+	//	self.labelsEnabled = true;
 //		self.minHorizontalGap = @(75);
 //		self.minorGridAlpha = @(0.07);
 //		self.minorGridEnabled = false;
 //		self.minVerticalGap = @(35);
 //		self.offset = @(0);
 //		self.position = @"bottom";
-		self.showFirstLabel = true;
-		self.showLastLabel = true;
+	//	self.showFirstLabel = true;
+	//	self.showLastLabel = true;
 		//self.tickLength = @(5);
-		self.titleBold = true;
+	//	self.titleBold = true;
 	}
 	return self;
 }
@@ -49,7 +49,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.autoGridCount) forKey:@"autoGridCount"];
+    if (self.autoGridCount) {
+        [dictRep setObject:self.autoGridCount forKey:@"autoGridCount"];
+    }
 
 	if (self.axisAlpha) {
 		[dictRep setObject:self.axisAlpha forKey:@"axisAlpha"];
@@ -71,6 +73,10 @@
 		[dictRep setObject:self.axisY forKey:@"axisY"];
 	}
 
+    if (self.boldLabels) {
+        [dictRep setObject:self.boldLabels forKey:@"boldLabels"];
+    }
+    
 	if (self.color) {
 		[dictRep setObject:self.color forKey:@"color"];
 	}
@@ -78,6 +84,10 @@
 	if (self.dashLength) {
 		[dictRep setObject:self.dashLength forKey:@"dashLength"];
 	}
+    
+    if (self.dateFormats) {
+        [dictRep setObject:self.dateFormats forKey:@"dateFormats"];
+    }
 
 	if (self.fillAlpha) {
 		[dictRep setObject:self.fillAlpha forKey:@"fillAlpha"];
@@ -118,9 +128,14 @@
 		[dictRep setObject:tmpArr forKey:@"guides"];
 	}
 
-	[dictRep setObject:@(self.ignoreAxisWidth) forKey:@"ignoreAxisWidth"];
+    if (self.ignoreAxisWidth) {
+        [dictRep setObject:self.ignoreAxisWidth forKey:@"ignoreAxisWidth"];
+    }
 
-	[dictRep setObject:@(self.inside) forKey:@"inside"];
+    if (self.inside) {
+        [dictRep setObject:self.inside forKey:@"inside"];
+    }
+	
 
 	if (self.labelFrequency) {
 		[dictRep setObject:self.labelFrequency forKey:@"labelFrequency"];
@@ -134,8 +149,10 @@
 		[dictRep setObject:self.labelRotation forKey:@"labelRotation"];
 	}
 
-	[dictRep setObject:@(self.labelsEnabled) forKey:@"labelsEnabled"];
-
+    if (self.labelsEnabled) {
+       [dictRep setObject:self.labelsEnabled forKey:@"labelsEnabled"];
+    }
+	
 	if (self.minHorizontalGap) {
 		[dictRep setObject:self.minHorizontalGap forKey:@"minHorizontalGap"];
 	}
@@ -144,7 +161,9 @@
 		[dictRep setObject:self.minorGridAlpha forKey:@"minorGridAlpha"];
 	}
 
-	[dictRep setObject:@(self.minorGridEnabled) forKey:@"minorGridEnabled"];
+    if (self.minorGridEnabled) {
+        [dictRep setObject:self.minorGridEnabled forKey:@"minorGridEnabled"];
+    }
 
 	if (self.minVerticalGap) {
 		[dictRep setObject:self.minVerticalGap forKey:@"minVerticalGap"];
@@ -158,9 +177,13 @@
 		[dictRep setObject:self.position forKey:@"position"];
 	}
 
-	[dictRep setObject:@(self.showFirstLabel) forKey:@"showFirstLabel"];
-
-	[dictRep setObject:@(self.showLastLabel) forKey:@"showLastLabel"];
+    if (self.showFirstLabel) {
+        [dictRep setObject:self.showFirstLabel forKey:@"showFirstLabel"];
+    }
+	
+    if (self.showLastLabel) {
+        [dictRep setObject:self.showLastLabel forKey:@"showLastLabel"];
+    }
 
 	if (self.tickLength) {
 		[dictRep setObject:self.tickLength forKey:@"tickLength"];
@@ -170,7 +193,9 @@
 		[dictRep setObject:self.title forKey:@"title"];
 	}
 
-	[dictRep setObject:@(self.titleBold) forKey:@"titleBold"];
+    if (self.titleBold) {
+       [dictRep setObject:self.titleBold forKey:@"titleBold"];
+    }
 
 	if (self.titleColor) {
 		[dictRep setObject:self.titleColor forKey:@"titleColor"];

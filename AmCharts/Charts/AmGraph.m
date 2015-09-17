@@ -26,8 +26,8 @@
 //		self.bulletBorderThickness = @(2);
 //		self.bulletOffset = @(0);
 //		self.bulletSize = @(8);
-		self.clustered = true;
-		self.connect = true;
+//		self.clustered = true;
+//		self.connect = true;
 //		self.cornerRadiusTop = @(0);
 //		self.cursorBulletAlpha = @(1);
 //		self.dashLength = @(0);
@@ -35,7 +35,7 @@
 //		self.gradientOrientation = @"vertical";
 //		self.hidden = false;
 //		self.hideBulletsCount = @(0);
-		self.includeInMinMax = true;
+//		self.includeInMinMax = true;
 //		self.labelPosition = @"top";
 //		//self.lineAlpha = @(1);
 //		//self.lineThickness = @(1);
@@ -49,14 +49,14 @@
 //		self.periodSpan = @(1);
 //		self.pointPosition = @"middle";
 //		self.showAllValueLabels = false;
-		self.showBalloon = true;
+//		self.showBalloon = true;
 //		self.showBalloonAt = @"close";
 //		self.showBulletsAt  = @"close";
 //		self.showHandOnHover = false;
-		self.stackable = true;
-        self.switchable = true;
+//		self.stackable = true;
+ //       self.switchable = true;
 //		self.type = @"line";
-		self.visibleInLegend = true;
+//		self.visibleInLegend = true;
          
 		self.xAxis = [[AmValueAxis alloc] init];
 		self.yAxis = [[AmValueAxis alloc] init];
@@ -83,7 +83,9 @@
 		[dictRep setObject:self.balloonText forKey:@"balloonText"];
 	}
 
-	[dictRep setObject:@(self.behindColumns) forKey:@"behindColumns"];
+    if (self.behindColumns) {
+       [dictRep setObject:self.behindColumns forKey:@"behindColumns"];
+    }
 
 	if (self.bullet) {
 		[dictRep setObject:self.bullet forKey:@"bullet"];
@@ -133,7 +135,9 @@
 		[dictRep setObject:self.closeField forKey:@"closeField"];
 	}
 
-	[dictRep setObject:@(self.clustered) forKey:@"clustered"];
+    if(self.clustered) {
+        [dictRep setObject:self.clustered forKey:@"clustered"];
+    }
 
 	if (self.color) {
 		[dictRep setObject:self.color forKey:@"color"];
@@ -147,7 +151,9 @@
 		[dictRep setObject:self.columnWidth forKey:@"columnWidth"];
 	}
 
-	[dictRep setObject:@(self.connect) forKey:@"connect"];
+    if (self.connect) {
+        [dictRep setObject:self.connect forKey:@"connect"];
+    }
 
 	if (self.cornerRadiusTop) {
 		[dictRep setObject:self.cornerRadiusTop forKey:@"cornerRadiusTop"];
@@ -225,7 +231,9 @@
 		[dictRep setObject:self.gradientOrientation forKey:@"gradientOrientation"];
 	}
 
-	[dictRep setObject:@(self.hidden) forKey:@"hidden"];
+    if (self.hidden) {
+        [dictRep setObject:self.hidden forKey:@"hidden"];
+    }
 
 	if (self.hideBulletsCount) {
 		[dictRep setObject:self.hideBulletsCount forKey:@"hideBulletsCount"];
@@ -239,7 +247,9 @@
 		[dictRep setObject:self.uid forKey:@"id"];
 	}
 
-	[dictRep setObject:@(self.includeInMinMax) forKey:@"includeInMinMax"];
+    if (self.includeInMinMax) {
+        [dictRep setObject:self.includeInMinMax forKey:@"includeInMinMax"];
+    }
 
     if (self.labelAnchor) {
         [dictRep setObject:self.labelAnchor forKey:@"labelAnchor"];
@@ -341,9 +351,13 @@
 		[dictRep setObject:self.negativeLineColor forKey:@"negativeLineColor"];
 	}
 
-	[dictRep setObject:@(self.newStack) forKey:@"newStack"];
-
-	[dictRep setObject:@(self.noStepRisers) forKey:@"noStepRisers"];
+    if (self.amNewStack) {
+        [dictRep setObject:self.amNewStack forKey:@"newStack"];
+    }
+	
+    if (self.noStepRisers) {
+        [dictRep setObject:self.noStepRisers forKey:@"noStepRisers"];
+    }
 
 	if (self.openField) {
 		[dictRep setObject:self.openField forKey:@"openField"];
@@ -369,11 +383,17 @@
 		[dictRep setObject:self.precision forKey:@"precision"];
 	}
     
-    [dictRep setObject:@(self.proCandlesticks) forKey:@"proCandlesticks"];
+    if (self.proCandlesticks) {
+        [dictRep setObject:self.proCandlesticks forKey:@"proCandlesticks"];
+    }
 
-	[dictRep setObject:@(self.showAllValueLabels) forKey:@"showAllValueLabels"];
-
-	[dictRep setObject:@(self.showBalloon) forKey:@"showBalloon"];
+    if (self.showAllValueLabels) {
+        [dictRep setObject:self.showAllValueLabels forKey:@"showAllValueLabels"];
+    }
+	
+    if (self.showBalloon) {
+        [dictRep setObject:self.showBalloon forKey:@"showBalloon"];
+    }
 
 	if (self.showBalloonAt) {
 		[dictRep setObject:self.showBalloonAt forKey:@"showBalloonAt"];
@@ -383,17 +403,25 @@
 		[dictRep setObject:self.showBulletsAt  forKey:@"showBulletsAt"];
 	}
 
-	[dictRep setObject:@(self.showHandOnHover) forKey:@"showHandOnHover"];
+    if (self.showHandOnHover) {
+        [dictRep setObject:self.showHandOnHover forKey:@"showHandOnHover"];
+    }
     
-    [dictRep setObject:@(self.showOnAxis) forKey:@"showOnAxis"];
-
-	[dictRep setObject:@(self.stackable) forKey:@"stackable"];
+    if (self.showOnAxis) {
+        [dictRep setObject:self.showOnAxis forKey:@"showOnAxis"];
+    }
+    
+    if (self.stackable) {
+        [dictRep setObject:self.stackable forKey:@"stackable"];
+    }
     
     if (self.stepDirection) {
         [dictRep setObject:self.stepDirection forKey:@"stepDirection"];
     }
     
-    [dictRep setObject:@(self.switchable) forKey:@"switchable"];
+    if (self.switchable) {
+        [dictRep setObject:self.switchable forKey:@"switchable"];
+    }
 
 	if (self.title) {
 		[dictRep setObject:self.title forKey:@"title"];
@@ -415,7 +443,9 @@
 		[dictRep setObject:self.urlTarget forKey:@"urlTarget"];
 	}
     
-    [dictRep setObject:@(self.useNegativeColorIfDown) forKey:@"useNegativeColorIfDown"];
+    if (self.useNegativeColorIfDown) {
+        [dictRep setObject:self.useNegativeColorIfDown forKey:@"useNegativeColorIfDown"];
+    }
 
 	if (self.valueAxis) {
 		[dictRep setObject:self.valueAxis forKey:@"valueAxis"];
@@ -425,7 +455,9 @@
 		[dictRep setObject:self.valueField forKey:@"valueField"];
 	}
 
-	[dictRep setObject:@(self.visibleInLegend) forKey:@"visibleInLegend"];
+    if (self.visibleInLegend) {
+        [dictRep setObject:self.visibleInLegend forKey:@"visibleInLegend"];
+    }
 
 	if (self.xAxis) {
 		[dictRep setObject:[self.xAxis dictionaryRepresentation] forKey:@"xAxis"];

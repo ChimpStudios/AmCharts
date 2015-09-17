@@ -14,7 +14,7 @@
 /**
  Specifies whether number of gridCount is specified automatically, acoarding to the axis size.
  */
-@property(assign) BOOL autoGridCount;
+@property(assign) NSNumber * autoGridCount;
 
 /**
  Axis opacity. Value range is 0 - 1.
@@ -42,6 +42,11 @@
 @property(strong) NSNumber * axisY;
 
 /**
+ Specifies if axis labels should be bold or not.
+ */
+@property(strong) NSNumber *boldLabels;
+
+/**
  Color of axis value labels. Will use chart's color if not set.
  */
 @property(strong) NSString * color;
@@ -50,6 +55,11 @@
  Length of a dash. 0 means line is not dashed.
  */
 @property(strong) NSNumber * dashLength;
+
+/**
+ Date formats of different periods. Possible period values: fff - milliseconds, ss - seconds, mm - minutes, hh - hours, DD - days, MM - months, WW - weeks, YYYY - years. Check this page for date formatting strings.
+ */
+@property(strong) NSMutableArray * dateFormats;
 
 /**
  Fill opacity. Every second space between grid lines can be filled with color. Set fillAlpha to a value greater than 0 to see the fills.
@@ -94,12 +104,12 @@
 /**
  If autoMargins of a chart is set to true, but you want this axis not to be measured when calculating margin, set ignoreAxisWidth to true.
  */
-@property(assign) BOOL ignoreAxisWidth;
+@property(assign) NSNumber * ignoreAxisWidth;
 
 /**
  Specifies whether values should be placed inside or outside plot area.
  */
-@property(assign) BOOL inside;
+@property(assign) NSNumber * inside;
 
 /**
  Frequency at which labels should be placed. Doesn't work for CategoryAxis if parseDates is set to true.
@@ -119,7 +129,7 @@
 /**
  Specifies whether axis displays category axis' labels and value axis' values.
  */
-@property(assign) BOOL labelsEnabled;
+@property(assign) NSNumber * labelsEnabled;
 
 /**
  This property is used when calculating grid count (when autoGridCount is true). It specifies minimum cell width required for one span between grid lines.
@@ -134,7 +144,7 @@
 /**
  Specifies if minor grid should be displayed.
  */
-@property(assign) BOOL minorGridEnabled;
+@property(assign) NSNumber * minorGridEnabled;
 
 /**
  This property is used when calculating grid count (when autoGridCount is true). It specifies minimum cell height required for one span between grid lines.
@@ -154,12 +164,12 @@
 /**
  Whether to show first axis label or not. This works properly only on ValueAxis. With CategoryAxis it wont work 100%, it depends on the period, zooming, etc. There is no guaranteed way to force category axis to show or hide first label.
  */
-@property(assign) BOOL showFirstLabel;
+@property(assign) NSNumber * showFirstLabel;
 
 /**
  Whether to show last axis label or not. This works properly only on ValueAxis. With CategoryAxis it wont work 100%, it depends on the period, zooming, etc. There is no guaranteed way to force category axis to show or hide last label.
  */
-@property(assign) BOOL showLastLabel;
+@property(assign) NSNumber * showLastLabel;
 
 /**
  Length of the tick marks.
@@ -174,7 +184,7 @@
 /**
  Specifies if title should be bold or not.
  */
-@property(assign) BOOL titleBold;
+@property(assign) NSNumber * titleBold;
 
 /**
  Color of axis title. Will use text color of chart if not set any.

@@ -17,18 +17,18 @@
 	if (self) {
 //		self.adjustment = @(0);
 //		self.animationDuration = @(0.3);
-        self.avoidBalloonOverlapping = true;
+//        self.avoidBalloonOverlapping = true;
 //      self.balloonPointerOrientation = @"horizontal";
 //		self.bulletsEnabled = false;
 //		self.bulletSize = @(8);
 //		self.categoryBalloonAlpha = @(1);
 //		self.categoryBalloonDateFormat = @"MMM DD, YYYY";
-		self.categoryBalloonEnabled = true;
+//		self.categoryBalloonEnabled = true;
 		//self.color = @"#FFFFFF";
 		//self.cursorAlpha = @(1);
 		//self.cursorColor = @"#CC0000";
 //		self.cursorPosition = @"middle";
-		self.enabled = true;
+//		self.enabled = true;
 //		self.fullWidth = false;
 //		self.graphBulletSize = @(1.7);
 //		self.oneBalloonOnly = false;
@@ -36,8 +36,8 @@
 //		self.selectionAlpha = @(0.2);
 //		self.selectWithoutZooming = false;
 //		self.showNextAvailable = false;
-		self.valueBalloonsEnabled = true;
-		self.zoomable = true;
+//		self.valueBalloonsEnabled = true;
+//		self.zoomable = true;
 	}
 	return self;
 }
@@ -53,13 +53,17 @@
 		[dictRep setObject:self.animationDuration forKey:@"animationDuration"];
 	}
 
-    [dictRep setObject:@(self.avoidBalloonOverlapping) forKey:@"avoidBalloonOverlapping"];
+    if (self.avoidBalloonOverlapping) {
+        [dictRep setObject:self.avoidBalloonOverlapping forKey:@"avoidBalloonOverlapping"];
+    }
     
     if (self.balloonPointerOrientation) {
         [dictRep setObject:self.balloonPointerOrientation forKey:@"balloonPointerOrientation"];
     }
     
-	[dictRep setObject:@(self.bulletsEnabled) forKey:@"bulletsEnabled"];
+    if (self.bulletsEnabled) {
+        [dictRep setObject:self.bulletsEnabled forKey:@"bulletsEnabled"];
+    }
 
 	if (self.bulletSize) {
 		[dictRep setObject:self.bulletSize forKey:@"bulletSize"];
@@ -77,7 +81,9 @@
 		[dictRep setObject:self.categoryBalloonDateFormat forKey:@"categoryBalloonDateFormat"];
 	}
 
-	[dictRep setObject:@(self.categoryBalloonEnabled) forKey:@"categoryBalloonEnabled"];
+    if (self.categoryBalloonEnabled) {
+        [dictRep setObject:self.categoryBalloonEnabled forKey:@"categoryBalloonEnabled"];
+    }
 
 	if (self.categoryBalloonFunction) {
 		[dictRep setObject:[self.categoryBalloonFunction dictionaryRepresentation] forKey:@"categoryBalloonFunction"];
@@ -99,9 +105,13 @@
 		[dictRep setObject:self.cursorPosition forKey:@"cursorPosition"];
 	}
 
-	[dictRep setObject:@(self.enabled) forKey:@"enabled"];
+    if (self.enabled) {
+        [dictRep setObject:self.enabled forKey:@"enabled"];
+    }
 
-	[dictRep setObject:@(self.fullWidth) forKey:@"fullWidth"];
+    if (self.fullWidth) {
+        [dictRep setObject:self.fullWidth forKey:@"fullWidth"];
+    }
 
     if (self.graphBulletAlpha) {
 		[dictRep setObject:self.graphBulletAlpha forKey:@"graphBulletAlpha"];
@@ -111,19 +121,29 @@
 		[dictRep setObject:self.graphBulletSize forKey:@"graphBulletSize"];
 	}
 
-	[dictRep setObject:@(self.oneBalloonOnly) forKey:@"oneBalloonOnly"];
+    if (self.oneBalloonOnly) {
+        [dictRep setObject:self.oneBalloonOnly forKey:@"oneBalloonOnly"];
+    }
 
-	[dictRep setObject:@(self.pan) forKey:@"pan"];
+    if (self.pan) {
+        [dictRep setObject:self.pan forKey:@"pan"];
+    }
 
 	if (self.selectionAlpha) {
 		[dictRep setObject:self.selectionAlpha forKey:@"selectionAlpha"];
 	}
 
-	[dictRep setObject:@(self.selectWithoutZooming) forKey:@"selectWithoutZooming"];
+    if (self.selectWithoutZooming) {
+        [dictRep setObject:self.selectWithoutZooming forKey:@"selectWithoutZooming"];
+    }
 
-	[dictRep setObject:@(self.showNextAvailable) forKey:@"showNextAvailable"];
+    if (self.showNextAvailable) {
+        [dictRep setObject:self.showNextAvailable forKey:@"showNextAvailable"];
+    }
 
-	[dictRep setObject:@(self.valueBalloonsEnabled) forKey:@"valueBalloonsEnabled"];
+    if (self.valueBalloonsEnabled) {
+        [dictRep setObject:self.valueBalloonsEnabled forKey:@"valueBalloonsEnabled"];
+    }
 
     if (self.valueLineAlpha) {
         [dictRep setObject:self.valueLineAlpha forKey:@"valueLineAlpha"];
@@ -133,13 +153,21 @@
         [dictRep setObject:[self.valueLineAxis dictionaryRepresentation] forKey:@"valueLineAxis"];
     }
     
-    [dictRep setObject:@(self.valueLineBalloonEnabled) forKey:@"valueLineBalloonEnabled"];
+    if (self.valueLineBalloonEnabled) {
+        [dictRep setObject:self.valueLineBalloonEnabled forKey:@"valueLineBalloonEnabled"];
+    }
     
-    [dictRep setObject:@(self.valueLineEnabled) forKey:@"valueLineEnabled"];
+    if (self.valueLineEnabled) {
+        [dictRep setObject:self.valueLineEnabled forKey:@"valueLineEnabled"];
+    }
     
-	[dictRep setObject:@(self.zoomable) forKey:@"zoomable"];
-
-	[dictRep setObject:@(self.zooming) forKey:@"zooming"];
+    if (self.zoomable) {
+        [dictRep setObject:self.zoomable forKey:@"zoomable"];
+    }
+	
+    if (self.zooming) {
+        [dictRep setObject:self.zooming forKey:@"zooming"];
+    }
 
 	return dictRep;
 }

@@ -17,10 +17,10 @@
 //		self.comparable = false;
 //		self.compareFromStart = false;
 //		self.compareGraphType = @"line";
-		self.compareGraphVisibleInLegend = true;
+//		self.compareGraphVisibleInLegend = true;
 //		self.periodValue = @"Close";
 //		self.showEventsOnComparedGraphs = false;
-		self.useDataSetColors = true;
+//		self.useDataSetColors = true;
 	}
 	return self;
 }
@@ -28,7 +28,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[super dictionaryRepresentation] mutableCopy];
 
-	[dictRep setObject:@(self.comparable) forKey:@"comparable"];
+    if (self.comparable) {
+       [dictRep setObject:self.comparable forKey:@"comparable"];
+    }
 
 	if (self.compareGraphBulletBorderAlpha) {
 		[dictRep setObject:self.compareGraphBulletBorderAlpha forKey:@"compareGraphBulletBorderAlpha"];
@@ -50,7 +52,9 @@
 		[dictRep setObject:self.compareField forKey:@"compareField"];
 	}
 
-	[dictRep setObject:@(self.compareFromStart) forKey:@"compareFromStart"];
+    if (self.compareFromStart) {
+       [dictRep setObject:self.compareFromStart forKey:@"compareFromStart"];
+    }
 
 	if (self.compareGraphBalloonColor) {
 		[dictRep setObject:self.compareGraphBalloonColor forKey:@"compareGraphBalloonColor"];
@@ -104,15 +108,21 @@
 		[dictRep setObject:self.compareGraphType forKey:@"compareGraphType"];
 	}
 
-	[dictRep setObject:@(self.compareGraphVisibleInLegend) forKey:@"compareGraphVisibleInLegend"];
+    if (self.compareGraphVisibleInLegend) {
+        [dictRep setObject:self.compareGraphVisibleInLegend forKey:@"compareGraphVisibleInLegend"];
+    }
 
 	if (self.periodValue) {
 		[dictRep setObject:self.periodValue forKey:@"periodValue"];
 	}
 
-	[dictRep setObject:@(self.showEventsOnComparedGraphs) forKey:@"showEventsOnComparedGraphs"];
-
-	[dictRep setObject:@(self.useDataSetColors) forKey:@"useDataSetColors"];
+    if (self.showEventsOnComparedGraphs) {
+        [dictRep setObject:self.showEventsOnComparedGraphs forKey:@"showEventsOnComparedGraphs"];
+    }
+	
+    if (self.useDataSetColors) {
+        [dictRep setObject:self.useDataSetColors forKey:@"useDataSetColors"];
+    }
 
 	return dictRep;
 }

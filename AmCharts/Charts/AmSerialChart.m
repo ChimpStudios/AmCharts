@@ -24,7 +24,7 @@
 //		self.minSelectedTime = @(0);
 //		self.mouseWheelScrollEnabled = false;
 //		self.rotate = false;
-		self.zoomOutOnDataUpdate = true;
+//		self.zoomOutOnDataUpdate = true;
 	}
 	return self;
 }
@@ -80,9 +80,13 @@
 		[dictRep setObject:self.minSelectedTime forKey:@"minSelectedTime"];
 	}
 
-	[dictRep setObject:@(self.mouseWheelScrollEnabled) forKey:@"mouseWheelScrollEnabled"];
-
-	[dictRep setObject:@(self.rotate) forKey:@"rotate"];
+    if (self.mouseWheelScrollEnabled) {
+        [dictRep setObject:self.mouseWheelScrollEnabled forKey:@"mouseWheelScrollEnabled"];
+    }
+	
+    if (self.rotate) {
+        [dictRep setObject:self.rotate forKey:@"rotate"];
+    }
 
 	if (self.startDate) {
 		[dictRep setObject:self.startDate forKey:@"startDate"];
@@ -92,8 +96,10 @@
 		[dictRep setObject:self.startIndex forKey:@"startIndex"];
 	}
 
-	[dictRep setObject:@(self.zoomOutOnDataUpdate) forKey:@"zoomOutOnDataUpdate"];
-
+    if (self.zoomOutOnDataUpdate) {
+        [dictRep setObject:self.zoomOutOnDataUpdate forKey:@"zoomOutOnDataUpdate"];
+    }
+	
 	return dictRep;
 }
 

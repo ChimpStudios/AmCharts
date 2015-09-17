@@ -194,7 +194,6 @@
 		11120B931A855CE100C2E31C /* AmResponsive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11120B8E1A855A7800C2E31C /* AmResponsive.h */; };
 		111DF6F01917C92100E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
 		111DF6F21917C92100E11137 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F11917C92100E11137 /* CoreGraphics.framework */; };
-		111DF6F41917C92100E11137 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6F31917C92100E11137 /* UIKit.framework */; };
 		111DF6FA1917C92100E11137 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111DF6F81917C92100E11137 /* InfoPlist.strings */; };
 		111DF6FC1917C92100E11137 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF6FB1917C92100E11137 /* main.m */; };
 		111DF7001917C92100E11137 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF6FF1917C92100E11137 /* AppDelegate.m */; };
@@ -203,7 +202,6 @@
 		111DF7091917C92100E11137 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF7081917C92100E11137 /* ViewController.m */; };
 		111DF70B1917C92100E11137 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111DF70A1917C92100E11137 /* Images.xcassets */; };
 		111DF7291917C94F00E11137 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF6EF1917C92100E11137 /* Foundation.framework */; };
-		111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111DF74A1917C98C00E11137 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		111DF74C1917C9E200E11137 /* NSArray+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */; };
 		111DF74D1917C9E200E11137 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D7190E9E9E004D52EC /* NSDictionary+JSONString.m */; };
 		111DF74E1917C9E200E11137 /* NSString+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151A4D9190E9E9E004D52EC /* NSString+JSONString.m */; };
@@ -455,7 +453,6 @@
 		111DF6EE1917C92100E11137 /* AmCharts iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AmCharts iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DF6EF1917C92100E11137 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		111DF6F11917C92100E11137 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		111DF6F31917C92100E11137 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		111DF6F71917C92100E11137 /* AmCharts iOS Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmCharts iOS Example-Info.plist"; sourceTree = "<group>"; };
 		111DF6F91917C92100E11137 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		111DF6FB1917C92100E11137 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -469,7 +466,6 @@
 		111DF70A1917C92100E11137 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		111DF7281917C94F00E11137 /* libAmChartsMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAmChartsMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DF72C1917C94F00E11137 /* AmChartsMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmChartsMobile-Prefix.pch"; sourceTree = "<group>"; };
-		111DF74A1917C98C00E11137 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		111DF8151917E3C700E11137 /* AmChartResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmChartResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DF8161917E3C700E11137 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		111DF81A1917E3C700E11137 /* AmChartResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmChartResources-Info.plist"; sourceTree = "<group>"; };
@@ -491,7 +487,6 @@
 		1151A4A7190E9E5A004D52EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1151A4AA190E9E5A004D52EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1151A4AC190E9E5A004D52EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1151A4B3190E9E5A004D52EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1151A4D3190E9E9E004D52EC /* AmCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmCategories.h; sourceTree = "<group>"; };
 		1151A4D4190E9E9E004D52EC /* NSArray+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONString.h"; sourceTree = "<group>"; };
 		1151A4D5190E9E9E004D52EC /* NSArray+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONString.m"; sourceTree = "<group>"; };
@@ -641,7 +636,6 @@
 			files = (
 				111DF80D1917D6B200E11137 /* libAmChartsMobile.a in Frameworks */,
 				111DF6F21917C92100E11137 /* CoreGraphics.framework in Frameworks */,
-				111DF6F41917C92100E11137 /* UIKit.framework in Frameworks */,
 				111DF6F01917C92100E11137 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +644,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111DF74B1917C98C00E11137 /* JavaScriptCore.framework in Frameworks */,
 				111DF7291917C94F00E11137 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,14 +787,11 @@
 		1151A493190E9E5A004D52EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				111DF74A1917C98C00E11137 /* JavaScriptCore.framework */,
 				11892A541910915000839813 /* JavaScriptCore.framework */,
 				11547468191012940003E1F5 /* WebKit.framework */,
 				1151A494190E9E5A004D52EC /* Cocoa.framework */,
-				1151A4B3190E9E5A004D52EC /* XCTest.framework */,
 				111DF6EF1917C92100E11137 /* Foundation.framework */,
 				111DF6F11917C92100E11137 /* CoreGraphics.framework */,
-				111DF6F31917C92100E11137 /* UIKit.framework */,
 				111DF8161917E3C700E11137 /* CoreFoundation.framework */,
 				1151A496190E9E5A004D52EC /* Other Frameworks */,
 			);
@@ -1546,6 +1536,7 @@
 		110386901912881900F917CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1559,6 +1550,7 @@
 				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -1566,6 +1558,7 @@
 		110386911912881900F917CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1575,6 +1568,7 @@
 				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -1699,6 +1693,124 @@
 			};
 			name = Release;
 		};
+		11365C0A1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = "Ad Hoc";
+		};
+		11365C0B1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		11365C0C1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts iOS Example/AmCharts iOS Example-Prefix.pch";
+				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		11365C0D1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
+				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = "Ad Hoc";
+		};
+		11365C0E1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AmChartsMobile.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartsMobile/AmChartsMobile-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DTARGET_OS_IPHONE=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		11365C0F1B06814A008E25BF /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmChartResources/AmChartResources-Prefix.pch";
+				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = "Ad Hoc";
+		};
 		1151A4C0190E9E5A004D52EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1803,6 +1915,7 @@
 			buildConfigurations = (
 				110386901912881900F917CE /* Debug */,
 				110386911912881900F917CE /* Release */,
+				11365C0D1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1812,6 +1925,7 @@
 			buildConfigurations = (
 				111DF71E1917C92100E11137 /* Debug */,
 				111DF71F1917C92100E11137 /* Release */,
+				11365C0C1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1821,6 +1935,7 @@
 			buildConfigurations = (
 				111DF7451917C95000E11137 /* Debug */,
 				111DF7461917C95000E11137 /* Release */,
+				11365C0E1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1830,6 +1945,7 @@
 			buildConfigurations = (
 				111DF8201917E3C700E11137 /* Debug */,
 				111DF8211917E3C700E11137 /* Release */,
+				11365C0F1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1839,6 +1955,7 @@
 			buildConfigurations = (
 				1151A4C0190E9E5A004D52EC /* Debug */,
 				1151A4C1190E9E5A004D52EC /* Release */,
+				11365C0A1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1848,6 +1965,7 @@
 			buildConfigurations = (
 				1151A4C3190E9E5A004D52EC /* Debug */,
 				1151A4C4190E9E5A004D52EC /* Release */,
+				11365C0B1B06814A008E25BF /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
