@@ -21,7 +21,7 @@
 @end
 
 
-@interface AmChartView : WebView <AmChartViewExport>
+@interface AmChartView : WebView <AmChartViewExport, WebUIDelegate, WebFrameLoadDelegate>
 
 /**
  delegate that conforms to JSExport protocol

@@ -1210,7 +1210,8 @@
 		1151A489190E9E5A004D52EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftMigration = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Chimp Studios";
 			};
 			buildConfigurationList = 1151A48C190E9E5A004D52EC /* Build configuration list for PBXProject "AmChartsLibrary" */;
@@ -1549,6 +1550,7 @@
 				);
 				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -1567,6 +1569,7 @@
 				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
 				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -1593,6 +1596,7 @@
 				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1617,6 +1621,7 @@
 				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1673,6 +1678,7 @@
 				);
 				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
@@ -1687,6 +1693,7 @@
 				GCC_PREFIX_HEADER = "AmChartResources/AmChartResources-Prefix.pch";
 				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
@@ -1733,6 +1740,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
 				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1754,6 +1762,7 @@
 				INFOPLIST_FILE = "AmCharts iOS Example/AmCharts iOS Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -1775,6 +1784,7 @@
 				GCC_PREFIX_HEADER = "AmCharts/AmCharts-Prefix.pch";
 				INFOPLIST_FILE = "AmCharts/AmCharts-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -1805,6 +1815,7 @@
 				GCC_PREFIX_HEADER = "AmChartResources/AmChartResources-Prefix.pch";
 				INFOPLIST_FILE = "AmChartResources/AmChartResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
@@ -1828,6 +1839,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1889,6 +1901,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
 				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1902,6 +1915,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmChartsLibrary/AmChartsLibrary-Prefix.pch";
 				INFOPLIST_FILE = "AmChartsLibrary/AmChartsLibrary-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chimpstudios.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
