@@ -71,6 +71,10 @@
 		[dictRep setObject:self.alphaField forKey:@"alphaField"];
 	}
 
+    if (self.autoColor) {
+        [dictRep setObject:self.autoColor forKey:@"autoColor"];
+    }
+    
 	if (self.balloonColor) {
 		[dictRep setObject:self.balloonColor forKey:@"balloonColor"];
 	}

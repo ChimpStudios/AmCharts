@@ -19,6 +19,12 @@
 @property(strong) NSString * alphaField;
 
 /**
+ Each series uses a theme chart color.  REQUIRES customized HTML template
+ http://www.amcharts.com/tips/automatically-apply-theme-colors-to-each-individual-column/
+ */
+@property(strong) NSNumber *autoColor;
+
+/**
  Value balloon color. Will use graph or data item color if not set.
  */
 @property(strong) NSString * balloonColor;
