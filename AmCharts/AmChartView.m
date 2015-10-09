@@ -28,7 +28,7 @@
 {
     self = [super init];
     if (self) {
-        [self setup];
+     //   [self setup];
     }
     return self;
 }
@@ -36,7 +36,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self setup];
+    //    [self setup];
     }
     return self;
 }
@@ -44,18 +44,23 @@
 {
     self = [super initWithFrame:frameRect];
     if (self) {
-        [self setup];
+    //    [self setup];
     }
     return self;
 }
 
 - (void)setup
 {
+    if (!self.templateFilepath) {
+        self.templateFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+        return;
+    }
+    
     if (self.hasSetup) {
         return;
     }
     self.hasSetup = YES;
-    
+   // NSLog(@"Setup");
     
     // set the delegates
     [self setFrameLoadDelegate:self];
@@ -74,9 +79,7 @@
     _context[@"amChartView"] = weakSelf;
     _context[@"jsDelegate"] = _jsDelegate;
     
-    if (!self.templateFilepath) {
-      self.templateFilepath = [[NSBundle bundleWithIdentifier:@"com.chimpstudios.AmCharts"] pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
-    }
+    
     
     // load the chart.html page in preparation for future charting needs
     NSString *localFilepath = self.templateFilepath;
