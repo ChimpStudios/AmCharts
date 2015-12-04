@@ -40,7 +40,7 @@
 /**
  Date of an event. Can be a string of date (using chart.dataDateFormat format) or Date object.
  */
-@property(strong) NSDate * date;
+@property(strong) NSString * date;
 
 /**
  A description that will be shown in a balloon when user rolls over mouse cursor over event icon.
@@ -50,7 +50,7 @@
 /**
  graph on which event will be displayed. You can use a reference to the stock graph object or id of the graph.
  */
-@property(strong) AmStockGraph * graph;
+@property(strong) NSString * graph;
 
 /**
  Roll-over background color.
@@ -63,9 +63,14 @@
 @property(strong) NSString * showAt;
 
 /**
+ If you set it to true, the data point will display both event and regular (if set) bullet.
+ */
+@property(assign) NSNumber * showBullet;
+
+/**
  Specifies if the event should be displayed on category axis
  */
-@property(assign) BOOL showOnAxis;
+@property(assign) NSNumber * showOnAxis;
 
 /**
  Letter which will be displayed on the event. Not all types can display letters. "text" type can display longer texts.

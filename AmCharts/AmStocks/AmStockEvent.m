@@ -60,7 +60,7 @@
 	}
 
 	if (self.graph) {
-		[dictRep setObject:[self.graph dictionaryRepresentation] forKey:@"graph"];
+		[dictRep setObject:self.graph forKey:@"graph"];
 	}
 
 	if (self.rollOverColor) {
@@ -71,7 +71,13 @@
 		[dictRep setObject:self.showAt forKey:@"showAt"];
 	}
 
-	[dictRep setObject:@(self.showOnAxis) forKey:@"showOnAxis"];
+    if (self.showBullet) {
+        [dictRep setObject:self.showBullet forKey:@"showBullet"];
+    }
+    
+    if (self.showOnAxis) {
+        [dictRep setObject:self.showOnAxis forKey:@"showOnAxis"];
+    }
 
 	if (self.text) {
 		[dictRep setObject:self.text forKey:@"text"];

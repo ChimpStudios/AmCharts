@@ -8,6 +8,7 @@
 
 #import "AmDataSet.h"
 #import "AmCategories.h"
+#import "AmStockEvent.h"
 
 
 @implementation AmDataSet
@@ -54,7 +55,14 @@
     }
 	
 	if (self.stockEvents) {
-		[dictRep setObject:self.stockEvents forKey:@"stockEvents"];
+        NSMutableArray *tmpArr = [[NSMutableArray alloc] initWithCapacity:self.stockEvents.count];
+        for (AmStockEvent *event in self.stockEvents) {
+            // only add appropriate class items
+            if ([event.class isSubclassOfClass:[AmStockEvent class]]) {
+                [tmpArr addObject:[event dictionaryRepresentation]];
+            }
+        }
+        [dictRep setObject:tmpArr forKey:@"stockEvents"];
 	}
 
 	if (self.title) {
