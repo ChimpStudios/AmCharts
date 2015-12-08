@@ -50,6 +50,10 @@
     if (self.eraseAll) {
         [dictRep setObject:self.eraseAll forKey:@"eraseAll"];
     }
+    
+    if (self.fixedHeight) {
+        [dictRep setObject:self.fixedHeight forKey:@"fixedHeight"];
+    }
 
 	if (self.iconSize) {
 		[dictRep setObject:self.iconSize forKey:@"iconSize"];

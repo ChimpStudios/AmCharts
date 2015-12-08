@@ -58,6 +58,10 @@
 	if (self.amDescription) {
 		[dictRep setObject:self.amDescription forKey:@"description"];
 	}
+    
+    if (self.fontSize) {
+        [dictRep setObject:self.fontSize forKey:@"fontSize"];
+    }
 
 	if (self.graph) {
 		[dictRep setObject:self.graph forKey:@"graph"];

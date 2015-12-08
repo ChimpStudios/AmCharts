@@ -34,6 +34,11 @@
 @property(assign) NSNumber * eraseAll;
 
 /**
+ Custom property that does not work with Vanilla AmCharts library.  Use instead of percentHeight to assign a panel a fixed height in pixels.
+ */
+@property(assign) NSNumber * fixedHeight;
+
+/**
  Size of trend line drawing icons. If you change this size, you should update icon images if you want them to look properly.
  */
 @property(strong) NSNumber * iconSize;

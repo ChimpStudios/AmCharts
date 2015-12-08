@@ -48,6 +48,11 @@
 @property(strong) NSString * amDescription;
 
 /**
+ Specifies font size of a event bullet. Will use graph's or chart font size if not set.
+ */
+@property(assign) NSNumber * fontSize;
+
+/**
  graph on which event will be displayed. You can use a reference to the stock graph object or id of the graph.
  */
 @property(strong) NSString * graph;
