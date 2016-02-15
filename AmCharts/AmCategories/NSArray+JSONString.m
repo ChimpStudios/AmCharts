@@ -16,7 +16,7 @@
     NSData *data = [NSJSONSerialization dataWithJSONObject:self options:0 error:&serializeErr];
     
     if (serializeErr) {
-        NSLog(@"%@", serializeErr.localizedDescription);
+     //   NSLog(@"%@", serializeErr.localizedDescription);
         return @"";
     }
     

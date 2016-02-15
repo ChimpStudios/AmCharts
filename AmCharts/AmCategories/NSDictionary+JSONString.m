@@ -16,14 +16,14 @@
     NSData *data = [NSJSONSerialization dataWithJSONObject:self options:0 error:&serializeErr];
     
     if (serializeErr) {
-        NSLog(@"%@", serializeErr.localizedDescription);
+      //  NSLog(@"%@", serializeErr.localizedDescription);
         return @"";
     }
     NSString *validJson = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSError *regexErr = nil;
     NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:@"\"(\\w+)\"\\s*:" options:NSRegularExpressionCaseInsensitive error:&regexErr];
     if (regexErr) {
-        NSLog(@"%@", regexErr.localizedDescription);
+      //  NSLog(@"%@", regexErr.localizedDescription);
     }
    // NSArray *matches = [regex matchesInString:validJson options:0 range:NSMakeRange(0, validJson.length)];
    // NSLog(@"%li", matches.count);
