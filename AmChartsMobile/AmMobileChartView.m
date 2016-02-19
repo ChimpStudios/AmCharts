@@ -55,10 +55,28 @@
     [self addSubview:self.chartView];
     self.chartView.delegate = self;
     
+    [self.chartView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self addConstraints:[NSLayoutConstraint
+                               constraintsWithVisualFormat:@"H:|-0-[_chartView]-0-|"
+                               options:NSLayoutFormatDirectionLeadingToTrailing
+                               metrics:nil
+                               views:NSDictionaryOfVariableBindings(_chartView)]];
+    [self addConstraints:[NSLayoutConstraint
+                               constraintsWithVisualFormat:@"V:|-0-[_chartView]-0-|"
+                               options:NSLayoutFormatDirectionLeadingToTrailing
+                               metrics:nil
+                               views:NSDictionaryOfVariableBindings(_chartView)]];
     
     if (!self.templateFilepath) {
-        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AmChartResources" withExtension:@"bundle"]];
-        self.templateFilepath = [bundle pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+        NSURL *chartResourceBundleURL = [[NSBundle mainBundle] URLForResource:@"AmChartResources" withExtension:@"bundle"];
+        if (chartResourceBundleURL) {
+            NSBundle *bundle = [NSBundle bundleWithURL:chartResourceBundleURL];
+            self.templateFilepath = [bundle pathForResource:@"chart" ofType:@"html" inDirectory:@"AmChartsWeb"];
+        } else {
+          //  NSLog(@"setup not completed");
+            _hasSetup = NO;
+            return;
+        }
     }
     
     NSURL *localURL = [NSURL fileURLWithPath:self.templateFilepath];
