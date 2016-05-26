@@ -12,6 +12,8 @@
 
 @implementation AmMapArea
 
+@dynamic uid;
+
 - (id)init {
 	self = [super init];
 	if (self) {

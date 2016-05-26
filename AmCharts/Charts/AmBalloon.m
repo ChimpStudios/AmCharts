@@ -15,7 +15,7 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		self.adjustBorderColor = true;
+	//	self.adjustBorderColor = true;
 //		self.animationDuration = @(0.3);
 //		self.borderAlpha = @(1);
 //		self.borderColor = @"#FFFFFF";
@@ -42,7 +42,9 @@
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *dictRep = [[NSMutableDictionary alloc] init];
 
-	[dictRep setObject:@(self.adjustBorderColor) forKey:@"adjustBorderColor"];
+    if (self.adjustBorderColor) {
+        [dictRep setObject:self.adjustBorderColor forKey:@"adjustBorderColor"];
+    }
 
 	if (self.animationDuration) {
 		[dictRep setObject:self.animationDuration forKey:@"animationDuration"];
@@ -80,7 +82,9 @@
 		[dictRep setObject:self.fillColor forKey:@"fillColor"];
 	}
 
-	[dictRep setObject:@(self.fixedPosition) forKey:@"fixedPosition"];
+    if (self.fixedPosition) {
+       [dictRep setObject:self.fixedPosition forKey:@"fixedPosition"];
+    }
 
 	if (self.fontSize) {
 		[dictRep setObject:self.fontSize forKey:@"fontSize"];
@@ -110,7 +114,9 @@
 		[dictRep setObject:self.shadowColor forKey:@"shadowColor"];
 	}
 
-	[dictRep setObject:@(self.showBullet) forKey:@"showBullet"];
+    if (self.showBullet) {
+        [dictRep setObject:self.showBullet forKey:@"showBullet"];
+    }
 
 	if (self.textAlign) {
 		[dictRep setObject:self.textAlign forKey:@"textAlign"];

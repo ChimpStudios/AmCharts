@@ -19,7 +19,7 @@
 /**
  Specifies, if class names should be added to chart elements.
  */
-@property(assign) NSNumber * addClassNames;
+@property(strong) NSNumber * addClassNames;
 
 /**
  Array of Labels. Example of label object, with all possible properties:<br>

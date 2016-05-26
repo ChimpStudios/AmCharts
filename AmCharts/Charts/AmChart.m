@@ -231,6 +231,7 @@
 	NSDictionary *dictRep = [self dictionaryRepresentation];
 
 	NSString *jsonRep = [NSString stringWithFormat:@"%@", [dictRep JSONString]];
+    
 	return jsonRep;
 }
 

@@ -14,7 +14,7 @@
 /**
  If this is set to true, border color instead of background color will be changed when user rolls-over the slice, graph, etc.
  */
-@property(assign) BOOL adjustBorderColor;
+@property(strong) NSNumber * adjustBorderColor;
 
 /**
  Duration of balloon movement from previous point to current point, in seconds.
@@ -64,7 +64,7 @@
 /**
  Specifies if balloon should follow mouse when hovering the slice/column/bullet or stay in fixed position (this does not affect balloon behavior if ChartCursor is used).
  */
-@property(assign) BOOL fixedPosition;
+@property(strong) NSNumber * fixedPosition;
 
 /**
  Size of text in the balloon. Chart's fontSize is used by default.
@@ -104,7 +104,7 @@
 /**
  If cornerRadius of a balloon is &gt;0, showBullet is set to true for value balloons when ChartCursor is used. If you don't want the bullet near the balloon, set it to false: chart.balloon.showBullet = false
  */
-@property(assign) BOOL showBullet;
+@property(strong) NSNumber * showBullet;
 
 /**
  Text alignment, possible values "left", "middle" and "right"

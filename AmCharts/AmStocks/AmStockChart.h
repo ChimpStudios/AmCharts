@@ -28,7 +28,7 @@
 /**
  Specifies, if class names should be added to chart elements.
  */
-@property(assign) NSNumber * addClassNames;
+@property(strong) NSNumber * addClassNames;
 
 /**
  AmExport object.

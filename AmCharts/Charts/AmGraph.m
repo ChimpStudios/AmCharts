@@ -486,6 +486,22 @@
 	NSDictionary *dictRep = [self dictionaryRepresentation];
 
 	NSString *jsonRep = [NSString stringWithFormat:@"\"amGraph\": %@", [dictRep JSONString]];
+    
+    // remove double quotes from labelFunction
+    NSError *regexErr = nil;
+    NSString *pattern = @"\"labelFunction\":\"(.*?)\",";
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&regexErr];
+    if (regexErr) {
+        NSLog(@"%@", regexErr.localizedDescription);
+    }
+    NSRange matchRange = [regex rangeOfFirstMatchInString:jsonRep options:(NSMatchingAnchored) range:NSMakeRange(0, jsonRep.length)];
+    if (matchRange.location != NSNotFound) {
+        NSString *replacement = [jsonRep substringWithRange:matchRange];
+        replacement = [replacement stringByReplacingCharactersInRange:NSMakeRange(16, 1) withString:@""];
+        replacement = [replacement stringByReplacingCharactersInRange:NSMakeRange(replacement.length-2, 1) withString:@""];
+        jsonRep = [jsonRep stringByReplacingCharactersInRange:matchRange withString:replacement];
+    }
+    
 	return jsonRep;
 }
 
