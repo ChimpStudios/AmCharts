@@ -13,7 +13,7 @@
 /**
  Specifies whether this graph will be compared if some data set is selected for comparing.
  */
-@property(assign) NSNumber * comparable;
+@property(strong) NSNumber * comparable;
 
 /**
  Specifies a field to be used to generate comparing graph. Note, this field is not the one used in your dataProvider, but toField from FieldMapping object.
@@ -23,7 +23,7 @@
 /**
  If you set it to true, when data sets are compared, the graphs will use first value as a base value instead of using the first value of selected period.
  */
-@property(assign) NSNumber * compareFromStart;
+@property(strong) NSNumber * compareFromStart;
 
 /**
  Balloon color of comparing graph.
@@ -113,7 +113,7 @@
 /**
  Specifies if compare graph is visible in legend.
  */
-@property(assign) NSNumber * compareGraphVisibleInLegend;
+@property(strong) NSNumber * compareGraphVisibleInLegend;
 
 /**
  When data is grouped to periods, the graph must know which period value should be used. Possible values are: "Open", "Low", "High", "Close", "Average" and "Sum".
@@ -123,12 +123,12 @@
 /**
  Specifies if events of compared graphs should be shown.
  */
-@property(assign) NSNumber * showEventsOnComparedGraphs;
+@property(strong) NSNumber * showEventsOnComparedGraphs;
 
 /**
  Specifies whether data set color should be used as this graph's lineColor.
  */
-@property(assign) NSNumber * useDataSetColors;
+@property(strong) NSNumber * useDataSetColors;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

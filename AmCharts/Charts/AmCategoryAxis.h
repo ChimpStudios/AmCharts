@@ -23,12 +23,12 @@
 /**
  Specifies if axis labels (only when it is horizontal) should be wrapped if they don't fit in the allocated space. Wrapping won't work for rotated axis labels.
  */
-@property(assign) NSNumber * autoWrap;
+@property(strong) NSNumber * autoWrap;
 
 /**
  When parse dates is on for the category axis, the chart will try to highlight the beginning of the periods, like month, in bold. Set this to false to disable the functionality.
  */
-@property(assign) NSNumber * boldPeriodBeginning;
+@property(strong) NSNumber * boldPeriodBeginning;
 
 /**
  specifies a method that returns the value that should be used as categoryValue for current item. If this property is set, the return value of the custom data function takes precedence over categoryField. When a chart calls this method, it passes category value, data item from chart's data provider and reference to categoryAxis: categoryFunction(category, dataItem, categoryAxis); This method can be used both when category axis parses dates and when it doesn't. If axis parses dates, your<br>
@@ -40,12 +40,12 @@
  This setting works only when parseDates is set to true and equalSpacing is set to false. In case you set it to false,<br>
         labels will never be centered between grid lines.
  */
-@property(assign) NSNumber * centerLabelOnFullPeriod;
+@property(strong) NSNumber * centerLabelOnFullPeriod;
 
 /**
  In case your category axis values are Date objects and parseDates is set to true, the chart will parse dates and will place your data points at irregular intervals. However if you want dates to be parsed (displayed on the axis, baloons, etc), but data points to be placed at equal intervals (omiting dates with no data), set equalSpacing to true.
  */
-@property(assign) NSNumber * equalSpacing;
+@property(strong) NSNumber * equalSpacing;
 
 /**
  Sets first day of the week. 0 is Sunday, 1 is Monday, etc.
@@ -89,7 +89,7 @@
 /**
  If you set it to false, the start of longer periods won't use a different date format and won't be bold.
  */
-@property(assign) NSNumber * markPeriodChange;
+@property(strong) NSNumber * markPeriodChange;
 
 /**
  Specifies the shortest period of your data. This should be set only if parseDates is set to "true". Possible period values: fff - milliseconds, ss - seconds, mm - minutes, hh - hours, DD - days, MM - months, YYYY - years.<br>
@@ -101,12 +101,12 @@
 /**
  In case your category axis values are Date objects, set this to true. In this case the chart will parse dates and will place your data points at irregular intervals. If you want dates to be parsed, but data points to be placed at equal intervals, set both parseDates and equalSpacing to true.
  */
-@property(assign) NSNumber * parseDates;
+@property(strong) NSNumber * parseDates;
 
 /**
  Specifies whether the graph should start on axis or not. In case you display columns, it is recommended to set this to false. If parseDates is set to true, startOnAxis will allways be false, unless equalSpacing is set to true.
  */
-@property(assign) NSNumber * startOnAxis;
+@property(strong) NSNumber * startOnAxis;
 
 /**
  Position of a axis tick. Works only with non-date-based data.  Default value is "middle"
@@ -116,7 +116,7 @@
 /**
  Works only when parseDates is set to true and equalSpacing is false. If you set it to true, at the position where bigger period changes, category axis will display date strings of bot small and big period, in two rows.
  */
-@property(assign) NSNumber * twoLineMode;
+@property(strong) NSNumber * twoLineMode;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

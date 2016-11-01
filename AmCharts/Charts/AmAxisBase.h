@@ -14,7 +14,7 @@
 /**
  Specifies whether number of gridCount is specified automatically, acoarding to the axis size.
  */
-@property(assign) NSNumber * autoGridCount;
+@property(strong) NSNumber * autoGridCount;
 
 /**
  Axis opacity. Value range is 0 - 1.
@@ -104,12 +104,12 @@
 /**
  If autoMargins of a chart is set to true, but you want this axis not to be measured when calculating margin, set ignoreAxisWidth to true.
  */
-@property(assign) NSNumber * ignoreAxisWidth;
+@property(strong) NSNumber * ignoreAxisWidth;
 
 /**
  Specifies whether values should be placed inside or outside plot area.
  */
-@property(assign) NSNumber * inside;
+@property(strong) NSNumber * inside;
 
 /**
  Frequency at which labels should be placed. Doesn't work for CategoryAxis if parseDates is set to true.
@@ -129,7 +129,7 @@
 /**
  Specifies whether axis displays category axis' labels and value axis' values.
  */
-@property(assign) NSNumber * labelsEnabled;
+@property(strong) NSNumber * labelsEnabled;
 
 /**
  This property is used when calculating grid count (when autoGridCount is true). It specifies minimum cell width required for one span between grid lines.
@@ -144,7 +144,7 @@
 /**
  Specifies if minor grid should be displayed.
  */
-@property(assign) NSNumber * minorGridEnabled;
+@property(strong) NSNumber * minorGridEnabled;
 
 /**
  This property is used when calculating grid count (when autoGridCount is true). It specifies minimum cell height required for one span between grid lines.
@@ -164,12 +164,12 @@
 /**
  Whether to show first axis label or not. This works properly only on ValueAxis. With CategoryAxis it wont work 100%, it depends on the period, zooming, etc. There is no guaranteed way to force category axis to show or hide first label.
  */
-@property(assign) NSNumber * showFirstLabel;
+@property(strong) NSNumber * showFirstLabel;
 
 /**
  Whether to show last axis label or not. This works properly only on ValueAxis. With CategoryAxis it wont work 100%, it depends on the period, zooming, etc. There is no guaranteed way to force category axis to show or hide last label.
  */
-@property(assign) NSNumber * showLastLabel;
+@property(strong) NSNumber * showLastLabel;
 
 /**
  Length of the tick marks.
@@ -184,7 +184,7 @@
 /**
  Specifies if title should be bold or not.
  */
-@property(assign) NSNumber * titleBold;
+@property(strong) NSNumber * titleBold;
 
 /**
  Color of axis title. Will use text color of chart if not set any.

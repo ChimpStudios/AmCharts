@@ -15,7 +15,7 @@
 /**
  Specifies whether number of gridCount is specified automatically, according to the axis size.
  */
-@property(assign) NSNumber * autoGridCount;
+@property(strong) NSNumber * autoGridCount;
 
 /**
  Background opacity.
@@ -45,7 +45,7 @@
 /**
  Set false if you don't need scrollbar.
  */
-@property(assign) NSNumber * enabled;
+@property(strong) NSNumber * enabled;
 
 /**
  Font size.
@@ -105,12 +105,12 @@
 /**
  Specifies whether resize grips are hidden when mouse is away from the scrollbar.
  */
-@property(assign) NSNumber * hideResizeGrips;
+@property(strong) NSNumber * hideResizeGrips;
 
 /**
  Specifies if category axis of scrollbar should mark period change with a different date format.
  */
-@property(assign) NSNumber * markPeriodChange;
+@property(strong) NSNumber * markPeriodChange;
 
 /**
  Position of a scrollbar. Possible values are "top" and "bottom".
@@ -155,7 +155,7 @@
 /**
  Specifies if the chart should be updated while dragging/resizing the scrollbar or only at the moment when user releases mouse button. Usefull when working with large data sets.
  */
-@property(assign) NSNumber * updateOnReleaseOnly;
+@property(strong) NSNumber * updateOnReleaseOnly;
 
 /**
  This is very important feature for those, who work with large data sets. You can tell ChartScrollbar what period it should use for it's graph and save a lot of time for rendering of this graph. For example, if your minPeriod is "DD" (days), set usePeriod = "WW" (weeks) and you will have 7 times less data points in scrollbar's graph. Note, the period you specify here should be set in CategoryAxesSettings.groupToPeriods.

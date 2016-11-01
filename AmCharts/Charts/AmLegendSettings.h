@@ -19,7 +19,7 @@
 /**
  Specifies if each legend entry should take the same space as the longest legend entry. 
  */
-@property(assign) NSNumber * equalWidths;
+@property(strong) NSNumber * equalWidths;
 
 /**
  Horizontal space between legend item and left/right border.
@@ -79,7 +79,7 @@
 /**
  Specifies whether legend entries should be placed in reversed order.
  */
-@property(assign) NSNumber * reversedOrder;
+@property(strong) NSNumber * reversedOrder;
 
 /**
  Legend item text color on roll-over.
@@ -94,7 +94,7 @@
 /**
  Whether showing/hiding of graphs by clicking on the legend marker is enabled or not.
  */
-@property(assign) NSNumber * switchable;
+@property(strong) NSNumber * switchable;
 
 /**
  Legend switch color.
@@ -109,12 +109,12 @@
 /**
  Specifies whether the legend text is clickable or not. Clicking on legend text can show/hide value balloons if they are enabled.
  */
-@property(assign) NSNumber * textClickEnabled;
+@property(strong) NSNumber * textClickEnabled;
 
 /**
  Specifies if legend labels should be use same color as corresponding markers.
  */
-@property(assign) NSNumber * useMarkerColorForLabels;
+@property(strong) NSNumber * useMarkerColorForLabels;
 
 /**
  The text which will be displayed in the value portion of the legend when graph is comparable and at least one dataSet is selected for comparing. You can use tags like [[value]], [[open]], [[high]], [[low]], [[close]], [[percents]], [[description]].

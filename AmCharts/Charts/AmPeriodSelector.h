@@ -24,12 +24,12 @@
 /**
  Specifies if period buttons with date range bigger than available data should be hidden.
  */
-@property(assign) NSNumber * hideOutOfScopePeriods;
+@property(strong) NSNumber * hideOutOfScopePeriods;
 
 /**
  Specifies whether period selector displays "from" and "to" date input fields.
  */
-@property(assign) NSNumber * inputFieldsEnabled;
+@property(strong) NSNumber * inputFieldsEnabled;
 
 /**
  Width of date input fields, in pixels. Works only if period selector is horizontal.
@@ -54,7 +54,7 @@
 /**
  Specifies whether predefined period buttons should select a period from  the beginning or the end of the data.
  */
-@property(assign) NSNumber * selectFromStart;
+@property(strong) NSNumber * selectFromStart;
 
 /**
  Text displayed next to "to" date input field.

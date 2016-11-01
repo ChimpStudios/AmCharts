@@ -50,17 +50,17 @@
 /**
  Specifies whether guide values should be included when calculating min and max of the axis.
  */
-@property(assign) NSNumber * includeGuidesInMinMax;
+@property(strong) NSNumber * includeGuidesInMinMax;
 
 /**
  If true, the axis will include hidden graphs when calculating min and max values.
  */
-@property(assign) NSNumber * includeHidden;
+@property(strong) NSNumber * includeHidden;
 
 /**
  Specifies whether values on axis can only be integers or both integers and doubles.
  */
-@property(assign) NSNumber * integersOnly;
+@property(strong) NSNumber * integersOnly;
 
 /**
  You can use this function to format Value axis labels. This function is called and these parameters are passed: labelFunction(value, valueText, valueAxis);<br>
@@ -71,7 +71,7 @@
 /**
  Specifies if this value axis' scale should be logarithmic.
  */
-@property(assign) NSNumber * logarithmic;
+@property(strong) NSNumber * logarithmic;
 
 /**
  Read-only. Maximum value of the axis.
@@ -106,17 +106,17 @@
 /**
  Radar chart only. Specifies if categories (axes' titles) should be displayed near axes)
  */
-@property(assign) NSNumber * radarCategoriesEnabled;
+@property(strong) NSNumber * radarCategoriesEnabled;
 
 /**
  Specifies if graphs's values should be recalculated to percents.
  */
-@property(assign) NSNumber * recalculateToPercents;
+@property(strong) NSNumber * recalculateToPercents;
 
 /**
  Specifies if value axis should be reversed (smaller values on top).
  */
-@property(assign) NSNumber * reversed;
+@property(strong) NSNumber * reversed;
 
 /**
  Stacking mode of the axis. Possible values are: "none", "regular", "100%", "3d".<br>
@@ -172,12 +172,12 @@
 /**
  If true, prefixes will be used for big and small numbers. You can set arrays of prefixes directly to the chart object via prefixesOfSmallNumbers and prefixesOfBigNumbers.
  */
-@property(assign) NSNumber * usePrefixes;
+@property(strong) NSNumber * usePrefixes;
 
 /**
  If true, values will always be formatted using scientific notation (5e+8, 5e-8...) Otherwise only values bigger then 1e+21 and smaller then 1e-7 will be displayed in scientific notation.
  */
-@property(assign) NSNumber * useScientificNotation;
+@property(strong) NSNumber * useScientificNotation;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

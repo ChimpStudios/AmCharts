@@ -90,7 +90,7 @@
 /**
  This setting affects touch-screen devices only. If a chart is on a page, and panEventsEnabled are set to true, the page won't move if the user touches the chart first. If a chart is big enough and occupies all the screen of your touch device, the user won’t be able to move the page at all. That's why the default value is "false". If you think that selecting or or panning the chart is a primary purpose of your chart users, you should set panEventsEnabled to true.
  */
-@property(assign) NSNumber * panEventsEnabled;
+@property(strong) NSNumber * panEventsEnabled;
 
 /**
  Precision of percent values. 
@@ -140,7 +140,7 @@
 /**
  Specifies whether the animation should be sequenced or all objects should appear at once.
  */
-@property(assign) NSNumber * sequencedAnimation;
+@property(strong) NSNumber * sequencedAnimation;
 
 /**
  The initial opacity of the column/line. If you set startDuration to a value higher than 0, the columns/lines will fade in from startAlpha.
@@ -165,7 +165,7 @@
 /**
  If true, prefixes will be used for big and small numbers.
  */
-@property(assign) NSNumber * usePrefixes;
+@property(strong) NSNumber * usePrefixes;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

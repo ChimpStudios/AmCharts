@@ -50,7 +50,7 @@
 /**
  Specifies font size of a event bullet. Will use graph's or chart font size if not set.
  */
-@property(assign) NSNumber * fontSize;
+@property(strong) NSNumber * fontSize;
 
 /**
  graph on which event will be displayed. You can use a reference to the stock graph object or id of the graph.
@@ -70,12 +70,12 @@
 /**
  If you set it to true, the data point will display both event and regular (if set) bullet.
  */
-@property(assign) NSNumber * showBullet;
+@property(strong) NSNumber * showBullet;
 
 /**
  Specifies if the event should be displayed on category axis
  */
-@property(assign) NSNumber * showOnAxis;
+@property(strong) NSNumber * showOnAxis;
 
 /**
  Letter which will be displayed on the event. Not all types can display letters. "text" type can display longer texts.

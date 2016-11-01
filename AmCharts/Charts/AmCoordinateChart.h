@@ -29,7 +29,7 @@
 /**
  Specifies if grid should be drawn above the graphs or below. Will not work properly with 3D charts.
  */
-@property(assign) NSNumber * gridAboveGraphs;
+@property(strong) NSNumber * gridAboveGraphs;
 
 /**
  Instead of adding guides to the axes, you can push all of them to this array. In case guide has category or date defined, it will automatically will be assigned to the category axis. Otherwise to first value axis, unless you specify a different valueAxis for the guide.
@@ -39,7 +39,7 @@
 /**
  Specifies whether the animation should be sequenced or all objects should appear at once.
  */
-@property(assign) NSNumber * sequencedAnimation;
+@property(strong) NSNumber * sequencedAnimation;
 
 /**
  The initial opacity of the column/line. If you set startDuration to a value higher than 0, the columns/lines will fade in from startAlpha. Value range is 0 - 1.

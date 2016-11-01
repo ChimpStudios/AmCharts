@@ -26,7 +26,7 @@
 /**
  Specifies if margins of a chart should be calculated automatically so that labels of axes would fit. The chart will adjust only margins with axes. Other margins will use values set with marginRight, marginTop, marginLeft and marginBottom properties.
  */
-@property(assign) NSNumber * autoMargins;
+@property(strong) NSNumber * autoMargins;
 
 /**
  Cursor of a chart.
@@ -61,7 +61,7 @@
 /**
  Flag which should be set to false if you need margins to be recalculated on next chart.validateNow() call.
  */
-@property(assign) NSNumber * marginsUpdated;
+@property(strong) NSNumber * marginsUpdated;
 
 /**
  Number of pixels between the container's top border and plot area. This space can be used for top axis' values. If autoMargin is true and top side has axis, this property is ignored.

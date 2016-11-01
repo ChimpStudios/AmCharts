@@ -59,7 +59,7 @@
 /**
  Specifies if text should be bold.
  */
-@property(assign) NSNumber * bottomTextBold;
+@property(strong) NSNumber * bottomTextBold;
 
 /**
  Bottom text color.
@@ -104,12 +104,12 @@
 /**
  Specifies if grid should be drawn inside or outside the axis.
  */
-@property(assign) NSNumber * gridInside;
+@property(strong) NSNumber * gridInside;
 
 /**
  Specifies if labels should be placed inside or outside the axis.
  */
-@property(assign) NSNumber * inside;
+@property(strong) NSNumber * inside;
 
 /**
  Frequency of labels.
@@ -139,12 +139,12 @@
 /**
  Specifies if the first label should be shown.
  */
-@property(assign) NSNumber * showFirstLabel;
+@property(strong) NSNumber * showFirstLabel;
 
 /**
  Specifies if the last label should be shown.
  */
-@property(assign) NSNumber * showLastLabel;
+@property(strong) NSNumber * showLastLabel;
 
 /**
  Axis start angle. Valid values are from  - 180 to 180.
@@ -184,7 +184,7 @@
 /**
  Specifies if text should be bold.
  */
-@property(assign) NSNumber * topTextBold;
+@property(strong) NSNumber * topTextBold;
 
 /**
  Color of top text.
@@ -214,7 +214,7 @@
 /**
  Specifies if small and big numbers should use prefixes to make them more readable.
  */
-@property(assign) NSNumber * usePrefixes;
+@property(strong) NSNumber * usePrefixes;
 
 /**
  Interval, at which ticks with values should be placed.

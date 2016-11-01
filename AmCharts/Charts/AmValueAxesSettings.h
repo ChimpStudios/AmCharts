@@ -14,7 +14,7 @@
 /**
  Specifies whether number for gridCount is specified automatically, according to the axis size.
  */
-@property(assign) NSNumber * autoGridCount;
+@property(strong) NSNumber * autoGridCount;
 
 /**
  Axis opacity.
@@ -74,22 +74,22 @@
 /**
  Specifies whether guide values should be included when calculating min and max of the axis.
  */
-@property(assign) NSNumber * includeGuidesInMinMax;
+@property(strong) NSNumber * includeGuidesInMinMax;
 
 /**
  If true, the axis will include hidden graphs when calculating min and max values.
  */
-@property(assign) NSNumber * includeHidden;
+@property(strong) NSNumber * includeHidden;
 
 /**
  Specifies whether values should be placed inside or outside plot area. In case you set this to false, you'll have to adjust marginLeft or marginRight in [[PanelsSettings]] in order labels to be visible.
  */
-@property(assign) NSNumber * inside;
+@property(strong) NSNumber * inside;
 
 /**
  Specifies whether values on axis can only be integers or both integers and doubles.
  */
-@property(assign) NSNumber * integersOnly;
+@property(strong) NSNumber * integersOnly;
 
 /**
  Frequency at which labels should be placed.
@@ -99,12 +99,12 @@
 /**
  Specifies whether value labels are displayed.
  */
-@property(assign) NSNumber * labelsEnabled;
+@property(strong) NSNumber * labelsEnabled;
 
 /**
  Set to true if value axis is logarithmic, false otherwise.
  */
-@property(assign) NSNumber * logarithmic;
+@property(strong) NSNumber * logarithmic;
 
 /**
  The distance of the axis to the plot area, in pixels. Useful if you have more then one axis on the same side.
@@ -119,17 +119,17 @@
 /**
  Set to true if value axis is reversed (smaller values on top), false otherwise.
  */
-@property(assign) NSNumber * reversed;
+@property(strong) NSNumber * reversed;
 
 /**
  Specifies if first label of value axis should be displayed.
  */
-@property(assign) NSNumber * showFirstLabel;
+@property(strong) NSNumber * showFirstLabel;
 
 /**
  Specifies if last label of value axis should be displayed.
  */
-@property(assign) NSNumber * showLastLabel;
+@property(strong) NSNumber * showLastLabel;
 
 /**
  Stacking mode of the axis. Possible values are: "none", "regular", "100%", "3d".

@@ -14,7 +14,7 @@
  Specifies whether the Responsibe Plugin should be used.
  http://www.amcharts.com/tutorials/making-charts-responsive/
  */
-@property(assign) NSNumber * enabled;
+@property(strong) NSNumber * enabled;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

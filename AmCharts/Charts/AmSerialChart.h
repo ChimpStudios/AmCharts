@@ -75,12 +75,12 @@
 /**
  Specifies if scrolling of a chart with mouse wheel is enabled.
  */
-@property(assign) NSNumber * mouseWheelScrollEnabled;
+@property(strong) NSNumber * mouseWheelScrollEnabled;
 
 /**
  If you set this to true, the chart will be rotated by 90 degrees (the columns will become bars).
  */
-@property(assign) NSNumber * rotate;
+@property(strong) NSNumber * rotate;
 
 /**
  Read-only. If category axis parses dates startDate indicates date from which the chart is currently displayed.
@@ -95,7 +95,7 @@
 /**
  Specifies if chart should zoom-out when data is updated.
  */
-@property(assign) NSNumber * zoomOutOnDataUpdate;
+@property(strong) NSNumber * zoomOutOnDataUpdate;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;

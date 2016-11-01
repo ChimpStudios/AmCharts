@@ -16,12 +16,12 @@
 /**
  Specifies whether x button will be displayed near the panel. This button allows turning panel off.
  */
-@property(assign) NSNumber * allowTurningOff;
+@property(strong) NSNumber * allowTurningOff;
 
 /**
  If true, drawing icons will be displayed in top-right corner.
  */
-@property(assign) NSNumber * drawingIconsEnabled;
+@property(strong) NSNumber * drawingIconsEnabled;
 
 /**
  Specifies on which value axis user can draw trend lines. Set drawingIconsEnabled to true if you want drawing icons to be visible. First value axis will be used if not set here. You can use a reference to the value axis object or id of value axis.
@@ -31,12 +31,12 @@
 /**
  Specifies if all trend lines should be erased when erase button is clicked. If false, trend lines can be erased one by one.
  */
-@property(assign) NSNumber * eraseAll;
+@property(strong) NSNumber * eraseAll;
 
 /**
  Custom property that does not work with Vanilla AmCharts library.  Use instead of percentHeight to assign a panel a fixed height in pixels.
  */
-@property(assign) NSNumber * fixedHeight;
+@property(strong) NSNumber * fixedHeight;
 
 /**
  Size of trend line drawing icons. If you change this size, you should update icon images if you want them to look properly.
@@ -56,12 +56,12 @@
 /**
  Specifies whether this panel will show category axis.
  */
-@property(assign) NSNumber * showCategoryAxis;
+@property(strong) NSNumber * showCategoryAxis;
 
 /**
  Specifies if compared graphs should be shown above or behind the main graph.
  */
-@property(assign) NSNumber * showComparedOnTop;
+@property(strong) NSNumber * showComparedOnTop;
 
 /**
  Array of stock graphs.

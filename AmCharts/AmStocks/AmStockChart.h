@@ -38,7 +38,7 @@
 /**
  Specifies if animation was already played. Animation is only played once, when chart is rendered for the first time. If you want the animation to be repeated, set this property to false.
  */
-@property(assign) NSNumber * animationPlayed;
+@property(strong) NSNumber * animationPlayed;
 
 /**
  Balloon object.
@@ -53,7 +53,7 @@
 /**
  Read-only. Indicates if the chart is created.
  */
-@property(assign) NSNumber * chartCreated;
+@property(strong) NSNumber * chartCreated;
 
 /**
  Chart cursor settings.
@@ -108,7 +108,7 @@
 /**
  Specifies if the chart should always display full first and last data item when data is grouped to a longer period if the chart is zoomed from the beginning or end of the data.
  */
-@property(assign) NSNumber * extendToFullPeriod;
+@property(strong) NSNumber * extendToFullPeriod;
 
 /**
  Defines on which day week starts. 0 - Sunday, 1 - Monday...
@@ -118,7 +118,7 @@
 /**
  If set to true the scope of the data view will be set to the end after data update.
  */
-@property(assign) NSNumber * glueToTheEnd;
+@property(strong) NSNumber * glueToTheEnd;
 
 /**
  Legend settings.
@@ -133,7 +133,7 @@
 /**
  Specifies if scrolling of a chart with mouse wheel is enabled.
  */
-@property(assign) NSNumber * mouseWheelScrollEnabled;
+@property(strong) NSNumber * mouseWheelScrollEnabled;
 
 /**
  Array of StockPanels (charts).
@@ -198,7 +198,7 @@
 /**
  Specifies whether the chart should zoom-out when main data set is changed.
  */
-@property(assign) NSNumber * zoomOutOnDataSetChange;
+@property(strong) NSNumber * zoomOutOnDataSetChange;
 
 - (NSDictionary *)dictionaryRepresentation;
 - (NSString *)javascriptRepresentation;
